@@ -1327,7 +1327,7 @@
         "sigla": "UniDa",
         "citta": "Reggio Calabria",
         "regione": "Calabria",
-        "studenti": 219,
+        "studenti": 192,
         "link": "https://www.unidarc.it/",
         "categoria": "nonstatali"
     },
@@ -1336,7 +1336,7 @@
         "sigla": "UniSob",
         "citta": "Napoli",
         "regione": "Campania",
-        "studenti": 9089,
+        "studenti": 9213,
         "link": "https://www.unisob.na.it/",
         "categoria": "nonstatali"
     },
@@ -1345,7 +1345,7 @@
         "sigla": "Link",
         "citta": "Roma",
         "regione": "Lazio",
-        "studenti": 1448,
+        "studenti": 2797,
         "link": "https://www.unilink.it/",
         "categoria": "nonstatali"
     },
@@ -1354,7 +1354,7 @@
         "sigla": "LUISS",
         "citta": "Roma",
         "regione": "Lazio",
-        "studenti": 11761,
+        "studenti": 11844,
         "link": "https://www.luiss.it/",
         "categoria": "nonstatali"
     },
@@ -1363,7 +1363,7 @@
         "sigla": "LUMSA",
         "citta": "Roma",
         "regione": "Lazio",
-        "studenti": 9027,
+        "studenti": 9740,
         "link": "https://lumsa.it/it/home",
         "categoria": "nonstatali"
     },
@@ -1372,7 +1372,7 @@
         "sigla": "UniCamillus",
         "citta": "Roma",
         "regione": "Lazio",
-        "studenti": 3504,
+        "studenti": 4449,
         "link": "https://unicamillus.org/",
         "categoria": "nonstatali"
     },
@@ -1381,7 +1381,7 @@
         "sigla": "UCBM",
         "citta": "Roma",
         "regione": "Lazio",
-        "studenti": 3250,
+        "studenti": 3525,
         "link": "https://www.unicampus.it/",
         "categoria": "nonstatali"
     },
@@ -1390,7 +1390,7 @@
         "sigla": "UER",
         "citta": "Roma",
         "regione": "Lazio",
-        "studenti": 2566,
+        "studenti": 2689,
         "link": "https://www.uer.it/",
         "categoria": "nonstatali"
     },
@@ -1399,7 +1399,7 @@
         "sigla": "UnInt",
         "citta": "Roma",
         "regione": "Lazio",
-        "studenti": 1192,
+        "studenti": 1149,
         "link": "https://www.unint.eu/",
         "categoria": "nonstatali"
     },
@@ -1408,7 +1408,7 @@
         "sigla": "Hunimed",
         "citta": "Pieve Emanuele (MI)",
         "regione": "Lombardia",
-        "studenti": 2195,
+        "studenti": 2479,
         "link": "https://www.hunimed.eu/it/",
         "categoria": "nonstatali"
     },
@@ -1417,7 +1417,7 @@
         "sigla": "IULM",
         "citta": "Milano",
         "regione": "Lombardia",
-        "studenti": 7833,
+        "studenti": 7682,
         "link": "https://www.iulm.it/it/home",
         "categoria": "nonstatali"
     },
@@ -1426,7 +1426,7 @@
         "sigla": "LIUC",
         "citta": "Castellanza (VA)",
         "regione": "Lombardia",
-        "studenti": 2400,
+        "studenti": 2240,
         "link": "https://www.liuc.it/",
         "categoria": "nonstatali"
     },
@@ -1435,7 +1435,7 @@
         "sigla": "UniCatt",
         "citta": "Milano",
         "regione": "Lombardia",
-        "studenti": 41867,
+        "studenti": 41716,
         "link": "https://www.unicatt.it/",
         "categoria": "nonstatali"
     },
@@ -1444,7 +1444,7 @@
         "sigla": "Bocconi",
         "citta": "Milano",
         "regione": "Lombardia",
-        "studenti": 14000,
+        "studenti": 14075,
         "link": "https://www.unibocconi.it/it",
         "categoria": "nonstatali"
     },
@@ -1453,7 +1453,7 @@
         "sigla": "UniSR",
         "citta": "Milano",
         "regione": "Lombardia",
-        "studenti": 5841,
+        "studenti": 6515,
         "link": "https://www.unisr.it/",
         "categoria": "nonstatali"
     },
@@ -1471,7 +1471,7 @@
         "sigla": "UniSG",
         "citta": "Bra (CN)",
         "regione": "Piemonte",
-        "studenti": 294,
+        "studenti": 282,
         "link": "https://www.unisg.it/",
         "categoria": "nonstatali"
     },
@@ -1480,7 +1480,7 @@
         "sigla": "LUM",
         "citta": "Casamassima (BA)",
         "regione": "Puglia",
-        "studenti": 2288,
+        "studenti": 2575,
         "link": "https://www.lum.it/",
         "categoria": "nonstatali"
     },
@@ -1489,7 +1489,7 @@
         "sigla": "UKE",
         "citta": "Enna",
         "regione": "Sicilia",
-        "studenti": 5675,
+        "studenti": 6223,
         "link": "https://uke.it/",
         "categoria": "nonstatali"
     },
@@ -1498,7 +1498,7 @@
         "sigla": "UniBz",
         "citta": "Bolzano",
         "regione": "Trentino-Alto Adige",
-        "studenti": 3422,
+        "studenti": 3493,
         "link": "https://www.unibz.it/it/",
         "categoria": "nonstatali"
     },
@@ -1507,7 +1507,7 @@
         "sigla": "UniVdA",
         "citta": "Aosta",
         "regione": "Valle d'Aosta",
-        "studenti": 1050,
+        "studenti": 1160,
         "link": "https://www.univda.it/",
         "categoria": "nonstatali"
     },
@@ -1516,7 +1516,7 @@
         "sigla": "UniCh",
         "citta": "Chieti - Pescara",
         "regione": "Abruzzo",
-        "studenti": 20460,
+        "studenti": 21015,
         "link": "https://www.unich.it/",
         "categoria": "statali"
     },
@@ -1525,7 +1525,7 @@
         "sigla": "UnivAq",
         "citta": "L'Aquila",
         "regione": "Abruzzo",
-        "studenti": 17024,
+        "studenti": 17007,
         "link": "https://www.univaq.it/",
         "categoria": "statali"
     },
@@ -1534,7 +1534,7 @@
         "sigla": "UniTe",
         "citta": "Teramo",
         "regione": "Abruzzo",
-        "studenti": 4732,
+        "studenti": 4905,
         "link": "https://www.unite.it/UniTE/",
         "categoria": "statali"
     },
@@ -1543,7 +1543,7 @@
         "sigla": "UniBas",
         "citta": "Potenza - Matera",
         "regione": "Basilicata",
-        "studenti": 5522,
+        "studenti": 5441,
         "link": "https://portale.unibas.it/site/home.html",
         "categoria": "statali"
     },
@@ -1552,7 +1552,7 @@
         "sigla": "UniCz",
         "citta": "Catanzaro",
         "regione": "Calabria",
-        "studenti": 12056,
+        "studenti": 12309,
         "link": "https://web.unicz.it/it/",
         "categoria": "statali"
     },
@@ -1561,7 +1561,7 @@
         "sigla": "UniCal",
         "citta": "Rende (CS)",
         "regione": "Calabria",
-        "studenti": 23469,
+        "studenti": 24686,
         "link": "https://www.unical.it/",
         "categoria": "statali"
     },
@@ -1570,7 +1570,7 @@
         "sigla": "UniRc",
         "citta": "Reggio Calabria",
         "regione": "Calabria",
-        "studenti": 4988,
+        "studenti": 5574,
         "link": "https://www.unirc.it/",
         "categoria": "statali"
     },
@@ -1579,7 +1579,7 @@
         "sigla": "UniCampania",
         "citta": "Caserta",
         "regione": "Campania",
-        "studenti": 23517,
+        "studenti": 23835,
         "link": "https://unicampania.it/",
         "categoria": "statali"
     },
@@ -1588,7 +1588,7 @@
         "sigla": "UniNa",
         "citta": "Napoli",
         "regione": "Campania",
-        "studenti": 71907,
+        "studenti": 72343,
         "link": "https://www.unina.it/it/",
         "categoria": "statali"
     },
@@ -1597,7 +1597,7 @@
         "sigla": "UniOr",
         "citta": "Napoli",
         "regione": "Campania",
-        "studenti": 8508,
+        "studenti": 8141,
         "link": "https://www.unior.it/it",
         "categoria": "statali"
     },
@@ -1606,7 +1606,7 @@
         "sigla": "UniParthenope",
         "citta": "Napoli",
         "regione": "Campania",
-        "studenti": 14845,
+        "studenti": 16018,
         "link": "https://www.uniparthenope.it/",
         "categoria": "statali"
     },
@@ -1615,7 +1615,7 @@
         "sigla": "UniSa",
         "citta": "Fisciano (SA)",
         "regione": "Campania",
-        "studenti": 32512,
+        "studenti": 33036,
         "link": "https://www.unisa.it/",
         "categoria": "statali"
     },
@@ -1624,7 +1624,7 @@
         "sigla": "UniSannio",
         "citta": "Benevento",
         "regione": "Campania",
-        "studenti": 3768,
+        "studenti": 3877,
         "link": "https://www.unisannio.it/it",
         "categoria": "statali"
     },
@@ -1633,7 +1633,7 @@
         "sigla": "UniBo",
         "citta": "Bologna",
         "regione": "Emilia-Romagna",
-        "studenti": 85256,
+        "studenti": 85484,
         "link": "https://www.unibo.it/it",
         "categoria": "statali"
     },
@@ -1642,7 +1642,7 @@
         "sigla": "UniFe",
         "citta": "Ferrara",
         "regione": "Emilia-Romagna",
-        "studenti": 27101,
+        "studenti": 27680,
         "link": "https://www.unife.it/it",
         "categoria": "statali"
     },
@@ -1651,7 +1651,7 @@
         "sigla": "UniMoRe",
         "citta": "Modena - Reggio Emilia",
         "regione": "Emilia-Romagna",
-        "studenti": 25851,
+        "studenti": 26015,
         "link": "https://www.unimore.it/it",
         "categoria": "statali"
     },
@@ -1660,7 +1660,7 @@
         "sigla": "UniPr",
         "citta": "Parma",
         "regione": "Emilia-Romagna",
-        "studenti": 30842,
+        "studenti": 31708,
         "link": "https://www.unipr.it/",
         "categoria": "statali"
     },
@@ -1669,7 +1669,7 @@
         "sigla": "UniTs",
         "citta": "Trieste",
         "regione": "Friuli-Venezia Giulia",
-        "studenti": 17534,
+        "studenti": 17424,
         "link": "https://portale.units.it/it",
         "categoria": "statali"
     },
@@ -1678,7 +1678,7 @@
         "sigla": "UniUd",
         "citta": "Udine",
         "regione": "Friuli-Venezia Giulia",
-        "studenti": 14707,
+        "studenti": 15179,
         "link": "https://www.uniud.it/it",
         "categoria": "statali"
     },
@@ -1687,7 +1687,7 @@
         "sigla": "UniCas",
         "citta": "Cassino (FR)",
         "regione": "Lazio",
-        "studenti": 7433,
+        "studenti": 8153,
         "link": "https://www.unicas.it/",
         "categoria": "statali"
     },
@@ -1696,7 +1696,7 @@
         "sigla": "UniRoma1",
         "citta": "Roma",
         "regione": "Lazio",
-        "studenti": 112000,
+        "studenti": 114115,
         "link": "https://www.uniroma1.it/it/",
         "categoria": "statali"
     },
@@ -1705,7 +1705,7 @@
         "sigla": "UniRoma2",
         "citta": "Roma",
         "regione": "Lazio",
-        "studenti": 31181,
+        "studenti": 31254,
         "link": "https://web.uniroma2.it/it",
         "categoria": "statali"
     },
@@ -1714,7 +1714,7 @@
         "sigla": "UniRoma3",
         "citta": "Roma",
         "regione": "Lazio",
-        "studenti": 35109,
+        "studenti": 36794,
         "link": "https://www.uniroma3.it/",
         "categoria": "statali"
     },
@@ -1723,7 +1723,7 @@
         "sigla": "UniRoma4",
         "citta": "Roma",
         "regione": "Lazio",
-        "studenti": 2445,
+        "studenti": 2496,
         "link": "https://www.uniroma4.it/",
         "categoria": "statali"
     },
@@ -1732,7 +1732,7 @@
         "sigla": "UniTus",
         "citta": "Viterbo",
         "regione": "Lazio",
-        "studenti": 7724,
+        "studenti": 8119,
         "link": "https://www.unitus.it/",
         "categoria": "statali"
     },
@@ -1741,7 +1741,7 @@
         "sigla": "UniGe",
         "citta": "Genova",
         "regione": "Liguria",
-        "studenti": 31976,
+        "studenti": 32921,
         "link": "https://unige.it/",
         "categoria": "statali"
     },
@@ -1750,7 +1750,7 @@
         "sigla": "UniBg",
         "citta": "Bergamo",
         "regione": "Lombardia",
-        "studenti": 18954,
+        "studenti": 19150,
         "link": "https://www.unibg.it/",
         "categoria": "statali"
     },
@@ -1759,7 +1759,7 @@
         "sigla": "UniBs",
         "citta": "Brescia",
         "regione": "Lombardia",
-        "studenti": 16456,
+        "studenti": 17402,
         "link": "https://www.unibs.it/it",
         "categoria": "statali"
     },
@@ -1768,7 +1768,7 @@
         "sigla": "PoliMi",
         "citta": "Milano",
         "regione": "Lombardia",
-        "studenti": 48124,
+        "studenti": 49141,
         "link": "https://www.polimi.it/",
         "categoria": "statali"
     },
@@ -1777,7 +1777,7 @@
         "sigla": "UniMi",
         "citta": "Milano",
         "regione": "Lombardia",
-        "studenti": 58016,
+        "studenti": 57615,
         "link": "https://www.unimi.it/it",
         "categoria": "statali"
     },
@@ -1786,7 +1786,7 @@
         "sigla": "UniMiB",
         "citta": "Milano",
         "regione": "Lombardia",
-        "studenti": 36215,
+        "studenti": 35293,
         "link": "https://www.unimib.it/",
         "categoria": "statali"
     },
@@ -1795,7 +1795,7 @@
         "sigla": "UniPv",
         "citta": "Pavia",
         "regione": "Lombardia",
-        "studenti": 26515,
+        "studenti": 27096,
         "link": "https://portale.unipv.it/it",
         "categoria": "statali"
     },
@@ -1804,7 +1804,7 @@
         "sigla": "Uninsubria",
         "citta": "Varese - Como",
         "regione": "Lombardia",
-        "studenti": 11214,
+        "studenti": 11400,
         "link": "https://www.uninsubria.it/",
         "categoria": "statali"
     },
@@ -1813,7 +1813,7 @@
         "sigla": "UnivPM",
         "citta": "Ancona",
         "regione": "Marche",
-        "studenti": 16241,
+        "studenti": 16904,
         "link": "https://www.univpm.it/Entra/",
         "categoria": "statali"
     },
@@ -1822,7 +1822,7 @@
         "sigla": "UniCam",
         "citta": "Camerino (MC)",
         "regione": "Marche",
-        "studenti": 6259,
+        "studenti": 6125,
         "link": "https://www.unicam.it/",
         "categoria": "statali"
     },
@@ -1831,7 +1831,7 @@
         "sigla": "UniMc",
         "citta": "Macerata",
         "regione": "Marche",
-        "studenti": 9181,
+        "studenti": 9178,
         "link": "https://www.unimc.it/it",
         "categoria": "statali"
     },
@@ -1840,7 +1840,7 @@
         "sigla": "UniUrb",
         "citta": "Urbino",
         "regione": "Marche",
-        "studenti": 13398,
+        "studenti": 13427,
         "link": "https://www.uniurb.it/",
         "categoria": "statali"
     },
@@ -1849,7 +1849,7 @@
         "sigla": "UniMol",
         "citta": "Campobasso",
         "regione": "Molise",
-        "studenti": 6889,
+        "studenti": 7135,
         "link": "https://www3.unimol.it/",
         "categoria": "statali"
     },
@@ -1858,7 +1858,7 @@
         "sigla": "UPO",
         "citta": "Alessandria - Novara - Vercelli",
         "regione": "Piemonte",
-        "studenti": 14235,
+        "studenti": 15160,
         "link": "https://www.uniupo.it/it",
         "categoria": "statali"
     },
@@ -1867,7 +1867,7 @@
         "sigla": "UniTo",
         "citta": "Torino",
         "regione": "Piemonte",
-        "studenti": 79122,
+        "studenti": 81152,
         "link": "https://www.unito.it/",
         "categoria": "statali"
     },
@@ -1876,7 +1876,7 @@
         "sigla": "PoliTo",
         "citta": "Torino",
         "regione": "Piemonte",
-        "studenti": 35605,
+        "studenti": 37246,
         "link": "https://www.polito.it/",
         "categoria": "statali"
     },
@@ -1885,7 +1885,7 @@
         "sigla": "PoliBa",
         "citta": "Bari",
         "regione": "Puglia",
-        "studenti": 10715,
+        "studenti": 11333,
         "link": "https://www.poliba.it/",
         "categoria": "statali"
     },
@@ -1894,7 +1894,7 @@
         "sigla": "UniBa",
         "citta": "Bari",
         "regione": "Puglia",
-        "studenti": 40527,
+        "studenti": 40763,
         "link": "https://www.uniba.it/it",
         "categoria": "statali"
     },
@@ -1903,7 +1903,7 @@
         "sigla": "UniFg",
         "citta": "Foggia",
         "regione": "Puglia",
-        "studenti": 13560,
+        "studenti": 14175,
         "link": "https://www.unifg.it/it",
         "categoria": "statali"
     },
@@ -1912,7 +1912,7 @@
         "sigla": "UniSalento",
         "citta": "Lecce",
         "regione": "Puglia",
-        "studenti": 19779,
+        "studenti": 20226,
         "link": "https://www.unisalento.it/",
         "categoria": "statali"
     },
@@ -1921,7 +1921,7 @@
         "sigla": "UniCa",
         "citta": "Cagliari",
         "regione": "Sardegna",
-        "studenti": 25094,
+        "studenti": 25922,
         "link": "https://www.unica.it/it",
         "categoria": "statali"
     },
@@ -1930,7 +1930,7 @@
         "sigla": "UniSs",
         "citta": "Sassari",
         "regione": "Sardegna",
-        "studenti": 12054,
+        "studenti": 12183,
         "link": "https://www.uniss.it/it",
         "categoria": "statali"
     },
@@ -1939,7 +1939,7 @@
         "sigla": "UniCt",
         "citta": "Catania",
         "regione": "Sicilia",
-        "studenti": 40287,
+        "studenti": 39681,
         "link": "https://www.unict.it/",
         "categoria": "statali"
     },
@@ -1948,7 +1948,7 @@
         "sigla": "UniMe",
         "citta": "Messina",
         "regione": "Sicilia",
-        "studenti": 25656,
+        "studenti": 26792,
         "link": "https://www.unime.it/",
         "categoria": "statali"
     },
@@ -1957,7 +1957,7 @@
         "sigla": "UniPa",
         "citta": "Palermo",
         "regione": "Sicilia",
-        "studenti": 44439,
+        "studenti": 46425,
         "link": "https://www.unipa.it/",
         "categoria": "statali"
     },
@@ -1966,7 +1966,7 @@
         "sigla": "UniFi",
         "citta": "Firenze",
         "regione": "Toscana",
-        "studenti": 56166,
+        "studenti": 57728,
         "link": "https://www.unifi.it/it",
         "categoria": "statali"
     },
@@ -1975,7 +1975,7 @@
         "sigla": "UniPi",
         "citta": "Pisa",
         "regione": "Toscana",
-        "studenti": 44709,
+        "studenti": 45046,
         "link": "https://www.unipi.it/",
         "categoria": "statali"
     },
@@ -1984,7 +1984,7 @@
         "sigla": "UniSi",
         "citta": "Siena",
         "regione": "Toscana",
-        "studenti": 14833,
+        "studenti": 14765,
         "link": "https://www.unisi.it/",
         "categoria": "statali"
     },
@@ -1993,7 +1993,7 @@
         "sigla": "UniStraSi",
         "citta": "Siena",
         "regione": "Toscana",
-        "studenti": 1601,
+        "studenti": 1441,
         "link": "https://www.unistrasi.it/",
         "categoria": "statali"
     },
@@ -2002,7 +2002,7 @@
         "sigla": "UniTn",
         "citta": "Trento",
         "regione": "Trentino-Alto Adige",
-        "studenti": 16923,
+        "studenti": 17350,
         "link": "https://www.unitn.it/it",
         "categoria": "statali"
     },
@@ -2011,7 +2011,7 @@
         "sigla": "UniPg",
         "citta": "Perugia",
         "regione": "Umbria",
-        "studenti": 29526,
+        "studenti": 30177,
         "link": "https://www.unipg.it/",
         "categoria": "statali"
     },
@@ -2020,7 +2020,7 @@
         "sigla": "UniStraPg",
         "citta": "Perugia",
         "regione": "Umbria",
-        "studenti": 1098,
+        "studenti": 1126,
         "link": "https://www.unistrapg.it/",
         "categoria": "statali"
     },
@@ -2029,7 +2029,7 @@
         "sigla": "UniPd",
         "citta": "Padova",
         "regione": "Veneto",
-        "studenti": 72543,
+        "studenti": 73812,
         "link": "https://www.unipd.it/",
         "categoria": "statali"
     },
@@ -2038,7 +2038,7 @@
         "sigla": "UniVe",
         "citta": "Venezia",
         "regione": "Veneto",
-        "studenti": 18941,
+        "studenti": 18900,
         "link": "https://www.unive.it/",
         "categoria": "statali"
     },
@@ -2047,7 +2047,7 @@
         "sigla": "Iuav",
         "citta": "Venezia",
         "regione": "Veneto",
-        "studenti": 4821,
+        "studenti": 4951,
         "link": "https://www.iuav.it/it",
         "categoria": "statali"
     },
@@ -2056,7 +2056,7 @@
         "sigla": "UniVr",
         "citta": "Verona",
         "regione": "Veneto",
-        "studenti": 26322,
+        "studenti": 26847,
         "link": "https://www.univr.it/",
         "categoria": "statali"
     },
@@ -2146,7 +2146,7 @@
         "sigla": "Unidav",
         "citta": "Torrevecchia Teatina (CH)",
         "regione": "Abruzzo",
-        "studenti": 546,
+        "studenti": 1026,
         "link": "https://www.unidav.it/",
         "categoria": "telematiche"
     },
@@ -2155,7 +2155,7 @@
         "sigla": "Unifortunato",
         "citta": "Benevento",
         "regione": "Campania",
-        "studenti": 2760,
+        "studenti": 2762,
         "link": "https://www.unifortunato.eu/",
         "categoria": "telematiche"
     },
@@ -2164,7 +2164,7 @@
         "sigla": "UniPegaso",
         "citta": "Napoli",
         "regione": "Campania",
-        "studenti": 108704,
+        "studenti": 105304,
         "link": "https://www.unipegaso.it/",
         "categoria": "telematiche"
     },
@@ -2173,7 +2173,7 @@
         "sigla": "Unimarconi",
         "citta": "Roma",
         "regione": "Lazio",
-        "studenti": 23533,
+        "studenti": 24612,
         "link": "https://www.unimarconi.it/",
         "categoria": "telematiche"
     },
@@ -2182,7 +2182,7 @@
         "sigla": "UTIU",
         "citta": "Roma",
         "regione": "Lazio",
-        "studenti": 17435,
+        "studenti": 13739,
         "link": "https://www.uninettunouniversity.net/it/default.aspx",
         "categoria": "telematiche"
     },
@@ -2191,7 +2191,7 @@
         "sigla": "Unicusano",
         "citta": "Roma",
         "regione": "Lazio",
-        "studenti": 18583,
+        "studenti": 16947,
         "link": "https://www.unicusano.it/",
         "categoria": "telematiche"
     },
@@ -2200,7 +2200,7 @@
         "sigla": "UniRoma5",
         "citta": "Roma",
         "regione": "Lazio",
-        "studenti": 17119,
+        "studenti": 21080,
         "link": "https://www.uniroma5.it/",
         "categoria": "telematiche"
     },
@@ -2209,7 +2209,7 @@
         "sigla": "Unitelma",
         "citta": "Roma",
         "regione": "Lazio",
-        "studenti": 4101,
+        "studenti": 3827,
         "link": "https://www.unitelmasapienza.it/",
         "categoria": "telematiche"
     },
@@ -2218,7 +2218,7 @@
         "sigla": "UniMercatorum",
         "citta": "Roma",
         "regione": "Lazio",
-        "studenti": 64741,
+        "studenti": 70602,
         "link": "https://www.unimercatorum.it/",
         "categoria": "telematiche"
     },
@@ -2227,7 +2227,7 @@
         "sigla": "Uni-eCampus",
         "citta": "Novedrate (CO)",
         "regione": "Lombardia",
-        "studenti": 49856,
+        "studenti": 40354,
         "link": "https://www.uniecampus.it/",
         "categoria": "telematiche"
     },
@@ -2236,7 +2236,7 @@
         "sigla": "IUL",
         "citta": "Firenze",
         "regione": "Toscana",
-        "studenti": 1990,
+        "studenti": 1934,
         "link": "https://www.iuline.it/",
         "categoria": "telematiche"
     },

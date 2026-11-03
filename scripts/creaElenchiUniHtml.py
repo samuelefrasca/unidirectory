@@ -16,6 +16,7 @@ categorie = [
         "titolo_seo": "Università statali in Italia: elenco per regione e città",
         "desc_seo": "Scopri l'elenco delle università statali in Italia, organizzate per regione e città. Elenco chiaro e aggiornato delle sedi disponibili.",
         "nav_active": "Statali",
+        "nota": "Dati sugli studenti dal MUR (USTAT), aggiornati all'anno <b>2025/2026</b> ed elaborati automaticamente. Eventuali errori possono dipendere dai dati di origine.",
     },
     {
         "categoria": "superiori",
@@ -24,6 +25,7 @@ categorie = [
         "titolo_seo": "Scuole superiori universitarie in Italia: elenco per regione e città",
         "desc_seo": "Scopri l'elenco delle scuole superiori universitarie in Italia, organizzate per regione e città.",
         "nav_active": "Scuole superiori",
+        "nota": "Dati sugli studenti dal MUR (USTAT), aggiornati all'anno <b>2023/2024</b> ed elaborati automaticamente. Per le scuole superiori universitarie il conteggio si riferisce esclusivamente ai <b>Dottorati di ricerca</b> (unico dato disponibile nel database USTAT). Eventuali errori possono dipendere dai dati di origine.",
     },
     {
         "categoria": "nonstatali",
@@ -32,6 +34,7 @@ categorie = [
         "titolo_seo": "Università non statali in Italia: elenco per regione e città",
         "desc_seo": "Scopri l'elenco delle università non statali in Italia, organizzate per regione e città.",
         "nav_active": "Non statali",
+        "nota": "Dati sugli studenti dal MUR (USTAT), aggiornati all'anno <b>2025/2026</b> ed elaborati automaticamente. Eventuali errori possono dipendere dai dati di origine.",
     },
     {
         "categoria": "telematiche",
@@ -40,6 +43,7 @@ categorie = [
         "titolo_seo": "Università telematiche in Italia: elenco completo",
         "desc_seo": "Scopri l'elenco delle università telematiche riconosciute in Italia.",
         "nav_active": "Telematiche",
+        "nota": "Dati sugli studenti dal MUR (USTAT), aggiornati all'anno <b>2025/2026</b> ed elaborati automaticamente. Eventuali errori possono dipendere dai dati di origine.",
     },
     {
         "categoria": "ssml",
@@ -48,6 +52,7 @@ categorie = [
         "titolo_seo": "Scuole Superiori per Mediatori Linguistici SSML in Italia: elenco completo",
         "desc_seo": "Scopri l'elenco delle Scuole Superiori per mediatori linguistici SSML in Italia.",
         "nav_active": "SSML",
+        "nota": "I dati sul numero di studenti iscritti alle SSML <b>non sono disponibili</b> nel database USTAT del MUR.",
     },
     {
         "categoria": "conservatori",
@@ -56,6 +61,7 @@ categorie = [
         "titolo_seo": "Conservatori statali in Italia: elenco per regione e città",
         "desc_seo": "Scopri l'elenco dei conservatori statali in Italia, organizzati per regione e città.",
         "nav_active": "Conservatori",
+        "nota": "Dati sugli studenti dal MUR (USTAT), aggiornati all'anno <b>2024/2025</b> ed elaborati automaticamente. Eventuali errori possono dipendere dai dati di origine.",
     },
     {
         "categoria": "abastatali",
@@ -64,6 +70,7 @@ categorie = [
         "titolo_seo": "Accademie di Belle Arti statali in Italia: elenco per regione e città",
         "desc_seo": "Scopri l'elenco delle Accademie di Belle Arti statali in Italia, organizzate per regione e città.",
         "nav_active": "ABA",
+        "nota": "Dati sugli studenti dal MUR (USTAT), aggiornati all'anno <b>2024/2025</b> ed elaborati automaticamente. Eventuali errori possono dipendere dai dati di origine.",
     },
     {
         "categoria": "accnazionali",
@@ -72,6 +79,7 @@ categorie = [
         "titolo_seo": "Accademie nazionali in Italia: elenco completo",
         "desc_seo": "Scopri l'elenco delle accademie nazionali in Italia.",
         "nav_active": "Acc. nazionali",
+        "nota": "Dati sugli studenti dal MUR (USTAT), aggiornati all'anno <b>2024/2025</b> ed elaborati automaticamente. Eventuali errori possono dipendere dai dati di origine.",
     },
     {
         "categoria": "isia",
@@ -80,6 +88,7 @@ categorie = [
         "titolo_seo": "ISIA in Italia: elenco degli istituti superiori per le industrie artistiche",
         "desc_seo": "Scopri l'elenco degli Istituti Superiori per le Industrie Artistiche (ISIA) in Italia.",
         "nav_active": "ISIA",
+        "nota": "Dati sugli studenti dal MUR (USTAT), aggiornati all'anno <b>2025/2026</b> ed elaborati automaticamente. Eventuali errori possono dipendere dai dati di origine.",
     },
     {
         "categoria": "afamprivati",
@@ -88,6 +97,7 @@ categorie = [
         "titolo_seo": "Istituti privati AFAM in Italia: elenco completo",
         "desc_seo": "Scopri l'elenco degli istituti privati di Alta Formazione Artistica, Musicale e Coreutica (AFAM) in Italia.",
         "nav_active": "AFAM privati",
+        "nota": "Dati sugli studenti dal MUR (USTAT), aggiornati all'anno <b>2025/2026</b> ed elaborati automaticamente. Eventuali errori possono dipendere dai dati di origine.",
     },
 ]
 
@@ -246,6 +256,7 @@ def genera_html(cat):
 {righe}
                 </tbody>
             </table>
+            <p class="data-note">{cat["nota"]}</p>
         </div>
     </main>
     <footer>
