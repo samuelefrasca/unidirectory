@@ -356,7 +356,6 @@ a.uni:visited {
     user-select: none;
 }
 
-/* Al momento non sono presenti data-note, lo style è fatto in modo da poter trovarsi come elemento di attributo p da mettere alla fine del .container del main */
 .data-note {
     margin: 8px 0 0 0;
     font-size: 0.9rem;
