@@ -749,6 +749,11 @@ def genera_html_ateneo(uni: dict, corsi: list) -> str:
                     <i class="fa-brands fa-instagram"></i> Instagram
                 </a>
             </p>
+            <p>
+                <a class="a_footer" href="https://paypal.me/SamueleFrasca18" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-mug-hot"></i> Sostieni il progetto
+                </a>
+            </p>
 
         </div>
 
