@@ -36,9 +36,9 @@
     <meta name="twitter:image"
         content="https://unidirectory.it/assets/img/iud_icon.png">
 
-    <link rel="icon" type="image/png" href="../assets/img/iud_icon.png">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/elenchi.css">
+    <link rel="icon" type="image/png" href="/assets/img/iud_icon.png">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/elenchi.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <script type="application/ld+json">
@@ -58,7 +58,7 @@
             <div class="header">
                 <div class="header1">
                     <a href="/">
-                        <img class="logo" src="../assets/img/iud_image.png" alt="Logo Unidirectory">
+                        <img class="logo" src="/assets/img/iud_image.png" alt="Logo Unidirectory">
                     </a>
                 </div>
                 <div class="header2">
@@ -69,16 +69,16 @@
             </div>
             <nav class="altreuni">
                 <ul class="navul">
-                    <li class="navli"><a class="reflink select-none" href="statali.html">Statali</a></li>
-                    <li class="navli"><a class="reflink select-none" href="superiori.html">Scuole superiori</a></li>
+                    <li class="navli"><a class="reflink select-none" href="statali">Statali</a></li>
+                    <li class="navli"><a class="reflink select-none" href="superiori">Scuole superiori</a></li>
                     <li class="navli"><span class="reflink select-none active">Non statali</span></li>
-                    <li class="navli"><a class="reflink select-none" href="telematiche.html">Telematiche</a></li>
-                    <li class="navli"><a class="reflink select-none" href="ssml.html">SSML</a></li>
-                    <li class="navli"><a class="reflink select-none" href="conservatori.html">Conservatori</a></li>
-                    <li class="navli"><a class="reflink select-none" href="abastatali.html">ABA</a></li>
-                    <li class="navli"><a class="reflink select-none" href="accnazionali.html">Acc. nazionali</a></li>
-                    <li class="navli"><a class="reflink select-none" href="isia.html">ISIA</a></li>
-                    <li class="navli"><a class="reflink select-none" href="afamprivati.html">AFAM privati</a></li>
+                    <li class="navli"><a class="reflink select-none" href="telematiche">Telematiche</a></li>
+                    <li class="navli"><a class="reflink select-none" href="ssml">SSML</a></li>
+                    <li class="navli"><a class="reflink select-none" href="conservatori">Conservatori</a></li>
+                    <li class="navli"><a class="reflink select-none" href="abastatali">ABA</a></li>
+                    <li class="navli"><a class="reflink select-none" href="accnazionali">Acc. nazionali</a></li>
+                    <li class="navli"><a class="reflink select-none" href="isia">ISIA</a></li>
+                    <li class="navli"><a class="reflink select-none" href="afamprivati">AFAM privati</a></li>
                 </ul>
             </nav>
         </div>
@@ -93,15 +93,15 @@
                         <th class="select-none num"></th>
                         <th class="select-none">Nome</th>
                         <th class="select-none">Sigla</th>
-                        <th class="select-none"><a onclick="ordinaPerCitta('nonstatali')">Sede principale <i class="fa-solid fa-sort"></i></a></th>
-                        <th class="select-none"><a onclick="ordinaPerRegione('nonstatali')">Regione <i class="fa-solid fa-sort"></i></a></th>
-                        <th class="select-none"><a onclick="ordinaPerStudenti('nonstatali')">Studenti <i class="fa-solid fa-sort"></i></a></th>
+                        <th class="select-none"><a onclick="ordinaPerCitta()">Sede principale <i class="fa-solid fa-sort"></i></a></th>
+                        <th class="select-none"><a onclick="ordinaPerRegione()">Regione <i class="fa-solid fa-sort"></i></a></th>
+                        <th class="select-none"><a onclick="ordinaPerStudenti()">Studenti <i class="fa-solid fa-sort"></i></a></th>
                     </tr>
                 </thead>
                 <tbody id="tabellauni">
         <tr data-uni="{&quot;nome&quot;: &quot;Università per Stranieri \&quot;Dante Alighieri\&quot; di Reggio Calabria&quot;, &quot;sigla&quot;: &quot;UniDa&quot;, &quot;citta&quot;: &quot;Reggio Calabria&quot;, &quot;regione&quot;: &quot;Calabria&quot;, &quot;studenti&quot;: 192, &quot;link&quot;: &quot;https://www.unidarc.it/&quot;, &quot;categoria&quot;: &quot;nonstatali&quot;}">
                 <td class="num">1</td>
-                <td><a class="uni" href="../atenei/unida.html">Università per Stranieri "Dante Alighieri" di Reggio Calabria</a></td>
+                <td><a class="uni" href="/atenei/unida">Università per Stranieri "Dante Alighieri" di Reggio Calabria</a></td>
                 <td>UniDa</td>
                 <td>Reggio Calabria</td>
                 <td>Calabria</td>
@@ -109,7 +109,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Università degli Studi \&quot;Suor Orsola Benincasa\&quot;&quot;, &quot;sigla&quot;: &quot;UniSob&quot;, &quot;citta&quot;: &quot;Napoli&quot;, &quot;regione&quot;: &quot;Campania&quot;, &quot;studenti&quot;: 9213, &quot;link&quot;: &quot;https://www.unisob.na.it/&quot;, &quot;categoria&quot;: &quot;nonstatali&quot;}">
                 <td class="num">2</td>
-                <td><a class="uni" href="../atenei/unisob.html">Università degli Studi "Suor Orsola Benincasa"</a></td>
+                <td><a class="uni" href="/atenei/unisob">Università degli Studi "Suor Orsola Benincasa"</a></td>
                 <td>UniSob</td>
                 <td>Napoli</td>
                 <td>Campania</td>
@@ -117,7 +117,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Link Campus University&quot;, &quot;sigla&quot;: &quot;Link&quot;, &quot;citta&quot;: &quot;Roma&quot;, &quot;regione&quot;: &quot;Lazio&quot;, &quot;studenti&quot;: 2797, &quot;link&quot;: &quot;https://www.unilink.it/&quot;, &quot;categoria&quot;: &quot;nonstatali&quot;}">
                 <td class="num">3</td>
-                <td><a class="uni" href="../atenei/link.html">Link Campus University</a></td>
+                <td><a class="uni" href="/atenei/link">Link Campus University</a></td>
                 <td>Link</td>
                 <td>Roma</td>
                 <td>Lazio</td>
@@ -125,7 +125,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;LUISS - Libera Università Internazionale Studi Sociali \&quot;Guido Carli\&quot;&quot;, &quot;sigla&quot;: &quot;LUISS&quot;, &quot;citta&quot;: &quot;Roma&quot;, &quot;regione&quot;: &quot;Lazio&quot;, &quot;studenti&quot;: 11844, &quot;link&quot;: &quot;https://www.luiss.it/&quot;, &quot;categoria&quot;: &quot;nonstatali&quot;}">
                 <td class="num">4</td>
-                <td><a class="uni" href="../atenei/luiss.html">LUISS - Libera Università Internazionale Studi Sociali "Guido Carli"</a></td>
+                <td><a class="uni" href="/atenei/luiss">LUISS - Libera Università Internazionale Studi Sociali "Guido Carli"</a></td>
                 <td>LUISS</td>
                 <td>Roma</td>
                 <td>Lazio</td>
@@ -133,7 +133,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;LUMSA - Libera Università Maria Santissima Assunta&quot;, &quot;sigla&quot;: &quot;LUMSA&quot;, &quot;citta&quot;: &quot;Roma&quot;, &quot;regione&quot;: &quot;Lazio&quot;, &quot;studenti&quot;: 9740, &quot;link&quot;: &quot;https://lumsa.it/it/home&quot;, &quot;categoria&quot;: &quot;nonstatali&quot;}">
                 <td class="num">5</td>
-                <td><a class="uni" href="../atenei/lumsa.html">LUMSA - Libera Università Maria Santissima Assunta</a></td>
+                <td><a class="uni" href="/atenei/lumsa">LUMSA - Libera Università Maria Santissima Assunta</a></td>
                 <td>LUMSA</td>
                 <td>Roma</td>
                 <td>Lazio</td>
@@ -141,7 +141,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Saint Camillus International University of Health and Medical Sciences&quot;, &quot;sigla&quot;: &quot;UniCamillus&quot;, &quot;citta&quot;: &quot;Roma&quot;, &quot;regione&quot;: &quot;Lazio&quot;, &quot;studenti&quot;: 4449, &quot;link&quot;: &quot;https://unicamillus.org/&quot;, &quot;categoria&quot;: &quot;nonstatali&quot;}">
                 <td class="num">6</td>
-                <td><a class="uni" href="../atenei/unicamillus.html">Saint Camillus International University of Health and Medical Sciences</a></td>
+                <td><a class="uni" href="/atenei/unicamillus">Saint Camillus International University of Health and Medical Sciences</a></td>
                 <td>UniCamillus</td>
                 <td>Roma</td>
                 <td>Lazio</td>
@@ -149,7 +149,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Università Campus Bio-Medico di Roma&quot;, &quot;sigla&quot;: &quot;UCBM&quot;, &quot;citta&quot;: &quot;Roma&quot;, &quot;regione&quot;: &quot;Lazio&quot;, &quot;studenti&quot;: 3525, &quot;link&quot;: &quot;https://www.unicampus.it/&quot;, &quot;categoria&quot;: &quot;nonstatali&quot;}">
                 <td class="num">7</td>
-                <td><a class="uni" href="../atenei/ucbm.html">Università Campus Bio-Medico di Roma</a></td>
+                <td><a class="uni" href="/atenei/ucbm">Università Campus Bio-Medico di Roma</a></td>
                 <td>UCBM</td>
                 <td>Roma</td>
                 <td>Lazio</td>
@@ -157,7 +157,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Università Europea di Roma&quot;, &quot;sigla&quot;: &quot;UER&quot;, &quot;citta&quot;: &quot;Roma&quot;, &quot;regione&quot;: &quot;Lazio&quot;, &quot;studenti&quot;: 2689, &quot;link&quot;: &quot;https://www.uer.it/&quot;, &quot;categoria&quot;: &quot;nonstatali&quot;}">
                 <td class="num">8</td>
-                <td><a class="uni" href="../atenei/uer.html">Università Europea di Roma</a></td>
+                <td><a class="uni" href="/atenei/uer">Università Europea di Roma</a></td>
                 <td>UER</td>
                 <td>Roma</td>
                 <td>Lazio</td>
@@ -165,7 +165,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Università degli Studi Internazionali di Roma&quot;, &quot;sigla&quot;: &quot;UnInt&quot;, &quot;citta&quot;: &quot;Roma&quot;, &quot;regione&quot;: &quot;Lazio&quot;, &quot;studenti&quot;: 1149, &quot;link&quot;: &quot;https://www.unint.eu/&quot;, &quot;categoria&quot;: &quot;nonstatali&quot;}">
                 <td class="num">9</td>
-                <td><a class="uni" href="../atenei/unint.html">Università degli Studi Internazionali di Roma</a></td>
+                <td><a class="uni" href="/atenei/unint">Università degli Studi Internazionali di Roma</a></td>
                 <td>UnInt</td>
                 <td>Roma</td>
                 <td>Lazio</td>
@@ -173,7 +173,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Humanitas University&quot;, &quot;sigla&quot;: &quot;Hunimed&quot;, &quot;citta&quot;: &quot;Pieve Emanuele (MI)&quot;, &quot;regione&quot;: &quot;Lombardia&quot;, &quot;studenti&quot;: 2479, &quot;link&quot;: &quot;https://www.hunimed.eu/it/&quot;, &quot;categoria&quot;: &quot;nonstatali&quot;}">
                 <td class="num">10</td>
-                <td><a class="uni" href="../atenei/hunimed.html">Humanitas University</a></td>
+                <td><a class="uni" href="/atenei/hunimed">Humanitas University</a></td>
                 <td>Hunimed</td>
                 <td>Pieve Emanuele (MI)</td>
                 <td>Lombardia</td>
@@ -181,7 +181,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;IULM - Libera università di lingue e comunicazione&quot;, &quot;sigla&quot;: &quot;IULM&quot;, &quot;citta&quot;: &quot;Milano&quot;, &quot;regione&quot;: &quot;Lombardia&quot;, &quot;studenti&quot;: 7682, &quot;link&quot;: &quot;https://www.iulm.it/it/home&quot;, &quot;categoria&quot;: &quot;nonstatali&quot;}">
                 <td class="num">11</td>
-                <td><a class="uni" href="../atenei/iulm.html">IULM - Libera università di lingue e comunicazione</a></td>
+                <td><a class="uni" href="/atenei/iulm">IULM - Libera università di lingue e comunicazione</a></td>
                 <td>IULM</td>
                 <td>Milano</td>
                 <td>Lombardia</td>
@@ -189,7 +189,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;LIUC - Università Carlo Cattaneo&quot;, &quot;sigla&quot;: &quot;LIUC&quot;, &quot;citta&quot;: &quot;Castellanza (VA)&quot;, &quot;regione&quot;: &quot;Lombardia&quot;, &quot;studenti&quot;: 2240, &quot;link&quot;: &quot;https://www.liuc.it/&quot;, &quot;categoria&quot;: &quot;nonstatali&quot;}">
                 <td class="num">12</td>
-                <td><a class="uni" href="../atenei/liuc.html">LIUC - Università Carlo Cattaneo</a></td>
+                <td><a class="uni" href="/atenei/liuc">LIUC - Università Carlo Cattaneo</a></td>
                 <td>LIUC</td>
                 <td>Castellanza (VA)</td>
                 <td>Lombardia</td>
@@ -197,7 +197,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Università Cattolica del Sacro Cuore&quot;, &quot;sigla&quot;: &quot;UniCatt&quot;, &quot;citta&quot;: &quot;Milano&quot;, &quot;regione&quot;: &quot;Lombardia&quot;, &quot;studenti&quot;: 41716, &quot;link&quot;: &quot;https://www.unicatt.it/&quot;, &quot;categoria&quot;: &quot;nonstatali&quot;}">
                 <td class="num">13</td>
-                <td><a class="uni" href="../atenei/unicatt.html">Università Cattolica del Sacro Cuore</a></td>
+                <td><a class="uni" href="/atenei/unicatt">Università Cattolica del Sacro Cuore</a></td>
                 <td>UniCatt</td>
                 <td>Milano</td>
                 <td>Lombardia</td>
@@ -205,7 +205,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Università commerciale \&quot;Luigi Bocconi\&quot;&quot;, &quot;sigla&quot;: &quot;Bocconi&quot;, &quot;citta&quot;: &quot;Milano&quot;, &quot;regione&quot;: &quot;Lombardia&quot;, &quot;studenti&quot;: 14075, &quot;link&quot;: &quot;https://www.unibocconi.it/it&quot;, &quot;categoria&quot;: &quot;nonstatali&quot;}">
                 <td class="num">14</td>
-                <td><a class="uni" href="../atenei/bocconi.html">Università commerciale "Luigi Bocconi"</a></td>
+                <td><a class="uni" href="/atenei/bocconi">Università commerciale "Luigi Bocconi"</a></td>
                 <td>Bocconi</td>
                 <td>Milano</td>
                 <td>Lombardia</td>
@@ -213,7 +213,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Università Vita-Salute \&quot;San Raffaele\&quot;&quot;, &quot;sigla&quot;: &quot;UniSR&quot;, &quot;citta&quot;: &quot;Milano&quot;, &quot;regione&quot;: &quot;Lombardia&quot;, &quot;studenti&quot;: 6515, &quot;link&quot;: &quot;https://www.unisr.it/&quot;, &quot;categoria&quot;: &quot;nonstatali&quot;}">
                 <td class="num">15</td>
-                <td><a class="uni" href="../atenei/unisr.html">Università Vita-Salute "San Raffaele"</a></td>
+                <td><a class="uni" href="/atenei/unisr">Università Vita-Salute "San Raffaele"</a></td>
                 <td>UniSR</td>
                 <td>Milano</td>
                 <td>Lombardia</td>
@@ -221,7 +221,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;UniNeuromed - Neuromed Mediterranean University of Sciences and Technologies&quot;, &quot;sigla&quot;: &quot;UniNeuromed&quot;, &quot;citta&quot;: &quot;Pozzilli (IS)&quot;, &quot;regione&quot;: &quot;Molise&quot;, &quot;studenti&quot;: null, &quot;link&quot;: &quot;https://www.unineuromed.it/&quot;, &quot;categoria&quot;: &quot;nonstatali&quot;}">
                 <td class="num">16</td>
-                <td><a class="uni" href="../atenei/unineuromed.html">UniNeuromed - Neuromed Mediterranean University of Sciences and Technologies</a></td>
+                <td><a class="uni" href="/atenei/unineuromed">UniNeuromed - Neuromed Mediterranean University of Sciences and Technologies</a></td>
                 <td>UniNeuromed</td>
                 <td>Pozzilli (IS)</td>
                 <td>Molise</td>
@@ -229,7 +229,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Università degli Studi di Scienze Gastronomiche&quot;, &quot;sigla&quot;: &quot;UniSG&quot;, &quot;citta&quot;: &quot;Bra (CN)&quot;, &quot;regione&quot;: &quot;Piemonte&quot;, &quot;studenti&quot;: 282, &quot;link&quot;: &quot;https://www.unisg.it/&quot;, &quot;categoria&quot;: &quot;nonstatali&quot;}">
                 <td class="num">17</td>
-                <td><a class="uni" href="../atenei/unisg.html">Università degli Studi di Scienze Gastronomiche</a></td>
+                <td><a class="uni" href="/atenei/unisg">Università degli Studi di Scienze Gastronomiche</a></td>
                 <td>UniSG</td>
                 <td>Bra (CN)</td>
                 <td>Piemonte</td>
@@ -237,7 +237,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Libera Università Mediterranea \&quot;Giuseppe Degennaro\&quot;&quot;, &quot;sigla&quot;: &quot;LUM&quot;, &quot;citta&quot;: &quot;Casamassima (BA)&quot;, &quot;regione&quot;: &quot;Puglia&quot;, &quot;studenti&quot;: 2575, &quot;link&quot;: &quot;https://www.lum.it/&quot;, &quot;categoria&quot;: &quot;nonstatali&quot;}">
                 <td class="num">18</td>
-                <td><a class="uni" href="../atenei/lum.html">Libera Università Mediterranea "Giuseppe Degennaro"</a></td>
+                <td><a class="uni" href="/atenei/lum">Libera Università Mediterranea "Giuseppe Degennaro"</a></td>
                 <td>LUM</td>
                 <td>Casamassima (BA)</td>
                 <td>Puglia</td>
@@ -245,7 +245,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Libera Università degli Studi di Enna \&quot;Kore\&quot;&quot;, &quot;sigla&quot;: &quot;UKE&quot;, &quot;citta&quot;: &quot;Enna&quot;, &quot;regione&quot;: &quot;Sicilia&quot;, &quot;studenti&quot;: 6223, &quot;link&quot;: &quot;https://uke.it/&quot;, &quot;categoria&quot;: &quot;nonstatali&quot;}">
                 <td class="num">19</td>
-                <td><a class="uni" href="../atenei/uke.html">Libera Università degli Studi di Enna "Kore"</a></td>
+                <td><a class="uni" href="/atenei/uke">Libera Università degli Studi di Enna "Kore"</a></td>
                 <td>UKE</td>
                 <td>Enna</td>
                 <td>Sicilia</td>
@@ -253,7 +253,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Libera Università di Bolzano&quot;, &quot;sigla&quot;: &quot;UniBz&quot;, &quot;citta&quot;: &quot;Bolzano&quot;, &quot;regione&quot;: &quot;Trentino-Alto Adige&quot;, &quot;studenti&quot;: 3493, &quot;link&quot;: &quot;https://www.unibz.it/it/&quot;, &quot;categoria&quot;: &quot;nonstatali&quot;}">
                 <td class="num">20</td>
-                <td><a class="uni" href="../atenei/unibz.html">Libera Università di Bolzano</a></td>
+                <td><a class="uni" href="/atenei/unibz">Libera Università di Bolzano</a></td>
                 <td>UniBz</td>
                 <td>Bolzano</td>
                 <td>Trentino-Alto Adige</td>
@@ -261,7 +261,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Università della Valle d'Aosta&quot;, &quot;sigla&quot;: &quot;UniVdA&quot;, &quot;citta&quot;: &quot;Aosta&quot;, &quot;regione&quot;: &quot;Valle d'Aosta&quot;, &quot;studenti&quot;: 1160, &quot;link&quot;: &quot;https://www.univda.it/&quot;, &quot;categoria&quot;: &quot;nonstatali&quot;}">
                 <td class="num">21</td>
-                <td><a class="uni" href="../atenei/univda.html">Università della Valle d'Aosta</a></td>
+                <td><a class="uni" href="/atenei/univda">Università della Valle d'Aosta</a></td>
                 <td>UniVdA</td>
                 <td>Aosta</td>
                 <td>Valle d'Aosta</td>
@@ -284,7 +284,7 @@
                 </a>
             </p>
             <p>
-                <a class="a_footer github" href="https://www.instagram.com/unidirectory/" target="_blank"
+                <a class="a_footer github" href="https://www.instagram.com/unidirectory" target="_blank"
                     rel="noopener noreferrer">
                     <i class="fa-brands fa-instagram"></i> Instagram
                 </a>
@@ -302,19 +302,18 @@
                 &middot;
                 <a class="a_footer" href="https://ustat.mur.gov.it/" target="_blank" rel="noopener noreferrer">USTAT</a>
             </p>
-            <p><a class="a_footer" href="../about.html">About</a></p>
-            <p><a class="a_footer" href="../privacy.html">Privacy Policy</a></p>
-            <p><a class="a_footer" href="../sitemap.xml">Sitemap</a></p>
+            <p><a class="a_footer" href="/about">About</a></p>
+            <p><a class="a_footer" href="/privacy">Privacy Policy</a></p>
+            <p><a class="a_footer" href="/sitemap.xml">Sitemap</a></p>
             <p><a class="a_footer" href="mailto:info@unidirectory.it">Contattaci</a></p>
         </div>
     </footer>
-    <script src="../assets/js/footer.js"></script>
-    <script src="../assets/js/scriptelenco.js"></script>
+    <script src="/assets/js/scriptelenco.js"></script>
     <script>
         ordineregione = false;
         ordinestudenti = false;
         ordinecitta = false;
-        caricaTabella('nonstatali');
+        caricaTabella();
     </script>
 </body>
 

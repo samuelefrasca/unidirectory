@@ -40,9 +40,9 @@
         content="https://unidirectory.it/assets/img/iud_icon.png">
 
 
-    <link rel="icon" type="image/png" href="../assets/img/iud_icon.png">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/classi.css">
+    <link rel="icon" type="image/png" href="/assets/img/iud_icon.png">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/classi.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <script type="application/ld+json">
@@ -63,7 +63,7 @@
             <div class="header">
                 <div class="header1">
                     <a href="/">
-                        <img class="logo" src="../assets/img/iud_image.png" alt="Logo Unidirectory">
+                        <img class="logo" src="/assets/img/iud_image.png" alt="Logo Unidirectory">
                     </a>
                 </div>
                 <div class="header2">
@@ -78,7 +78,7 @@
         <div class="container table-responsive">
             <div class="toolbar-tabella">
                 <div class="filtri">
-                    <select id="filtroLingua" onchange="gestisciFiltroLingua(this.value, 'LM-62')">
+                    <select id="filtroLingua" onchange="gestisciFiltroLingua()">
                         <option value="">Tutte le lingue</option>
                         <option value="italiano">Italiano</option>
                         <option value="inglese">Inglese</option>
@@ -86,12 +86,12 @@
                         <option value="francese">Francese</option>
                         <option value="ladino">Ladino</option>
                     </select>
-                    <select id="filtroAccesso" onchange="gestisciFiltroAccesso(this.value, 'LM-62')">
+                    <select id="filtroAccesso" onchange="gestisciFiltroAccesso()">
                         <option value="">Tutti gli accessi</option>
                         <option value="libero">Accesso libero</option>
                         <option value="programmato">Accesso programmato</option>
                     </select>
-                    <select id="filtroDidattica" onchange="gestisciFiltroDidattica(this.value, 'LM-62')">
+                    <select id="filtroDidattica" onchange="gestisciFiltroDidattica()">
                         <option value="">Tutte le didattiche</option>
                         <option value="presenza">In presenza</option>
                         <option value="distanza">A distanza</option>
@@ -99,9 +99,9 @@
                     </select>
                 </div>
                 <div class="ordina">
-                    <button type="button" onclick="ordinaPerCorso('LM-62')">Ordina per corso</button>
-                    <button type="button" onclick="ordinaPerSede('LM-62')">Ordina per sede</button>
-                    <button type="button" onclick="ordinaPerRegione('LM-62')">Ordina per regione</button>
+                    <button type="button" onclick="ordinaPerCorso()">Ordina per corso</button>
+                    <button type="button" onclick="ordinaPerSede()">Ordina per sede</button>
+                    <button type="button" onclick="ordinaPerRegione()">Ordina per regione</button>
                 </div>
             </div>
             <input type="search" id="searchNelleClassi" placeholder="Cerca università, sede, regione o corso...">
@@ -109,7 +109,7 @@
             <table>
                 <tbody id="tabellauni">
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;Bocconi&quot;, &quot;nomeCorso&quot;: &quot;Politics and Policy Analysis&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/bocconi.html">Università commerciale "Luigi Bocconi"</a></td>
+                        <td><a class="uni" href="/atenei/bocconi">Università commerciale "Luigi Bocconi"</a></td>
                         <td colspan="4"><strong>Politics and Policy Analysis</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -119,7 +119,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;LUISS&quot;, &quot;nomeCorso&quot;: &quot;GOVERNO, AMMINISTRAZIONE E POLITICA&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/luiss.html">LUISS - Libera Università Internazionale Studi Sociali "Guido Carli"</a></td>
+                        <td><a class="uni" href="/atenei/luiss">LUISS - Libera Università Internazionale Studi Sociali "Guido Carli"</a></td>
                         <td colspan="4"><strong>GOVERNO, AMMINISTRAZIONE E POLITICA</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -129,7 +129,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;LUISS&quot;, &quot;nomeCorso&quot;: &quot;POLICIES AND GOVERNANCE IN EUROPE&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/luiss.html">LUISS - Libera Università Internazionale Studi Sociali "Guido Carli"</a></td>
+                        <td><a class="uni" href="/atenei/luiss">LUISS - Libera Università Internazionale Studi Sociali "Guido Carli"</a></td>
                         <td colspan="4"><strong>POLICIES AND GOVERNANCE IN EUROPE</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -139,7 +139,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;LUMSA&quot;, &quot;nomeCorso&quot;: &quot;Politiche, Amministrazioni e Innovazione&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/lumsa.html">LUMSA - Libera Università Maria Santissima Assunta</a></td>
+                        <td><a class="uni" href="/atenei/lumsa">LUMSA - Libera Università Maria Santissima Assunta</a></td>
                         <td colspan="4"><strong>Politiche, Amministrazioni e Innovazione</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -149,7 +149,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;Link&quot;, &quot;nomeCorso&quot;: &quot;Studi strategici e politiche della sicurezza&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/link.html">Link Campus University</a></td>
+                        <td><a class="uni" href="/atenei/link">Link Campus University</a></td>
                         <td colspan="4"><strong>Studi strategici e politiche della sicurezza</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -159,7 +159,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UPO&quot;, &quot;nomeCorso&quot;: &quot;Filosofia, politica e studi culturali&quot;, &quot;sede&quot;: &quot;Vercelli&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/upo.html">Università degli Studi del Piemonte Orientale "Amedeo Avogadro"</a></td>
+                        <td><a class="uni" href="/atenei/upo">Università degli Studi del Piemonte Orientale "Amedeo Avogadro"</a></td>
                         <td colspan="4"><strong>Filosofia, politica e studi culturali</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -169,7 +169,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBg&quot;, &quot;nomeCorso&quot;: &quot;Geopolitica, Economia e Strategie Globali&quot;, &quot;sede&quot;: &quot;Bergamo&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unibg.html">Università degli Studi di Bergamo</a></td>
+                        <td><a class="uni" href="/atenei/unibg">Università degli Studi di Bergamo</a></td>
                         <td colspan="4"><strong>Geopolitica, Economia e Strategie Globali</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -179,7 +179,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBo&quot;, &quot;nomeCorso&quot;: &quot;International politics and economics&quot;, &quot;sede&quot;: &quot;Forlì&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unibo.html">Alma Mater Studiorum - Università di Bologna</a></td>
+                        <td><a class="uni" href="/atenei/unibo">Alma Mater Studiorum - Università di Bologna</a></td>
                         <td colspan="4"><strong>International politics and economics</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -189,7 +189,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCa&quot;, &quot;nomeCorso&quot;: &quot;Innovazione Sociale e Comunicazione&quot;, &quot;sede&quot;: &quot;Cagliari&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unica.html">Università degli Studi di Cagliari</a></td>
+                        <td><a class="uni" href="/atenei/unica">Università degli Studi di Cagliari</a></td>
                         <td colspan="4"><strong>Innovazione Sociale e Comunicazione</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -199,7 +199,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCal&quot;, &quot;nomeCorso&quot;: &quot;Scienze della Politica e Istituzioni Internazionali&quot;, &quot;sede&quot;: &quot;Rende&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unical.html">Università della Calabria</a></td>
+                        <td><a class="uni" href="/atenei/unical">Università della Calabria</a></td>
                         <td colspan="4"><strong>Scienze della Politica e Istituzioni Internazionali</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -209,7 +209,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCampania&quot;, &quot;nomeCorso&quot;: &quot;Scienze della politica e della comunicazione istituzionale&quot;, &quot;sede&quot;: &quot;Caserta&quot;, &quot;didattica&quot;: &quot;Mista&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unicampania.html">Università degli Studi della Campania "Luigi Vanvitelli"</a></td>
+                        <td><a class="uni" href="/atenei/unicampania">Università degli Studi della Campania "Luigi Vanvitelli"</a></td>
                         <td colspan="4"><strong>Scienze della politica e della comunicazione istituzionale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -219,7 +219,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCh&quot;, &quot;nomeCorso&quot;: &quot;Ricerca Sociale, Politiche della Sicurezza e Criminalità&quot;, &quot;sede&quot;: &quot;Chieti&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unich.html">Università degli Studi "Gabriele d'Annunzio" di Chieti-Pescara</a></td>
+                        <td><a class="uni" href="/atenei/unich">Università degli Studi "Gabriele d'Annunzio" di Chieti-Pescara</a></td>
                         <td colspan="4"><strong>Ricerca Sociale, Politiche della Sicurezza e Criminalità</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -229,7 +229,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCt&quot;, &quot;nomeCorso&quot;: &quot;Global Politics and Euro-Mediterranean Relations&quot;, &quot;sede&quot;: &quot;Catania&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unict.html">Università degli Studi di Catania</a></td>
+                        <td><a class="uni" href="/atenei/unict">Università degli Studi di Catania</a></td>
                         <td colspan="4"><strong>Global Politics and Euro-Mediterranean Relations</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -239,7 +239,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniFi&quot;, &quot;nomeCorso&quot;: &quot;Politica, Istituzioni e Mercato&quot;, &quot;sede&quot;: &quot;Firenze&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unifi.html">Università degli Studi di Firenze</a></td>
+                        <td><a class="uni" href="/atenei/unifi">Università degli Studi di Firenze</a></td>
                         <td colspan="4"><strong>Politica, Istituzioni e Mercato</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -249,7 +249,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMc&quot;, &quot;nomeCorso&quot;: &quot;Politiche per la sostenibilità e l'innovazione digitale&quot;, &quot;sede&quot;: &quot;Macerata&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unimc.html">Università degli Studi di Macerata</a></td>
+                        <td><a class="uni" href="/atenei/unimc">Università degli Studi di Macerata</a></td>
                         <td colspan="4"><strong>Politiche per la sostenibilità e l'innovazione digitale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -259,7 +259,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMi&quot;, &quot;nomeCorso&quot;: &quot;Computational Social and Political Science&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unimi.html">Università degli Studi di Milano</a></td>
+                        <td><a class="uni" href="/atenei/unimi">Università degli Studi di Milano</a></td>
                         <td colspan="4"><strong>Computational Social and Political Science</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -269,7 +269,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMi&quot;, &quot;nomeCorso&quot;: &quot;Economics and political science&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unimi.html">Università degli Studi di Milano</a></td>
+                        <td><a class="uni" href="/atenei/unimi">Università degli Studi di Milano</a></td>
                         <td colspan="4"><strong>Economics and political science</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -279,7 +279,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMi&quot;, &quot;nomeCorso&quot;: &quot;Global Politics and Society&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unimi.html">Università degli Studi di Milano</a></td>
+                        <td><a class="uni" href="/atenei/unimi">Università degli Studi di Milano</a></td>
                         <td colspan="4"><strong>Global Politics and Society</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -289,7 +289,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMi&quot;, &quot;nomeCorso&quot;: &quot;Politics, Philosophy and Public Affairs&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unimi.html">Università degli Studi di Milano</a></td>
+                        <td><a class="uni" href="/atenei/unimi">Università degli Studi di Milano</a></td>
                         <td colspan="4"><strong>Politics, Philosophy and Public Affairs</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -299,7 +299,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMi&quot;, &quot;nomeCorso&quot;: &quot;Scienze politiche e di governo&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unimi.html">Università degli Studi di Milano</a></td>
+                        <td><a class="uni" href="/atenei/unimi">Università degli Studi di Milano</a></td>
                         <td colspan="4"><strong>Scienze politiche e di governo</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -309,7 +309,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMol&quot;, &quot;nomeCorso&quot;: &quot;Istituzioni, Governance and Global Studies&quot;, &quot;sede&quot;: &quot;Campobasso&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unimol.html">Università degli Studi del Molise</a></td>
+                        <td><a class="uni" href="/atenei/unimol">Università degli Studi del Molise</a></td>
                         <td colspan="4"><strong>Istituzioni, Governance and Global Studies</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -319,7 +319,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniNa&quot;, &quot;nomeCorso&quot;: &quot;Scienze criminologiche, investigative e di contrasto ai crimini informatici&quot;, &quot;sede&quot;: &quot;Napoli&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unina.html">Università degli Studi di Napoli "Federico II"</a></td>
+                        <td><a class="uni" href="/atenei/unina">Università degli Studi di Napoli "Federico II"</a></td>
                         <td colspan="4"><strong>Scienze criminologiche, investigative e di contrasto ai crimini informatici</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -329,7 +329,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPg&quot;, &quot;nomeCorso&quot;: &quot;Governo e amministrazione&quot;, &quot;sede&quot;: &quot;Perugia&quot;, &quot;didattica&quot;: &quot;Mista&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipg.html">Università degli Studi di Perugia</a></td>
+                        <td><a class="uni" href="/atenei/unipg">Università degli Studi di Perugia</a></td>
                         <td colspan="4"><strong>Governo e amministrazione</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -339,7 +339,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPi&quot;, &quot;nomeCorso&quot;: &quot;ISTITUZIONI, POLITICA E SOCIETA'&quot;, &quot;sede&quot;: &quot;Pisa&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipi.html">Università di Pisa</a></td>
+                        <td><a class="uni" href="/atenei/unipi">Università di Pisa</a></td>
                         <td colspan="4"><strong>ISTITUZIONI, POLITICA E SOCIETA'</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -349,7 +349,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPv&quot;, &quot;nomeCorso&quot;: &quot;World Politics and International Relations&quot;, &quot;sede&quot;: &quot;Pavia&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipv.html">Università degli Studi di Pavia</a></td>
+                        <td><a class="uni" href="/atenei/unipv">Università degli Studi di Pavia</a></td>
                         <td colspan="4"><strong>World Politics and International Relations</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -359,7 +359,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniRoma1&quot;, &quot;nomeCorso&quot;: &quot;Scienze della Politica e Sicurezza Internazionale&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniroma1.html">Sapienza Università di Roma</a></td>
+                        <td><a class="uni" href="/atenei/uniroma1">Sapienza Università di Roma</a></td>
                         <td colspan="4"><strong>Scienze della Politica e Sicurezza Internazionale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -369,7 +369,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniSa&quot;, &quot;nomeCorso&quot;: &quot;Politiche Territoriali e Cooperazione Internazionale&quot;, &quot;sede&quot;: &quot;Fisciano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unisa.html">Università degli Studi di Salerno</a></td>
+                        <td><a class="uni" href="/atenei/unisa">Università degli Studi di Salerno</a></td>
                         <td colspan="4"><strong>Politiche Territoriali e Cooperazione Internazionale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -379,7 +379,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniSalento&quot;, &quot;nomeCorso&quot;: &quot;Studi geopolitici e internazionali&quot;, &quot;sede&quot;: &quot;Lecce&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unisalento.html">Università del Salento</a></td>
+                        <td><a class="uni" href="/atenei/unisalento">Università del Salento</a></td>
                         <td colspan="4"><strong>Studi geopolitici e internazionali</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -389,7 +389,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniSs&quot;, &quot;nomeCorso&quot;: &quot;SCIENZE POLITICHE E GIURIDICHE PER L AMMINISTRAZIONE&quot;, &quot;sede&quot;: &quot;Sassari&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniss.html">Università degli Studi di Sassari</a></td>
+                        <td><a class="uni" href="/atenei/uniss">Università degli Studi di Sassari</a></td>
                         <td colspan="4"><strong>SCIENZE POLITICHE E GIURIDICHE PER L AMMINISTRAZIONE</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -399,7 +399,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTe&quot;, &quot;nomeCorso&quot;: &quot;Politiche Internazionali e della Sostenibilità&quot;, &quot;sede&quot;: &quot;Teramo&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unite.html">Università degli Studi di Teramo</a></td>
+                        <td><a class="uni" href="/atenei/unite">Università degli Studi di Teramo</a></td>
                         <td colspan="4"><strong>Politiche Internazionali e della Sostenibilità</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -409,7 +409,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTn&quot;, &quot;nomeCorso&quot;: &quot;Global affairs: geopolitics and sustainability&quot;, &quot;sede&quot;: &quot;Trento&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unitn.html">Università degli Studi di Trento</a></td>
+                        <td><a class="uni" href="/atenei/unitn">Università degli Studi di Trento</a></td>
                         <td colspan="4"><strong>Global affairs: geopolitics and sustainability</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -419,7 +419,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTo&quot;, &quot;nomeCorso&quot;: &quot;Scienze del governo&quot;, &quot;sede&quot;: &quot;Torino&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unito.html">Università degli Studi di Torino</a></td>
+                        <td><a class="uni" href="/atenei/unito">Università degli Studi di Torino</a></td>
                         <td colspan="4"><strong>Scienze del governo</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -429,7 +429,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTs&quot;, &quot;nomeCorso&quot;: &quot;Political science – integration and governance&quot;, &quot;sede&quot;: &quot;Gorizia&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/units.html">Università degli Studi di Trieste</a></td>
+                        <td><a class="uni" href="/atenei/units">Università degli Studi di Trieste</a></td>
                         <td colspan="4"><strong>Political science – integration and governance</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -439,7 +439,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTs&quot;, &quot;nomeCorso&quot;: &quot;Scienze del governo e politiche pubbliche&quot;, &quot;sede&quot;: &quot;Trieste&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/units.html">Università degli Studi di Trieste</a></td>
+                        <td><a class="uni" href="/atenei/units">Università degli Studi di Trieste</a></td>
                         <td colspan="4"><strong>Scienze del governo e politiche pubbliche</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -449,7 +449,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTus&quot;, &quot;nomeCorso&quot;: &quot;Scienze della politica, della sicurezza internazionalee dellacomunicazione pubblica&quot;, &quot;sede&quot;: &quot;Viterbo&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unitus.html">Università degli Studi della Tuscia</a></td>
+                        <td><a class="uni" href="/atenei/unitus">Università degli Studi della Tuscia</a></td>
                         <td colspan="4"><strong>Scienze della politica, della sicurezza internazionalee dellacomunicazione pubblica</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -459,7 +459,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniUrb&quot;, &quot;nomeCorso&quot;: &quot;Politica Società Economia Internazionali&quot;, &quot;sede&quot;: &quot;Urbino&quot;, &quot;didattica&quot;: &quot;Mista&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniurb.html">Università degli Studi di Urbino "Carlo Bo"</a></td>
+                        <td><a class="uni" href="/atenei/uniurb">Università degli Studi di Urbino "Carlo Bo"</a></td>
                         <td colspan="4"><strong>Politica Società Economia Internazionali</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -469,7 +469,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniVr&quot;, &quot;nomeCorso&quot;: &quot;Governance dell'emergenza&quot;, &quot;sede&quot;: &quot;Verona&quot;, &quot;didattica&quot;: &quot;Mista&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/univr.html">Università degli Studi di Verona</a></td>
+                        <td><a class="uni" href="/atenei/univr">Università degli Studi di Verona</a></td>
                         <td colspan="4"><strong>Governance dell'emergenza</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -495,7 +495,7 @@
                 </a>
             </p>
             <p>
-                <a class="a_footer github" href="https://www.instagram.com/unidirectory/" target="_blank"
+                <a class="a_footer github" href="https://www.instagram.com/unidirectory" target="_blank"
                     rel="noopener noreferrer">
                     <i class="fa-brands fa-instagram"></i> Instagram
                 </a>
@@ -513,16 +513,15 @@
                 &middot;
                 <a class="a_footer" href="https://ustat.mur.gov.it/" target="_blank" rel="noopener noreferrer">USTAT</a>
             </p>
-            <p><a class="a_footer" href="../about.html">About</a></p>
-            <p><a class="a_footer" href="../privacy.html">Privacy Policy</a></p>
-            <p><a class="a_footer" href="../sitemap.xml">Sitemap</a></p>
+            <p><a class="a_footer" href="/about">About</a></p>
+            <p><a class="a_footer" href="/privacy">Privacy Policy</a></p>
+            <p><a class="a_footer" href="/sitemap.xml">Sitemap</a></p>
             <p><a class="a_footer" href="mailto:info@unidirectory.it">Contattaci</a></p>
         </div>
     </footer>
-    <script src="../assets/js/footer.js"></script>
-    <script src="../assets/js/scriptclassi.js"></script>
+    <script src="/assets/js/scriptclassi.js"></script>
     <script>
-        caricaTabella("LM-62");
+        caricaTabella();
         ordinecorso = true;
         ordinecitta = false;
         ordineregione = false;

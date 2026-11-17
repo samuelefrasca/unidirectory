@@ -36,9 +36,9 @@
     <meta name="twitter:image"
         content="https://unidirectory.it/assets/img/iud_icon.png">
 
-    <link rel="icon" type="image/png" href="../assets/img/iud_icon.png">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/elenchi.css">
+    <link rel="icon" type="image/png" href="/assets/img/iud_icon.png">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/elenchi.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <script type="application/ld+json">
@@ -58,7 +58,7 @@
             <div class="header">
                 <div class="header1">
                     <a href="/">
-                        <img class="logo" src="../assets/img/iud_image.png" alt="Logo Unidirectory">
+                        <img class="logo" src="/assets/img/iud_image.png" alt="Logo Unidirectory">
                     </a>
                 </div>
                 <div class="header2">
@@ -69,15 +69,15 @@
             </div>
             <nav class="altreuni">
                 <ul class="navul">
-                    <li class="navli"><a class="reflink select-none" href="statali.html">Statali</a></li>
-                    <li class="navli"><a class="reflink select-none" href="superiori.html">Scuole superiori</a></li>
-                    <li class="navli"><a class="reflink select-none" href="nonstatali.html">Non statali</a></li>
-                    <li class="navli"><a class="reflink select-none" href="telematiche.html">Telematiche</a></li>
-                    <li class="navli"><a class="reflink select-none" href="ssml.html">SSML</a></li>
-                    <li class="navli"><a class="reflink select-none" href="conservatori.html">Conservatori</a></li>
-                    <li class="navli"><a class="reflink select-none" href="abastatali.html">ABA</a></li>
-                    <li class="navli"><a class="reflink select-none" href="accnazionali.html">Acc. nazionali</a></li>
-                    <li class="navli"><a class="reflink select-none" href="isia.html">ISIA</a></li>
+                    <li class="navli"><a class="reflink select-none" href="statali">Statali</a></li>
+                    <li class="navli"><a class="reflink select-none" href="superiori">Scuole superiori</a></li>
+                    <li class="navli"><a class="reflink select-none" href="nonstatali">Non statali</a></li>
+                    <li class="navli"><a class="reflink select-none" href="telematiche">Telematiche</a></li>
+                    <li class="navli"><a class="reflink select-none" href="ssml">SSML</a></li>
+                    <li class="navli"><a class="reflink select-none" href="conservatori">Conservatori</a></li>
+                    <li class="navli"><a class="reflink select-none" href="abastatali">ABA</a></li>
+                    <li class="navli"><a class="reflink select-none" href="accnazionali">Acc. nazionali</a></li>
+                    <li class="navli"><a class="reflink select-none" href="isia">ISIA</a></li>
                     <li class="navli"><span class="reflink select-none active">AFAM privati</span></li>
                 </ul>
             </nav>
@@ -93,15 +93,15 @@
                         <th class="select-none num"></th>
                         <th class="select-none">Nome</th>
                         <th class="select-none">Sigla</th>
-                        <th class="select-none"><a onclick="ordinaPerCitta('afamprivati')">Sede principale <i class="fa-solid fa-sort"></i></a></th>
-                        <th class="select-none"><a onclick="ordinaPerRegione('afamprivati')">Regione <i class="fa-solid fa-sort"></i></a></th>
-                        <th class="select-none"><a onclick="ordinaPerStudenti('afamprivati')">Studenti <i class="fa-solid fa-sort"></i></a></th>
+                        <th class="select-none"><a onclick="ordinaPerCitta()">Sede principale <i class="fa-solid fa-sort"></i></a></th>
+                        <th class="select-none"><a onclick="ordinaPerRegione()">Regione <i class="fa-solid fa-sort"></i></a></th>
+                        <th class="select-none"><a onclick="ordinaPerStudenti()">Studenti <i class="fa-solid fa-sort"></i></a></th>
                     </tr>
                 </thead>
                 <tbody id="tabellauni">
         <tr data-uni="{&quot;nome&quot;: &quot;Istituto del Design&quot;, &quot;sigla&quot;: &quot;IdD&quot;, &quot;citta&quot;: &quot;Matera&quot;, &quot;regione&quot;: &quot;Basilicata&quot;, &quot;studenti&quot;: 58, &quot;link&quot;: &quot;https://www.istitutodeldesign.it/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">1</td>
-                <td><a class="uni" href="../atenei/idd.html">Istituto del Design</a></td>
+                <td><a class="uni" href="/atenei/idd">Istituto del Design</a></td>
                 <td>IdD</td>
                 <td>Matera</td>
                 <td>Basilicata</td>
@@ -109,7 +109,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Accademia della Moda. Institute of Universal Art and Design&quot;, &quot;sigla&quot;: &quot;IUAD&quot;, &quot;citta&quot;: &quot;Napoli&quot;, &quot;regione&quot;: &quot;Campania&quot;, &quot;studenti&quot;: 1279, &quot;link&quot;: &quot;https://www.accademiamoda.it/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">2</td>
-                <td><a class="uni" href="../atenei/iuad.html">Accademia della Moda. Institute of Universal Art and Design</a></td>
+                <td><a class="uni" href="/atenei/iuad">Accademia della Moda. Institute of Universal Art and Design</a></td>
                 <td>IUAD</td>
                 <td>Napoli</td>
                 <td>Campania</td>
@@ -117,7 +117,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Libera Accademia di Belle Arti di Rimini&quot;, &quot;sigla&quot;: &quot;LABA Rimini&quot;, &quot;citta&quot;: &quot;Rimini&quot;, &quot;regione&quot;: &quot;Emilia-Romagna&quot;, &quot;studenti&quot;: 1415, &quot;link&quot;: &quot;https://www.labarimini.com/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">3</td>
-                <td><a class="uni" href="../atenei/laba_rimini.html">Libera Accademia di Belle Arti di Rimini</a></td>
+                <td><a class="uni" href="/atenei/laba_rimini">Libera Accademia di Belle Arti di Rimini</a></td>
                 <td>LABA Rimini</td>
                 <td>Rimini</td>
                 <td>Emilia-Romagna</td>
@@ -125,7 +125,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;The Bernstein School of Musical Theater&quot;, &quot;sigla&quot;: &quot;BSMT&quot;, &quot;citta&quot;: &quot;Bologna&quot;, &quot;regione&quot;: &quot;Emilia-Romagna&quot;, &quot;studenti&quot;: 128, &quot;link&quot;: &quot;https://www.bsmt.it/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">4</td>
-                <td><a class="uni" href="../atenei/bsmt.html">The Bernstein School of Musical Theater</a></td>
+                <td><a class="uni" href="/atenei/bsmt">The Bernstein School of Musical Theater</a></td>
                 <td>BSMT</td>
                 <td>Bologna</td>
                 <td>Emilia-Romagna</td>
@@ -133,7 +133,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Accademia di Belle Arti G.B. Tiepolo&quot;, &quot;sigla&quot;: &quot;AbaUd&quot;, &quot;citta&quot;: &quot;Udine&quot;, &quot;regione&quot;: &quot;Friuli-Venezia Giulia&quot;, &quot;studenti&quot;: 549, &quot;link&quot;: &quot;https://www.abaud.it/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">5</td>
-                <td><a class="uni" href="../atenei/abaud.html">Accademia di Belle Arti G.B. Tiepolo</a></td>
+                <td><a class="uni" href="/atenei/abaud">Accademia di Belle Arti G.B. Tiepolo</a></td>
                 <td>AbaUd</td>
                 <td>Udine</td>
                 <td>Friuli-Venezia Giulia</td>
@@ -141,7 +141,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Accademia Costume & Moda&quot;, &quot;sigla&quot;: &quot;ACM&quot;, &quot;citta&quot;: &quot;Roma&quot;, &quot;regione&quot;: &quot;Lazio&quot;, &quot;studenti&quot;: 485, &quot;link&quot;: &quot;https://www.accademiacostumeemoda.it/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">6</td>
-                <td><a class="uni" href="../atenei/acm.html">Accademia Costume & Moda</a></td>
+                <td><a class="uni" href="/atenei/acm">Accademia Costume & Moda</a></td>
                 <td>ACM</td>
                 <td>Roma</td>
                 <td>Lazio</td>
@@ -149,7 +149,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Accademia Internazionale di Teatro&quot;, &quot;sigla&quot;: &quot;AIT&quot;, &quot;citta&quot;: &quot;Roma&quot;, &quot;regione&quot;: &quot;Lazio&quot;, &quot;studenti&quot;: 112, &quot;link&quot;: &quot;https://www.scuoladiteatro.it/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">7</td>
-                <td><a class="uni" href="../atenei/ait.html">Accademia Internazionale di Teatro</a></td>
+                <td><a class="uni" href="/atenei/ait">Accademia Internazionale di Teatro</a></td>
                 <td>AIT</td>
                 <td>Roma</td>
                 <td>Lazio</td>
@@ -157,7 +157,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Accademia Nazionale delle Arti e Nuove Tecnologie&quot;, &quot;sigla&quot;: &quot;AANT&quot;, &quot;citta&quot;: &quot;Roma&quot;, &quot;regione&quot;: &quot;Lazio&quot;, &quot;studenti&quot;: 580, &quot;link&quot;: &quot;https://www.accademiadellearti.it/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">8</td>
-                <td><a class="uni" href="../atenei/aant.html">Accademia Nazionale delle Arti e Nuove Tecnologie</a></td>
+                <td><a class="uni" href="/atenei/aant">Accademia Nazionale delle Arti e Nuove Tecnologie</a></td>
                 <td>AANT</td>
                 <td>Roma</td>
                 <td>Lazio</td>
@@ -165,7 +165,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Istituto Pantheon Design & Technology&quot;, &quot;sigla&quot;: &quot;Pantheon&quot;, &quot;citta&quot;: &quot;Roma&quot;, &quot;regione&quot;: &quot;Lazio&quot;, &quot;studenti&quot;: 362, &quot;link&quot;: &quot;https://istitutopantheon.it/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">9</td>
-                <td><a class="uni" href="../atenei/pantheon.html">Istituto Pantheon Design & Technology</a></td>
+                <td><a class="uni" href="/atenei/pantheon">Istituto Pantheon Design & Technology</a></td>
                 <td>Pantheon</td>
                 <td>Roma</td>
                 <td>Lazio</td>
@@ -173,7 +173,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Quasar Institute for Advanced Design&quot;, &quot;sigla&quot;: &quot;Quasar&quot;, &quot;citta&quot;: &quot;Roma&quot;, &quot;regione&quot;: &quot;Lazio&quot;, &quot;studenti&quot;: 202, &quot;link&quot;: &quot;https://quasarinstitute.it/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">10</td>
-                <td><a class="uni" href="../atenei/quasar.html">Quasar Institute for Advanced Design</a></td>
+                <td><a class="uni" href="/atenei/quasar">Quasar Institute for Advanced Design</a></td>
                 <td>Quasar</td>
                 <td>Roma</td>
                 <td>Lazio</td>
@@ -181,7 +181,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Saint Louis College of Music&quot;, &quot;sigla&quot;: &quot;SLMC&quot;, &quot;citta&quot;: &quot;Roma&quot;, &quot;regione&quot;: &quot;Lazio&quot;, &quot;studenti&quot;: 665, &quot;link&quot;: &quot;https://www.saintlouis.eu/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">11</td>
-                <td><a class="uni" href="../atenei/slmc.html">Saint Louis College of Music</a></td>
+                <td><a class="uni" href="/atenei/slmc">Saint Louis College of Music</a></td>
                 <td>SLMC</td>
                 <td>Roma</td>
                 <td>Lazio</td>
@@ -189,7 +189,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Rome University of Fine Arts&quot;, &quot;sigla&quot;: &quot;RUFA&quot;, &quot;citta&quot;: &quot;Roma&quot;, &quot;regione&quot;: &quot;Lazio&quot;, &quot;studenti&quot;: 1241, &quot;link&quot;: &quot;https://www.unirufa.it/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">12</td>
-                <td><a class="uni" href="../atenei/rufa.html">Rome University of Fine Arts</a></td>
+                <td><a class="uni" href="/atenei/rufa">Rome University of Fine Arts</a></td>
                 <td>RUFA</td>
                 <td>Roma</td>
                 <td>Lazio</td>
@@ -197,7 +197,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Accademia di Belle Arti Lorenzo da Viterbo&quot;, &quot;sigla&quot;: &quot;ABAV&quot;, &quot;citta&quot;: &quot;Viterbo&quot;, &quot;regione&quot;: &quot;Lazio&quot;, &quot;studenti&quot;: 137, &quot;link&quot;: &quot;https://www.abav.it/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">13</td>
-                <td><a class="uni" href="../atenei/abav.html">Accademia di Belle Arti Lorenzo da Viterbo</a></td>
+                <td><a class="uni" href="/atenei/abav">Accademia di Belle Arti Lorenzo da Viterbo</a></td>
                 <td>ABAV</td>
                 <td>Viterbo</td>
                 <td>Lazio</td>
@@ -205,7 +205,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Accademia di Belle Arti Isadora Duncan&quot;, &quot;sigla&quot;: &quot;ABA Sanremo&quot;, &quot;citta&quot;: &quot;Sanremo (IM)&quot;, &quot;regione&quot;: &quot;Liguria&quot;, &quot;studenti&quot;: 279, &quot;link&quot;: &quot;https://www.accademiabelleartisanremo.it/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">14</td>
-                <td><a class="uni" href="../atenei/aba_sanremo.html">Accademia di Belle Arti Isadora Duncan</a></td>
+                <td><a class="uni" href="/atenei/aba_sanremo">Accademia di Belle Arti Isadora Duncan</a></td>
                 <td>ABA Sanremo</td>
                 <td>Sanremo (IM)</td>
                 <td>Liguria</td>
@@ -213,7 +213,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Libera Accademia di Belle Arti di Brescia&quot;, &quot;sigla&quot;: &quot;LABA Brescia&quot;, &quot;citta&quot;: &quot;Brescia&quot;, &quot;regione&quot;: &quot;Lombardia&quot;, &quot;studenti&quot;: 1415, &quot;link&quot;: &quot;https://www.laba.edu/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">15</td>
-                <td><a class="uni" href="../atenei/laba_brescia.html">Libera Accademia di Belle Arti di Brescia</a></td>
+                <td><a class="uni" href="/atenei/laba_brescia">Libera Accademia di Belle Arti di Brescia</a></td>
                 <td>LABA Brescia</td>
                 <td>Brescia</td>
                 <td>Lombardia</td>
@@ -221,7 +221,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Accademia SantaGiulia&quot;, &quot;sigla&quot;: &quot;SantaGiulia&quot;, &quot;citta&quot;: &quot;Brescia&quot;, &quot;regione&quot;: &quot;Lombardia&quot;, &quot;studenti&quot;: 966, &quot;link&quot;: &quot;https://www.accademiasantagiulia.it/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">16</td>
-                <td><a class="uni" href="../atenei/santagiulia.html">Accademia SantaGiulia</a></td>
+                <td><a class="uni" href="/atenei/santagiulia">Accademia SantaGiulia</a></td>
                 <td>SantaGiulia</td>
                 <td>Brescia</td>
                 <td>Lombardia</td>
@@ -229,7 +229,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Accademia Aldo Galli&quot;, &quot;sigla&quot;: &quot;Galli&quot;, &quot;citta&quot;: &quot;Como&quot;, &quot;regione&quot;: &quot;Lombardia&quot;, &quot;studenti&quot;: 82, &quot;link&quot;: &quot;https://www.accademiagalli.it/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">17</td>
-                <td><a class="uni" href="../atenei/galli.html">Accademia Aldo Galli</a></td>
+                <td><a class="uni" href="/atenei/galli">Accademia Aldo Galli</a></td>
                 <td>Galli</td>
                 <td>Como</td>
                 <td>Lombardia</td>
@@ -237,7 +237,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Accademia di Belle Arti ACME&quot;, &quot;sigla&quot;: &quot;ACME&quot;, &quot;citta&quot;: &quot;Milano&quot;, &quot;regione&quot;: &quot;Lombardia&quot;, &quot;studenti&quot;: 166, &quot;link&quot;: &quot;https://www.acmemilano.it/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">18</td>
-                <td><a class="uni" href="../atenei/acme.html">Accademia di Belle Arti ACME</a></td>
+                <td><a class="uni" href="/atenei/acme">Accademia di Belle Arti ACME</a></td>
                 <td>ACME</td>
                 <td>Milano</td>
                 <td>Lombardia</td>
@@ -245,7 +245,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Accademia del Lusso&quot;, &quot;sigla&quot;: &quot;ADLM&quot;, &quot;citta&quot;: &quot;Milano&quot;, &quot;regione&quot;: &quot;Lombardia&quot;, &quot;studenti&quot;: 233, &quot;link&quot;: &quot;https://www.accademiadellusso.com/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">19</td>
-                <td><a class="uni" href="../atenei/adlm.html">Accademia del Lusso</a></td>
+                <td><a class="uni" href="/atenei/adlm">Accademia del Lusso</a></td>
                 <td>ADLM</td>
                 <td>Milano</td>
                 <td>Lombardia</td>
@@ -253,7 +253,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Accademia Teatro alla Scala&quot;, &quot;sigla&quot;: &quot;Scala&quot;, &quot;citta&quot;: &quot;Milano&quot;, &quot;regione&quot;: &quot;Lombardia&quot;, &quot;studenti&quot;: 73, &quot;link&quot;: &quot;https://www.accademialascala.it/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">20</td>
-                <td><a class="uni" href="../atenei/scala.html">Accademia Teatro alla Scala</a></td>
+                <td><a class="uni" href="/atenei/scala">Accademia Teatro alla Scala</a></td>
                 <td>Scala</td>
                 <td>Milano</td>
                 <td>Lombardia</td>
@@ -261,7 +261,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Civica Scuola di Musica Claudio Abbado&quot;, &quot;sigla&quot;: &quot;Civica Musica&quot;, &quot;citta&quot;: &quot;Milano&quot;, &quot;regione&quot;: &quot;Lombardia&quot;, &quot;studenti&quot;: 554, &quot;link&quot;: &quot;https://musica.fondazionemilano.eu/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">21</td>
-                <td><a class="uni" href="../atenei/civica_musica.html">Civica Scuola di Musica Claudio Abbado</a></td>
+                <td><a class="uni" href="/atenei/civica_musica">Civica Scuola di Musica Claudio Abbado</a></td>
                 <td>Civica Musica</td>
                 <td>Milano</td>
                 <td>Lombardia</td>
@@ -269,7 +269,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Civica Scuola di Teatro Paolo Grassi&quot;, &quot;sigla&quot;: &quot;Civica Teatro&quot;, &quot;citta&quot;: &quot;Milano&quot;, &quot;regione&quot;: &quot;Lombardia&quot;, &quot;studenti&quot;: 113, &quot;link&quot;: &quot;https://teatro.fondazionemilano.eu/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">22</td>
-                <td><a class="uni" href="../atenei/civica_teatro.html">Civica Scuola di Teatro Paolo Grassi</a></td>
+                <td><a class="uni" href="/atenei/civica_teatro">Civica Scuola di Teatro Paolo Grassi</a></td>
                 <td>Civica Teatro</td>
                 <td>Milano</td>
                 <td>Lombardia</td>
@@ -277,7 +277,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Istituto Europeo di Design&quot;, &quot;sigla&quot;: &quot;IED&quot;, &quot;citta&quot;: &quot;Milano&quot;, &quot;regione&quot;: &quot;Lombardia&quot;, &quot;studenti&quot;: 4923, &quot;link&quot;: &quot;https://www.ied.it/milano&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">23</td>
-                <td><a class="uni" href="../atenei/ied.html">Istituto Europeo di Design</a></td>
+                <td><a class="uni" href="/atenei/ied">Istituto Europeo di Design</a></td>
                 <td>IED</td>
                 <td>Milano</td>
                 <td>Lombardia</td>
@@ -285,7 +285,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;SAE Institute&quot;, &quot;sigla&quot;: &quot;SAE&quot;, &quot;citta&quot;: &quot;Milano&quot;, &quot;regione&quot;: &quot;Lombardia&quot;, &quot;studenti&quot;: 323, &quot;link&quot;: &quot;https://www.sae.edu/ita/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">24</td>
-                <td><a class="uni" href="../atenei/sae.html">SAE Institute</a></td>
+                <td><a class="uni" href="/atenei/sae">SAE Institute</a></td>
                 <td>SAE</td>
                 <td>Milano</td>
                 <td>Lombardia</td>
@@ -293,7 +293,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;CPM Music Institute&quot;, &quot;sigla&quot;: &quot;CPM&quot;, &quot;citta&quot;: &quot;Milano&quot;, &quot;regione&quot;: &quot;Lombardia&quot;, &quot;studenti&quot;: 278, &quot;link&quot;: &quot;https://www.cpm.it/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">25</td>
-                <td><a class="uni" href="../atenei/cpm.html">CPM Music Institute</a></td>
+                <td><a class="uni" href="/atenei/cpm">CPM Music Institute</a></td>
                 <td>CPM</td>
                 <td>Milano</td>
                 <td>Lombardia</td>
@@ -301,7 +301,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Nuova Accademia di Belle Arti&quot;, &quot;sigla&quot;: &quot;NABA&quot;, &quot;citta&quot;: &quot;Milano&quot;, &quot;regione&quot;: &quot;Lombardia&quot;, &quot;studenti&quot;: 6274, &quot;link&quot;: &quot;https://www.naba.it/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">26</td>
-                <td><a class="uni" href="../atenei/naba.html">Nuova Accademia di Belle Arti</a></td>
+                <td><a class="uni" href="/atenei/naba">Nuova Accademia di Belle Arti</a></td>
                 <td>NABA</td>
                 <td>Milano</td>
                 <td>Lombardia</td>
@@ -309,7 +309,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Istituto Marangoni&quot;, &quot;sigla&quot;: &quot;Marangoni&quot;, &quot;citta&quot;: &quot;Milano&quot;, &quot;regione&quot;: &quot;Lombardia&quot;, &quot;studenti&quot;: 1796, &quot;link&quot;: &quot;https://www.istitutomarangoni.com/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">27</td>
-                <td><a class="uni" href="../atenei/marangoni.html">Istituto Marangoni</a></td>
+                <td><a class="uni" href="/atenei/marangoni">Istituto Marangoni</a></td>
                 <td>Marangoni</td>
                 <td>Milano</td>
                 <td>Lombardia</td>
@@ -317,7 +317,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Raffles Milano - Istituto Moda e Design&quot;, &quot;sigla&quot;: &quot;Raffles&quot;, &quot;citta&quot;: &quot;Milano&quot;, &quot;regione&quot;: &quot;Lombardia&quot;, &quot;studenti&quot;: 48, &quot;link&quot;: &quot;https://rafflesmilano.it/it/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">28</td>
-                <td><a class="uni" href="../atenei/raffles.html">Raffles Milano - Istituto Moda e Design</a></td>
+                <td><a class="uni" href="/atenei/raffles">Raffles Milano - Istituto Moda e Design</a></td>
                 <td>Raffles</td>
                 <td>Milano</td>
                 <td>Lombardia</td>
@@ -325,7 +325,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Istituto Secoli&quot;, &quot;sigla&quot;: &quot;Secoli&quot;, &quot;citta&quot;: &quot;Milano&quot;, &quot;regione&quot;: &quot;Lombardia&quot;, &quot;studenti&quot;: 86, &quot;link&quot;: &quot;https://www.istitutosecoli.it/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">29</td>
-                <td><a class="uni" href="../atenei/secoli.html">Istituto Secoli</a></td>
+                <td><a class="uni" href="/atenei/secoli">Istituto Secoli</a></td>
                 <td>Secoli</td>
                 <td>Milano</td>
                 <td>Lombardia</td>
@@ -333,7 +333,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Istituto Poliarte&quot;, &quot;sigla&quot;: &quot;Poliarte&quot;, &quot;citta&quot;: &quot;Ancona&quot;, &quot;regione&quot;: &quot;Marche&quot;, &quot;studenti&quot;: 192, &quot;link&quot;: &quot;https://www.poliarte.net/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">30</td>
-                <td><a class="uni" href="../atenei/poliarte.html">Istituto Poliarte</a></td>
+                <td><a class="uni" href="/atenei/poliarte">Istituto Poliarte</a></td>
                 <td>Poliarte</td>
                 <td>Ancona</td>
                 <td>Marche</td>
@@ -341,7 +341,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Accademia di Belle Arti di Cuneo&quot;, &quot;sigla&quot;: &quot;ABA Cuneo&quot;, &quot;citta&quot;: &quot;Cuneo&quot;, &quot;regione&quot;: &quot;Piemonte&quot;, &quot;studenti&quot;: 1306, &quot;link&quot;: &quot;https://accademiabellearticuneo.it/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">31</td>
-                <td><a class="uni" href="../atenei/aba_cuneo.html">Accademia di Belle Arti di Cuneo</a></td>
+                <td><a class="uni" href="/atenei/aba_cuneo">Accademia di Belle Arti di Cuneo</a></td>
                 <td>ABA Cuneo</td>
                 <td>Cuneo</td>
                 <td>Piemonte</td>
@@ -349,7 +349,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Istituto d'Arte Applicata e Design&quot;, &quot;sigla&quot;: &quot;IAAD&quot;, &quot;citta&quot;: &quot;Torino&quot;, &quot;regione&quot;: &quot;Piemonte&quot;, &quot;studenti&quot;: 579, &quot;link&quot;: &quot;https://www.iaad.it/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">32</td>
-                <td><a class="uni" href="../atenei/iaad.html">Istituto d'Arte Applicata e Design</a></td>
+                <td><a class="uni" href="/atenei/iaad">Istituto d'Arte Applicata e Design</a></td>
                 <td>IAAD</td>
                 <td>Torino</td>
                 <td>Piemonte</td>
@@ -357,7 +357,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Scuola del Teatro Musicale&quot;, &quot;sigla&quot;: &quot;STM&quot;, &quot;citta&quot;: &quot;Novara&quot;, &quot;regione&quot;: &quot;Piemonte&quot;, &quot;studenti&quot;: 105, &quot;link&quot;: &quot;https://www.scuolateatromusicale.it/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">33</td>
-                <td><a class="uni" href="../atenei/stm.html">Scuola del Teatro Musicale</a></td>
+                <td><a class="uni" href="/atenei/stm">Scuola del Teatro Musicale</a></td>
                 <td>STM</td>
                 <td>Novara</td>
                 <td>Piemonte</td>
@@ -365,7 +365,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Accademia di Belle Arti Rosario Gagliardi&quot;, &quot;sigla&quot;: &quot;MADE&quot;, &quot;citta&quot;: &quot;Siracusa&quot;, &quot;regione&quot;: &quot;Sicilia&quot;, &quot;studenti&quot;: 96, &quot;link&quot;: &quot;https://www.madeprogram.it/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">34</td>
-                <td><a class="uni" href="../atenei/made.html">Accademia di Belle Arti Rosario Gagliardi</a></td>
+                <td><a class="uni" href="/atenei/made">Accademia di Belle Arti Rosario Gagliardi</a></td>
                 <td>MADE</td>
                 <td>Siracusa</td>
                 <td>Sicilia</td>
@@ -373,7 +373,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Accademia di Design e Comunicazione Visiva&quot;, &quot;sigla&quot;: &quot;Abadir&quot;, &quot;citta&quot;: &quot;Sant'Agata li Battiati (CT)&quot;, &quot;regione&quot;: &quot;Sicilia&quot;, &quot;studenti&quot;: 78, &quot;link&quot;: &quot;https://www.abadir.net/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">35</td>
-                <td><a class="uni" href="../atenei/abadir.html">Accademia di Design e Comunicazione Visiva</a></td>
+                <td><a class="uni" href="/atenei/abadir">Accademia di Design e Comunicazione Visiva</a></td>
                 <td>Abadir</td>
                 <td>Sant'Agata li Battiati (CT)</td>
                 <td>Sicilia</td>
@@ -381,7 +381,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Accademia Italiana di Arte, Moda e Design&quot;, &quot;sigla&quot;: &quot;AI&quot;, &quot;citta&quot;: &quot;Firenze&quot;, &quot;regione&quot;: &quot;Toscana&quot;, &quot;studenti&quot;: 743, &quot;link&quot;: &quot;https://www.accademiaitaliana.com/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">36</td>
-                <td><a class="uni" href="../atenei/ai.html">Accademia Italiana di Arte, Moda e Design</a></td>
+                <td><a class="uni" href="/atenei/ai">Accademia Italiana di Arte, Moda e Design</a></td>
                 <td>AI</td>
                 <td>Firenze</td>
                 <td>Toscana</td>
@@ -389,7 +389,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Libera Accademia di Belle Arti di Firenze&quot;, &quot;sigla&quot;: &quot;LABA Firenze&quot;, &quot;citta&quot;: &quot;Firenze&quot;, &quot;regione&quot;: &quot;Toscana&quot;, &quot;studenti&quot;: 699, &quot;link&quot;: &quot;https://www.laba.biz/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">37</td>
-                <td><a class="uni" href="../atenei/laba_firenze.html">Libera Accademia di Belle Arti di Firenze</a></td>
+                <td><a class="uni" href="/atenei/laba_firenze">Libera Accademia di Belle Arti di Firenze</a></td>
                 <td>LABA Firenze</td>
                 <td>Firenze</td>
                 <td>Toscana</td>
@@ -397,7 +397,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Istituto Modartech&quot;, &quot;sigla&quot;: &quot;Modartech&quot;, &quot;citta&quot;: &quot;Pontedera (PI)&quot;, &quot;regione&quot;: &quot;Toscana&quot;, &quot;studenti&quot;: 369, &quot;link&quot;: &quot;https://www.modartech.com/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">38</td>
-                <td><a class="uni" href="../atenei/modartech.html">Istituto Modartech</a></td>
+                <td><a class="uni" href="/atenei/modartech">Istituto Modartech</a></td>
                 <td>Modartech</td>
                 <td>Pontedera (PI)</td>
                 <td>Toscana</td>
@@ -405,7 +405,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Scuola di Musica di Fiesole&quot;, &quot;sigla&quot;: &quot;SMF&quot;, &quot;citta&quot;: &quot;Fiesole (FI)&quot;, &quot;regione&quot;: &quot;Toscana&quot;, &quot;studenti&quot;: 179, &quot;link&quot;: &quot;https://www.scuolamusicafiesole.it/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">39</td>
-                <td><a class="uni" href="../atenei/smf.html">Scuola di Musica di Fiesole</a></td>
+                <td><a class="uni" href="/atenei/smf">Scuola di Musica di Fiesole</a></td>
                 <td>SMF</td>
                 <td>Fiesole (FI)</td>
                 <td>Toscana</td>
@@ -413,7 +413,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Accademia Nazionale del Jazz&quot;, &quot;sigla&quot;: &quot;SienaJazz&quot;, &quot;citta&quot;: &quot;Siena&quot;, &quot;regione&quot;: &quot;Toscana&quot;, &quot;studenti&quot;: 137, &quot;link&quot;: &quot;https://www.sienajazz.it/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">40</td>
-                <td><a class="uni" href="../atenei/sienajazz.html">Accademia Nazionale del Jazz</a></td>
+                <td><a class="uni" href="/atenei/sienajazz">Accademia Nazionale del Jazz</a></td>
                 <td>SienaJazz</td>
                 <td>Siena</td>
                 <td>Toscana</td>
@@ -421,7 +421,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Trentino Art Academy&quot;, &quot;sigla&quot;: &quot;TNAA&quot;, &quot;citta&quot;: &quot;Trento&quot;, &quot;regione&quot;: &quot;Trentino-Alto Adige&quot;, &quot;studenti&quot;: 90, &quot;link&quot;: &quot;https://www.trentinoartacademy.it/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">41</td>
-                <td><a class="uni" href="../atenei/tnaa.html">Trentino Art Academy</a></td>
+                <td><a class="uni" href="/atenei/tnaa">Trentino Art Academy</a></td>
                 <td>TNAA</td>
                 <td>Trento</td>
                 <td>Trentino-Alto Adige</td>
@@ -429,7 +429,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Istituto Italiano Design&quot;, &quot;sigla&quot;: &quot;IID&quot;, &quot;citta&quot;: &quot;Perugia&quot;, &quot;regione&quot;: &quot;Umbria&quot;, &quot;studenti&quot;: 45, &quot;link&quot;: &quot;https://istitutoitalianodesign.com/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">42</td>
-                <td><a class="uni" href="../atenei/iid.html">Istituto Italiano Design</a></td>
+                <td><a class="uni" href="/atenei/iid">Istituto Italiano Design</a></td>
                 <td>IID</td>
                 <td>Perugia</td>
                 <td>Umbria</td>
@@ -437,7 +437,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Scuola Italiana Design&quot;, &quot;sigla&quot;: &quot;SID&quot;, &quot;citta&quot;: &quot;Padova&quot;, &quot;regione&quot;: &quot;Veneto&quot;, &quot;studenti&quot;: 179, &quot;link&quot;: &quot;https://www.scuolaitalianadesign.com/&quot;, &quot;categoria&quot;: &quot;afamprivati&quot;}">
                 <td class="num">43</td>
-                <td><a class="uni" href="../atenei/sid.html">Scuola Italiana Design</a></td>
+                <td><a class="uni" href="/atenei/sid">Scuola Italiana Design</a></td>
                 <td>SID</td>
                 <td>Padova</td>
                 <td>Veneto</td>
@@ -460,7 +460,7 @@
                 </a>
             </p>
             <p>
-                <a class="a_footer github" href="https://www.instagram.com/unidirectory/" target="_blank"
+                <a class="a_footer github" href="https://www.instagram.com/unidirectory" target="_blank"
                     rel="noopener noreferrer">
                     <i class="fa-brands fa-instagram"></i> Instagram
                 </a>
@@ -478,19 +478,18 @@
                 &middot;
                 <a class="a_footer" href="https://ustat.mur.gov.it/" target="_blank" rel="noopener noreferrer">USTAT</a>
             </p>
-            <p><a class="a_footer" href="../about.html">About</a></p>
-            <p><a class="a_footer" href="../privacy.html">Privacy Policy</a></p>
-            <p><a class="a_footer" href="../sitemap.xml">Sitemap</a></p>
+            <p><a class="a_footer" href="/about">About</a></p>
+            <p><a class="a_footer" href="/privacy">Privacy Policy</a></p>
+            <p><a class="a_footer" href="/sitemap.xml">Sitemap</a></p>
             <p><a class="a_footer" href="mailto:info@unidirectory.it">Contattaci</a></p>
         </div>
     </footer>
-    <script src="../assets/js/footer.js"></script>
-    <script src="../assets/js/scriptelenco.js"></script>
+    <script src="/assets/js/scriptelenco.js"></script>
     <script>
         ordineregione = false;
         ordinestudenti = false;
         ordinecitta = false;
-        caricaTabella('afamprivati');
+        caricaTabella();
     </script>
 </body>
 

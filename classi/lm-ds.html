@@ -40,9 +40,9 @@
         content="https://unidirectory.it/assets/img/iud_icon.png">
 
 
-    <link rel="icon" type="image/png" href="../assets/img/iud_icon.png">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/classi.css">
+    <link rel="icon" type="image/png" href="/assets/img/iud_icon.png">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/classi.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <script type="application/ld+json">
@@ -63,7 +63,7 @@
             <div class="header">
                 <div class="header1">
                     <a href="/">
-                        <img class="logo" src="../assets/img/iud_image.png" alt="Logo Unidirectory">
+                        <img class="logo" src="/assets/img/iud_image.png" alt="Logo Unidirectory">
                     </a>
                 </div>
                 <div class="header2">
@@ -78,7 +78,7 @@
         <div class="container table-responsive">
             <div class="toolbar-tabella">
                 <div class="filtri">
-                    <select id="filtroLingua" onchange="gestisciFiltroLingua(this.value, 'LM/DS')">
+                    <select id="filtroLingua" onchange="gestisciFiltroLingua()">
                         <option value="">Tutte le lingue</option>
                         <option value="italiano">Italiano</option>
                         <option value="inglese">Inglese</option>
@@ -86,12 +86,12 @@
                         <option value="francese">Francese</option>
                         <option value="ladino">Ladino</option>
                     </select>
-                    <select id="filtroAccesso" onchange="gestisciFiltroAccesso(this.value, 'LM/DS')">
+                    <select id="filtroAccesso" onchange="gestisciFiltroAccesso()">
                         <option value="">Tutti gli accessi</option>
                         <option value="libero">Accesso libero</option>
                         <option value="programmato">Accesso programmato</option>
                     </select>
-                    <select id="filtroDidattica" onchange="gestisciFiltroDidattica(this.value, 'LM/DS')">
+                    <select id="filtroDidattica" onchange="gestisciFiltroDidattica()">
                         <option value="">Tutte le didattiche</option>
                         <option value="presenza">In presenza</option>
                         <option value="distanza">A distanza</option>
@@ -99,9 +99,9 @@
                     </select>
                 </div>
                 <div class="ordina">
-                    <button type="button" onclick="ordinaPerCorso('LM/DS')">Ordina per corso</button>
-                    <button type="button" onclick="ordinaPerSede('LM/DS')">Ordina per sede</button>
-                    <button type="button" onclick="ordinaPerRegione('LM/DS')">Ordina per regione</button>
+                    <button type="button" onclick="ordinaPerCorso()">Ordina per corso</button>
+                    <button type="button" onclick="ordinaPerSede()">Ordina per sede</button>
+                    <button type="button" onclick="ordinaPerRegione()">Ordina per regione</button>
                 </div>
             </div>
             <input type="search" id="searchNelleClassi" placeholder="Cerca università, sede, regione o corso...">
@@ -109,7 +109,7 @@
             <table>
                 <tbody id="tabellauni">
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBa&quot;, &quot;nomeCorso&quot;: &quot;Scienze strategiche marittimo-portuali&quot;, &quot;sede&quot;: &quot;Taranto&quot;, &quot;didattica&quot;: &quot;Mista&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniba.html">Università degli Studi di Bari "Aldo Moro"</a></td>
+                        <td><a class="uni" href="/atenei/uniba">Università degli Studi di Bari "Aldo Moro"</a></td>
                         <td colspan="4"><strong>Scienze strategiche marittimo-portuali</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -119,7 +119,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniGe&quot;, &quot;nomeCorso&quot;: &quot;Engineering Technology for Strategy and Security&quot;, &quot;sede&quot;: &quot;Genova&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unige.html">Università degli Studi di Genova</a></td>
+                        <td><a class="uni" href="/atenei/unige">Università degli Studi di Genova</a></td>
                         <td colspan="4"><strong>Engineering Technology for Strategy and Security</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -129,7 +129,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniNa&quot;, &quot;nomeCorso&quot;: &quot;SCIENZE DEI SISTEMI AEROSPAZIALI PER LA DIFESA&quot;, &quot;sede&quot;: &quot;Napoli&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unina.html">Università degli Studi di Napoli "Federico II"</a></td>
+                        <td><a class="uni" href="/atenei/unina">Università degli Studi di Napoli "Federico II"</a></td>
                         <td colspan="4"><strong>SCIENZE DEI SISTEMI AEROSPAZIALI PER LA DIFESA</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -139,7 +139,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPi&quot;, &quot;nomeCorso&quot;: &quot;SCIENZE MARITTIME E NAVALI&quot;, &quot;sede&quot;: &quot;Livorno&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipi.html">Università di Pisa</a></td>
+                        <td><a class="uni" href="/atenei/unipi">Università di Pisa</a></td>
                         <td colspan="4"><strong>SCIENZE MARITTIME E NAVALI</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -149,7 +149,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTo&quot;, &quot;nomeCorso&quot;: &quot;SCIENZE STRATEGICHE&quot;, &quot;sede&quot;: &quot;Torino&quot;, &quot;didattica&quot;: &quot;Mista&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unito.html">Università degli Studi di Torino</a></td>
+                        <td><a class="uni" href="/atenei/unito">Università degli Studi di Torino</a></td>
                         <td colspan="4"><strong>SCIENZE STRATEGICHE</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -159,7 +159,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTo&quot;, &quot;nomeCorso&quot;: &quot;SCIENZE STRATEGICHE E MILITARI&quot;, &quot;sede&quot;: &quot;Torino&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unito.html">Università degli Studi di Torino</a></td>
+                        <td><a class="uni" href="/atenei/unito">Università degli Studi di Torino</a></td>
                         <td colspan="4"><strong>SCIENZE STRATEGICHE E MILITARI</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -185,7 +185,7 @@
                 </a>
             </p>
             <p>
-                <a class="a_footer github" href="https://www.instagram.com/unidirectory/" target="_blank"
+                <a class="a_footer github" href="https://www.instagram.com/unidirectory" target="_blank"
                     rel="noopener noreferrer">
                     <i class="fa-brands fa-instagram"></i> Instagram
                 </a>
@@ -203,16 +203,15 @@
                 &middot;
                 <a class="a_footer" href="https://ustat.mur.gov.it/" target="_blank" rel="noopener noreferrer">USTAT</a>
             </p>
-            <p><a class="a_footer" href="../about.html">About</a></p>
-            <p><a class="a_footer" href="../privacy.html">Privacy Policy</a></p>
-            <p><a class="a_footer" href="../sitemap.xml">Sitemap</a></p>
+            <p><a class="a_footer" href="/about">About</a></p>
+            <p><a class="a_footer" href="/privacy">Privacy Policy</a></p>
+            <p><a class="a_footer" href="/sitemap.xml">Sitemap</a></p>
             <p><a class="a_footer" href="mailto:info@unidirectory.it">Contattaci</a></p>
         </div>
     </footer>
-    <script src="../assets/js/footer.js"></script>
-    <script src="../assets/js/scriptclassi.js"></script>
+    <script src="/assets/js/scriptclassi.js"></script>
     <script>
-        caricaTabella("LM/DS");
+        caricaTabella();
         ordinecorso = true;
         ordinecitta = false;
         ordineregione = false;

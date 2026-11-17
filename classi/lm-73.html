@@ -40,9 +40,9 @@
         content="https://unidirectory.it/assets/img/iud_icon.png">
 
 
-    <link rel="icon" type="image/png" href="../assets/img/iud_icon.png">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/classi.css">
+    <link rel="icon" type="image/png" href="/assets/img/iud_icon.png">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/classi.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <script type="application/ld+json">
@@ -63,7 +63,7 @@
             <div class="header">
                 <div class="header1">
                     <a href="/">
-                        <img class="logo" src="../assets/img/iud_image.png" alt="Logo Unidirectory">
+                        <img class="logo" src="/assets/img/iud_image.png" alt="Logo Unidirectory">
                     </a>
                 </div>
                 <div class="header2">
@@ -78,7 +78,7 @@
         <div class="container table-responsive">
             <div class="toolbar-tabella">
                 <div class="filtri">
-                    <select id="filtroLingua" onchange="gestisciFiltroLingua(this.value, 'LM-73')">
+                    <select id="filtroLingua" onchange="gestisciFiltroLingua()">
                         <option value="">Tutte le lingue</option>
                         <option value="italiano">Italiano</option>
                         <option value="inglese">Inglese</option>
@@ -86,12 +86,12 @@
                         <option value="francese">Francese</option>
                         <option value="ladino">Ladino</option>
                     </select>
-                    <select id="filtroAccesso" onchange="gestisciFiltroAccesso(this.value, 'LM-73')">
+                    <select id="filtroAccesso" onchange="gestisciFiltroAccesso()">
                         <option value="">Tutti gli accessi</option>
                         <option value="libero">Accesso libero</option>
                         <option value="programmato">Accesso programmato</option>
                     </select>
-                    <select id="filtroDidattica" onchange="gestisciFiltroDidattica(this.value, 'LM-73')">
+                    <select id="filtroDidattica" onchange="gestisciFiltroDidattica()">
                         <option value="">Tutte le didattiche</option>
                         <option value="presenza">In presenza</option>
                         <option value="distanza">A distanza</option>
@@ -99,9 +99,9 @@
                     </select>
                 </div>
                 <div class="ordina">
-                    <button type="button" onclick="ordinaPerCorso('LM-73')">Ordina per corso</button>
-                    <button type="button" onclick="ordinaPerSede('LM-73')">Ordina per sede</button>
-                    <button type="button" onclick="ordinaPerRegione('LM-73')">Ordina per regione</button>
+                    <button type="button" onclick="ordinaPerCorso()">Ordina per corso</button>
+                    <button type="button" onclick="ordinaPerSede()">Ordina per sede</button>
+                    <button type="button" onclick="ordinaPerRegione()">Ordina per regione</button>
                 </div>
             </div>
             <input type="search" id="searchNelleClassi" placeholder="Cerca università, sede, regione o corso...">
@@ -109,7 +109,7 @@
             <table>
                 <tbody id="tabellauni">
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBa&quot;, &quot;nomeCorso&quot;: &quot;Scienze Agro-Ambientali e Territoriali&quot;, &quot;sede&quot;: &quot;Bari&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniba.html">Università degli Studi di Bari "Aldo Moro"</a></td>
+                        <td><a class="uni" href="/atenei/uniba">Università degli Studi di Bari "Aldo Moro"</a></td>
                         <td colspan="4"><strong>Scienze Agro-Ambientali e Territoriali</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -119,7 +119,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBas&quot;, &quot;nomeCorso&quot;: &quot;Scienze Forestali e Ambientali&quot;, &quot;sede&quot;: &quot;Potenza&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unibas.html">Università degli Studi della Basilicata</a></td>
+                        <td><a class="uni" href="/atenei/unibas">Università degli Studi della Basilicata</a></td>
                         <td colspan="4"><strong>Scienze Forestali e Ambientali</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -129,7 +129,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBo&quot;, &quot;nomeCorso&quot;: &quot;Progettazione e Gestione del Territorio Forestale, del Paesaggio e dell’Ambiente&quot;, &quot;sede&quot;: &quot;Bologna&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unibo.html">Alma Mater Studiorum - Università di Bologna</a></td>
+                        <td><a class="uni" href="/atenei/unibo">Alma Mater Studiorum - Università di Bologna</a></td>
                         <td colspan="4"><strong>Progettazione e Gestione del Territorio Forestale, del Paesaggio e dell’Ambiente</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -139,7 +139,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBz&quot;, &quot;nomeCorso&quot;: &quot;Gestione sostenibile dell'ambiente montano&quot;, &quot;sede&quot;: &quot;Bolzano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unibz.html">Libera Università di Bolzano</a></td>
+                        <td><a class="uni" href="/atenei/unibz">Libera Università di Bolzano</a></td>
                         <td colspan="4"><strong>Gestione sostenibile dell'ambiente montano</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -149,7 +149,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniFi&quot;, &quot;nomeCorso&quot;: &quot;Scienze e tecnologie dei sistemi forestali&quot;, &quot;sede&quot;: &quot;Firenze&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unifi.html">Università degli Studi di Firenze</a></td>
+                        <td><a class="uni" href="/atenei/unifi">Università degli Studi di Firenze</a></td>
                         <td colspan="4"><strong>Scienze e tecnologie dei sistemi forestali</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -159,7 +159,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMi&quot;, &quot;nomeCorso&quot;: &quot;Sustainable natural resource management&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unimi.html">Università degli Studi di Milano</a></td>
+                        <td><a class="uni" href="/atenei/unimi">Università degli Studi di Milano</a></td>
                         <td colspan="4"><strong>Sustainable natural resource management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -169,7 +169,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMi&quot;, &quot;nomeCorso&quot;: &quot;Valorization and Sustainable Development of Mountain Areas&quot;, &quot;sede&quot;: &quot;Edolo&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unimi.html">Università degli Studi di Milano</a></td>
+                        <td><a class="uni" href="/atenei/unimi">Università degli Studi di Milano</a></td>
                         <td colspan="4"><strong>Valorization and Sustainable Development of Mountain Areas</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -179,7 +179,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMol&quot;, &quot;nomeCorso&quot;: &quot;Scienze e tecnologie forestali ed ambientali&quot;, &quot;sede&quot;: &quot;Campobasso&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unimol.html">Università degli Studi del Molise</a></td>
+                        <td><a class="uni" href="/atenei/unimol">Università degli Studi del Molise</a></td>
                         <td colspan="4"><strong>Scienze e tecnologie forestali ed ambientali</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -189,7 +189,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniNa&quot;, &quot;nomeCorso&quot;: &quot;Scienze Forestali ed Ambientali&quot;, &quot;sede&quot;: &quot;Portici&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unina.html">Università degli Studi di Napoli "Federico II"</a></td>
+                        <td><a class="uni" href="/atenei/unina">Università degli Studi di Napoli "Federico II"</a></td>
                         <td colspan="4"><strong>Scienze Forestali ed Ambientali</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -199,7 +199,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPa&quot;, &quot;nomeCorso&quot;: &quot;Scienze e Tecnologie Agroingegneristiche e Forestali&quot;, &quot;sede&quot;: &quot;Palermo&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipa.html">Università degli Studi di Palermo</a></td>
+                        <td><a class="uni" href="/atenei/unipa">Università degli Studi di Palermo</a></td>
                         <td colspan="4"><strong>Scienze e Tecnologie Agroingegneristiche e Forestali</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -209,7 +209,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPd&quot;, &quot;nomeCorso&quot;: &quot;Forest Sciences&quot;, &quot;sede&quot;: &quot;Legnaro&quot;, &quot;didattica&quot;: &quot;Mista&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipd.html">Università degli Studi di Padova</a></td>
+                        <td><a class="uni" href="/atenei/unipd">Università degli Studi di Padova</a></td>
                         <td colspan="4"><strong>Forest Sciences</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -219,7 +219,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPd&quot;, &quot;nomeCorso&quot;: &quot;Scienze forestali e ambientali&quot;, &quot;sede&quot;: &quot;Legnaro&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipd.html">Università degli Studi di Padova</a></td>
+                        <td><a class="uni" href="/atenei/unipd">Università degli Studi di Padova</a></td>
                         <td colspan="4"><strong>Scienze forestali e ambientali</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -229,7 +229,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniRc&quot;, &quot;nomeCorso&quot;: &quot;GESTIONE SOSTENIBILE DEL TERRITORIO FORESTALE E MONTANO&quot;, &quot;sede&quot;: &quot;Reggio Di Calabria&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unirc.html">Università degli Studi "Mediterranea" di Reggio Calabria</a></td>
+                        <td><a class="uni" href="/atenei/unirc">Università degli Studi "Mediterranea" di Reggio Calabria</a></td>
                         <td colspan="4"><strong>GESTIONE SOSTENIBILE DEL TERRITORIO FORESTALE E MONTANO</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -239,7 +239,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniSs&quot;, &quot;nomeCorso&quot;: &quot;Sistemi forestali Mediterranei&quot;, &quot;sede&quot;: &quot;Nuoro&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniss.html">Università degli Studi di Sassari</a></td>
+                        <td><a class="uni" href="/atenei/uniss">Università degli Studi di Sassari</a></td>
                         <td colspan="4"><strong>Sistemi forestali Mediterranei</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -249,7 +249,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTo&quot;, &quot;nomeCorso&quot;: &quot;SCIENZE DEI SISTEMI FORESTALI E DELL'AMBIENTE&quot;, &quot;sede&quot;: &quot;Grugliasco&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unito.html">Università degli Studi di Torino</a></td>
+                        <td><a class="uni" href="/atenei/unito">Università degli Studi di Torino</a></td>
                         <td colspan="4"><strong>SCIENZE DEI SISTEMI FORESTALI E DELL'AMBIENTE</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -259,7 +259,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTus&quot;, &quot;nomeCorso&quot;: &quot;Conservazione e Restauro dell'Ambiente e delle Foreste&quot;, &quot;sede&quot;: &quot;Viterbo&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unitus.html">Università degli Studi della Tuscia</a></td>
+                        <td><a class="uni" href="/atenei/unitus">Università degli Studi della Tuscia</a></td>
                         <td colspan="4"><strong>Conservazione e Restauro dell'Ambiente e delle Foreste</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -269,7 +269,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTus&quot;, &quot;nomeCorso&quot;: &quot;Forestry and Environmental Sciences&quot;, &quot;sede&quot;: &quot;Viterbo&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unitus.html">Università degli Studi della Tuscia</a></td>
+                        <td><a class="uni" href="/atenei/unitus">Università degli Studi della Tuscia</a></td>
                         <td colspan="4"><strong>Forestry and Environmental Sciences</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -279,7 +279,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTus&quot;, &quot;nomeCorso&quot;: &quot;Science and Technologies for Agriculture and Mountain Areas&quot;, &quot;sede&quot;: &quot;Rieti&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unitus.html">Università degli Studi della Tuscia</a></td>
+                        <td><a class="uni" href="/atenei/unitus">Università degli Studi della Tuscia</a></td>
                         <td colspan="4"><strong>Science and Technologies for Agriculture and Mountain Areas</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -289,7 +289,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UnivPM&quot;, &quot;nomeCorso&quot;: &quot;SCIENZE E TECNOLOGIE FORESTALI E AMBIENTALI&quot;, &quot;sede&quot;: &quot;Ancona&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/univpm.html">Università Politecnica delle Marche</a></td>
+                        <td><a class="uni" href="/atenei/univpm">Università Politecnica delle Marche</a></td>
                         <td colspan="4"><strong>SCIENZE E TECNOLOGIE FORESTALI E AMBIENTALI</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -315,7 +315,7 @@
                 </a>
             </p>
             <p>
-                <a class="a_footer github" href="https://www.instagram.com/unidirectory/" target="_blank"
+                <a class="a_footer github" href="https://www.instagram.com/unidirectory" target="_blank"
                     rel="noopener noreferrer">
                     <i class="fa-brands fa-instagram"></i> Instagram
                 </a>
@@ -333,16 +333,15 @@
                 &middot;
                 <a class="a_footer" href="https://ustat.mur.gov.it/" target="_blank" rel="noopener noreferrer">USTAT</a>
             </p>
-            <p><a class="a_footer" href="../about.html">About</a></p>
-            <p><a class="a_footer" href="../privacy.html">Privacy Policy</a></p>
-            <p><a class="a_footer" href="../sitemap.xml">Sitemap</a></p>
+            <p><a class="a_footer" href="/about">About</a></p>
+            <p><a class="a_footer" href="/privacy">Privacy Policy</a></p>
+            <p><a class="a_footer" href="/sitemap.xml">Sitemap</a></p>
             <p><a class="a_footer" href="mailto:info@unidirectory.it">Contattaci</a></p>
         </div>
     </footer>
-    <script src="../assets/js/footer.js"></script>
-    <script src="../assets/js/scriptclassi.js"></script>
+    <script src="/assets/js/scriptclassi.js"></script>
     <script>
-        caricaTabella("LM-73");
+        caricaTabella();
         ordinecorso = true;
         ordinecitta = false;
         ordineregione = false;

@@ -40,9 +40,9 @@
         content="https://unidirectory.it/assets/img/iud_icon.png">
 
 
-    <link rel="icon" type="image/png" href="../../assets/img/iud_icon.png">
-    <link rel="stylesheet" href="../../assets/css/style.css">
-    <link rel="stylesheet" href="../../assets/css/classi.css">
+    <link rel="icon" type="image/png" href="/assets/img/iud_icon.png">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/classi.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <script type="application/ld+json">
@@ -63,7 +63,7 @@
             <div class="header">
                 <div class="header1">
                     <a href="/">
-                        <img class="logo" src="../../assets/img/iud_image.png" alt="Logo Unidirectory">
+                        <img class="logo" src="/assets/img/iud_image.png" alt="Logo Unidirectory">
                     </a>
                 </div>
                 <div class="header2">
@@ -78,9 +78,9 @@
         <div class="container table-responsive">
             <div class="toolbar-tabella">
                 <div class="ordina">
-                    <button type="button" onclick="ordinaPerCorso('DASLQ01')">Ordina per corso</button>
-                    <button type="button" onclick="ordinaPerSede('DASLQ01')">Ordina per sede</button>
-                    <button type="button" onclick="ordinaPerRegione('DASLQ01')">Ordina per regione</button>
+                    <button type="button" onclick="ordinaPerCorso()">Ordina per corso</button>
+                    <button type="button" onclick="ordinaPerSede()">Ordina per sede</button>
+                    <button type="button" onclick="ordinaPerRegione()">Ordina per regione</button>
                 </div>
             </div>
             <input type="search" id="searchNelleClassi" placeholder="Cerca istituto, sede, regione o corso...">
@@ -88,7 +88,7 @@
             <table>
                 <tbody id="tabellauni">
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaBo&quot;, &quot;nomeCorso&quot;: &quot;Restauro - Ciclo Unico Abilitante&quot;, &quot;sede&quot;: &quot;Bologna&quot;}">
-                        <td><a class="uni" href="../../atenei/ababo.html">Accademia di Belle Arti di Bologna</a></td>
+                        <td><a class="uni" href="/atenei/ababo">Accademia di Belle Arti di Bologna</a></td>
                         <td colspan="4"><strong>Restauro - Ciclo Unico Abilitante</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -96,7 +96,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaMc&quot;, &quot;nomeCorso&quot;: &quot;Restauro - Ciclo Unico Abilitante&quot;, &quot;sede&quot;: &quot;Macerata&quot;}">
-                        <td><a class="uni" href="../../atenei/abamc.html">Accademia di Belle Arti di Macerata</a></td>
+                        <td><a class="uni" href="/atenei/abamc">Accademia di Belle Arti di Macerata</a></td>
                         <td colspan="4"><strong>Restauro - Ciclo Unico Abilitante</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -104,7 +104,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaMi&quot;, &quot;nomeCorso&quot;: &quot;Restauro - Ciclo Unico Abilitante&quot;, &quot;sede&quot;: &quot;Milano&quot;}">
-                        <td><a class="uni" href="../../atenei/abami.html">Accademia di Belle Arti di Brera</a></td>
+                        <td><a class="uni" href="/atenei/abami">Accademia di Belle Arti di Brera</a></td>
                         <td colspan="4"><strong>Restauro - Ciclo Unico Abilitante</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -112,7 +112,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaNa&quot;, &quot;nomeCorso&quot;: &quot;Restauro - Ciclo Unico Abilitante&quot;, &quot;sede&quot;: &quot;Napoli&quot;}">
-                        <td><a class="uni" href="../../atenei/abana.html">Accademia di Belle Arti di Napoli</a></td>
+                        <td><a class="uni" href="/atenei/abana">Accademia di Belle Arti di Napoli</a></td>
                         <td colspan="4"><strong>Restauro - Ciclo Unico Abilitante</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -120,7 +120,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaPa&quot;, &quot;nomeCorso&quot;: &quot;Restauro - Ciclo Unico Abilitante&quot;, &quot;sede&quot;: &quot;Palermo&quot;}">
-                        <td><a class="uni" href="../../atenei/abapa.html">Accademia di Belle Arti di Palermo</a></td>
+                        <td><a class="uni" href="/atenei/abapa">Accademia di Belle Arti di Palermo</a></td>
                         <td colspan="4"><strong>Restauro - Ciclo Unico Abilitante</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -128,7 +128,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaSs&quot;, &quot;nomeCorso&quot;: &quot;Restauro - Ciclo Unico Abilitante&quot;, &quot;sede&quot;: &quot;Sassari&quot;}">
-                        <td><a class="uni" href="../../atenei/abass.html">Accademia di Belle Arti "Mario Sironi" di Sassari</a></td>
+                        <td><a class="uni" href="/atenei/abass">Accademia di Belle Arti "Mario Sironi" di Sassari</a></td>
                         <td colspan="4"><strong>Restauro - Ciclo Unico Abilitante</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -136,7 +136,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaVr&quot;, &quot;nomeCorso&quot;: &quot;Restauro - Ciclo Unico Abilitante&quot;, &quot;sede&quot;: &quot;Verona&quot;}">
-                        <td><a class="uni" href="../../atenei/abavr.html">Accademia di Belle Arti di Verona</a></td>
+                        <td><a class="uni" href="/atenei/abavr">Accademia di Belle Arti di Verona</a></td>
                         <td colspan="4"><strong>Restauro - Ciclo Unico Abilitante</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -144,7 +144,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;Abaq&quot;, &quot;nomeCorso&quot;: &quot;Restauro - Ciclo Unico Abilitante&quot;, &quot;sede&quot;: &quot;L'Aquila&quot;}">
-                        <td><a class="uni" href="../../atenei/abaq.html">Accademia di Belle Arti dell'Aquila</a></td>
+                        <td><a class="uni" href="/atenei/abaq">Accademia di Belle Arti dell'Aquila</a></td>
                         <td colspan="4"><strong>Restauro - Ciclo Unico Abilitante</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -152,7 +152,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;Galli&quot;, &quot;nomeCorso&quot;: &quot;Restauro - Ciclo Unico Abilitante&quot;, &quot;sede&quot;: &quot;Como&quot;}">
-                        <td><a class="uni" href="../../atenei/galli.html">Accademia Aldo Galli</a></td>
+                        <td><a class="uni" href="/atenei/galli">Accademia Aldo Galli</a></td>
                         <td colspan="4"><strong>Restauro - Ciclo Unico Abilitante</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -176,7 +176,7 @@
                 </a>
             </p>
             <p>
-                <a class="a_footer github" href="https://www.instagram.com/unidirectory/" target="_blank"
+                <a class="a_footer github" href="https://www.instagram.com/unidirectory" target="_blank"
                     rel="noopener noreferrer">
                     <i class="fa-brands fa-instagram"></i> Instagram
                 </a>
@@ -194,16 +194,15 @@
                 &middot;
                 <a class="a_footer" href="https://ustat.mur.gov.it/" target="_blank" rel="noopener noreferrer">USTAT</a>
             </p>
-            <p><a class="a_footer" href="../../about.html">About</a></p>
-            <p><a class="a_footer" href="../../privacy.html">Privacy Policy</a></p>
-            <p><a class="a_footer" href="../../sitemap.xml">Sitemap</a></p>
+            <p><a class="a_footer" href="/about">About</a></p>
+            <p><a class="a_footer" href="/privacy">Privacy Policy</a></p>
+            <p><a class="a_footer" href="/sitemap.xml">Sitemap</a></p>
             <p><a class="a_footer" href="mailto:info@unidirectory.it">Contattaci</a></p>
         </div>
     </footer>
-    <script src="../../assets/js/footer.js"></script>
-    <script src="../../assets/js/scriptafam.js"></script>
+    <script src="/assets/js/scriptafam.js"></script>
     <script>
-        caricaTabella("DASLQ01");
+        caricaTabella();
         ordinecorso = true;
         ordinecitta = false;
         ordineregione = false;

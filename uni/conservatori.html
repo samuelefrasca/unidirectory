@@ -36,9 +36,9 @@
     <meta name="twitter:image"
         content="https://unidirectory.it/assets/img/iud_icon.png">
 
-    <link rel="icon" type="image/png" href="../assets/img/iud_icon.png">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/elenchi.css">
+    <link rel="icon" type="image/png" href="/assets/img/iud_icon.png">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/elenchi.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <script type="application/ld+json">
@@ -58,7 +58,7 @@
             <div class="header">
                 <div class="header1">
                     <a href="/">
-                        <img class="logo" src="../assets/img/iud_image.png" alt="Logo Unidirectory">
+                        <img class="logo" src="/assets/img/iud_image.png" alt="Logo Unidirectory">
                     </a>
                 </div>
                 <div class="header2">
@@ -69,16 +69,16 @@
             </div>
             <nav class="altreuni">
                 <ul class="navul">
-                    <li class="navli"><a class="reflink select-none" href="statali.html">Statali</a></li>
-                    <li class="navli"><a class="reflink select-none" href="superiori.html">Scuole superiori</a></li>
-                    <li class="navli"><a class="reflink select-none" href="nonstatali.html">Non statali</a></li>
-                    <li class="navli"><a class="reflink select-none" href="telematiche.html">Telematiche</a></li>
-                    <li class="navli"><a class="reflink select-none" href="ssml.html">SSML</a></li>
+                    <li class="navli"><a class="reflink select-none" href="statali">Statali</a></li>
+                    <li class="navli"><a class="reflink select-none" href="superiori">Scuole superiori</a></li>
+                    <li class="navli"><a class="reflink select-none" href="nonstatali">Non statali</a></li>
+                    <li class="navli"><a class="reflink select-none" href="telematiche">Telematiche</a></li>
+                    <li class="navli"><a class="reflink select-none" href="ssml">SSML</a></li>
                     <li class="navli"><span class="reflink select-none active">Conservatori</span></li>
-                    <li class="navli"><a class="reflink select-none" href="abastatali.html">ABA</a></li>
-                    <li class="navli"><a class="reflink select-none" href="accnazionali.html">Acc. nazionali</a></li>
-                    <li class="navli"><a class="reflink select-none" href="isia.html">ISIA</a></li>
-                    <li class="navli"><a class="reflink select-none" href="afamprivati.html">AFAM privati</a></li>
+                    <li class="navli"><a class="reflink select-none" href="abastatali">ABA</a></li>
+                    <li class="navli"><a class="reflink select-none" href="accnazionali">Acc. nazionali</a></li>
+                    <li class="navli"><a class="reflink select-none" href="isia">ISIA</a></li>
+                    <li class="navli"><a class="reflink select-none" href="afamprivati">AFAM privati</a></li>
                 </ul>
             </nav>
         </div>
@@ -93,15 +93,15 @@
                         <th class="select-none num"></th>
                         <th class="select-none">Nome</th>
                         <th class="select-none">Sigla</th>
-                        <th class="select-none"><a onclick="ordinaPerCitta('conservatori')">Sede principale <i class="fa-solid fa-sort"></i></a></th>
-                        <th class="select-none"><a onclick="ordinaPerRegione('conservatori')">Regione <i class="fa-solid fa-sort"></i></a></th>
-                        <th class="select-none"><a onclick="ordinaPerStudenti('conservatori')">Studenti <i class="fa-solid fa-sort"></i></a></th>
+                        <th class="select-none"><a onclick="ordinaPerCitta()">Sede principale <i class="fa-solid fa-sort"></i></a></th>
+                        <th class="select-none"><a onclick="ordinaPerRegione()">Regione <i class="fa-solid fa-sort"></i></a></th>
+                        <th class="select-none"><a onclick="ordinaPerStudenti()">Studenti <i class="fa-solid fa-sort"></i></a></th>
                     </tr>
                 </thead>
                 <tbody id="tabellauni">
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica dell'Aquila \&quot;Alfredo Casella\&quot;&quot;, &quot;sigla&quot;: &quot;ConsAq&quot;, &quot;citta&quot;: &quot;L'Aquila&quot;, &quot;regione&quot;: &quot;Abruzzo&quot;, &quot;studenti&quot;: 475, &quot;link&quot;: &quot;https://www.consaq.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">1</td>
-                <td><a class="uni" href="../atenei/consaq.html">Conservatorio statale di musica dell'Aquila "Alfredo Casella"</a></td>
+                <td><a class="uni" href="/atenei/consaq">Conservatorio statale di musica dell'Aquila "Alfredo Casella"</a></td>
                 <td>ConsAq</td>
                 <td>L'Aquila</td>
                 <td>Abruzzo</td>
@@ -109,7 +109,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Pescara \&quot;Luisa d'Annunzio\&quot;&quot;, &quot;sigla&quot;: &quot;ConsPe&quot;, &quot;citta&quot;: &quot;Pescara&quot;, &quot;regione&quot;: &quot;Abruzzo&quot;, &quot;studenti&quot;: 513, &quot;link&quot;: &quot;https://www.conservatoriopescara.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">2</td>
-                <td><a class="uni" href="../atenei/conspe.html">Conservatorio statale di musica di Pescara "Luisa d'Annunzio"</a></td>
+                <td><a class="uni" href="/atenei/conspe">Conservatorio statale di musica di Pescara "Luisa d'Annunzio"</a></td>
                 <td>ConsPe</td>
                 <td>Pescara</td>
                 <td>Abruzzo</td>
@@ -117,7 +117,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Istituto statale superiore di studi musicali e coreutici \&quot;Gaetano Braga\&quot; di Teramo&quot;, &quot;sigla&quot;: &quot;ConsTe&quot;, &quot;citta&quot;: &quot;Teramo&quot;, &quot;regione&quot;: &quot;Abruzzo&quot;, &quot;studenti&quot;: 247, &quot;link&quot;: &quot;https://www.conservatoriobraga.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">3</td>
-                <td><a class="uni" href="../atenei/conste.html">Istituto statale superiore di studi musicali e coreutici "Gaetano Braga" di Teramo</a></td>
+                <td><a class="uni" href="/atenei/conste">Istituto statale superiore di studi musicali e coreutici "Gaetano Braga" di Teramo</a></td>
                 <td>ConsTe</td>
                 <td>Teramo</td>
                 <td>Abruzzo</td>
@@ -125,7 +125,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Matera \&quot;Egidio Romualdo Duni\&quot;&quot;, &quot;sigla&quot;: &quot;ConsMt&quot;, &quot;citta&quot;: &quot;Matera&quot;, &quot;regione&quot;: &quot;Basilicata&quot;, &quot;studenti&quot;: 390, &quot;link&quot;: &quot;http://www.conservatoriomatera.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">4</td>
-                <td><a class="uni" href="../atenei/consmt.html">Conservatorio statale di musica di Matera "Egidio Romualdo Duni"</a></td>
+                <td><a class="uni" href="/atenei/consmt">Conservatorio statale di musica di Matera "Egidio Romualdo Duni"</a></td>
                 <td>ConsMt</td>
                 <td>Matera</td>
                 <td>Basilicata</td>
@@ -133,7 +133,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Potenza \&quot;Gesualdo da Venosa\&quot;&quot;, &quot;sigla&quot;: &quot;ConsPz&quot;, &quot;citta&quot;: &quot;Potenza&quot;, &quot;regione&quot;: &quot;Basilicata&quot;, &quot;studenti&quot;: 270, &quot;link&quot;: &quot;https://www.conservatoriopotenza.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">5</td>
-                <td><a class="uni" href="../atenei/conspz.html">Conservatorio statale di musica di Potenza "Gesualdo da Venosa"</a></td>
+                <td><a class="uni" href="/atenei/conspz">Conservatorio statale di musica di Potenza "Gesualdo da Venosa"</a></td>
                 <td>ConsPz</td>
                 <td>Potenza</td>
                 <td>Basilicata</td>
@@ -141,7 +141,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Cosenza \&quot;Stanislao Giacomantonio\&quot;&quot;, &quot;sigla&quot;: &quot;ConsCs&quot;, &quot;citta&quot;: &quot;Cosenza&quot;, &quot;regione&quot;: &quot;Calabria&quot;, &quot;studenti&quot;: 667, &quot;link&quot;: &quot;https://www.conservatoriocosenza.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">6</td>
-                <td><a class="uni" href="../atenei/conscs.html">Conservatorio statale di musica di Cosenza "Stanislao Giacomantonio"</a></td>
+                <td><a class="uni" href="/atenei/conscs">Conservatorio statale di musica di Cosenza "Stanislao Giacomantonio"</a></td>
                 <td>ConsCs</td>
                 <td>Cosenza</td>
                 <td>Calabria</td>
@@ -149,7 +149,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Nocera Terinese \&quot;Pyotr Ilyich Tchaikovsky\&quot;&quot;, &quot;sigla&quot;: &quot;ConsCz&quot;, &quot;citta&quot;: &quot;Nocera Terinese (CZ)&quot;, &quot;regione&quot;: &quot;Calabria&quot;, &quot;studenti&quot;: 664, &quot;link&quot;: &quot;https://www.conscz.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">7</td>
-                <td><a class="uni" href="../atenei/conscz.html">Conservatorio statale di musica di Nocera Terinese "Pyotr Ilyich Tchaikovsky"</a></td>
+                <td><a class="uni" href="/atenei/conscz">Conservatorio statale di musica di Nocera Terinese "Pyotr Ilyich Tchaikovsky"</a></td>
                 <td>ConsCz</td>
                 <td>Nocera Terinese (CZ)</td>
                 <td>Calabria</td>
@@ -157,7 +157,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Reggio Calabria \&quot;Francesco Cilea\&quot;&quot;, &quot;sigla&quot;: &quot;ConsRc&quot;, &quot;citta&quot;: &quot;Reggio Calabria&quot;, &quot;regione&quot;: &quot;Calabria&quot;, &quot;studenti&quot;: 331, &quot;link&quot;: &quot;https://www.conservatoriocilea.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">8</td>
-                <td><a class="uni" href="../atenei/consrc.html">Conservatorio statale di musica di Reggio Calabria "Francesco Cilea"</a></td>
+                <td><a class="uni" href="/atenei/consrc">Conservatorio statale di musica di Reggio Calabria "Francesco Cilea"</a></td>
                 <td>ConsRc</td>
                 <td>Reggio Calabria</td>
                 <td>Calabria</td>
@@ -165,7 +165,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Vibo Valentia \&quot;Fausto Torrefranca\&quot;&quot;, &quot;sigla&quot;: &quot;ConsVv&quot;, &quot;citta&quot;: &quot;Vibo Valentia&quot;, &quot;regione&quot;: &quot;Calabria&quot;, &quot;studenti&quot;: 371, &quot;link&quot;: &quot;https://consvv.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">9</td>
-                <td><a class="uni" href="../atenei/consvv.html">Conservatorio statale di musica di Vibo Valentia "Fausto Torrefranca"</a></td>
+                <td><a class="uni" href="/atenei/consvv">Conservatorio statale di musica di Vibo Valentia "Fausto Torrefranca"</a></td>
                 <td>ConsVv</td>
                 <td>Vibo Valentia</td>
                 <td>Calabria</td>
@@ -173,7 +173,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Avellino \&quot;Domenico Cimarosa\&quot;&quot;, &quot;sigla&quot;: &quot;ConsAv&quot;, &quot;citta&quot;: &quot;Avellino&quot;, &quot;regione&quot;: &quot;Campania&quot;, &quot;studenti&quot;: 844, &quot;link&quot;: &quot;https://conservatoriocimarosa.org/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">10</td>
-                <td><a class="uni" href="../atenei/consav.html">Conservatorio statale di musica di Avellino "Domenico Cimarosa"</a></td>
+                <td><a class="uni" href="/atenei/consav">Conservatorio statale di musica di Avellino "Domenico Cimarosa"</a></td>
                 <td>ConsAv</td>
                 <td>Avellino</td>
                 <td>Campania</td>
@@ -181,7 +181,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Benevento \&quot;Nicola Sala\&quot;&quot;, &quot;sigla&quot;: &quot;ConsBn&quot;, &quot;citta&quot;: &quot;Benevento&quot;, &quot;regione&quot;: &quot;Campania&quot;, &quot;studenti&quot;: 776, &quot;link&quot;: &quot;https://www.conservatorionicolasala.eu/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">11</td>
-                <td><a class="uni" href="../atenei/consbn.html">Conservatorio statale di musica di Benevento "Nicola Sala"</a></td>
+                <td><a class="uni" href="/atenei/consbn">Conservatorio statale di musica di Benevento "Nicola Sala"</a></td>
                 <td>ConsBn</td>
                 <td>Benevento</td>
                 <td>Campania</td>
@@ -189,7 +189,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Napoli \&quot;S. Pietro a Majella\&quot;&quot;, &quot;sigla&quot;: &quot;ConsNa&quot;, &quot;citta&quot;: &quot;Napoli&quot;, &quot;regione&quot;: &quot;Campania&quot;, &quot;studenti&quot;: 864, &quot;link&quot;: &quot;https://www.sanpietroamajella.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">12</td>
-                <td><a class="uni" href="../atenei/consna.html">Conservatorio statale di musica di Napoli "S. Pietro a Majella"</a></td>
+                <td><a class="uni" href="/atenei/consna">Conservatorio statale di musica di Napoli "S. Pietro a Majella"</a></td>
                 <td>ConsNa</td>
                 <td>Napoli</td>
                 <td>Campania</td>
@@ -197,7 +197,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Salerno \&quot;Giuseppe Martucci\&quot;&quot;, &quot;sigla&quot;: &quot;ConsSa&quot;, &quot;citta&quot;: &quot;Salerno&quot;, &quot;regione&quot;: &quot;Campania&quot;, &quot;studenti&quot;: 1078, &quot;link&quot;: &quot;https://www.consalerno.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">13</td>
-                <td><a class="uni" href="../atenei/conssa.html">Conservatorio statale di musica di Salerno "Giuseppe Martucci"</a></td>
+                <td><a class="uni" href="/atenei/conssa">Conservatorio statale di musica di Salerno "Giuseppe Martucci"</a></td>
                 <td>ConsSa</td>
                 <td>Salerno</td>
                 <td>Campania</td>
@@ -205,7 +205,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Bologna \&quot;Giovan Battista Martini\&quot;&quot;, &quot;sigla&quot;: &quot;ConsBo&quot;, &quot;citta&quot;: &quot;Bologna&quot;, &quot;regione&quot;: &quot;Emilia-Romagna&quot;, &quot;studenti&quot;: 711, &quot;link&quot;: &quot;https://www.consbo.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">14</td>
-                <td><a class="uni" href="../atenei/consbo.html">Conservatorio statale di musica di Bologna "Giovan Battista Martini"</a></td>
+                <td><a class="uni" href="/atenei/consbo">Conservatorio statale di musica di Bologna "Giovan Battista Martini"</a></td>
                 <td>ConsBo</td>
                 <td>Bologna</td>
                 <td>Emilia-Romagna</td>
@@ -213,7 +213,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Cesena e Rimini \&quot;Bruno Maderna-Giovanni Lettimi\&quot;&quot;, &quot;sigla&quot;: &quot;ConsCeRi&quot;, &quot;citta&quot;: &quot;Cesena - Rimini&quot;, &quot;regione&quot;: &quot;Emilia-Romagna&quot;, &quot;studenti&quot;: 306, &quot;link&quot;: &quot;https://www.madernalettimi.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">15</td>
-                <td><a class="uni" href="../atenei/consceri.html">Conservatorio statale di musica di Cesena e Rimini "Bruno Maderna-Giovanni Lettimi"</a></td>
+                <td><a class="uni" href="/atenei/consceri">Conservatorio statale di musica di Cesena e Rimini "Bruno Maderna-Giovanni Lettimi"</a></td>
                 <td>ConsCeRi</td>
                 <td>Cesena - Rimini</td>
                 <td>Emilia-Romagna</td>
@@ -221,7 +221,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Ferrara \&quot;Girolamo Frescobaldi\&quot;&quot;, &quot;sigla&quot;: &quot;ConsFe&quot;, &quot;citta&quot;: &quot;Ferrara&quot;, &quot;regione&quot;: &quot;Emilia-Romagna&quot;, &quot;studenti&quot;: 251, &quot;link&quot;: &quot;https://www.consfe.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">16</td>
-                <td><a class="uni" href="../atenei/consfe.html">Conservatorio statale di musica di Ferrara "Girolamo Frescobaldi"</a></td>
+                <td><a class="uni" href="/atenei/consfe">Conservatorio statale di musica di Ferrara "Girolamo Frescobaldi"</a></td>
                 <td>ConsFe</td>
                 <td>Ferrara</td>
                 <td>Emilia-Romagna</td>
@@ -229,7 +229,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Modena e Carpi \&quot;Orazio Vecchi - Antonio Tonelli\&quot;&quot;, &quot;sigla&quot;: &quot;ConsMoCa&quot;, &quot;citta&quot;: &quot;Modena - Carpi (MO)&quot;, &quot;regione&quot;: &quot;Emilia-Romagna&quot;, &quot;studenti&quot;: 188, &quot;link&quot;: &quot;https://www.vecchitonelli.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">17</td>
-                <td><a class="uni" href="../atenei/consmoca.html">Conservatorio statale di musica di Modena e Carpi "Orazio Vecchi - Antonio Tonelli"</a></td>
+                <td><a class="uni" href="/atenei/consmoca">Conservatorio statale di musica di Modena e Carpi "Orazio Vecchi - Antonio Tonelli"</a></td>
                 <td>ConsMoCa</td>
                 <td>Modena - Carpi (MO)</td>
                 <td>Emilia-Romagna</td>
@@ -237,7 +237,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Parma \&quot;Arrigo Boito\&quot;&quot;, &quot;sigla&quot;: &quot;ConsPr&quot;, &quot;citta&quot;: &quot;Parma&quot;, &quot;regione&quot;: &quot;Emilia-Romagna&quot;, &quot;studenti&quot;: 735, &quot;link&quot;: &quot;https://www.conservatorio.pr.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">18</td>
-                <td><a class="uni" href="../atenei/conspr.html">Conservatorio statale di musica di Parma "Arrigo Boito"</a></td>
+                <td><a class="uni" href="/atenei/conspr">Conservatorio statale di musica di Parma "Arrigo Boito"</a></td>
                 <td>ConsPr</td>
                 <td>Parma</td>
                 <td>Emilia-Romagna</td>
@@ -245,7 +245,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Piacenza \&quot;Giuseppe Nicolini\&quot;&quot;, &quot;sigla&quot;: &quot;ConsPc&quot;, &quot;citta&quot;: &quot;Piacenza&quot;, &quot;regione&quot;: &quot;Emilia-Romagna&quot;, &quot;studenti&quot;: 314, &quot;link&quot;: &quot;https://www.conservatorionicolini.com/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">19</td>
-                <td><a class="uni" href="../atenei/conspc.html">Conservatorio statale di musica di Piacenza "Giuseppe Nicolini"</a></td>
+                <td><a class="uni" href="/atenei/conspc">Conservatorio statale di musica di Piacenza "Giuseppe Nicolini"</a></td>
                 <td>ConsPc</td>
                 <td>Piacenza</td>
                 <td>Emilia-Romagna</td>
@@ -253,7 +253,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Ravenna \&quot;Giuseppe Verdi\&quot;&quot;, &quot;sigla&quot;: &quot;ConsRa&quot;, &quot;citta&quot;: &quot;Ravenna&quot;, &quot;regione&quot;: &quot;Emilia-Romagna&quot;, &quot;studenti&quot;: 195, &quot;link&quot;: &quot;https://www.verdiravenna.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">20</td>
-                <td><a class="uni" href="../atenei/consra.html">Conservatorio statale di musica di Ravenna "Giuseppe Verdi"</a></td>
+                <td><a class="uni" href="/atenei/consra">Conservatorio statale di musica di Ravenna "Giuseppe Verdi"</a></td>
                 <td>ConsRa</td>
                 <td>Ravenna</td>
                 <td>Emilia-Romagna</td>
@@ -261,7 +261,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Reggio Emilia e Castelnuovo né Monti \&quot;Achille Peri e Claudio Merulo\&quot;&quot;, &quot;sigla&quot;: &quot;ConsReCa&quot;, &quot;citta&quot;: &quot;Reggio Emilia - Castelnovo ne' Monti (RE)&quot;, &quot;regione&quot;: &quot;Emilia-Romagna&quot;, &quot;studenti&quot;: 217, &quot;link&quot;: &quot;https://www.consperimerulo.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">21</td>
-                <td><a class="uni" href="../atenei/consreca.html">Conservatorio statale di musica di Reggio Emilia e Castelnuovo né Monti "Achille Peri e Claudio Merulo"</a></td>
+                <td><a class="uni" href="/atenei/consreca">Conservatorio statale di musica di Reggio Emilia e Castelnuovo né Monti "Achille Peri e Claudio Merulo"</a></td>
                 <td>ConsReCa</td>
                 <td>Reggio Emilia - Castelnovo ne' Monti (RE)</td>
                 <td>Emilia-Romagna</td>
@@ -269,7 +269,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Trieste \&quot;Giuseppe Tartini\&quot;&quot;, &quot;sigla&quot;: &quot;ConsTs&quot;, &quot;citta&quot;: &quot;Trieste&quot;, &quot;regione&quot;: &quot;Friuli-Venezia Giulia&quot;, &quot;studenti&quot;: 496, &quot;link&quot;: &quot;https://www.conts.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">22</td>
-                <td><a class="uni" href="../atenei/consts.html">Conservatorio statale di musica di Trieste "Giuseppe Tartini"</a></td>
+                <td><a class="uni" href="/atenei/consts">Conservatorio statale di musica di Trieste "Giuseppe Tartini"</a></td>
                 <td>ConsTs</td>
                 <td>Trieste</td>
                 <td>Friuli-Venezia Giulia</td>
@@ -277,7 +277,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Udine \&quot;Jacopo Tomadini\&quot;&quot;, &quot;sigla&quot;: &quot;ConsUd&quot;, &quot;citta&quot;: &quot;Udine&quot;, &quot;regione&quot;: &quot;Friuli-Venezia Giulia&quot;, &quot;studenti&quot;: 236, &quot;link&quot;: &quot;https://www.conservatorio.udine.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">23</td>
-                <td><a class="uni" href="../atenei/consud.html">Conservatorio statale di musica di Udine "Jacopo Tomadini"</a></td>
+                <td><a class="uni" href="/atenei/consud">Conservatorio statale di musica di Udine "Jacopo Tomadini"</a></td>
                 <td>ConsUd</td>
                 <td>Udine</td>
                 <td>Friuli-Venezia Giulia</td>
@@ -285,7 +285,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Frosinone \&quot;Licinio Refice\&quot;&quot;, &quot;sigla&quot;: &quot;ConsFr&quot;, &quot;citta&quot;: &quot;Frosinone&quot;, &quot;regione&quot;: &quot;Lazio&quot;, &quot;studenti&quot;: 524, &quot;link&quot;: &quot;https://www.conservatorio-frosinone.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">24</td>
-                <td><a class="uni" href="../atenei/consfr.html">Conservatorio statale di musica di Frosinone "Licinio Refice"</a></td>
+                <td><a class="uni" href="/atenei/consfr">Conservatorio statale di musica di Frosinone "Licinio Refice"</a></td>
                 <td>ConsFr</td>
                 <td>Frosinone</td>
                 <td>Lazio</td>
@@ -293,7 +293,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Latina \&quot;Ottorino Respighi\&quot;&quot;, &quot;sigla&quot;: &quot;ConsLt&quot;, &quot;citta&quot;: &quot;Latina&quot;, &quot;regione&quot;: &quot;Lazio&quot;, &quot;studenti&quot;: 318, &quot;link&quot;: &quot;https://www.conslatina.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">25</td>
-                <td><a class="uni" href="../atenei/conslt.html">Conservatorio statale di musica di Latina "Ottorino Respighi"</a></td>
+                <td><a class="uni" href="/atenei/conslt">Conservatorio statale di musica di Latina "Ottorino Respighi"</a></td>
                 <td>ConsLt</td>
                 <td>Latina</td>
                 <td>Lazio</td>
@@ -301,7 +301,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Roma \&quot;Santa Cecilia\&quot;&quot;, &quot;sigla&quot;: &quot;ConsRm&quot;, &quot;citta&quot;: &quot;Roma&quot;, &quot;regione&quot;: &quot;Lazio&quot;, &quot;studenti&quot;: 1378, &quot;link&quot;: &quot;https://www.conservatoriosantacecilia.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">26</td>
-                <td><a class="uni" href="../atenei/consrm.html">Conservatorio statale di musica di Roma "Santa Cecilia"</a></td>
+                <td><a class="uni" href="/atenei/consrm">Conservatorio statale di musica di Roma "Santa Cecilia"</a></td>
                 <td>ConsRm</td>
                 <td>Roma</td>
                 <td>Lazio</td>
@@ -309,7 +309,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Genova \&quot;Nicolò Paganini\&quot;&quot;, &quot;sigla&quot;: &quot;ConsGe&quot;, &quot;citta&quot;: &quot;Genova&quot;, &quot;regione&quot;: &quot;Liguria&quot;, &quot;studenti&quot;: 318, &quot;link&quot;: &quot;https://www.conspaganini.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">27</td>
-                <td><a class="uni" href="../atenei/consge.html">Conservatorio statale di musica di Genova "Nicolò Paganini"</a></td>
+                <td><a class="uni" href="/atenei/consge">Conservatorio statale di musica di Genova "Nicolò Paganini"</a></td>
                 <td>ConsGe</td>
                 <td>Genova</td>
                 <td>Liguria</td>
@@ -317,7 +317,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di La Spezia \&quot;Giacomo Puccini\&quot;&quot;, &quot;sigla&quot;: &quot;ConsSp&quot;, &quot;citta&quot;: &quot;La Spezia&quot;, &quot;regione&quot;: &quot;Liguria&quot;, &quot;studenti&quot;: 235, &quot;link&quot;: &quot;https://conssp.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">28</td>
-                <td><a class="uni" href="../atenei/conssp.html">Conservatorio statale di musica di La Spezia "Giacomo Puccini"</a></td>
+                <td><a class="uni" href="/atenei/conssp">Conservatorio statale di musica di La Spezia "Giacomo Puccini"</a></td>
                 <td>ConsSp</td>
                 <td>La Spezia</td>
                 <td>Liguria</td>
@@ -325,7 +325,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Brescia \&quot;Luca Marenzio\&quot;&quot;, &quot;sigla&quot;: &quot;ConsBs&quot;, &quot;citta&quot;: &quot;Brescia - Darfo Boario Terme (BS)&quot;, &quot;regione&quot;: &quot;Lombardia&quot;, &quot;studenti&quot;: 454, &quot;link&quot;: &quot;https://www.consbs.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">29</td>
-                <td><a class="uni" href="../atenei/consbs.html">Conservatorio statale di musica di Brescia "Luca Marenzio"</a></td>
+                <td><a class="uni" href="/atenei/consbs">Conservatorio statale di musica di Brescia "Luca Marenzio"</a></td>
                 <td>ConsBs</td>
                 <td>Brescia - Darfo Boario Terme (BS)</td>
                 <td>Lombardia</td>
@@ -333,7 +333,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Como \&quot;Giuseppe Verdi\&quot;&quot;, &quot;sigla&quot;: &quot;ConsCo&quot;, &quot;citta&quot;: &quot;Como&quot;, &quot;regione&quot;: &quot;Lombardia&quot;, &quot;studenti&quot;: 311, &quot;link&quot;: &quot;https://www.conservatoriocomo.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">30</td>
-                <td><a class="uni" href="../atenei/consco.html">Conservatorio statale di musica di Como "Giuseppe Verdi"</a></td>
+                <td><a class="uni" href="/atenei/consco">Conservatorio statale di musica di Como "Giuseppe Verdi"</a></td>
                 <td>ConsCo</td>
                 <td>Como</td>
                 <td>Lombardia</td>
@@ -341,7 +341,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Cremona \&quot;Claudio Monteverdi\&quot;&quot;, &quot;sigla&quot;: &quot;ConsCr&quot;, &quot;citta&quot;: &quot;Cremona&quot;, &quot;regione&quot;: &quot;Lombardia&quot;, &quot;studenti&quot;: 95, &quot;link&quot;: &quot;https://www.conscremona.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">31</td>
-                <td><a class="uni" href="../atenei/conscr.html">Conservatorio statale di musica di Cremona "Claudio Monteverdi"</a></td>
+                <td><a class="uni" href="/atenei/conscr">Conservatorio statale di musica di Cremona "Claudio Monteverdi"</a></td>
                 <td>ConsCr</td>
                 <td>Cremona</td>
                 <td>Lombardia</td>
@@ -349,7 +349,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Gallarate \&quot;Giacomo Puccini\&quot;&quot;, &quot;sigla&quot;: &quot;ConsGa&quot;, &quot;citta&quot;: &quot;Gallarate (VA)&quot;, &quot;regione&quot;: &quot;Lombardia&quot;, &quot;studenti&quot;: 119, &quot;link&quot;: &quot;https://issmpuccinigallarate.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">32</td>
-                <td><a class="uni" href="../atenei/consga.html">Conservatorio statale di musica di Gallarate "Giacomo Puccini"</a></td>
+                <td><a class="uni" href="/atenei/consga">Conservatorio statale di musica di Gallarate "Giacomo Puccini"</a></td>
                 <td>ConsGa</td>
                 <td>Gallarate (VA)</td>
                 <td>Lombardia</td>
@@ -357,7 +357,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Mantova \&quot;Lucio Campiani\&quot;&quot;, &quot;sigla&quot;: &quot;ConsMn&quot;, &quot;citta&quot;: &quot;Mantova&quot;, &quot;regione&quot;: &quot;Lombardia&quot;, &quot;studenti&quot;: 219, &quot;link&quot;: &quot;https://www.conservatoriomantova.com/it/home&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">33</td>
-                <td><a class="uni" href="../atenei/consmn.html">Conservatorio statale di musica di Mantova "Lucio Campiani"</a></td>
+                <td><a class="uni" href="/atenei/consmn">Conservatorio statale di musica di Mantova "Lucio Campiani"</a></td>
                 <td>ConsMn</td>
                 <td>Mantova</td>
                 <td>Lombardia</td>
@@ -365,7 +365,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Milano \&quot;Giuseppe Verdi\&quot;&quot;, &quot;sigla&quot;: &quot;ConsMi&quot;, &quot;citta&quot;: &quot;Milano&quot;, &quot;regione&quot;: &quot;Lombardia&quot;, &quot;studenti&quot;: 1193, &quot;link&quot;: &quot;https://www.consmilano.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">34</td>
-                <td><a class="uni" href="../atenei/consmi.html">Conservatorio statale di musica di Milano "Giuseppe Verdi"</a></td>
+                <td><a class="uni" href="/atenei/consmi">Conservatorio statale di musica di Milano "Giuseppe Verdi"</a></td>
                 <td>ConsMi</td>
                 <td>Milano</td>
                 <td>Lombardia</td>
@@ -373,7 +373,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Pavia \&quot;Franco Vittadini\&quot;&quot;, &quot;sigla&quot;: &quot;ConsPv&quot;, &quot;citta&quot;: &quot;Pavia&quot;, &quot;regione&quot;: &quot;Lombardia&quot;, &quot;studenti&quot;: 222, &quot;link&quot;: &quot;https://conspv.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">35</td>
-                <td><a class="uni" href="../atenei/conspv.html">Conservatorio statale di musica di Pavia "Franco Vittadini"</a></td>
+                <td><a class="uni" href="/atenei/conspv">Conservatorio statale di musica di Pavia "Franco Vittadini"</a></td>
                 <td>ConsPv</td>
                 <td>Pavia</td>
                 <td>Lombardia</td>
@@ -381,7 +381,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Politecnico delle Arti di Bergamo - Conservatorio di Musica \&quot;Gaetano Donizetti\&quot;&quot;, &quot;sigla&quot;: &quot;PAB-ConsBg&quot;, &quot;citta&quot;: &quot;Bergamo&quot;, &quot;regione&quot;: &quot;Lombardia&quot;, &quot;studenti&quot;: 296, &quot;link&quot;: &quot;https://www.consbg.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">36</td>
-                <td><a class="uni" href="../atenei/pab-consbg.html">Politecnico delle Arti di Bergamo - Conservatorio di Musica "Gaetano Donizetti"</a></td>
+                <td><a class="uni" href="/atenei/pab-consbg">Politecnico delle Arti di Bergamo - Conservatorio di Musica "Gaetano Donizetti"</a></td>
                 <td>PAB-ConsBg</td>
                 <td>Bergamo</td>
                 <td>Lombardia</td>
@@ -389,7 +389,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Fermo \&quot;Giovambattista Pergolesi\&quot;&quot;, &quot;sigla&quot;: &quot;ConsFm&quot;, &quot;citta&quot;: &quot;Fermo&quot;, &quot;regione&quot;: &quot;Marche&quot;, &quot;studenti&quot;: 268, &quot;link&quot;: &quot;https://conservatorio.net/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">37</td>
-                <td><a class="uni" href="../atenei/consfm.html">Conservatorio statale di musica di Fermo "Giovambattista Pergolesi"</a></td>
+                <td><a class="uni" href="/atenei/consfm">Conservatorio statale di musica di Fermo "Giovambattista Pergolesi"</a></td>
                 <td>ConsFm</td>
                 <td>Fermo</td>
                 <td>Marche</td>
@@ -397,7 +397,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Pesaro \&quot;Gioachino Rossini\&quot;&quot;, &quot;sigla&quot;: &quot;ConsPs&quot;, &quot;citta&quot;: &quot;Pesaro&quot;, &quot;regione&quot;: &quot;Marche&quot;, &quot;studenti&quot;: 360, &quot;link&quot;: &quot;https://www.conservatoriorossini.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">38</td>
-                <td><a class="uni" href="../atenei/consps.html">Conservatorio statale di musica di Pesaro "Gioachino Rossini"</a></td>
+                <td><a class="uni" href="/atenei/consps">Conservatorio statale di musica di Pesaro "Gioachino Rossini"</a></td>
                 <td>ConsPs</td>
                 <td>Pesaro</td>
                 <td>Marche</td>
@@ -405,7 +405,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Campobasso \&quot;Lorenzo Perosi\&quot;&quot;, &quot;sigla&quot;: &quot;ConsCb&quot;, &quot;citta&quot;: &quot;Campobasso&quot;, &quot;regione&quot;: &quot;Molise&quot;, &quot;studenti&quot;: 275, &quot;link&quot;: &quot;https://www.conservatorioperosi.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">39</td>
-                <td><a class="uni" href="../atenei/conscb.html">Conservatorio statale di musica di Campobasso "Lorenzo Perosi"</a></td>
+                <td><a class="uni" href="/atenei/conscb">Conservatorio statale di musica di Campobasso "Lorenzo Perosi"</a></td>
                 <td>ConsCb</td>
                 <td>Campobasso</td>
                 <td>Molise</td>
@@ -413,7 +413,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Alessandria \&quot;Antonio Vivaldi\&quot;&quot;, &quot;sigla&quot;: &quot;ConsAl&quot;, &quot;citta&quot;: &quot;Alessandria&quot;, &quot;regione&quot;: &quot;Piemonte&quot;, &quot;studenti&quot;: 287, &quot;link&quot;: &quot;https://www.conservatoriovivaldi.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">40</td>
-                <td><a class="uni" href="../atenei/consal.html">Conservatorio statale di musica di Alessandria "Antonio Vivaldi"</a></td>
+                <td><a class="uni" href="/atenei/consal">Conservatorio statale di musica di Alessandria "Antonio Vivaldi"</a></td>
                 <td>ConsAl</td>
                 <td>Alessandria</td>
                 <td>Piemonte</td>
@@ -421,7 +421,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Cuneo \&quot;Giorgio Federico Ghedini\&quot;&quot;, &quot;sigla&quot;: &quot;ConsCn&quot;, &quot;citta&quot;: &quot;Cuneo&quot;, &quot;regione&quot;: &quot;Piemonte&quot;, &quot;studenti&quot;: 289, &quot;link&quot;: &quot;https://www.conservatoriocuneo.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">41</td>
-                <td><a class="uni" href="../atenei/conscn.html">Conservatorio statale di musica di Cuneo "Giorgio Federico Ghedini"</a></td>
+                <td><a class="uni" href="/atenei/conscn">Conservatorio statale di musica di Cuneo "Giorgio Federico Ghedini"</a></td>
                 <td>ConsCn</td>
                 <td>Cuneo</td>
                 <td>Piemonte</td>
@@ -429,7 +429,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Novara \&quot;Guido Cantelli\&quot;&quot;, &quot;sigla&quot;: &quot;ConsNo&quot;, &quot;citta&quot;: &quot;Novara&quot;, &quot;regione&quot;: &quot;Piemonte&quot;, &quot;studenti&quot;: 314, &quot;link&quot;: &quot;https://consno.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">42</td>
-                <td><a class="uni" href="../atenei/consno.html">Conservatorio statale di musica di Novara "Guido Cantelli"</a></td>
+                <td><a class="uni" href="/atenei/consno">Conservatorio statale di musica di Novara "Guido Cantelli"</a></td>
                 <td>ConsNo</td>
                 <td>Novara</td>
                 <td>Piemonte</td>
@@ -437,7 +437,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Torino \&quot;Giuseppe Verdi\&quot;&quot;, &quot;sigla&quot;: &quot;ConsTo&quot;, &quot;citta&quot;: &quot;Torino&quot;, &quot;regione&quot;: &quot;Piemonte&quot;, &quot;studenti&quot;: 622, &quot;link&quot;: &quot;https://www.conservatoriotorino.eu/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">43</td>
-                <td><a class="uni" href="../atenei/consto.html">Conservatorio statale di musica di Torino "Giuseppe Verdi"</a></td>
+                <td><a class="uni" href="/atenei/consto">Conservatorio statale di musica di Torino "Giuseppe Verdi"</a></td>
                 <td>ConsTo</td>
                 <td>Torino</td>
                 <td>Piemonte</td>
@@ -445,7 +445,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Bari \&quot;Niccolò Piccinni\&quot;&quot;, &quot;sigla&quot;: &quot;ConsBa&quot;, &quot;citta&quot;: &quot;Bari&quot;, &quot;regione&quot;: &quot;Puglia&quot;, &quot;studenti&quot;: 656, &quot;link&quot;: &quot;https://www.conservatoriopiccinni.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">44</td>
-                <td><a class="uni" href="../atenei/consba.html">Conservatorio statale di musica di Bari "Niccolò Piccinni"</a></td>
+                <td><a class="uni" href="/atenei/consba">Conservatorio statale di musica di Bari "Niccolò Piccinni"</a></td>
                 <td>ConsBa</td>
                 <td>Bari</td>
                 <td>Puglia</td>
@@ -453,7 +453,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Foggia \&quot;Umberto Giordano\&quot;&quot;, &quot;sigla&quot;: &quot;ConsFg&quot;, &quot;citta&quot;: &quot;Foggia - Rodi Garganico (FG)&quot;, &quot;regione&quot;: &quot;Puglia&quot;, &quot;studenti&quot;: 496, &quot;link&quot;: &quot;https://www.conservatoriofoggia.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">45</td>
-                <td><a class="uni" href="../atenei/consfg.html">Conservatorio statale di musica di Foggia "Umberto Giordano"</a></td>
+                <td><a class="uni" href="/atenei/consfg">Conservatorio statale di musica di Foggia "Umberto Giordano"</a></td>
                 <td>ConsFg</td>
                 <td>Foggia - Rodi Garganico (FG)</td>
                 <td>Puglia</td>
@@ -461,7 +461,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Lecce \&quot;Tito Schipa\&quot;&quot;, &quot;sigla&quot;: &quot;ConsLe&quot;, &quot;citta&quot;: &quot;Lecce - Ceglie Messapica (BR)&quot;, &quot;regione&quot;: &quot;Puglia&quot;, &quot;studenti&quot;: 469, &quot;link&quot;: &quot;https://www.conservatoriolecce.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">46</td>
-                <td><a class="uni" href="../atenei/consle.html">Conservatorio statale di musica di Lecce "Tito Schipa"</a></td>
+                <td><a class="uni" href="/atenei/consle">Conservatorio statale di musica di Lecce "Tito Schipa"</a></td>
                 <td>ConsLe</td>
                 <td>Lecce - Ceglie Messapica (BR)</td>
                 <td>Puglia</td>
@@ -469,7 +469,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Monopoli \&quot;Nino Rota\&quot;&quot;, &quot;sigla&quot;: &quot;ConsMo&quot;, &quot;citta&quot;: &quot;Monopoli (BA)&quot;, &quot;regione&quot;: &quot;Puglia&quot;, &quot;studenti&quot;: 374, &quot;link&quot;: &quot;https://www.conservatoriodimonopoli.org/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">47</td>
-                <td><a class="uni" href="../atenei/consmo.html">Conservatorio statale di musica di Monopoli "Nino Rota"</a></td>
+                <td><a class="uni" href="/atenei/consmo">Conservatorio statale di musica di Monopoli "Nino Rota"</a></td>
                 <td>ConsMo</td>
                 <td>Monopoli (BA)</td>
                 <td>Puglia</td>
@@ -477,7 +477,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Taranto \&quot;Giovanni Paisiello\&quot;&quot;, &quot;sigla&quot;: &quot;ConsTa&quot;, &quot;citta&quot;: &quot;Taranto&quot;, &quot;regione&quot;: &quot;Puglia&quot;, &quot;studenti&quot;: 233, &quot;link&quot;: &quot;https://www.paisiello.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">48</td>
-                <td><a class="uni" href="../atenei/consta.html">Conservatorio statale di musica di Taranto "Giovanni Paisiello"</a></td>
+                <td><a class="uni" href="/atenei/consta">Conservatorio statale di musica di Taranto "Giovanni Paisiello"</a></td>
                 <td>ConsTa</td>
                 <td>Taranto</td>
                 <td>Puglia</td>
@@ -485,7 +485,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio di musica statale di Cagliari \&quot;Pierluigi da Palestrina\&quot;&quot;, &quot;sigla&quot;: &quot;ConsCa&quot;, &quot;citta&quot;: &quot;Cagliari&quot;, &quot;regione&quot;: &quot;Sardegna&quot;, &quot;studenti&quot;: 429, &quot;link&quot;: &quot;https://www.conservatoriocagliari.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">49</td>
-                <td><a class="uni" href="../atenei/consca.html">Conservatorio di musica statale di Cagliari "Pierluigi da Palestrina"</a></td>
+                <td><a class="uni" href="/atenei/consca">Conservatorio di musica statale di Cagliari "Pierluigi da Palestrina"</a></td>
                 <td>ConsCa</td>
                 <td>Cagliari</td>
                 <td>Sardegna</td>
@@ -493,7 +493,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio di musica statale di Sassari \&quot;Luigi Canepa\&quot;&quot;, &quot;sigla&quot;: &quot;ConsSs&quot;, &quot;citta&quot;: &quot;Sassari&quot;, &quot;regione&quot;: &quot;Sardegna&quot;, &quot;studenti&quot;: 284, &quot;link&quot;: &quot;https://www.conservatorio.sassari.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">50</td>
-                <td><a class="uni" href="../atenei/consss.html">Conservatorio di musica statale di Sassari "Luigi Canepa"</a></td>
+                <td><a class="uni" href="/atenei/consss">Conservatorio di musica statale di Sassari "Luigi Canepa"</a></td>
                 <td>ConsSs</td>
                 <td>Sassari</td>
                 <td>Sardegna</td>
@@ -501,7 +501,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Caltanissetta \&quot;Vincenzo Bellini\&quot;&quot;, &quot;sigla&quot;: &quot;ConsCl&quot;, &quot;citta&quot;: &quot;Caltanissetta&quot;, &quot;regione&quot;: &quot;Sicilia&quot;, &quot;studenti&quot;: 405, &quot;link&quot;: &quot;https://www.issmbellini.cl.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">51</td>
-                <td><a class="uni" href="../atenei/conscl.html">Conservatorio statale di musica di Caltanissetta "Vincenzo Bellini"</a></td>
+                <td><a class="uni" href="/atenei/conscl">Conservatorio statale di musica di Caltanissetta "Vincenzo Bellini"</a></td>
                 <td>ConsCl</td>
                 <td>Caltanissetta</td>
                 <td>Sicilia</td>
@@ -509,7 +509,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Catania \&quot;Vincenzo Bellini\&quot;&quot;, &quot;sigla&quot;: &quot;ConsCt&quot;, &quot;citta&quot;: &quot;Catania&quot;, &quot;regione&quot;: &quot;Sicilia&quot;, &quot;studenti&quot;: 579, &quot;link&quot;: &quot;https://www.conservatoriocatania.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">52</td>
-                <td><a class="uni" href="../atenei/consct.html">Conservatorio statale di musica di Catania "Vincenzo Bellini"</a></td>
+                <td><a class="uni" href="/atenei/consct">Conservatorio statale di musica di Catania "Vincenzo Bellini"</a></td>
                 <td>ConsCt</td>
                 <td>Catania</td>
                 <td>Sicilia</td>
@@ -517,7 +517,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Messina \&quot;Arcangelo Corelli\&quot;&quot;, &quot;sigla&quot;: &quot;ConsMe&quot;, &quot;citta&quot;: &quot;Messina&quot;, &quot;regione&quot;: &quot;Sicilia&quot;, &quot;studenti&quot;: 538, &quot;link&quot;: &quot;https://www.consme.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">53</td>
-                <td><a class="uni" href="../atenei/consme.html">Conservatorio statale di musica di Messina "Arcangelo Corelli"</a></td>
+                <td><a class="uni" href="/atenei/consme">Conservatorio statale di musica di Messina "Arcangelo Corelli"</a></td>
                 <td>ConsMe</td>
                 <td>Messina</td>
                 <td>Sicilia</td>
@@ -525,7 +525,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Palermo \&quot;Alessandro Scarlatti\&quot;&quot;, &quot;sigla&quot;: &quot;ConsPa&quot;, &quot;citta&quot;: &quot;Palermo&quot;, &quot;regione&quot;: &quot;Sicilia&quot;, &quot;studenti&quot;: 772, &quot;link&quot;: &quot;https://www.conservatoriopalermo.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">54</td>
-                <td><a class="uni" href="../atenei/conspa.html">Conservatorio statale di musica di Palermo "Alessandro Scarlatti"</a></td>
+                <td><a class="uni" href="/atenei/conspa">Conservatorio statale di musica di Palermo "Alessandro Scarlatti"</a></td>
                 <td>ConsPa</td>
                 <td>Palermo</td>
                 <td>Sicilia</td>
@@ -533,7 +533,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Ribera \&quot;Arturo Toscanini\&quot;&quot;, &quot;sigla&quot;: &quot;ConsRi&quot;, &quot;citta&quot;: &quot;Ribera (AG)&quot;, &quot;regione&quot;: &quot;Sicilia&quot;, &quot;studenti&quot;: 284, &quot;link&quot;: &quot;https://www.conservatoriotoscanini.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">55</td>
-                <td><a class="uni" href="../atenei/consri.html">Conservatorio statale di musica di Ribera "Arturo Toscanini"</a></td>
+                <td><a class="uni" href="/atenei/consri">Conservatorio statale di musica di Ribera "Arturo Toscanini"</a></td>
                 <td>ConsRi</td>
                 <td>Ribera (AG)</td>
                 <td>Sicilia</td>
@@ -541,7 +541,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Trapani \&quot;Antonio Scontrino\&quot;&quot;, &quot;sigla&quot;: &quot;ConsTp&quot;, &quot;citta&quot;: &quot;Trapani&quot;, &quot;regione&quot;: &quot;Sicilia&quot;, &quot;studenti&quot;: 299, &quot;link&quot;: &quot;https://www.constp.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">56</td>
-                <td><a class="uni" href="../atenei/constp.html">Conservatorio statale di musica di Trapani "Antonio Scontrino"</a></td>
+                <td><a class="uni" href="/atenei/constp">Conservatorio statale di musica di Trapani "Antonio Scontrino"</a></td>
                 <td>ConsTp</td>
                 <td>Trapani</td>
                 <td>Sicilia</td>
@@ -549,7 +549,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Firenze \&quot;Luigi Cherubini\&quot;&quot;, &quot;sigla&quot;: &quot;ConsFi&quot;, &quot;citta&quot;: &quot;Firenze&quot;, &quot;regione&quot;: &quot;Toscana&quot;, &quot;studenti&quot;: 762, &quot;link&quot;: &quot;https://www.consfi.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">57</td>
-                <td><a class="uni" href="../atenei/consfi.html">Conservatorio statale di musica di Firenze "Luigi Cherubini"</a></td>
+                <td><a class="uni" href="/atenei/consfi">Conservatorio statale di musica di Firenze "Luigi Cherubini"</a></td>
                 <td>ConsFi</td>
                 <td>Firenze</td>
                 <td>Toscana</td>
@@ -557,7 +557,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Livorno \&quot;Pietro Mascagni\&quot;&quot;, &quot;sigla&quot;: &quot;ConsLi&quot;, &quot;citta&quot;: &quot;Livorno&quot;, &quot;regione&quot;: &quot;Toscana&quot;, &quot;studenti&quot;: 186, &quot;link&quot;: &quot;https://www.consli.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">58</td>
-                <td><a class="uni" href="../atenei/consli.html">Conservatorio statale di musica di Livorno "Pietro Mascagni"</a></td>
+                <td><a class="uni" href="/atenei/consli">Conservatorio statale di musica di Livorno "Pietro Mascagni"</a></td>
                 <td>ConsLi</td>
                 <td>Livorno</td>
                 <td>Toscana</td>
@@ -565,7 +565,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Lucca \&quot;Luigi Boccherini\&quot;&quot;, &quot;sigla&quot;: &quot;ConsLu&quot;, &quot;citta&quot;: &quot;Lucca&quot;, &quot;regione&quot;: &quot;Toscana&quot;, &quot;studenti&quot;: 243, &quot;link&quot;: &quot;https://www.boccherini.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">59</td>
-                <td><a class="uni" href="../atenei/conslu.html">Conservatorio statale di musica di Lucca "Luigi Boccherini"</a></td>
+                <td><a class="uni" href="/atenei/conslu">Conservatorio statale di musica di Lucca "Luigi Boccherini"</a></td>
                 <td>ConsLu</td>
                 <td>Lucca</td>
                 <td>Toscana</td>
@@ -573,7 +573,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Siena \&quot;Rinaldo Franci\&quot;&quot;, &quot;sigla&quot;: &quot;ConsSi&quot;, &quot;citta&quot;: &quot;Siena&quot;, &quot;regione&quot;: &quot;Toscana&quot;, &quot;studenti&quot;: 157, &quot;link&quot;: &quot;https://www.conservatoriosiena.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">60</td>
-                <td><a class="uni" href="../atenei/conssi.html">Conservatorio statale di musica di Siena "Rinaldo Franci"</a></td>
+                <td><a class="uni" href="/atenei/conssi">Conservatorio statale di musica di Siena "Rinaldo Franci"</a></td>
                 <td>ConsSi</td>
                 <td>Siena</td>
                 <td>Toscana</td>
@@ -581,7 +581,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Bolzano \&quot;Claudio Monteverdi\&quot;&quot;, &quot;sigla&quot;: &quot;ConsBz&quot;, &quot;citta&quot;: &quot;Bolzano&quot;, &quot;regione&quot;: &quot;Trentino-Alto Adige&quot;, &quot;studenti&quot;: 332, &quot;link&quot;: &quot;https://cons.bz.it/it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">61</td>
-                <td><a class="uni" href="../atenei/consbz.html">Conservatorio statale di musica di Bolzano "Claudio Monteverdi"</a></td>
+                <td><a class="uni" href="/atenei/consbz">Conservatorio statale di musica di Bolzano "Claudio Monteverdi"</a></td>
                 <td>ConsBz</td>
                 <td>Bolzano</td>
                 <td>Trentino-Alto Adige</td>
@@ -589,7 +589,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Trento \&quot;Francesco Antonio Bonporti\&quot;&quot;, &quot;sigla&quot;: &quot;ConsTn&quot;, &quot;citta&quot;: &quot;Trento - Riva del Garda (TN)&quot;, &quot;regione&quot;: &quot;Trentino-Alto Adige&quot;, &quot;studenti&quot;: 362, &quot;link&quot;: &quot;https://www.conservatorio.tn.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">62</td>
-                <td><a class="uni" href="../atenei/constn.html">Conservatorio statale di musica di Trento "Francesco Antonio Bonporti"</a></td>
+                <td><a class="uni" href="/atenei/constn">Conservatorio statale di musica di Trento "Francesco Antonio Bonporti"</a></td>
                 <td>ConsTn</td>
                 <td>Trento - Riva del Garda (TN)</td>
                 <td>Trentino-Alto Adige</td>
@@ -597,7 +597,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Perugia \&quot;Francesco Morlacchi\&quot;&quot;, &quot;sigla&quot;: &quot;ConsPg&quot;, &quot;citta&quot;: &quot;Perugia&quot;, &quot;regione&quot;: &quot;Umbria&quot;, &quot;studenti&quot;: 427, &quot;link&quot;: &quot;https://www.conservatorioperugia.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">63</td>
-                <td><a class="uni" href="../atenei/conspg.html">Conservatorio statale di musica di Perugia "Francesco Morlacchi"</a></td>
+                <td><a class="uni" href="/atenei/conspg">Conservatorio statale di musica di Perugia "Francesco Morlacchi"</a></td>
                 <td>ConsPg</td>
                 <td>Perugia</td>
                 <td>Umbria</td>
@@ -605,7 +605,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Terni \&quot;Giulio Briccialdi\&quot;&quot;, &quot;sigla&quot;: &quot;ConsTr&quot;, &quot;citta&quot;: &quot;Terni&quot;, &quot;regione&quot;: &quot;Umbria&quot;, &quot;studenti&quot;: 187, &quot;link&quot;: &quot;https://www.briccialditerni.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">64</td>
-                <td><a class="uni" href="../atenei/constr.html">Conservatorio statale di musica di Terni "Giulio Briccialdi"</a></td>
+                <td><a class="uni" href="/atenei/constr">Conservatorio statale di musica di Terni "Giulio Briccialdi"</a></td>
                 <td>ConsTr</td>
                 <td>Terni</td>
                 <td>Umbria</td>
@@ -613,7 +613,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Istituto superiore pareggiato di studi musicali della Valle d'Aosta&quot;, &quot;sigla&quot;: &quot;ConsAo&quot;, &quot;citta&quot;: &quot;Aosta&quot;, &quot;regione&quot;: &quot;Valle d'Aosta&quot;, &quot;studenti&quot;: 104, &quot;link&quot;: &quot;https://www.consaosta.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">65</td>
-                <td><a class="uni" href="../atenei/consao.html">Istituto superiore pareggiato di studi musicali della Valle d'Aosta</a></td>
+                <td><a class="uni" href="/atenei/consao">Istituto superiore pareggiato di studi musicali della Valle d'Aosta</a></td>
                 <td>ConsAo</td>
                 <td>Aosta</td>
                 <td>Valle d'Aosta</td>
@@ -621,7 +621,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Adria \&quot;Antonio Buzzolla\&quot;&quot;, &quot;sigla&quot;: &quot;ConsAd&quot;, &quot;citta&quot;: &quot;Adria (RO)&quot;, &quot;regione&quot;: &quot;Veneto&quot;, &quot;studenti&quot;: 148, &quot;link&quot;: &quot;https://www.conservatorioadria.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">66</td>
-                <td><a class="uni" href="../atenei/consad.html">Conservatorio statale di musica di Adria "Antonio Buzzolla"</a></td>
+                <td><a class="uni" href="/atenei/consad">Conservatorio statale di musica di Adria "Antonio Buzzolla"</a></td>
                 <td>ConsAd</td>
                 <td>Adria (RO)</td>
                 <td>Veneto</td>
@@ -629,7 +629,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Castelfranco Veneto \&quot;Agostino Steffani\&quot;&quot;, &quot;sigla&quot;: &quot;ConsCfv&quot;, &quot;citta&quot;: &quot;Castelfranco Veneto (TV)&quot;, &quot;regione&quot;: &quot;Veneto&quot;, &quot;studenti&quot;: 379, &quot;link&quot;: &quot;https://conscfv.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">67</td>
-                <td><a class="uni" href="../atenei/conscfv.html">Conservatorio statale di musica di Castelfranco Veneto "Agostino Steffani"</a></td>
+                <td><a class="uni" href="/atenei/conscfv">Conservatorio statale di musica di Castelfranco Veneto "Agostino Steffani"</a></td>
                 <td>ConsCfv</td>
                 <td>Castelfranco Veneto (TV)</td>
                 <td>Veneto</td>
@@ -637,7 +637,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Padova \&quot;Cesare Pollini\&quot;&quot;, &quot;sigla&quot;: &quot;ConsPd&quot;, &quot;citta&quot;: &quot;Padova&quot;, &quot;regione&quot;: &quot;Veneto&quot;, &quot;studenti&quot;: 618, &quot;link&quot;: &quot;https://www.conservatoriopollini.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">68</td>
-                <td><a class="uni" href="../atenei/conspd.html">Conservatorio statale di musica di Padova "Cesare Pollini"</a></td>
+                <td><a class="uni" href="/atenei/conspd">Conservatorio statale di musica di Padova "Cesare Pollini"</a></td>
                 <td>ConsPd</td>
                 <td>Padova</td>
                 <td>Veneto</td>
@@ -645,7 +645,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Rovigo \&quot;Francesco Venezze\&quot;&quot;, &quot;sigla&quot;: &quot;ConsRo&quot;, &quot;citta&quot;: &quot;Rovigo&quot;, &quot;regione&quot;: &quot;Veneto&quot;, &quot;studenti&quot;: 532, &quot;link&quot;: &quot;https://www.conservatoriorovigo.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">69</td>
-                <td><a class="uni" href="../atenei/consro.html">Conservatorio statale di musica di Rovigo "Francesco Venezze"</a></td>
+                <td><a class="uni" href="/atenei/consro">Conservatorio statale di musica di Rovigo "Francesco Venezze"</a></td>
                 <td>ConsRo</td>
                 <td>Rovigo</td>
                 <td>Veneto</td>
@@ -653,7 +653,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Venezia \&quot;Benedetto Marcello\&quot;&quot;, &quot;sigla&quot;: &quot;ConsVe&quot;, &quot;citta&quot;: &quot;Venezia&quot;, &quot;regione&quot;: &quot;Veneto&quot;, &quot;studenti&quot;: 353, &quot;link&quot;: &quot;https://www.conservatoriovenezia.net/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">70</td>
-                <td><a class="uni" href="../atenei/consve.html">Conservatorio statale di musica di Venezia "Benedetto Marcello"</a></td>
+                <td><a class="uni" href="/atenei/consve">Conservatorio statale di musica di Venezia "Benedetto Marcello"</a></td>
                 <td>ConsVe</td>
                 <td>Venezia</td>
                 <td>Veneto</td>
@@ -661,7 +661,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Verona \&quot;Evaristo Felice Dall'Abaco\&quot;&quot;, &quot;sigla&quot;: &quot;ConsVr&quot;, &quot;citta&quot;: &quot;Verona&quot;, &quot;regione&quot;: &quot;Veneto&quot;, &quot;studenti&quot;: 440, &quot;link&quot;: &quot;https://www.conservatorioverona.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">71</td>
-                <td><a class="uni" href="../atenei/consvr.html">Conservatorio statale di musica di Verona "Evaristo Felice Dall'Abaco"</a></td>
+                <td><a class="uni" href="/atenei/consvr">Conservatorio statale di musica di Verona "Evaristo Felice Dall'Abaco"</a></td>
                 <td>ConsVr</td>
                 <td>Verona</td>
                 <td>Veneto</td>
@@ -669,7 +669,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Conservatorio statale di musica di Vicenza \&quot;Arrigo Pedrollo\&quot;&quot;, &quot;sigla&quot;: &quot;ConsVi&quot;, &quot;citta&quot;: &quot;Vicenza&quot;, &quot;regione&quot;: &quot;Veneto&quot;, &quot;studenti&quot;: 424, &quot;link&quot;: &quot;https://www.consvi.it/&quot;, &quot;categoria&quot;: &quot;conservatori&quot;}">
                 <td class="num">72</td>
-                <td><a class="uni" href="../atenei/consvi.html">Conservatorio statale di musica di Vicenza "Arrigo Pedrollo"</a></td>
+                <td><a class="uni" href="/atenei/consvi">Conservatorio statale di musica di Vicenza "Arrigo Pedrollo"</a></td>
                 <td>ConsVi</td>
                 <td>Vicenza</td>
                 <td>Veneto</td>
@@ -692,7 +692,7 @@
                 </a>
             </p>
             <p>
-                <a class="a_footer github" href="https://www.instagram.com/unidirectory/" target="_blank"
+                <a class="a_footer github" href="https://www.instagram.com/unidirectory" target="_blank"
                     rel="noopener noreferrer">
                     <i class="fa-brands fa-instagram"></i> Instagram
                 </a>
@@ -710,19 +710,18 @@
                 &middot;
                 <a class="a_footer" href="https://ustat.mur.gov.it/" target="_blank" rel="noopener noreferrer">USTAT</a>
             </p>
-            <p><a class="a_footer" href="../about.html">About</a></p>
-            <p><a class="a_footer" href="../privacy.html">Privacy Policy</a></p>
-            <p><a class="a_footer" href="../sitemap.xml">Sitemap</a></p>
+            <p><a class="a_footer" href="/about">About</a></p>
+            <p><a class="a_footer" href="/privacy">Privacy Policy</a></p>
+            <p><a class="a_footer" href="/sitemap.xml">Sitemap</a></p>
             <p><a class="a_footer" href="mailto:info@unidirectory.it">Contattaci</a></p>
         </div>
     </footer>
-    <script src="../assets/js/footer.js"></script>
-    <script src="../assets/js/scriptelenco.js"></script>
+    <script src="/assets/js/scriptelenco.js"></script>
     <script>
         ordineregione = false;
         ordinestudenti = false;
         ordinecitta = false;
-        caricaTabella('conservatori');
+        caricaTabella();
     </script>
 </body>
 

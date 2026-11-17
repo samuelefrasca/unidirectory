@@ -138,7 +138,7 @@ def build_corsi_index() -> dict:
                     "didattica":       didattica,
                     "lingua":          lingua,
                     "accessoLibero":   offerta.get("accessoLibero"),
-                    "link":            f"../classi/{codice_to_slug(codice)}.html",
+                    "link":            f"/classi/{codice_to_slug(codice)}",
                 })
 
     # Corsi AFAM
@@ -162,7 +162,7 @@ def build_corsi_index() -> dict:
                     "lingua":          offerta.get("lingua", ""),
                     "accessoLibero":   offerta.get("accessoLibero"),
                     "classificazione": livello,
-                    "link":            f"../afam/{area_slug}/{codice_to_slug(codice)}.html",
+                    "link":            f"/afam/{area_slug}/{codice_to_slug(codice)}",
                 })
 
     return dict(index)
@@ -330,7 +330,7 @@ def genera_html_ateneo(uni: dict, corsi: list) -> str:
     nome      = uni["nome"]
     citta     = uni.get("citta", "")
     regione   = uni.get("regione", "")
-    link      = uni.get("link", "#")
+    link      = uni.get("link")
     studenti  = uni.get("studenti", 0)
     categoria = uni.get("categoria", "")
     slug      = ateneo_to_slug(sigla)
@@ -355,6 +355,21 @@ def genera_html_ateneo(uni: dict, corsi: list) -> str:
     title_seo = f"{nome} | Unidirectory"
     desc_seo  = (f"{nome}: studenti, corsi di laurea, sedi e "
                  f"informazioni sull'ateneo.")
+
+    if link:
+        sito_ateneo = (
+            f'<a class="sito-ateneo" href="{esc(link)}" target="_blank" '
+            'rel="noopener noreferrer">'
+            '<i class="fa-solid fa-arrow-up-right-from-square"></i> '
+            'Sito ufficiale</a>'
+        )
+    else:
+        sito_ateneo = (
+            '<button type="button" class="sito-ateneo" '
+            'onclick="alert(\'La pagina non esiste\')">'
+            '<i class="fa-solid fa-arrow-up-right-from-square"></i> '
+            'Sito ufficiale</button>'
+        )
 
     corsi_header = "Corsi" if categoria in CATEGORIE_AFAM else "Corsi di laurea"
     corsi_label  = "corso" if n_corsi == 1 else "corsi"
@@ -516,9 +531,9 @@ def genera_html_ateneo(uni: dict, corsi: list) -> str:
     <meta name="twitter:image"
         content="https://unidirectory.it/assets/img/iud_icon.png">
 
-    <link rel="icon" type="image/png" href="../assets/img/iud_icon.png">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/atenei.css">
+    <link rel="icon" type="image/png" href="/assets/img/iud_icon.png">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/atenei.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
@@ -545,7 +560,7 @@ def genera_html_ateneo(uni: dict, corsi: list) -> str:
                 <div class="header1">
                     <a href="/">
                         <img class="logo"
-                            src="../assets/img/iud_image.png"
+                            src="/assets/img/iud_image.png"
                             alt="Logo Unidirectory">
                     </a>
                 </div>
@@ -583,15 +598,7 @@ def genera_html_ateneo(uni: dict, corsi: list) -> str:
                 </div>
 
 
-                <a class="sito-ateneo"
-                    href="{esc(link)}"
-                    target="_blank"
-                    rel="noopener noreferrer">
-
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    Sito ufficiale
-
-                </a>
+                {sito_ateneo}
 
             </section>
 
@@ -744,7 +751,7 @@ def genera_html_ateneo(uni: dict, corsi: list) -> str:
                 </a>
             </p>
             <p>
-                <a class="a_footer github" href="https://www.instagram.com/unidirectory/" target="_blank"
+                <a class="a_footer github" href="https://www.instagram.com/unidirectory" target="_blank"
                     rel="noopener noreferrer">
                     <i class="fa-brands fa-instagram"></i> Instagram
                 </a>
@@ -774,19 +781,19 @@ def genera_html_ateneo(uni: dict, corsi: list) -> str:
             </p>
 
             <p>
-                <a class="a_footer" href="../about.html">
+                <a class="a_footer" href="/about">
                     About
                 </a>
             </p>
 
             <p>
-                <a class="a_footer" href="../privacy.html">
+                <a class="a_footer" href="/privacy">
                     Privacy Policy
                 </a>
             </p>
 
             <p>
-                <a class="a_footer" href="../sitemap.xml">
+                <a class="a_footer" href="/sitemap.xml">
                     Sitemap
                 </a>
             </p>
@@ -802,7 +809,7 @@ def genera_html_ateneo(uni: dict, corsi: list) -> str:
     </footer>
 
 
-    <script src="../assets/js/scriptatenei.js"></script>
+    <script src="/assets/js/scriptatenei.js"></script>
 
 </body>
 

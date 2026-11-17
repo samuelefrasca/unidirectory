@@ -40,9 +40,9 @@
         content="https://unidirectory.it/assets/img/iud_icon.png">
 
 
-    <link rel="icon" type="image/png" href="../assets/img/iud_icon.png">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/classi.css">
+    <link rel="icon" type="image/png" href="/assets/img/iud_icon.png">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/classi.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <script type="application/ld+json">
@@ -63,7 +63,7 @@
             <div class="header">
                 <div class="header1">
                     <a href="/">
-                        <img class="logo" src="../assets/img/iud_image.png" alt="Logo Unidirectory">
+                        <img class="logo" src="/assets/img/iud_image.png" alt="Logo Unidirectory">
                     </a>
                 </div>
                 <div class="header2">
@@ -78,7 +78,7 @@
         <div class="container table-responsive">
             <div class="toolbar-tabella">
                 <div class="filtri">
-                    <select id="filtroLingua" onchange="gestisciFiltroLingua(this.value, 'LM-77')">
+                    <select id="filtroLingua" onchange="gestisciFiltroLingua()">
                         <option value="">Tutte le lingue</option>
                         <option value="italiano">Italiano</option>
                         <option value="inglese">Inglese</option>
@@ -86,12 +86,12 @@
                         <option value="francese">Francese</option>
                         <option value="ladino">Ladino</option>
                     </select>
-                    <select id="filtroAccesso" onchange="gestisciFiltroAccesso(this.value, 'LM-77')">
+                    <select id="filtroAccesso" onchange="gestisciFiltroAccesso()">
                         <option value="">Tutti gli accessi</option>
                         <option value="libero">Accesso libero</option>
                         <option value="programmato">Accesso programmato</option>
                     </select>
-                    <select id="filtroDidattica" onchange="gestisciFiltroDidattica(this.value, 'LM-77')">
+                    <select id="filtroDidattica" onchange="gestisciFiltroDidattica()">
                         <option value="">Tutte le didattiche</option>
                         <option value="presenza">In presenza</option>
                         <option value="distanza">A distanza</option>
@@ -99,9 +99,9 @@
                     </select>
                 </div>
                 <div class="ordina">
-                    <button type="button" onclick="ordinaPerCorso('LM-77')">Ordina per corso</button>
-                    <button type="button" onclick="ordinaPerSede('LM-77')">Ordina per sede</button>
-                    <button type="button" onclick="ordinaPerRegione('LM-77')">Ordina per regione</button>
+                    <button type="button" onclick="ordinaPerCorso()">Ordina per corso</button>
+                    <button type="button" onclick="ordinaPerSede()">Ordina per sede</button>
+                    <button type="button" onclick="ordinaPerRegione()">Ordina per regione</button>
                 </div>
             </div>
             <input type="search" id="searchNelleClassi" placeholder="Cerca università, sede, regione o corso...">
@@ -109,7 +109,7 @@
             <table>
                 <tbody id="tabellauni">
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;Bocconi&quot;, &quot;nomeCorso&quot;: &quot;Accounting and Financial Management&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/bocconi.html">Università commerciale "Luigi Bocconi"</a></td>
+                        <td><a class="uni" href="/atenei/bocconi">Università commerciale "Luigi Bocconi"</a></td>
                         <td colspan="4"><strong>Accounting and Financial Management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -119,7 +119,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;Bocconi&quot;, &quot;nomeCorso&quot;: &quot;Economics and Management in Arts, Culture, Media and Entertainment&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/bocconi.html">Università commerciale "Luigi Bocconi"</a></td>
+                        <td><a class="uni" href="/atenei/bocconi">Università commerciale "Luigi Bocconi"</a></td>
                         <td colspan="4"><strong>Economics and Management in Arts, Culture, Media and Entertainment</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -129,7 +129,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;Bocconi&quot;, &quot;nomeCorso&quot;: &quot;Economics and Management of Government and International Organizations&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/bocconi.html">Università commerciale "Luigi Bocconi"</a></td>
+                        <td><a class="uni" href="/atenei/bocconi">Università commerciale "Luigi Bocconi"</a></td>
                         <td colspan="4"><strong>Economics and Management of Government and International Organizations</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -139,7 +139,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;Bocconi&quot;, &quot;nomeCorso&quot;: &quot;International Management&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/bocconi.html">Università commerciale "Luigi Bocconi"</a></td>
+                        <td><a class="uni" href="/atenei/bocconi">Università commerciale "Luigi Bocconi"</a></td>
                         <td colspan="4"><strong>International Management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -149,7 +149,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;Bocconi&quot;, &quot;nomeCorso&quot;: &quot;Marketing Management&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/bocconi.html">Università commerciale "Luigi Bocconi"</a></td>
+                        <td><a class="uni" href="/atenei/bocconi">Università commerciale "Luigi Bocconi"</a></td>
                         <td colspan="4"><strong>Marketing Management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -159,7 +159,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;LIUC&quot;, &quot;nomeCorso&quot;: &quot;Economia, Management e Governance&quot;, &quot;sede&quot;: &quot;Castellanza&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/liuc.html">LIUC - Università Carlo Cattaneo</a></td>
+                        <td><a class="uni" href="/atenei/liuc">LIUC - Università Carlo Cattaneo</a></td>
                         <td colspan="4"><strong>Economia, Management e Governance</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -169,7 +169,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;LUISS&quot;, &quot;nomeCorso&quot;: &quot;AMMINISTRAZIONE, FINANZA E CONTROLLO&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/luiss.html">LUISS - Libera Università Internazionale Studi Sociali "Guido Carli"</a></td>
+                        <td><a class="uni" href="/atenei/luiss">LUISS - Libera Università Internazionale Studi Sociali "Guido Carli"</a></td>
                         <td colspan="4"><strong>AMMINISTRAZIONE, FINANZA E CONTROLLO</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -179,7 +179,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;LUISS&quot;, &quot;nomeCorso&quot;: &quot;CORPORATE FINANCE&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/luiss.html">LUISS - Libera Università Internazionale Studi Sociali "Guido Carli"</a></td>
+                        <td><a class="uni" href="/atenei/luiss">LUISS - Libera Università Internazionale Studi Sociali "Guido Carli"</a></td>
                         <td colspan="4"><strong>CORPORATE FINANCE</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -189,7 +189,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;LUISS&quot;, &quot;nomeCorso&quot;: &quot;GLOBAL MANAGEMENT AND POLITICS&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/luiss.html">LUISS - Libera Università Internazionale Studi Sociali "Guido Carli"</a></td>
+                        <td><a class="uni" href="/atenei/luiss">LUISS - Libera Università Internazionale Studi Sociali "Guido Carli"</a></td>
                         <td colspan="4"><strong>GLOBAL MANAGEMENT AND POLITICS</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -199,7 +199,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;LUISS&quot;, &quot;nomeCorso&quot;: &quot;MANAGEMENT&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/luiss.html">LUISS - Libera Università Internazionale Studi Sociali "Guido Carli"</a></td>
+                        <td><a class="uni" href="/atenei/luiss">LUISS - Libera Università Internazionale Studi Sociali "Guido Carli"</a></td>
                         <td colspan="4"><strong>MANAGEMENT</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -209,7 +209,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;LUISS&quot;, &quot;nomeCorso&quot;: &quot;MARKETING&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/luiss.html">LUISS - Libera Università Internazionale Studi Sociali "Guido Carli"</a></td>
+                        <td><a class="uni" href="/atenei/luiss">LUISS - Libera Università Internazionale Studi Sociali "Guido Carli"</a></td>
                         <td colspan="4"><strong>MARKETING</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -219,7 +219,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;LUISS&quot;, &quot;nomeCorso&quot;: &quot;STRATEGIC MANAGEMENT&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/luiss.html">LUISS - Libera Università Internazionale Studi Sociali "Guido Carli"</a></td>
+                        <td><a class="uni" href="/atenei/luiss">LUISS - Libera Università Internazionale Studi Sociali "Guido Carli"</a></td>
                         <td colspan="4"><strong>STRATEGIC MANAGEMENT</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -229,7 +229,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;LUM&quot;, &quot;nomeCorso&quot;: &quot;ECONOMIA E MANAGEMENT&quot;, &quot;sede&quot;: &quot;Casamassima&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/lum.html">Libera Università Mediterranea "Giuseppe Degennaro"</a></td>
+                        <td><a class="uni" href="/atenei/lum">Libera Università Mediterranea "Giuseppe Degennaro"</a></td>
                         <td colspan="4"><strong>ECONOMIA E MANAGEMENT</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -239,7 +239,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;LUMSA&quot;, &quot;nomeCorso&quot;: &quot;Economia e management&quot;, &quot;sede&quot;: &quot;Palermo&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/lumsa.html">LUMSA - Libera Università Maria Santissima Assunta</a></td>
+                        <td><a class="uni" href="/atenei/lumsa">LUMSA - Libera Università Maria Santissima Assunta</a></td>
                         <td colspan="4"><strong>Economia e management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -249,7 +249,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;LUMSA&quot;, &quot;nomeCorso&quot;: &quot;Management, finance and data analitycs&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/lumsa.html">LUMSA - Libera Università Maria Santissima Assunta</a></td>
+                        <td><a class="uni" href="/atenei/lumsa">LUMSA - Libera Università Maria Santissima Assunta</a></td>
                         <td colspan="4"><strong>Management, finance and data analitycs</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -259,7 +259,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;Link&quot;, &quot;nomeCorso&quot;: &quot;Corporate Management and Public Administration&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/link.html">Link Campus University</a></td>
+                        <td><a class="uni" href="/atenei/link">Link Campus University</a></td>
                         <td colspan="4"><strong>Corporate Management and Public Administration</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -269,7 +269,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UKE&quot;, &quot;nomeCorso&quot;: &quot;Economia e Direzione delle Imprese&quot;, &quot;sede&quot;: &quot;Enna&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uke.html">Libera Università degli Studi di Enna "Kore"</a></td>
+                        <td><a class="uni" href="/atenei/uke">Libera Università degli Studi di Enna "Kore"</a></td>
                         <td colspan="4"><strong>Economia e Direzione delle Imprese</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -279,7 +279,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UPO&quot;, &quot;nomeCorso&quot;: &quot;AMMINISTRAZIONE, PROFESSIONE E PERSONE&quot;, &quot;sede&quot;: &quot;Novara&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/upo.html">Università degli Studi del Piemonte Orientale "Amedeo Avogadro"</a></td>
+                        <td><a class="uni" href="/atenei/upo">Università degli Studi del Piemonte Orientale "Amedeo Avogadro"</a></td>
                         <td colspan="4"><strong>AMMINISTRAZIONE, PROFESSIONE E PERSONE</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -289,7 +289,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UPO&quot;, &quot;nomeCorso&quot;: &quot;MANAGEMENT, ECONOMIA E FINANZA&quot;, &quot;sede&quot;: &quot;Novara&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/upo.html">Università degli Studi del Piemonte Orientale "Amedeo Avogadro"</a></td>
+                        <td><a class="uni" href="/atenei/upo">Università degli Studi del Piemonte Orientale "Amedeo Avogadro"</a></td>
                         <td colspan="4"><strong>MANAGEMENT, ECONOMIA E FINANZA</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -299,7 +299,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UTIU&quot;, &quot;nomeCorso&quot;: &quot;Gestione d'impresa e tecnologie digitali&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;A distanza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/utiu.html">Università telematica internazionale "UniNettuno"</a></td>
+                        <td><a class="uni" href="/atenei/utiu">Università telematica internazionale "UniNettuno"</a></td>
                         <td colspan="4"><strong>Gestione d'impresa e tecnologie digitali</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -309,7 +309,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UnInt&quot;, &quot;nomeCorso&quot;: &quot;ECONOMIA E MANAGEMENT INTERNAZIONALE&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unint.html">Università degli Studi Internazionali di Roma</a></td>
+                        <td><a class="uni" href="/atenei/unint">Università degli Studi Internazionali di Roma</a></td>
                         <td colspan="4"><strong>ECONOMIA E MANAGEMENT INTERNAZIONALE</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -319,7 +319,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBa&quot;, &quot;nomeCorso&quot;: &quot;CONSULENZA PROFESSIONALE PER LE AZIENDE&quot;, &quot;sede&quot;: &quot;Bari&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniba.html">Università degli Studi di Bari "Aldo Moro"</a></td>
+                        <td><a class="uni" href="/atenei/uniba">Università degli Studi di Bari "Aldo Moro"</a></td>
                         <td colspan="4"><strong>CONSULENZA PROFESSIONALE PER LE AZIENDE</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -329,7 +329,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBa&quot;, &quot;nomeCorso&quot;: &quot;ECONOMIA E MANAGEMENT&quot;, &quot;sede&quot;: &quot;Bari&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniba.html">Università degli Studi di Bari "Aldo Moro"</a></td>
+                        <td><a class="uni" href="/atenei/uniba">Università degli Studi di Bari "Aldo Moro"</a></td>
                         <td colspan="4"><strong>ECONOMIA E MANAGEMENT</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -339,7 +339,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBa&quot;, &quot;nomeCorso&quot;: &quot;Economia degli Intermediari e dei Mercati Finanziari&quot;, &quot;sede&quot;: &quot;Bari&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniba.html">Università degli Studi di Bari "Aldo Moro"</a></td>
+                        <td><a class="uni" href="/atenei/uniba">Università degli Studi di Bari "Aldo Moro"</a></td>
                         <td colspan="4"><strong>Economia degli Intermediari e dei Mercati Finanziari</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -349,7 +349,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBa&quot;, &quot;nomeCorso&quot;: &quot;Gestione Strategica e Marketing Digitale&quot;, &quot;sede&quot;: &quot;Bari&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniba.html">Università degli Studi di Bari "Aldo Moro"</a></td>
+                        <td><a class="uni" href="/atenei/uniba">Università degli Studi di Bari "Aldo Moro"</a></td>
                         <td colspan="4"><strong>Gestione Strategica e Marketing Digitale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -359,7 +359,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBa&quot;, &quot;nomeCorso&quot;: &quot;Innovazione, Governance e Sostenibilità&quot;, &quot;sede&quot;: &quot;Bari&quot;, &quot;didattica&quot;: &quot;Mista&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniba.html">Università degli Studi di Bari "Aldo Moro"</a></td>
+                        <td><a class="uni" href="/atenei/uniba">Università degli Studi di Bari "Aldo Moro"</a></td>
                         <td colspan="4"><strong>Innovazione, Governance e Sostenibilità</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -369,7 +369,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBa&quot;, &quot;nomeCorso&quot;: &quot;Strategie d'impresa e management&quot;, &quot;sede&quot;: &quot;Taranto&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniba.html">Università degli Studi di Bari "Aldo Moro"</a></td>
+                        <td><a class="uni" href="/atenei/uniba">Università degli Studi di Bari "Aldo Moro"</a></td>
                         <td colspan="4"><strong>Strategie d'impresa e management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -379,7 +379,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBg&quot;, &quot;nomeCorso&quot;: &quot;Accounting, Governance and Sustainability&quot;, &quot;sede&quot;: &quot;Bergamo&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unibg.html">Università degli Studi di Bergamo</a></td>
+                        <td><a class="uni" href="/atenei/unibg">Università degli Studi di Bergamo</a></td>
                         <td colspan="4"><strong>Accounting, Governance and Sustainability</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -389,7 +389,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBg&quot;, &quot;nomeCorso&quot;: &quot;Economia aziendale, direzione amministrativa e professione&quot;, &quot;sede&quot;: &quot;Bergamo&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unibg.html">Università degli Studi di Bergamo</a></td>
+                        <td><a class="uni" href="/atenei/unibg">Università degli Studi di Bergamo</a></td>
                         <td colspan="4"><strong>Economia aziendale, direzione amministrativa e professione</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -399,7 +399,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBg&quot;, &quot;nomeCorso&quot;: &quot;International Management andMarketing&quot;, &quot;sede&quot;: &quot;Bergamo&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unibg.html">Università degli Studi di Bergamo</a></td>
+                        <td><a class="uni" href="/atenei/unibg">Università degli Studi di Bergamo</a></td>
                         <td colspan="4"><strong>International Management andMarketing</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -409,7 +409,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBg&quot;, &quot;nomeCorso&quot;: &quot;MANAGEMENT, INNOVAZIONE E FINANZA&quot;, &quot;sede&quot;: &quot;Bergamo&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unibg.html">Università degli Studi di Bergamo</a></td>
+                        <td><a class="uni" href="/atenei/unibg">Università degli Studi di Bergamo</a></td>
                         <td colspan="4"><strong>MANAGEMENT, INNOVAZIONE E FINANZA</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -419,7 +419,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBg&quot;, &quot;nomeCorso&quot;: &quot;Welfare management e innovazione sociale&quot;, &quot;sede&quot;: &quot;Bergamo&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unibg.html">Università degli Studi di Bergamo</a></td>
+                        <td><a class="uni" href="/atenei/unibg">Università degli Studi di Bergamo</a></td>
                         <td colspan="4"><strong>Welfare management e innovazione sociale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -429,7 +429,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBo&quot;, &quot;nomeCorso&quot;: &quot;Amministrazione e gestione d'impresa&quot;, &quot;sede&quot;: &quot;Rimini&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unibo.html">Alma Mater Studiorum - Università di Bologna</a></td>
+                        <td><a class="uni" href="/atenei/unibo">Alma Mater Studiorum - Università di Bologna</a></td>
                         <td colspan="4"><strong>Amministrazione e gestione d'impresa</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -439,7 +439,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBo&quot;, &quot;nomeCorso&quot;: &quot;Business Administration and Sustainability&quot;, &quot;sede&quot;: &quot;Forlì&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unibo.html">Alma Mater Studiorum - Università di Bologna</a></td>
+                        <td><a class="uni" href="/atenei/unibo">Alma Mater Studiorum - Università di Bologna</a></td>
                         <td colspan="4"><strong>Business Administration and Sustainability</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -449,7 +449,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBo&quot;, &quot;nomeCorso&quot;: &quot;Direzione Aziendale&quot;, &quot;sede&quot;: &quot;Bologna&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unibo.html">Alma Mater Studiorum - Università di Bologna</a></td>
+                        <td><a class="uni" href="/atenei/unibo">Alma Mater Studiorum - Università di Bologna</a></td>
                         <td colspan="4"><strong>Direzione Aziendale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -459,7 +459,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBo&quot;, &quot;nomeCorso&quot;: &quot;ECONOMIA E COMMERCIO&quot;, &quot;sede&quot;: &quot;Forlì&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unibo.html">Alma Mater Studiorum - Università di Bologna</a></td>
+                        <td><a class="uni" href="/atenei/unibo">Alma Mater Studiorum - Università di Bologna</a></td>
                         <td colspan="4"><strong>ECONOMIA E COMMERCIO</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -469,7 +469,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBo&quot;, &quot;nomeCorso&quot;: &quot;Economia e management&quot;, &quot;sede&quot;: &quot;Forlì&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unibo.html">Alma Mater Studiorum - Università di Bologna</a></td>
+                        <td><a class="uni" href="/atenei/unibo">Alma Mater Studiorum - Università di Bologna</a></td>
                         <td colspan="4"><strong>Economia e management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -479,7 +479,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBo&quot;, &quot;nomeCorso&quot;: &quot;Economia, Consulenza e Professioni&quot;, &quot;sede&quot;: &quot;Bologna&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unibo.html">Alma Mater Studiorum - Università di Bologna</a></td>
+                        <td><a class="uni" href="/atenei/unibo">Alma Mater Studiorum - Università di Bologna</a></td>
                         <td colspan="4"><strong>Economia, Consulenza e Professioni</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -489,7 +489,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBo&quot;, &quot;nomeCorso&quot;: &quot;International management&quot;, &quot;sede&quot;: &quot;Bologna&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unibo.html">Alma Mater Studiorum - Università di Bologna</a></td>
+                        <td><a class="uni" href="/atenei/unibo">Alma Mater Studiorum - Università di Bologna</a></td>
                         <td colspan="4"><strong>International management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -499,7 +499,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBo&quot;, &quot;nomeCorso&quot;: &quot;Management dell'economia sociale&quot;, &quot;sede&quot;: &quot;Forlì&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unibo.html">Alma Mater Studiorum - Università di Bologna</a></td>
+                        <td><a class="uni" href="/atenei/unibo">Alma Mater Studiorum - Università di Bologna</a></td>
                         <td colspan="4"><strong>Management dell'economia sociale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -509,7 +509,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBo&quot;, &quot;nomeCorso&quot;: &quot;Service Management&quot;, &quot;sede&quot;: &quot;Rimini&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unibo.html">Alma Mater Studiorum - Università di Bologna</a></td>
+                        <td><a class="uni" href="/atenei/unibo">Alma Mater Studiorum - Università di Bologna</a></td>
                         <td colspan="4"><strong>Service Management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -519,7 +519,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBs&quot;, &quot;nomeCorso&quot;: &quot;Consulenza aziendale e libera professione&quot;, &quot;sede&quot;: &quot;Brescia&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unibs.html">Università degli Studi di Brescia</a></td>
+                        <td><a class="uni" href="/atenei/unibs">Università degli Studi di Brescia</a></td>
                         <td colspan="4"><strong>Consulenza aziendale e libera professione</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -529,7 +529,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBs&quot;, &quot;nomeCorso&quot;: &quot;Management&quot;, &quot;sede&quot;: &quot;Brescia&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unibs.html">Università degli Studi di Brescia</a></td>
+                        <td><a class="uni" href="/atenei/unibs">Università degli Studi di Brescia</a></td>
                         <td colspan="4"><strong>Management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -539,7 +539,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBs&quot;, &quot;nomeCorso&quot;: &quot;Marketing per il Made in Italy&quot;, &quot;sede&quot;: &quot;Mantova&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unibs.html">Università degli Studi di Brescia</a></td>
+                        <td><a class="uni" href="/atenei/unibs">Università degli Studi di Brescia</a></td>
                         <td colspan="4"><strong>Marketing per il Made in Italy</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -549,7 +549,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBz&quot;, &quot;nomeCorso&quot;: &quot;Accounting e Finanza&quot;, &quot;sede&quot;: &quot;Bolzano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Tedesco, Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unibz.html">Libera Università di Bolzano</a></td>
+                        <td><a class="uni" href="/atenei/unibz">Libera Università di Bolzano</a></td>
                         <td colspan="4"><strong>Accounting e Finanza</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -559,7 +559,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBz&quot;, &quot;nomeCorso&quot;: &quot;Entrepreneurship and Innovation&quot;, &quot;sede&quot;: &quot;Bolzano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unibz.html">Libera Università di Bolzano</a></td>
+                        <td><a class="uni" href="/atenei/unibz">Libera Università di Bolzano</a></td>
                         <td colspan="4"><strong>Entrepreneurship and Innovation</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -569,7 +569,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBz&quot;, &quot;nomeCorso&quot;: &quot;Tourism Management&quot;, &quot;sede&quot;: &quot;Brunico&quot;, &quot;didattica&quot;: &quot;Mista&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unibz.html">Libera Università di Bolzano</a></td>
+                        <td><a class="uni" href="/atenei/unibz">Libera Università di Bolzano</a></td>
                         <td colspan="4"><strong>Tourism Management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -579,7 +579,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCa&quot;, &quot;nomeCorso&quot;: &quot;Economia Manageriale&quot;, &quot;sede&quot;: &quot;Cagliari&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unica.html">Università degli Studi di Cagliari</a></td>
+                        <td><a class="uni" href="/atenei/unica">Università degli Studi di Cagliari</a></td>
                         <td colspan="4"><strong>Economia Manageriale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -589,7 +589,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCa&quot;, &quot;nomeCorso&quot;: &quot;International Management&quot;, &quot;sede&quot;: &quot;Cagliari&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unica.html">Università degli Studi di Cagliari</a></td>
+                        <td><a class="uni" href="/atenei/unica">Università degli Studi di Cagliari</a></td>
                         <td colspan="4"><strong>International Management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -599,7 +599,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCal&quot;, &quot;nomeCorso&quot;: &quot;Economia Aziendale e Management&quot;, &quot;sede&quot;: &quot;Rende&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unical.html">Università della Calabria</a></td>
+                        <td><a class="uni" href="/atenei/unical">Università della Calabria</a></td>
                         <td colspan="4"><strong>Economia Aziendale e Management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -609,7 +609,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCampania&quot;, &quot;nomeCorso&quot;: &quot;ECONOMIA E MANAGEMENT&quot;, &quot;sede&quot;: &quot;Capua&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unicampania.html">Università degli Studi della Campania "Luigi Vanvitelli"</a></td>
+                        <td><a class="uni" href="/atenei/unicampania">Università degli Studi della Campania "Luigi Vanvitelli"</a></td>
                         <td colspan="4"><strong>ECONOMIA E MANAGEMENT</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -619,7 +619,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCas&quot;, &quot;nomeCorso&quot;: &quot;BANCA E FINANZA&quot;, &quot;sede&quot;: &quot;Frosinone&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unicas.html">Università degli Studi di Cassino e del Lazio Meridionale</a></td>
+                        <td><a class="uni" href="/atenei/unicas">Università degli Studi di Cassino e del Lazio Meridionale</a></td>
                         <td colspan="4"><strong>BANCA E FINANZA</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -629,7 +629,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCas&quot;, &quot;nomeCorso&quot;: &quot;MANAGEMENT&quot;, &quot;sede&quot;: &quot;Cassino&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unicas.html">Università degli Studi di Cassino e del Lazio Meridionale</a></td>
+                        <td><a class="uni" href="/atenei/unicas">Università degli Studi di Cassino e del Lazio Meridionale</a></td>
                         <td colspan="4"><strong>MANAGEMENT</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -639,7 +639,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCatt&quot;, &quot;nomeCorso&quot;: &quot;Banking and finance&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unicatt.html">Università Cattolica del Sacro Cuore</a></td>
+                        <td><a class="uni" href="/atenei/unicatt">Università Cattolica del Sacro Cuore</a></td>
                         <td colspan="4"><strong>Banking and finance</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -649,7 +649,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCatt&quot;, &quot;nomeCorso&quot;: &quot;Banking e consulting&quot;, &quot;sede&quot;: &quot;Piacenza&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unicatt.html">Università Cattolica del Sacro Cuore</a></td>
+                        <td><a class="uni" href="/atenei/unicatt">Università Cattolica del Sacro Cuore</a></td>
                         <td colspan="4"><strong>Banking e consulting</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -659,7 +659,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCatt&quot;, &quot;nomeCorso&quot;: &quot;Direzione e consulenza aziendale&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;Mista&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unicatt.html">Università Cattolica del Sacro Cuore</a></td>
+                        <td><a class="uni" href="/atenei/unicatt">Università Cattolica del Sacro Cuore</a></td>
                         <td colspan="4"><strong>Direzione e consulenza aziendale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -669,7 +669,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCatt&quot;, &quot;nomeCorso&quot;: &quot;Direzione e consulenza aziendale REPLICA – ROMA&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;Mista&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unicatt.html">Università Cattolica del Sacro Cuore</a></td>
+                        <td><a class="uni" href="/atenei/unicatt">Università Cattolica del Sacro Cuore</a></td>
                         <td colspan="4"><strong>Direzione e consulenza aziendale REPLICA – ROMA</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -679,7 +679,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCatt&quot;, &quot;nomeCorso&quot;: &quot;Economia dei mercati e degli intermediari finanziari&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unicatt.html">Università Cattolica del Sacro Cuore</a></td>
+                        <td><a class="uni" href="/atenei/unicatt">Università Cattolica del Sacro Cuore</a></td>
                         <td colspan="4"><strong>Economia dei mercati e degli intermediari finanziari</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -689,7 +689,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCatt&quot;, &quot;nomeCorso&quot;: &quot;Economia e legislazione d'impresa&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unicatt.html">Università Cattolica del Sacro Cuore</a></td>
+                        <td><a class="uni" href="/atenei/unicatt">Università Cattolica del Sacro Cuore</a></td>
                         <td colspan="4"><strong>Economia e legislazione d'impresa</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -699,7 +699,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCatt&quot;, &quot;nomeCorso&quot;: &quot;Food marketing e strategie commerciali&quot;, &quot;sede&quot;: &quot;Piacenza&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unicatt.html">Università Cattolica del Sacro Cuore</a></td>
+                        <td><a class="uni" href="/atenei/unicatt">Università Cattolica del Sacro Cuore</a></td>
                         <td colspan="4"><strong>Food marketing e strategie commerciali</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -709,7 +709,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCatt&quot;, &quot;nomeCorso&quot;: &quot;Gestione d'azienda&quot;, &quot;sede&quot;: &quot;Piacenza&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unicatt.html">Università Cattolica del Sacro Cuore</a></td>
+                        <td><a class="uni" href="/atenei/unicatt">Università Cattolica del Sacro Cuore</a></td>
                         <td colspan="4"><strong>Gestione d'azienda</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -719,7 +719,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCatt&quot;, &quot;nomeCorso&quot;: &quot;Global business management&quot;, &quot;sede&quot;: &quot;Piacenza&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unicatt.html">Università Cattolica del Sacro Cuore</a></td>
+                        <td><a class="uni" href="/atenei/unicatt">Università Cattolica del Sacro Cuore</a></td>
                         <td colspan="4"><strong>Global business management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -729,7 +729,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCatt&quot;, &quot;nomeCorso&quot;: &quot;Healthcare management&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unicatt.html">Università Cattolica del Sacro Cuore</a></td>
+                        <td><a class="uni" href="/atenei/unicatt">Università Cattolica del Sacro Cuore</a></td>
                         <td colspan="4"><strong>Healthcare management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -739,7 +739,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCatt&quot;, &quot;nomeCorso&quot;: &quot;Innovation and technology management&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unicatt.html">Università Cattolica del Sacro Cuore</a></td>
+                        <td><a class="uni" href="/atenei/unicatt">Università Cattolica del Sacro Cuore</a></td>
                         <td colspan="4"><strong>Innovation and technology management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -749,7 +749,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCatt&quot;, &quot;nomeCorso&quot;: &quot;Innovazione e imprenditorialità digitale&quot;, &quot;sede&quot;: &quot;Cremona&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unicatt.html">Università Cattolica del Sacro Cuore</a></td>
+                        <td><a class="uni" href="/atenei/unicatt">Università Cattolica del Sacro Cuore</a></td>
                         <td colspan="4"><strong>Innovazione e imprenditorialità digitale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -759,7 +759,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCatt&quot;, &quot;nomeCorso&quot;: &quot;Management&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unicatt.html">Università Cattolica del Sacro Cuore</a></td>
+                        <td><a class="uni" href="/atenei/unicatt">Università Cattolica del Sacro Cuore</a></td>
                         <td colspan="4"><strong>Management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -769,7 +769,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCatt&quot;, &quot;nomeCorso&quot;: &quot;Management per l'impresa&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unicatt.html">Università Cattolica del Sacro Cuore</a></td>
+                        <td><a class="uni" href="/atenei/unicatt">Università Cattolica del Sacro Cuore</a></td>
                         <td colspan="4"><strong>Management per l'impresa</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -779,7 +779,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCatt&quot;, &quot;nomeCorso&quot;: &quot;Management, imprese e mercati&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unicatt.html">Università Cattolica del Sacro Cuore</a></td>
+                        <td><a class="uni" href="/atenei/unicatt">Università Cattolica del Sacro Cuore</a></td>
                         <td colspan="4"><strong>Management, imprese e mercati</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -789,7 +789,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCatt&quot;, &quot;nomeCorso&quot;: &quot;Mercati e strategie d'impresa&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unicatt.html">Università Cattolica del Sacro Cuore</a></td>
+                        <td><a class="uni" href="/atenei/unicatt">Università Cattolica del Sacro Cuore</a></td>
                         <td colspan="4"><strong>Mercati e strategie d'impresa</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -799,7 +799,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCh&quot;, &quot;nomeCorso&quot;: &quot;Business Administration&quot;, &quot;sede&quot;: &quot;Pescara&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unich.html">Università degli Studi "Gabriele d'Annunzio" di Chieti-Pescara</a></td>
+                        <td><a class="uni" href="/atenei/unich">Università degli Studi "Gabriele d'Annunzio" di Chieti-Pescara</a></td>
                         <td colspan="4"><strong>Business Administration</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -809,7 +809,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCh&quot;, &quot;nomeCorso&quot;: &quot;Economia e Management&quot;, &quot;sede&quot;: &quot;Pescara&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unich.html">Università degli Studi "Gabriele d'Annunzio" di Chieti-Pescara</a></td>
+                        <td><a class="uni" href="/atenei/unich">Università degli Studi "Gabriele d'Annunzio" di Chieti-Pescara</a></td>
                         <td colspan="4"><strong>Economia e Management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -819,7 +819,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCh&quot;, &quot;nomeCorso&quot;: &quot;Marketing Digitale&quot;, &quot;sede&quot;: &quot;Pescara&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unich.html">Università degli Studi "Gabriele d'Annunzio" di Chieti-Pescara</a></td>
+                        <td><a class="uni" href="/atenei/unich">Università degli Studi "Gabriele d'Annunzio" di Chieti-Pescara</a></td>
                         <td colspan="4"><strong>Marketing Digitale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -829,7 +829,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCt&quot;, &quot;nomeCorso&quot;: &quot;Direzione aziendale&quot;, &quot;sede&quot;: &quot;Catania&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unict.html">Università degli Studi di Catania</a></td>
+                        <td><a class="uni" href="/atenei/unict">Università degli Studi di Catania</a></td>
                         <td colspan="4"><strong>Direzione aziendale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -839,7 +839,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCt&quot;, &quot;nomeCorso&quot;: &quot;Finanza Aziendale&quot;, &quot;sede&quot;: &quot;Catania&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unict.html">Università degli Studi di Catania</a></td>
+                        <td><a class="uni" href="/atenei/unict">Università degli Studi di Catania</a></td>
                         <td colspan="4"><strong>Finanza Aziendale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -849,7 +849,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCz&quot;, &quot;nomeCorso&quot;: &quot;Economia Aziendale e Management&quot;, &quot;sede&quot;: &quot;Catanzaro&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unicz.html">Università degli Studi Magna Græcia di Catanzaro</a></td>
+                        <td><a class="uni" href="/atenei/unicz">Università degli Studi Magna Græcia di Catanzaro</a></td>
                         <td colspan="4"><strong>Economia Aziendale e Management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -859,7 +859,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniFe&quot;, &quot;nomeCorso&quot;: &quot;Economia e management per la creazione di valore&quot;, &quot;sede&quot;: &quot;Ferrara&quot;, &quot;didattica&quot;: &quot;Mista&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unife.html">Università degli Studi di Ferrara</a></td>
+                        <td><a class="uni" href="/atenei/unife">Università degli Studi di Ferrara</a></td>
                         <td colspan="4"><strong>Economia e management per la creazione di valore</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -869,7 +869,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniFe&quot;, &quot;nomeCorso&quot;: &quot;Small Business Management in International Markets&quot;, &quot;sede&quot;: &quot;Ferrara&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unife.html">Università degli Studi di Ferrara</a></td>
+                        <td><a class="uni" href="/atenei/unife">Università degli Studi di Ferrara</a></td>
                         <td colspan="4"><strong>Small Business Management in International Markets</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -879,7 +879,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniFg&quot;, &quot;nomeCorso&quot;: &quot;BANCA, FINANZA E MERCATI&quot;, &quot;sede&quot;: &quot;Foggia&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unifg.html">Università degli Studi di Foggia</a></td>
+                        <td><a class="uni" href="/atenei/unifg">Università degli Studi di Foggia</a></td>
                         <td colspan="4"><strong>BANCA, FINANZA E MERCATI</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -889,7 +889,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniFg&quot;, &quot;nomeCorso&quot;: &quot;ECONOMIA AZIENDALE&quot;, &quot;sede&quot;: &quot;Foggia&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unifg.html">Università degli Studi di Foggia</a></td>
+                        <td><a class="uni" href="/atenei/unifg">Università degli Studi di Foggia</a></td>
                         <td colspan="4"><strong>ECONOMIA AZIENDALE</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -899,7 +899,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniFg&quot;, &quot;nomeCorso&quot;: &quot;IMPRENDITORIALITÀ E MANAGEMENT INTERNAZIONALE&quot;, &quot;sede&quot;: &quot;Foggia&quot;, &quot;didattica&quot;: &quot;Mista&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unifg.html">Università degli Studi di Foggia</a></td>
+                        <td><a class="uni" href="/atenei/unifg">Università degli Studi di Foggia</a></td>
                         <td colspan="4"><strong>IMPRENDITORIALITÀ E MANAGEMENT INTERNAZIONALE</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -909,7 +909,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniFi&quot;, &quot;nomeCorso&quot;: &quot;Accounting, Auditing e Controllo&quot;, &quot;sede&quot;: &quot;Firenze&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unifi.html">Università degli Studi di Firenze</a></td>
+                        <td><a class="uni" href="/atenei/unifi">Università degli Studi di Firenze</a></td>
                         <td colspan="4"><strong>Accounting, Auditing e Controllo</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -919,7 +919,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniFi&quot;, &quot;nomeCorso&quot;: &quot;Governo e direzione d'impresa&quot;, &quot;sede&quot;: &quot;Firenze&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unifi.html">Università degli Studi di Firenze</a></td>
+                        <td><a class="uni" href="/atenei/unifi">Università degli Studi di Firenze</a></td>
                         <td colspan="4"><strong>Governo e direzione d'impresa</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -929,7 +929,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniGe&quot;, &quot;nomeCorso&quot;: &quot;Amministrazione, Finanza e Controllo&quot;, &quot;sede&quot;: &quot;Genova&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unige.html">Università degli Studi di Genova</a></td>
+                        <td><a class="uni" href="/atenei/unige">Università degli Studi di Genova</a></td>
                         <td colspan="4"><strong>Amministrazione, Finanza e Controllo</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -939,7 +939,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniGe&quot;, &quot;nomeCorso&quot;: &quot;Economia e management marittimo e portuale&quot;, &quot;sede&quot;: &quot;Genova&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unige.html">Università degli Studi di Genova</a></td>
+                        <td><a class="uni" href="/atenei/unige">Università degli Studi di Genova</a></td>
                         <td colspan="4"><strong>Economia e management marittimo e portuale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -949,7 +949,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniGe&quot;, &quot;nomeCorso&quot;: &quot;Management&quot;, &quot;sede&quot;: &quot;Genova&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unige.html">Università degli Studi di Genova</a></td>
+                        <td><a class="uni" href="/atenei/unige">Università degli Studi di Genova</a></td>
                         <td colspan="4"><strong>Management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -959,7 +959,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniGe&quot;, &quot;nomeCorso&quot;: &quot;Management for Energy and Environmental Transition (MEET)&quot;, &quot;sede&quot;: &quot;Genova&quot;, &quot;didattica&quot;: &quot;A distanza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unige.html">Università degli Studi di Genova</a></td>
+                        <td><a class="uni" href="/atenei/unige">Università degli Studi di Genova</a></td>
                         <td colspan="4"><strong>Management for Energy and Environmental Transition (MEET)</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -969,7 +969,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMc&quot;, &quot;nomeCorso&quot;: &quot;Management e Marketing Internazionale&quot;, &quot;sede&quot;: &quot;Macerata&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unimc.html">Università degli Studi di Macerata</a></td>
+                        <td><a class="uni" href="/atenei/unimc">Università degli Studi di Macerata</a></td>
                         <td colspan="4"><strong>Management e Marketing Internazionale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -979,7 +979,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMe&quot;, &quot;nomeCorso&quot;: &quot;Consulenza e Gestione di Impresa&quot;, &quot;sede&quot;: &quot;Messina&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unime.html">Università degli Studi di Messina</a></td>
+                        <td><a class="uni" href="/atenei/unime">Università degli Studi di Messina</a></td>
                         <td colspan="4"><strong>Consulenza e Gestione di Impresa</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -989,7 +989,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMe&quot;, &quot;nomeCorso&quot;: &quot;Digital Trasformation e Innovation Management&quot;, &quot;sede&quot;: &quot;Messina&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unime.html">Università degli Studi di Messina</a></td>
+                        <td><a class="uni" href="/atenei/unime">Università degli Studi di Messina</a></td>
                         <td colspan="4"><strong>Digital Trasformation e Innovation Management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -999,7 +999,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMercatorum&quot;, &quot;nomeCorso&quot;: &quot;MANAGEMENT&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;A distanza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unimercatorum.html">Università telematica "Universitas Mercatorum"</a></td>
+                        <td><a class="uni" href="/atenei/unimercatorum">Università telematica "Universitas Mercatorum"</a></td>
                         <td colspan="4"><strong>MANAGEMENT</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1009,7 +1009,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMi&quot;, &quot;nomeCorso&quot;: &quot;Economia aziendale, diritto e governance d’impresa&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unimi.html">Università degli Studi di Milano</a></td>
+                        <td><a class="uni" href="/atenei/unimi">Università degli Studi di Milano</a></td>
                         <td colspan="4"><strong>Economia aziendale, diritto e governance d’impresa</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1019,7 +1019,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMi&quot;, &quot;nomeCorso&quot;: &quot;Management delle Aziende Sanitarie e del Settore Salute&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unimi.html">Università degli Studi di Milano</a></td>
+                        <td><a class="uni" href="/atenei/unimi">Università degli Studi di Milano</a></td>
                         <td colspan="4"><strong>Management delle Aziende Sanitarie e del Settore Salute</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1029,7 +1029,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMi&quot;, &quot;nomeCorso&quot;: &quot;Management of Human Resources&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unimi.html">Università degli Studi di Milano</a></td>
+                        <td><a class="uni" href="/atenei/unimi">Università degli Studi di Milano</a></td>
                         <td colspan="4"><strong>Management of Human Resources</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1039,7 +1039,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMi&quot;, &quot;nomeCorso&quot;: &quot;Management of innovation and entrepreneurship&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unimi.html">Università degli Studi di Milano</a></td>
+                        <td><a class="uni" href="/atenei/unimi">Università degli Studi di Milano</a></td>
                         <td colspan="4"><strong>Management of innovation and entrepreneurship</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1049,7 +1049,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMiB&quot;, &quot;nomeCorso&quot;: &quot;MARKETING E MERCATI GLOBALI&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unimib.html">Università degli Studi di Milano-Bicocca</a></td>
+                        <td><a class="uni" href="/atenei/unimib">Università degli Studi di Milano-Bicocca</a></td>
                         <td colspan="4"><strong>MARKETING E MERCATI GLOBALI</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1059,7 +1059,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMiB&quot;, &quot;nomeCorso&quot;: &quot;SCIENZE ECONOMICO-AZIENDALI&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unimib.html">Università degli Studi di Milano-Bicocca</a></td>
+                        <td><a class="uni" href="/atenei/unimib">Università degli Studi di Milano-Bicocca</a></td>
                         <td colspan="4"><strong>SCIENZE ECONOMICO-AZIENDALI</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1069,7 +1069,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMoRe&quot;, &quot;nomeCorso&quot;: &quot;Analisi dei dati per l'economia e il management&quot;, &quot;sede&quot;: &quot;Modena&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unimore.html">Università degli Studi di Modena e Reggio Emilia</a></td>
+                        <td><a class="uni" href="/atenei/unimore">Università degli Studi di Modena e Reggio Emilia</a></td>
                         <td colspan="4"><strong>Analisi dei dati per l'economia e il management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1079,7 +1079,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMoRe&quot;, &quot;nomeCorso&quot;: &quot;Direzione e Consulenza di Impresa&quot;, &quot;sede&quot;: &quot;Modena&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unimore.html">Università degli Studi di Modena e Reggio Emilia</a></td>
+                        <td><a class="uni" href="/atenei/unimore">Università degli Studi di Modena e Reggio Emilia</a></td>
                         <td colspan="4"><strong>Direzione e Consulenza di Impresa</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1089,7 +1089,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMoRe&quot;, &quot;nomeCorso&quot;: &quot;ECONOMIA E DIRITTO PER LA SOSTENIBILITÀ DELLE ORGANIZZAZIONI&quot;, &quot;sede&quot;: &quot;Reggio Nell'Emilia&quot;, &quot;didattica&quot;: &quot;A distanza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unimore.html">Università degli Studi di Modena e Reggio Emilia</a></td>
+                        <td><a class="uni" href="/atenei/unimore">Università degli Studi di Modena e Reggio Emilia</a></td>
                         <td colspan="4"><strong>ECONOMIA E DIRITTO PER LA SOSTENIBILITÀ DELLE ORGANIZZAZIONI</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1099,7 +1099,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMoRe&quot;, &quot;nomeCorso&quot;: &quot;Finanza e management&quot;, &quot;sede&quot;: &quot;Modena&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unimore.html">Università degli Studi di Modena e Reggio Emilia</a></td>
+                        <td><a class="uni" href="/atenei/unimore">Università degli Studi di Modena e Reggio Emilia</a></td>
                         <td colspan="4"><strong>Finanza e management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1109,7 +1109,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMoRe&quot;, &quot;nomeCorso&quot;: &quot;International Management&quot;, &quot;sede&quot;: &quot;Modena&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unimore.html">Università degli Studi di Modena e Reggio Emilia</a></td>
+                        <td><a class="uni" href="/atenei/unimore">Università degli Studi di Modena e Reggio Emilia</a></td>
                         <td colspan="4"><strong>International Management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1119,7 +1119,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMoRe&quot;, &quot;nomeCorso&quot;: &quot;MANAGEMENT E COMUNICAZIONE D'IMPRESA&quot;, &quot;sede&quot;: &quot;Reggio Nell'Emilia&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unimore.html">Università degli Studi di Modena e Reggio Emilia</a></td>
+                        <td><a class="uni" href="/atenei/unimore">Università degli Studi di Modena e Reggio Emilia</a></td>
                         <td colspan="4"><strong>MANAGEMENT E COMUNICAZIONE D'IMPRESA</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1129,7 +1129,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMoRe&quot;, &quot;nomeCorso&quot;: &quot;Relazioni di lavoro&quot;, &quot;sede&quot;: &quot;Modena&quot;, &quot;didattica&quot;: &quot;Mista&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unimore.html">Università degli Studi di Modena e Reggio Emilia</a></td>
+                        <td><a class="uni" href="/atenei/unimore">Università degli Studi di Modena e Reggio Emilia</a></td>
                         <td colspan="4"><strong>Relazioni di lavoro</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1139,7 +1139,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMol&quot;, &quot;nomeCorso&quot;: &quot;Management e consulenza aziendale&quot;, &quot;sede&quot;: &quot;Campobasso&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unimol.html">Università degli Studi del Molise</a></td>
+                        <td><a class="uni" href="/atenei/unimol">Università degli Studi del Molise</a></td>
                         <td colspan="4"><strong>Management e consulenza aziendale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1149,7 +1149,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniNa&quot;, &quot;nomeCorso&quot;: &quot;Economia Aziendale&quot;, &quot;sede&quot;: &quot;Napoli&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unina.html">Università degli Studi di Napoli "Federico II"</a></td>
+                        <td><a class="uni" href="/atenei/unina">Università degli Studi di Napoli "Federico II"</a></td>
                         <td colspan="4"><strong>Economia Aziendale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1159,7 +1159,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniNa&quot;, &quot;nomeCorso&quot;: &quot;Innovation and International Management&quot;, &quot;sede&quot;: &quot;Napoli&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unina.html">Università degli Studi di Napoli "Federico II"</a></td>
+                        <td><a class="uni" href="/atenei/unina">Università degli Studi di Napoli "Federico II"</a></td>
                         <td colspan="4"><strong>Innovation and International Management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1169,7 +1169,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPa&quot;, &quot;nomeCorso&quot;: &quot;Scienze economico-aziendali&quot;, &quot;sede&quot;: &quot;Palermo&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipa.html">Università degli Studi di Palermo</a></td>
+                        <td><a class="uni" href="/atenei/unipa">Università degli Studi di Palermo</a></td>
                         <td colspan="4"><strong>Scienze economico-aziendali</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1179,7 +1179,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniParthenope&quot;, &quot;nomeCorso&quot;: &quot;Amministrazione, Finanza e Consulenza Aziendale&quot;, &quot;sede&quot;: &quot;Napoli&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniparthenope.html">Università degli Studi di Napoli "Parthenope"</a></td>
+                        <td><a class="uni" href="/atenei/uniparthenope">Università degli Studi di Napoli "Parthenope"</a></td>
                         <td colspan="4"><strong>Amministrazione, Finanza e Consulenza Aziendale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1189,7 +1189,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniParthenope&quot;, &quot;nomeCorso&quot;: &quot;Economia & Management del Mare&quot;, &quot;sede&quot;: &quot;Napoli&quot;, &quot;didattica&quot;: &quot;Mista&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniparthenope.html">Università degli Studi di Napoli "Parthenope"</a></td>
+                        <td><a class="uni" href="/atenei/uniparthenope">Università degli Studi di Napoli "Parthenope"</a></td>
                         <td colspan="4"><strong>Economia & Management del Mare</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1199,7 +1199,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniParthenope&quot;, &quot;nomeCorso&quot;: &quot;MARKETING E MANAGEMENT INTERNAZIONALE&quot;, &quot;sede&quot;: &quot;Napoli&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniparthenope.html">Università degli Studi di Napoli "Parthenope"</a></td>
+                        <td><a class="uni" href="/atenei/uniparthenope">Università degli Studi di Napoli "Parthenope"</a></td>
                         <td colspan="4"><strong>MARKETING E MANAGEMENT INTERNAZIONALE</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1209,7 +1209,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniParthenope&quot;, &quot;nomeCorso&quot;: &quot;Management della Moda, dell'Arte e del Cibo&quot;, &quot;sede&quot;: &quot;Napoli&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniparthenope.html">Università degli Studi di Napoli "Parthenope"</a></td>
+                        <td><a class="uni" href="/atenei/uniparthenope">Università degli Studi di Napoli "Parthenope"</a></td>
                         <td colspan="4"><strong>Management della Moda, dell'Arte e del Cibo</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1219,7 +1219,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPd&quot;, &quot;nomeCorso&quot;: &quot;Accounting, Finance and Business Consulting&quot;, &quot;sede&quot;: &quot;Padova&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipd.html">Università degli Studi di Padova</a></td>
+                        <td><a class="uni" href="/atenei/unipd">Università degli Studi di Padova</a></td>
                         <td colspan="4"><strong>Accounting, Finance and Business Consulting</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1229,7 +1229,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPd&quot;, &quot;nomeCorso&quot;: &quot;Management for Sustainable Firms&quot;, &quot;sede&quot;: &quot;Padova&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipd.html">Università degli Studi di Padova</a></td>
+                        <td><a class="uni" href="/atenei/unipd">Università degli Studi di Padova</a></td>
                         <td colspan="4"><strong>Management for Sustainable Firms</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1239,7 +1239,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPg&quot;, &quot;nomeCorso&quot;: &quot;Amministrazione, finanza e controllo&quot;, &quot;sede&quot;: &quot;Perugia&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipg.html">Università degli Studi di Perugia</a></td>
+                        <td><a class="uni" href="/atenei/unipg">Università degli Studi di Perugia</a></td>
                         <td colspan="4"><strong>Amministrazione, finanza e controllo</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1249,7 +1249,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPg&quot;, &quot;nomeCorso&quot;: &quot;ECONOMIA E MANAGEMENT DELLO SVILUPPO SOSTENIBILE&quot;, &quot;sede&quot;: &quot;Terni&quot;, &quot;didattica&quot;: &quot;Mista&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipg.html">Università degli Studi di Perugia</a></td>
+                        <td><a class="uni" href="/atenei/unipg">Università degli Studi di Perugia</a></td>
                         <td colspan="4"><strong>ECONOMIA E MANAGEMENT DELLO SVILUPPO SOSTENIBILE</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1259,7 +1259,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPg&quot;, &quot;nomeCorso&quot;: &quot;ECONOMIAE MANAGEMENT&quot;, &quot;sede&quot;: &quot;Perugia&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipg.html">Università degli Studi di Perugia</a></td>
+                        <td><a class="uni" href="/atenei/unipg">Università degli Studi di Perugia</a></td>
                         <td colspan="4"><strong>ECONOMIAE MANAGEMENT</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1269,7 +1269,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPi&quot;, &quot;nomeCorso&quot;: &quot;BANCA, FINANZA AZIENDALE E MERCATI FINANZIARI&quot;, &quot;sede&quot;: &quot;Pisa&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipi.html">Università di Pisa</a></td>
+                        <td><a class="uni" href="/atenei/unipi">Università di Pisa</a></td>
                         <td colspan="4"><strong>BANCA, FINANZA AZIENDALE E MERCATI FINANZIARI</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1279,7 +1279,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPi&quot;, &quot;nomeCorso&quot;: &quot;CONSULENZA PROFESSIONALE ALLE AZIENDE&quot;, &quot;sede&quot;: &quot;Pisa&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipi.html">Università di Pisa</a></td>
+                        <td><a class="uni" href="/atenei/unipi">Università di Pisa</a></td>
                         <td colspan="4"><strong>CONSULENZA PROFESSIONALE ALLE AZIENDE</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1289,7 +1289,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPi&quot;, &quot;nomeCorso&quot;: &quot;DIGITAL INTELLIGENCE AND CHANGE MANAGEMENT&quot;, &quot;sede&quot;: &quot;Pisa&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipi.html">Università di Pisa</a></td>
+                        <td><a class="uni" href="/atenei/unipi">Università di Pisa</a></td>
                         <td colspan="4"><strong>DIGITAL INTELLIGENCE AND CHANGE MANAGEMENT</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1299,7 +1299,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPi&quot;, &quot;nomeCorso&quot;: &quot;MANAGEMENT E CONTROLLO DEI PROCESSI LOGISTICI&quot;, &quot;sede&quot;: &quot;Livorno&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipi.html">Università di Pisa</a></td>
+                        <td><a class="uni" href="/atenei/unipi">Università di Pisa</a></td>
                         <td colspan="4"><strong>MANAGEMENT E CONTROLLO DEI PROCESSI LOGISTICI</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1309,7 +1309,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPi&quot;, &quot;nomeCorso&quot;: &quot;MARKETING E RICERCHE DI MERCATO&quot;, &quot;sede&quot;: &quot;Pisa&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipi.html">Università di Pisa</a></td>
+                        <td><a class="uni" href="/atenei/unipi">Università di Pisa</a></td>
                         <td colspan="4"><strong>MARKETING E RICERCHE DI MERCATO</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1319,7 +1319,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPi&quot;, &quot;nomeCorso&quot;: &quot;STRATEGIA, MANAGEMENT E CONTROLLO&quot;, &quot;sede&quot;: &quot;Pisa&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipi.html">Università di Pisa</a></td>
+                        <td><a class="uni" href="/atenei/unipi">Università di Pisa</a></td>
                         <td colspan="4"><strong>STRATEGIA, MANAGEMENT E CONTROLLO</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1329,7 +1329,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPr&quot;, &quot;nomeCorso&quot;: &quot;Amministrazione e Direzione Aziendale&quot;, &quot;sede&quot;: &quot;Parma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipr.html">Università degli Studi di Parma</a></td>
+                        <td><a class="uni" href="/atenei/unipr">Università degli Studi di Parma</a></td>
                         <td colspan="4"><strong>Amministrazione e Direzione Aziendale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1339,7 +1339,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPr&quot;, &quot;nomeCorso&quot;: &quot;Economics and Management of Sustainable Food System&quot;, &quot;sede&quot;: &quot;Parma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipr.html">Università degli Studi di Parma</a></td>
+                        <td><a class="uni" href="/atenei/unipr">Università degli Studi di Parma</a></td>
                         <td colspan="4"><strong>Economics and Management of Sustainable Food System</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1349,7 +1349,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPr&quot;, &quot;nomeCorso&quot;: &quot;Finanza e Risk Management&quot;, &quot;sede&quot;: &quot;Parma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipr.html">Università degli Studi di Parma</a></td>
+                        <td><a class="uni" href="/atenei/unipr">Università degli Studi di Parma</a></td>
                         <td colspan="4"><strong>Finanza e Risk Management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1359,7 +1359,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPr&quot;, &quot;nomeCorso&quot;: &quot;International Business and Development&quot;, &quot;sede&quot;: &quot;Parma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipr.html">Università degli Studi di Parma</a></td>
+                        <td><a class="uni" href="/atenei/unipr">Università degli Studi di Parma</a></td>
                         <td colspan="4"><strong>International Business and Development</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1369,7 +1369,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPr&quot;, &quot;nomeCorso&quot;: &quot;Trade e Consumer Marketing&quot;, &quot;sede&quot;: &quot;Parma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unipr.html">Università degli Studi di Parma</a></td>
+                        <td><a class="uni" href="/atenei/unipr">Università degli Studi di Parma</a></td>
                         <td colspan="4"><strong>Trade e Consumer Marketing</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1379,7 +1379,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPv&quot;, &quot;nomeCorso&quot;: &quot;ECONOMIA E GESTIONE DELLE IMPRESE&quot;, &quot;sede&quot;: &quot;Pavia&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipv.html">Università degli Studi di Pavia</a></td>
+                        <td><a class="uni" href="/atenei/unipv">Università degli Studi di Pavia</a></td>
                         <td colspan="4"><strong>ECONOMIA E GESTIONE DELLE IMPRESE</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1389,7 +1389,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPv&quot;, &quot;nomeCorso&quot;: &quot;Economia e legislazione d'impresa&quot;, &quot;sede&quot;: &quot;Pavia&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipv.html">Università degli Studi di Pavia</a></td>
+                        <td><a class="uni" href="/atenei/unipv">Università degli Studi di Pavia</a></td>
                         <td colspan="4"><strong>Economia e legislazione d'impresa</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1399,7 +1399,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPv&quot;, &quot;nomeCorso&quot;: &quot;International business and entrepreneurship&quot;, &quot;sede&quot;: &quot;Pavia&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unipv.html">Università degli Studi di Pavia</a></td>
+                        <td><a class="uni" href="/atenei/unipv">Università degli Studi di Pavia</a></td>
                         <td colspan="4"><strong>International business and entrepreneurship</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1409,7 +1409,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniRoma1&quot;, &quot;nomeCorso&quot;: &quot;Economia e management&quot;, &quot;sede&quot;: &quot;Latina&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniroma1.html">Sapienza Università di Roma</a></td>
+                        <td><a class="uni" href="/atenei/uniroma1">Sapienza Università di Roma</a></td>
                         <td colspan="4"><strong>Economia e management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1419,7 +1419,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniRoma1&quot;, &quot;nomeCorso&quot;: &quot;Economics and communication for management and innovation&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniroma1.html">Sapienza Università di Roma</a></td>
+                        <td><a class="uni" href="/atenei/uniroma1">Sapienza Università di Roma</a></td>
                         <td colspan="4"><strong>Economics and communication for management and innovation</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1429,7 +1429,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniRoma1&quot;, &quot;nomeCorso&quot;: &quot;Intermediari, finanza internazionale e risk management&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniroma1.html">Sapienza Università di Roma</a></td>
+                        <td><a class="uni" href="/atenei/uniroma1">Sapienza Università di Roma</a></td>
                         <td colspan="4"><strong>Intermediari, finanza internazionale e risk management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1439,7 +1439,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniRoma1&quot;, &quot;nomeCorso&quot;: &quot;Management delle imprese&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniroma1.html">Sapienza Università di Roma</a></td>
+                        <td><a class="uni" href="/atenei/uniroma1">Sapienza Università di Roma</a></td>
                         <td colspan="4"><strong>Management delle imprese</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1449,7 +1449,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniRoma1&quot;, &quot;nomeCorso&quot;: &quot;Management delle tecnologie, innovazione e sostenibilita'&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniroma1.html">Sapienza Università di Roma</a></td>
+                        <td><a class="uni" href="/atenei/uniroma1">Sapienza Università di Roma</a></td>
                         <td colspan="4"><strong>Management delle tecnologie, innovazione e sostenibilita'</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1459,7 +1459,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniRoma1&quot;, &quot;nomeCorso&quot;: &quot;Strategia e governance dell'impresa&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniroma1.html">Sapienza Università di Roma</a></td>
+                        <td><a class="uni" href="/atenei/uniroma1">Sapienza Università di Roma</a></td>
                         <td colspan="4"><strong>Strategia e governance dell'impresa</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1469,7 +1469,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniRoma2&quot;, &quot;nomeCorso&quot;: &quot;Business Administration-Gestione d'impresa&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;Mista&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniroma2.html">Università degli Studi di Roma Tor Vergata</a></td>
+                        <td><a class="uni" href="/atenei/uniroma2">Università degli Studi di Roma Tor Vergata</a></td>
                         <td colspan="4"><strong>Business Administration-Gestione d'impresa</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1479,7 +1479,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniRoma2&quot;, &quot;nomeCorso&quot;: &quot;Economia e Management&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniroma2.html">Università degli Studi di Roma Tor Vergata</a></td>
+                        <td><a class="uni" href="/atenei/uniroma2">Università degli Studi di Roma Tor Vergata</a></td>
                         <td colspan="4"><strong>Economia e Management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1489,7 +1489,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniRoma3&quot;, &quot;nomeCorso&quot;: &quot;Economia aziendale&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniroma3.html">Università degli Studi Roma Tre</a></td>
+                        <td><a class="uni" href="/atenei/uniroma3">Università degli Studi Roma Tre</a></td>
                         <td colspan="4"><strong>Economia aziendale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1499,7 +1499,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniRoma3&quot;, &quot;nomeCorso&quot;: &quot;Economia e Gestione della Trasformazione Digitale&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniroma3.html">Università degli Studi Roma Tre</a></td>
+                        <td><a class="uni" href="/atenei/uniroma3">Università degli Studi Roma Tre</a></td>
                         <td colspan="4"><strong>Economia e Gestione della Trasformazione Digitale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1509,7 +1509,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniRoma3&quot;, &quot;nomeCorso&quot;: &quot;Economia e management&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniroma3.html">Università degli Studi Roma Tre</a></td>
+                        <td><a class="uni" href="/atenei/uniroma3">Università degli Studi Roma Tre</a></td>
                         <td colspan="4"><strong>Economia e management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1519,7 +1519,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniRoma3&quot;, &quot;nomeCorso&quot;: &quot;Finanza e impresa&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniroma3.html">Università degli Studi Roma Tre</a></td>
+                        <td><a class="uni" href="/atenei/uniroma3">Università degli Studi Roma Tre</a></td>
                         <td colspan="4"><strong>Finanza e impresa</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1529,7 +1529,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniRoma5&quot;, &quot;nomeCorso&quot;: &quot;Management e Consulenza Aziendale&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;A distanza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniroma5.html">Università telematica "San Raffaele"</a></td>
+                        <td><a class="uni" href="/atenei/uniroma5">Università telematica "San Raffaele"</a></td>
                         <td colspan="4"><strong>Management e Consulenza Aziendale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1539,7 +1539,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniSa&quot;, &quot;nomeCorso&quot;: &quot;Consulenza e management aziendale&quot;, &quot;sede&quot;: &quot;Fisciano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unisa.html">Università degli Studi di Salerno</a></td>
+                        <td><a class="uni" href="/atenei/unisa">Università degli Studi di Salerno</a></td>
                         <td colspan="4"><strong>Consulenza e management aziendale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1549,7 +1549,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniSa&quot;, &quot;nomeCorso&quot;: &quot;Digital Marketing&quot;, &quot;sede&quot;: &quot;Fisciano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unisa.html">Università degli Studi di Salerno</a></td>
+                        <td><a class="uni" href="/atenei/unisa">Università degli Studi di Salerno</a></td>
                         <td colspan="4"><strong>Digital Marketing</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1559,7 +1559,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniSalento&quot;, &quot;nomeCorso&quot;: &quot;Management dei Territori, delle Aziende Pubbliche e del Turismo&quot;, &quot;sede&quot;: &quot;Lecce&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unisalento.html">Università del Salento</a></td>
+                        <td><a class="uni" href="/atenei/unisalento">Università del Salento</a></td>
                         <td colspan="4"><strong>Management dei Territori, delle Aziende Pubbliche e del Turismo</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1569,7 +1569,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniSalento&quot;, &quot;nomeCorso&quot;: &quot;Management, Controllo e Finanza con IA&quot;, &quot;sede&quot;: &quot;Lecce&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unisalento.html">Università del Salento</a></td>
+                        <td><a class="uni" href="/atenei/unisalento">Università del Salento</a></td>
                         <td colspan="4"><strong>Management, Controllo e Finanza con IA</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1579,7 +1579,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniSannio&quot;, &quot;nomeCorso&quot;: &quot;ECONOMIA E MANAGEMENT&quot;, &quot;sede&quot;: &quot;Benevento&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unisannio.html">Università degli Studi del Sannio</a></td>
+                        <td><a class="uni" href="/atenei/unisannio">Università degli Studi del Sannio</a></td>
                         <td colspan="4"><strong>ECONOMIA E MANAGEMENT</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1589,7 +1589,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniSi&quot;, &quot;nomeCorso&quot;: &quot;Economia e gestione degli intermediari finanziari&quot;, &quot;sede&quot;: &quot;Siena&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unisi.html">Università degli Studi di Siena</a></td>
+                        <td><a class="uni" href="/atenei/unisi">Università degli Studi di Siena</a></td>
                         <td colspan="4"><strong>Economia e gestione degli intermediari finanziari</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1599,7 +1599,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniSi&quot;, &quot;nomeCorso&quot;: &quot;International Accounting and Management&quot;, &quot;sede&quot;: &quot;Siena&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unisi.html">Università degli Studi di Siena</a></td>
+                        <td><a class="uni" href="/atenei/unisi">Università degli Studi di Siena</a></td>
                         <td colspan="4"><strong>International Accounting and Management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1609,7 +1609,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniSi&quot;, &quot;nomeCorso&quot;: &quot;Management e Governance&quot;, &quot;sede&quot;: &quot;Siena&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unisi.html">Università degli Studi di Siena</a></td>
+                        <td><a class="uni" href="/atenei/unisi">Università degli Studi di Siena</a></td>
                         <td colspan="4"><strong>Management e Governance</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1619,7 +1619,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniSob&quot;, &quot;nomeCorso&quot;: &quot;Economia, Management e Sostenibilità&quot;, &quot;sede&quot;: &quot;Napoli&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unisob.html">Università degli Studi "Suor Orsola Benincasa"</a></td>
+                        <td><a class="uni" href="/atenei/unisob">Università degli Studi "Suor Orsola Benincasa"</a></td>
                         <td colspan="4"><strong>Economia, Management e Sostenibilità</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1629,7 +1629,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniSs&quot;, &quot;nomeCorso&quot;: &quot;Economia aziendale&quot;, &quot;sede&quot;: &quot;Sassari&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniss.html">Università degli Studi di Sassari</a></td>
+                        <td><a class="uni" href="/atenei/uniss">Università degli Studi di Sassari</a></td>
                         <td colspan="4"><strong>Economia aziendale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1639,7 +1639,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniSs&quot;, &quot;nomeCorso&quot;: &quot;Innovation management for sustainable tourism&quot;, &quot;sede&quot;: &quot;Olbia&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniss.html">Università degli Studi di Sassari</a></td>
+                        <td><a class="uni" href="/atenei/uniss">Università degli Studi di Sassari</a></td>
                         <td colspan="4"><strong>Innovation management for sustainable tourism</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1649,7 +1649,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTe&quot;, &quot;nomeCorso&quot;: &quot;Diritto, Economia e Strategia d'Impresa&quot;, &quot;sede&quot;: &quot;Teramo&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unite.html">Università degli Studi di Teramo</a></td>
+                        <td><a class="uni" href="/atenei/unite">Università degli Studi di Teramo</a></td>
                         <td colspan="4"><strong>Diritto, Economia e Strategia d'Impresa</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1659,7 +1659,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTn&quot;, &quot;nomeCorso&quot;: &quot;Economia e Legislazione d'Impresa&quot;, &quot;sede&quot;: &quot;Trento&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unitn.html">Università degli Studi di Trento</a></td>
+                        <td><a class="uni" href="/atenei/unitn">Università degli Studi di Trento</a></td>
                         <td colspan="4"><strong>Economia e Legislazione d'Impresa</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1669,7 +1669,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTn&quot;, &quot;nomeCorso&quot;: &quot;Innovation Management - Management dell'innovazione&quot;, &quot;sede&quot;: &quot;Trento&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unitn.html">Università degli Studi di Trento</a></td>
+                        <td><a class="uni" href="/atenei/unitn">Università degli Studi di Trento</a></td>
                         <td colspan="4"><strong>Innovation Management - Management dell'innovazione</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1679,7 +1679,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTn&quot;, &quot;nomeCorso&quot;: &quot;International Management - Management Internazionale&quot;, &quot;sede&quot;: &quot;Trento&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unitn.html">Università degli Studi di Trento</a></td>
+                        <td><a class="uni" href="/atenei/unitn">Università degli Studi di Trento</a></td>
                         <td colspan="4"><strong>International Management - Management Internazionale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1689,7 +1689,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTn&quot;, &quot;nomeCorso&quot;: &quot;Management&quot;, &quot;sede&quot;: &quot;Trento&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unitn.html">Università degli Studi di Trento</a></td>
+                        <td><a class="uni" href="/atenei/unitn">Università degli Studi di Trento</a></td>
                         <td colspan="4"><strong>Management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1699,7 +1699,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTn&quot;, &quot;nomeCorso&quot;: &quot;Management della sostenibilità e del turismo&quot;, &quot;sede&quot;: &quot;Trento&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unitn.html">Università degli Studi di Trento</a></td>
+                        <td><a class="uni" href="/atenei/unitn">Università degli Studi di Trento</a></td>
                         <td colspan="4"><strong>Management della sostenibilità e del turismo</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1709,7 +1709,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTo&quot;, &quot;nomeCorso&quot;: &quot;AMMINISTRAZIONE E CONTROLLO AZIENDALE&quot;, &quot;sede&quot;: &quot;Torino&quot;, &quot;didattica&quot;: &quot;Mista&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unito.html">Università degli Studi di Torino</a></td>
+                        <td><a class="uni" href="/atenei/unito">Università degli Studi di Torino</a></td>
                         <td colspan="4"><strong>AMMINISTRAZIONE E CONTROLLO AZIENDALE</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1719,7 +1719,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTo&quot;, &quot;nomeCorso&quot;: &quot;AMMINISTRAZIONE E GESTIONE DIGITALE DELLE AZIENDE&quot;, &quot;sede&quot;: &quot;Torino&quot;, &quot;didattica&quot;: &quot;A distanza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unito.html">Università degli Studi di Torino</a></td>
+                        <td><a class="uni" href="/atenei/unito">Università degli Studi di Torino</a></td>
                         <td colspan="4"><strong>AMMINISTRAZIONE E GESTIONE DIGITALE DELLE AZIENDE</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1729,7 +1729,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTo&quot;, &quot;nomeCorso&quot;: &quot;BUSINESS ADMINISTRATION&quot;, &quot;sede&quot;: &quot;Torino&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unito.html">Università degli Studi di Torino</a></td>
+                        <td><a class="uni" href="/atenei/unito">Università degli Studi di Torino</a></td>
                         <td colspan="4"><strong>BUSINESS ADMINISTRATION</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1739,7 +1739,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTo&quot;, &quot;nomeCorso&quot;: &quot;DIREZIONE D'IMPRESA, MARKETING E STRATEGIA&quot;, &quot;sede&quot;: &quot;Torino&quot;, &quot;didattica&quot;: &quot;Mista&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unito.html">Università degli Studi di Torino</a></td>
+                        <td><a class="uni" href="/atenei/unito">Università degli Studi di Torino</a></td>
                         <td colspan="4"><strong>DIREZIONE D'IMPRESA, MARKETING E STRATEGIA</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1749,7 +1749,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTo&quot;, &quot;nomeCorso&quot;: &quot;FINANZA AZIENDALE E MERCATI FINANZIARI&quot;, &quot;sede&quot;: &quot;Torino&quot;, &quot;didattica&quot;: &quot;Mista&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unito.html">Università degli Studi di Torino</a></td>
+                        <td><a class="uni" href="/atenei/unito">Università degli Studi di Torino</a></td>
                         <td colspan="4"><strong>FINANZA AZIENDALE E MERCATI FINANZIARI</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1759,7 +1759,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTs&quot;, &quot;nomeCorso&quot;: &quot;MARKETING E MANAGEMENT&quot;, &quot;sede&quot;: &quot;Trieste&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/units.html">Università degli Studi di Trieste</a></td>
+                        <td><a class="uni" href="/atenei/units">Università degli Studi di Trieste</a></td>
                         <td colspan="4"><strong>MARKETING E MANAGEMENT</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1769,7 +1769,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTs&quot;, &quot;nomeCorso&quot;: &quot;Strategia, consulenza e logistica aziendale&quot;, &quot;sede&quot;: &quot;Trieste&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/units.html">Università degli Studi di Trieste</a></td>
+                        <td><a class="uni" href="/atenei/units">Università degli Studi di Trieste</a></td>
                         <td colspan="4"><strong>Strategia, consulenza e logistica aziendale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1779,7 +1779,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTus&quot;, &quot;nomeCorso&quot;: &quot;Amministrazione, finanza e controllo&quot;, &quot;sede&quot;: &quot;Viterbo&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unitus.html">Università degli Studi della Tuscia</a></td>
+                        <td><a class="uni" href="/atenei/unitus">Università degli Studi della Tuscia</a></td>
                         <td colspan="4"><strong>Amministrazione, finanza e controllo</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1789,7 +1789,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTus&quot;, &quot;nomeCorso&quot;: &quot;Marketing e qualità&quot;, &quot;sede&quot;: &quot;Viterbo&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unitus.html">Università degli Studi della Tuscia</a></td>
+                        <td><a class="uni" href="/atenei/unitus">Università degli Studi della Tuscia</a></td>
                         <td colspan="4"><strong>Marketing e qualità</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1799,7 +1799,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniUd&quot;, &quot;nomeCorso&quot;: &quot;Banca e Finanza&quot;, &quot;sede&quot;: &quot;Pordenone&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniud.html">Università degli Studi di Udine</a></td>
+                        <td><a class="uni" href="/atenei/uniud">Università degli Studi di Udine</a></td>
                         <td colspan="4"><strong>Banca e Finanza</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1809,7 +1809,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniUd&quot;, &quot;nomeCorso&quot;: &quot;Economia aziendale&quot;, &quot;sede&quot;: &quot;Udine&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniud.html">Università degli Studi di Udine</a></td>
+                        <td><a class="uni" href="/atenei/uniud">Università degli Studi di Udine</a></td>
                         <td colspan="4"><strong>Economia aziendale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1819,7 +1819,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniUd&quot;, &quot;nomeCorso&quot;: &quot;International Marketing, Management and Organization&quot;, &quot;sede&quot;: &quot;Udine&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniud.html">Università degli Studi di Udine</a></td>
+                        <td><a class="uni" href="/atenei/uniud">Università degli Studi di Udine</a></td>
                         <td colspan="4"><strong>International Marketing, Management and Organization</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1829,7 +1829,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniUrb&quot;, &quot;nomeCorso&quot;: &quot;ECONOMIA, MANAGEMENT E FINANZA&quot;, &quot;sede&quot;: &quot;Urbino&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniurb.html">Università degli Studi di Urbino "Carlo Bo"</a></td>
+                        <td><a class="uni" href="/atenei/uniurb">Università degli Studi di Urbino "Carlo Bo"</a></td>
                         <td colspan="4"><strong>ECONOMIA, MANAGEMENT E FINANZA</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1839,7 +1839,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniUrb&quot;, &quot;nomeCorso&quot;: &quot;Marketing e comunicazione per le aziende&quot;, &quot;sede&quot;: &quot;Urbino&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniurb.html">Università degli Studi di Urbino "Carlo Bo"</a></td>
+                        <td><a class="uni" href="/atenei/uniurb">Università degli Studi di Urbino "Carlo Bo"</a></td>
                         <td colspan="4"><strong>Marketing e comunicazione per le aziende</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1849,7 +1849,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniVe&quot;, &quot;nomeCorso&quot;: &quot;Amministrazione, finanza e controllo&quot;, &quot;sede&quot;: &quot;Venezia&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unive.html">Università Ca' Foscari Venezia</a></td>
+                        <td><a class="uni" href="/atenei/unive">Università Ca' Foscari Venezia</a></td>
                         <td colspan="4"><strong>Amministrazione, finanza e controllo</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1859,7 +1859,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniVe&quot;, &quot;nomeCorso&quot;: &quot;Global Accounting and Finance&quot;, &quot;sede&quot;: &quot;Venezia&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unive.html">Università Ca' Foscari Venezia</a></td>
+                        <td><a class="uni" href="/atenei/unive">Università Ca' Foscari Venezia</a></td>
                         <td colspan="4"><strong>Global Accounting and Finance</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1869,7 +1869,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniVe&quot;, &quot;nomeCorso&quot;: &quot;Innovation and Management for Culture and Creativity&quot;, &quot;sede&quot;: &quot;Venezia&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unive.html">Università Ca' Foscari Venezia</a></td>
+                        <td><a class="uni" href="/atenei/unive">Università Ca' Foscari Venezia</a></td>
                         <td colspan="4"><strong>Innovation and Management for Culture and Creativity</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1879,7 +1879,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniVe&quot;, &quot;nomeCorso&quot;: &quot;International Management&quot;, &quot;sede&quot;: &quot;Venezia&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unive.html">Università Ca' Foscari Venezia</a></td>
+                        <td><a class="uni" href="/atenei/unive">Università Ca' Foscari Venezia</a></td>
                         <td colspan="4"><strong>International Management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1889,7 +1889,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniVe&quot;, &quot;nomeCorso&quot;: &quot;Management e sostenibilità&quot;, &quot;sede&quot;: &quot;Venezia&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unive.html">Università Ca' Foscari Venezia</a></td>
+                        <td><a class="uni" href="/atenei/unive">Università Ca' Foscari Venezia</a></td>
                         <td colspan="4"><strong>Management e sostenibilità</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1899,7 +1899,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniVe&quot;, &quot;nomeCorso&quot;: &quot;Marketing management&quot;, &quot;sede&quot;: &quot;Venezia&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unive.html">Università Ca' Foscari Venezia</a></td>
+                        <td><a class="uni" href="/atenei/unive">Università Ca' Foscari Venezia</a></td>
                         <td colspan="4"><strong>Marketing management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1909,7 +1909,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniVr&quot;, &quot;nomeCorso&quot;: &quot;Governance e amministrazione d'impresa&quot;, &quot;sede&quot;: &quot;Verona&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/univr.html">Università degli Studi di Verona</a></td>
+                        <td><a class="uni" href="/atenei/univr">Università degli Studi di Verona</a></td>
                         <td colspan="4"><strong>Governance e amministrazione d'impresa</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1919,7 +1919,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniVr&quot;, &quot;nomeCorso&quot;: &quot;Management e strategia d'impresa&quot;, &quot;sede&quot;: &quot;Vicenza&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/univr.html">Università degli Studi di Verona</a></td>
+                        <td><a class="uni" href="/atenei/univr">Università degli Studi di Verona</a></td>
                         <td colspan="4"><strong>Management e strategia d'impresa</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1929,7 +1929,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniVr&quot;, &quot;nomeCorso&quot;: &quot;Marketing e Comunicazione d'Impresa&quot;, &quot;sede&quot;: &quot;Verona&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/univr.html">Università degli Studi di Verona</a></td>
+                        <td><a class="uni" href="/atenei/univr">Università degli Studi di Verona</a></td>
                         <td colspan="4"><strong>Marketing e Comunicazione d'Impresa</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1939,7 +1939,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniVr&quot;, &quot;nomeCorso&quot;: &quot;Supply Chain Management&quot;, &quot;sede&quot;: &quot;Verona&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/univr.html">Università degli Studi di Verona</a></td>
+                        <td><a class="uni" href="/atenei/univr">Università degli Studi di Verona</a></td>
                         <td colspan="4"><strong>Supply Chain Management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1949,7 +1949,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;Unifortunato&quot;, &quot;nomeCorso&quot;: &quot;Economia aziendale&quot;, &quot;sede&quot;: &quot;Benevento&quot;, &quot;didattica&quot;: &quot;A distanza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unifortunato.html">Università telematica "Giustino Fortunato"</a></td>
+                        <td><a class="uni" href="/atenei/unifortunato">Università telematica "Giustino Fortunato"</a></td>
                         <td colspan="4"><strong>Economia aziendale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1959,7 +1959,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;Unimarconi&quot;, &quot;nomeCorso&quot;: &quot;Economia internazionale e Management per l’Innovazione e la Sostenibilità (EIMIS)&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;A distanza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unimarconi.html">Università telematica "Guglielmo Marconi"</a></td>
+                        <td><a class="uni" href="/atenei/unimarconi">Università telematica "Guglielmo Marconi"</a></td>
                         <td colspan="4"><strong>Economia internazionale e Management per l’Innovazione e la Sostenibilità (EIMIS)</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1969,7 +1969,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;Uninsubria&quot;, &quot;nomeCorso&quot;: &quot;Economia, Diritto e Finanza d'Impresa&quot;, &quot;sede&quot;: &quot;Varese&quot;, &quot;didattica&quot;: &quot;Mista&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uninsubria.html">Università degli Studi dell'Insubria</a></td>
+                        <td><a class="uni" href="/atenei/uninsubria">Università degli Studi dell'Insubria</a></td>
                         <td colspan="4"><strong>Economia, Diritto e Finanza d'Impresa</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1979,7 +1979,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;Uninsubria&quot;, &quot;nomeCorso&quot;: &quot;Global entrepreneurship economics and management /Imprenditorialità, Economia e Management Internazionale (GEEM)&quot;, &quot;sede&quot;: &quot;Varese&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uninsubria.html">Università degli Studi dell'Insubria</a></td>
+                        <td><a class="uni" href="/atenei/uninsubria">Università degli Studi dell'Insubria</a></td>
                         <td colspan="4"><strong>Global entrepreneurship economics and management /Imprenditorialità, Economia e Management Internazionale (GEEM)</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1989,7 +1989,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;Unitelma&quot;, &quot;nomeCorso&quot;: &quot;Economia, management e innovazione&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;A distanza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unitelma.html">Università telematica Unitelma Sapienza di Roma</a></td>
+                        <td><a class="uni" href="/atenei/unitelma">Università telematica Unitelma Sapienza di Roma</a></td>
                         <td colspan="4"><strong>Economia, management e innovazione</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1999,7 +1999,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UnivAq&quot;, &quot;nomeCorso&quot;: &quot;Amministrazione, Economia e Finanza&quot;, &quot;sede&quot;: &quot;L'Aquila&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/univaq.html">Università degli Studi dell'Aquila</a></td>
+                        <td><a class="uni" href="/atenei/univaq">Università degli Studi dell'Aquila</a></td>
                         <td colspan="4"><strong>Amministrazione, Economia e Finanza</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -2009,7 +2009,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UnivPM&quot;, &quot;nomeCorso&quot;: &quot;Economia e management&quot;, &quot;sede&quot;: &quot;Ancona&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/univpm.html">Università Politecnica delle Marche</a></td>
+                        <td><a class="uni" href="/atenei/univpm">Università Politecnica delle Marche</a></td>
                         <td colspan="4"><strong>Economia e management</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -2019,7 +2019,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UnivPM&quot;, &quot;nomeCorso&quot;: &quot;Management pubblico e dei sistemi socio-sanitari&quot;, &quot;sede&quot;: &quot;San Benedetto Del Tronto&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/univpm.html">Università Politecnica delle Marche</a></td>
+                        <td><a class="uni" href="/atenei/univpm">Università Politecnica delle Marche</a></td>
                         <td colspan="4"><strong>Management pubblico e dei sistemi socio-sanitari</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -2029,7 +2029,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UnivPM&quot;, &quot;nomeCorso&quot;: &quot;SUSTAINABILITY MANAGEMENT AND CIRCULAR ECONOMY&quot;, &quot;sede&quot;: &quot;Ancona&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/univpm.html">Università Politecnica delle Marche</a></td>
+                        <td><a class="uni" href="/atenei/univpm">Università Politecnica delle Marche</a></td>
                         <td colspan="4"><strong>SUSTAINABILITY MANAGEMENT AND CIRCULAR ECONOMY</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -2055,7 +2055,7 @@
                 </a>
             </p>
             <p>
-                <a class="a_footer github" href="https://www.instagram.com/unidirectory/" target="_blank"
+                <a class="a_footer github" href="https://www.instagram.com/unidirectory" target="_blank"
                     rel="noopener noreferrer">
                     <i class="fa-brands fa-instagram"></i> Instagram
                 </a>
@@ -2073,16 +2073,15 @@
                 &middot;
                 <a class="a_footer" href="https://ustat.mur.gov.it/" target="_blank" rel="noopener noreferrer">USTAT</a>
             </p>
-            <p><a class="a_footer" href="../about.html">About</a></p>
-            <p><a class="a_footer" href="../privacy.html">Privacy Policy</a></p>
-            <p><a class="a_footer" href="../sitemap.xml">Sitemap</a></p>
+            <p><a class="a_footer" href="/about">About</a></p>
+            <p><a class="a_footer" href="/privacy">Privacy Policy</a></p>
+            <p><a class="a_footer" href="/sitemap.xml">Sitemap</a></p>
             <p><a class="a_footer" href="mailto:info@unidirectory.it">Contattaci</a></p>
         </div>
     </footer>
-    <script src="../assets/js/footer.js"></script>
-    <script src="../assets/js/scriptclassi.js"></script>
+    <script src="/assets/js/scriptclassi.js"></script>
     <script>
-        caricaTabella("LM-77");
+        caricaTabella();
         ordinecorso = true;
         ordinecitta = false;
         ordineregione = false;

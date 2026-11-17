@@ -104,16 +104,16 @@ categorie = [
 # ── Nav links (usati in tutte le pagine) ─────────────────────────────────────
 
 NAV_ITEMS = [
-    ("Statali",        "statali.html"),
-    ("Scuole superiori", "superiori.html"),
-    ("Non statali",    "nonstatali.html"),
-    ("Telematiche",    "telematiche.html"),
-    ("SSML",   "ssml.html"),
-    ("Conservatori",   "conservatori.html"),
-    ("ABA",            "abastatali.html"),
-    ("Acc. nazionali", "accnazionali.html"),
-    ("ISIA",           "isia.html"),
-    ("AFAM privati",   "afamprivati.html"),
+    ("Statali",        "statali"),
+    ("Scuole superiori", "superiori"),
+    ("Non statali",    "nonstatali"),
+    ("Telematiche",    "telematiche"),
+    ("SSML",   "ssml"),
+    ("Conservatori",   "conservatori"),
+    ("ABA",            "abastatali"),
+    ("Acc. nazionali", "accnazionali"),
+    ("ISIA",           "isia"),
+    ("AFAM privati",   "afamprivati"),
 ]
 
 # ── Generazione righe HTML ───────────────────────────────────────────────────
@@ -125,7 +125,7 @@ def genera_righe(categoria):
     for n, uni in enumerate(lista, start=1):
         sigla = uni.get("sigla") or "----"
         slug = sigla.lower().replace(" ", "_")
-        link = f"../atenei/{slug}.html"
+        link = f"/atenei/{slug}"
         studenti = uni.get("studenti")
         studenti_display = f"{studenti:,}".replace(",", ".") if studenti else "----"
 
@@ -145,7 +145,7 @@ def genera_righe(categoria):
 
 # ── Template HTML ────────────────────────────────────────────────────────────
 
-def genera_nav(nav_active, slug_corrente):
+def genera_nav(nav_active):
     items = []
     for label, href in NAV_ITEMS:
         if label == nav_active:
@@ -158,7 +158,7 @@ def genera_nav(nav_active, slug_corrente):
 def genera_html(cat):
     base_url = f"https://unidirectory.it/uni/{cat['slug']}"
     righe = genera_righe(cat["categoria"])
-    nav = genera_nav(cat["nav_active"], cat["slug"])
+    nav = genera_nav(cat["nav_active"])
     n_totale = righe.count("<tr data-uni=")
 
     return f"""<!DOCTYPE html>
@@ -199,9 +199,9 @@ def genera_html(cat):
     <meta name="twitter:image"
         content="https://unidirectory.it/assets/img/iud_icon.png">
 
-    <link rel="icon" type="image/png" href="../assets/img/iud_icon.png">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/elenchi.css">
+    <link rel="icon" type="image/png" href="/assets/img/iud_icon.png">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/elenchi.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <script type="application/ld+json">
@@ -221,7 +221,7 @@ def genera_html(cat):
             <div class="header">
                 <div class="header1">
                     <a href="/">
-                        <img class="logo" src="../assets/img/iud_image.png" alt="Logo Unidirectory">
+                        <img class="logo" src="/assets/img/iud_image.png" alt="Logo Unidirectory">
                     </a>
                 </div>
                 <div class="header2">
@@ -247,9 +247,9 @@ def genera_html(cat):
                         <th class="select-none num"></th>
                         <th class="select-none">Nome</th>
                         <th class="select-none">Sigla</th>
-                        <th class="select-none"><a onclick="ordinaPerCitta('{cat["categoria"]}')">Sede principale <i class="fa-solid fa-sort"></i></a></th>
-                        <th class="select-none"><a onclick="ordinaPerRegione('{cat["categoria"]}')">Regione <i class="fa-solid fa-sort"></i></a></th>
-{"" if cat["categoria"] == "ssml" else '                        <th class="select-none"><a onclick="ordinaPerStudenti(\'' + cat["categoria"] + '\')">Studenti <i class="fa-solid fa-sort"></i></a></th>'}
+                        <th class="select-none"><a onclick="ordinaPerCitta()">Sede principale <i class="fa-solid fa-sort"></i></a></th>
+                        <th class="select-none"><a onclick="ordinaPerRegione()">Regione <i class="fa-solid fa-sort"></i></a></th>
+{"" if cat["categoria"] == "ssml" else '                        <th class="select-none"><a onclick="ordinaPerStudenti()">Studenti <i class="fa-solid fa-sort"></i></a></th>'}
                     </tr>
                 </thead>
                 <tbody id="tabellauni">
@@ -271,7 +271,7 @@ def genera_html(cat):
                 </a>
             </p>
             <p>
-                <a class="a_footer github" href="https://www.instagram.com/unidirectory/" target="_blank"
+                <a class="a_footer github" href="https://www.instagram.com/unidirectory" target="_blank"
                     rel="noopener noreferrer">
                     <i class="fa-brands fa-instagram"></i> Instagram
                 </a>
@@ -289,19 +289,18 @@ def genera_html(cat):
                 &middot;
                 <a class="a_footer" href="https://ustat.mur.gov.it/" target="_blank" rel="noopener noreferrer">USTAT</a>
             </p>
-            <p><a class="a_footer" href="../about.html">About</a></p>
-            <p><a class="a_footer" href="../privacy.html">Privacy Policy</a></p>
-            <p><a class="a_footer" href="../sitemap.xml">Sitemap</a></p>
+            <p><a class="a_footer" href="/about">About</a></p>
+            <p><a class="a_footer" href="/privacy">Privacy Policy</a></p>
+            <p><a class="a_footer" href="/sitemap.xml">Sitemap</a></p>
             <p><a class="a_footer" href="mailto:info@unidirectory.it">Contattaci</a></p>
         </div>
     </footer>
-    <script src="../assets/js/footer.js"></script>
-    <script src="../assets/js/scriptelenco.js"></script>
+    <script src="/assets/js/scriptelenco.js"></script>
     <script>
         ordineregione = false;
         ordinestudenti = false;
         ordinecitta = false;
-        caricaTabella('{cat["categoria"]}');
+        caricaTabella();
     </script>
 </body>
 

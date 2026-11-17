@@ -41,7 +41,7 @@ function renderizzaTabella(offerte, mappaUniversita) {
     for (let offerta of offerte) {
         const uniData = mappaUniversita[offerta.universita] || {};
         const slug = offerta.universita.toLowerCase().replace(/ /g, "_");
-        const link = `../atenei/${slug}.html`;
+        const link = `/atenei/${slug}`;
         const regione = offerta.regione ? offerta.regione : uniData.regione || "----";
         const nomeUni = uniData.nome || offerta.universita;
         const accesso = offerta.accessoLibero ? "✅ Accesso Libero" : "🔒 Accesso Programmato";
@@ -61,8 +61,8 @@ function renderizzaTabella(offerte, mappaUniversita) {
     corsiTrovati.textContent = `${n} corsi trovati`;
 }
 
-function caricaTabella(codiceCorso) {
-    fetch(`../data/universita.json`).then(r => r.json())
+function caricaTabella() {
+    fetch(`/data/universita.json`).then(r => r.json())
         .then(universita => {
             const mappaUniversita = {};
             for (let uni of universita) {
@@ -87,7 +87,7 @@ function caricaTabella(codiceCorso) {
 
 var ordinecorso
 
-function ordinaPerCorso(codiceCorso) {
+function ordinaPerCorso() {
     const copia = [...offerteAttuali];
     if (ordinecorso) {
         renderizzaTabella(copia.reverse(), mappaUniversitaAttuale);
@@ -104,7 +104,7 @@ function ordinaPerCorso(codiceCorso) {
 
 var ordineregione;
 
-function ordinaPerRegione(codiceCorso) {
+function ordinaPerRegione() {
     const copia = [...offerteAttuali].sort((a, b) => {
         const regioneA = a.regione || mappaUniversitaAttuale[a.universita]?.regione || "";
         const regioneB = b.regione || mappaUniversitaAttuale[b.universita]?.regione || "";
@@ -125,7 +125,7 @@ function ordinaPerRegione(codiceCorso) {
 
 var ordinecitta;
 
-function ordinaPerSede(codiceCorso) {
+function ordinaPerSede() {
     const copia = [...offerteAttuali].sort((a, b) => {
         const cittaA = a.sede || mappaUniversitaAttuale[a.universita]?.citta || "";
         const cittaB = b.sede || mappaUniversitaAttuale[b.universita]?.citta || "";
@@ -177,6 +177,6 @@ function applicaFiltri() {
 
 // GESTISCI FILTRO
 
-function gestisciFiltroLingua(valore, codiceCorso) { applicaFiltri(); }
-function gestisciFiltroAccesso(valore, codiceCorso) { applicaFiltri(); }
-function gestisciFiltroDidattica(valore, codiceCorso) { applicaFiltri(); }
+function gestisciFiltroLingua() { applicaFiltri(); }
+function gestisciFiltroAccesso() { applicaFiltri(); }
+function gestisciFiltroDidattica() { applicaFiltri(); }

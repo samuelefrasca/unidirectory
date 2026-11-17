@@ -40,9 +40,9 @@
         content="https://unidirectory.it/assets/img/iud_icon.png">
 
 
-    <link rel="icon" type="image/png" href="../../assets/img/iud_icon.png">
-    <link rel="stylesheet" href="../../assets/css/style.css">
-    <link rel="stylesheet" href="../../assets/css/classi.css">
+    <link rel="icon" type="image/png" href="/assets/img/iud_icon.png">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/classi.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <script type="application/ld+json">
@@ -63,7 +63,7 @@
             <div class="header">
                 <div class="header1">
                     <a href="/">
-                        <img class="logo" src="../../assets/img/iud_image.png" alt="Logo Unidirectory">
+                        <img class="logo" src="/assets/img/iud_image.png" alt="Logo Unidirectory">
                     </a>
                 </div>
                 <div class="header2">
@@ -78,9 +78,9 @@
         <div class="container table-responsive">
             <div class="toolbar-tabella">
                 <div class="ordina">
-                    <button type="button" onclick="ordinaPerCorso('DASL09')">Ordina per corso</button>
-                    <button type="button" onclick="ordinaPerSede('DASL09')">Ordina per sede</button>
-                    <button type="button" onclick="ordinaPerRegione('DASL09')">Ordina per regione</button>
+                    <button type="button" onclick="ordinaPerCorso()">Ordina per corso</button>
+                    <button type="button" onclick="ordinaPerSede()">Ordina per sede</button>
+                    <button type="button" onclick="ordinaPerRegione()">Ordina per regione</button>
                 </div>
             </div>
             <input type="search" id="searchNelleClassi" placeholder="Cerca istituto, sede, regione o corso...">
@@ -88,7 +88,7 @@
             <table>
                 <tbody id="tabellauni">
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;ACME&quot;, &quot;nomeCorso&quot;: &quot;Innovazioni Digitali Per La Valorizzazione Dell'Arte E Della Cultura&quot;, &quot;sede&quot;: &quot;Milano&quot;}">
-                        <td><a class="uni" href="../../atenei/acme.html">Accademia di Belle Arti ACME</a></td>
+                        <td><a class="uni" href="/atenei/acme">Accademia di Belle Arti ACME</a></td>
                         <td colspan="4"><strong>Innovazioni Digitali Per La Valorizzazione Dell'Arte E Della Cultura</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -96,7 +96,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaCt&quot;, &quot;nomeCorso&quot;: &quot;Didattica Dell'Arte E Mediazione Culturale&quot;, &quot;sede&quot;: &quot;Catania&quot;}">
-                        <td><a class="uni" href="../../atenei/abact.html">Accademia di Belle Arti di Catania</a></td>
+                        <td><a class="uni" href="/atenei/abact">Accademia di Belle Arti di Catania</a></td>
                         <td colspan="4"><strong>Didattica Dell'Arte E Mediazione Culturale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -104,7 +104,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaFr&quot;, &quot;nomeCorso&quot;: &quot;Comunicazione E Valorizzazione Dei Beni Culturali&quot;, &quot;sede&quot;: &quot;Frosinone&quot;}">
-                        <td><a class="uni" href="../../atenei/abafr.html">Accademia di Belle Arti di Frosinone</a></td>
+                        <td><a class="uni" href="/atenei/abafr">Accademia di Belle Arti di Frosinone</a></td>
                         <td colspan="4"><strong>Comunicazione E Valorizzazione Dei Beni Culturali</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -112,7 +112,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaMc&quot;, &quot;nomeCorso&quot;: &quot;Museologia E Museografia&quot;, &quot;sede&quot;: &quot;Macerata&quot;}">
-                        <td><a class="uni" href="../../atenei/abamc.html">Accademia di Belle Arti di Macerata</a></td>
+                        <td><a class="uni" href="/atenei/abamc">Accademia di Belle Arti di Macerata</a></td>
                         <td colspan="4"><strong>Museologia E Museografia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -120,7 +120,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaMi&quot;, &quot;nomeCorso&quot;: &quot;Ricerca E Progetto Per Il Museo E I Beni Culturali&quot;, &quot;sede&quot;: &quot;Milano&quot;}">
-                        <td><a class="uni" href="../../atenei/abami.html">Accademia di Belle Arti di Brera</a></td>
+                        <td><a class="uni" href="/atenei/abami">Accademia di Belle Arti di Brera</a></td>
                         <td colspan="4"><strong>Ricerca E Progetto Per Il Museo E I Beni Culturali</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -128,7 +128,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaPa&quot;, &quot;nomeCorso&quot;: &quot;Exhibition Design E Valorizzazione Museale&quot;, &quot;sede&quot;: &quot;Palermo&quot;}">
-                        <td><a class="uni" href="../../atenei/abapa.html">Accademia di Belle Arti di Palermo</a></td>
+                        <td><a class="uni" href="/atenei/abapa">Accademia di Belle Arti di Palermo</a></td>
                         <td colspan="4"><strong>Exhibition Design E Valorizzazione Museale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -136,7 +136,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaRm&quot;, &quot;nomeCorso&quot;: &quot;Comunicazione E Valorizzazione Del Patrimonio Artistico Contemporaneo&quot;, &quot;sede&quot;: &quot;Roma&quot;}">
-                        <td><a class="uni" href="../../atenei/abarm.html">Accademia di Belle Arti di Roma</a></td>
+                        <td><a class="uni" href="/atenei/abarm">Accademia di Belle Arti di Roma</a></td>
                         <td colspan="4"><strong>Comunicazione E Valorizzazione Del Patrimonio Artistico Contemporaneo</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -144,7 +144,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaTo&quot;, &quot;nomeCorso&quot;: &quot;Comunicazione E Valorizzazione Del Patrimonio Artistico Contemporaneo&quot;, &quot;sede&quot;: &quot;Torino&quot;}">
-                        <td><a class="uni" href="../../atenei/abato.html">Accademia Albertina di Belle Arti di Torino</a></td>
+                        <td><a class="uni" href="/atenei/abato">Accademia Albertina di Belle Arti di Torino</a></td>
                         <td colspan="4"><strong>Comunicazione E Valorizzazione Del Patrimonio Artistico Contemporaneo</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -168,7 +168,7 @@
                 </a>
             </p>
             <p>
-                <a class="a_footer github" href="https://www.instagram.com/unidirectory/" target="_blank"
+                <a class="a_footer github" href="https://www.instagram.com/unidirectory" target="_blank"
                     rel="noopener noreferrer">
                     <i class="fa-brands fa-instagram"></i> Instagram
                 </a>
@@ -186,16 +186,15 @@
                 &middot;
                 <a class="a_footer" href="https://ustat.mur.gov.it/" target="_blank" rel="noopener noreferrer">USTAT</a>
             </p>
-            <p><a class="a_footer" href="../../about.html">About</a></p>
-            <p><a class="a_footer" href="../../privacy.html">Privacy Policy</a></p>
-            <p><a class="a_footer" href="../../sitemap.xml">Sitemap</a></p>
+            <p><a class="a_footer" href="/about">About</a></p>
+            <p><a class="a_footer" href="/privacy">Privacy Policy</a></p>
+            <p><a class="a_footer" href="/sitemap.xml">Sitemap</a></p>
             <p><a class="a_footer" href="mailto:info@unidirectory.it">Contattaci</a></p>
         </div>
     </footer>
-    <script src="../../assets/js/footer.js"></script>
-    <script src="../../assets/js/scriptafam.js"></script>
+    <script src="/assets/js/scriptafam.js"></script>
     <script>
-        caricaTabella("DASL09");
+        caricaTabella();
         ordinecorso = true;
         ordinecitta = false;
         ordineregione = false;

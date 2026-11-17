@@ -40,9 +40,9 @@
         content="https://unidirectory.it/assets/img/iud_icon.png">
 
 
-    <link rel="icon" type="image/png" href="../assets/img/iud_icon.png">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/classi.css">
+    <link rel="icon" type="image/png" href="/assets/img/iud_icon.png">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/classi.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <script type="application/ld+json">
@@ -63,7 +63,7 @@
             <div class="header">
                 <div class="header1">
                     <a href="/">
-                        <img class="logo" src="../assets/img/iud_image.png" alt="Logo Unidirectory">
+                        <img class="logo" src="/assets/img/iud_image.png" alt="Logo Unidirectory">
                     </a>
                 </div>
                 <div class="header2">
@@ -78,7 +78,7 @@
         <div class="container table-responsive">
             <div class="toolbar-tabella">
                 <div class="filtri">
-                    <select id="filtroLingua" onchange="gestisciFiltroLingua(this.value, 'LM-45')">
+                    <select id="filtroLingua" onchange="gestisciFiltroLingua()">
                         <option value="">Tutte le lingue</option>
                         <option value="italiano">Italiano</option>
                         <option value="inglese">Inglese</option>
@@ -86,12 +86,12 @@
                         <option value="francese">Francese</option>
                         <option value="ladino">Ladino</option>
                     </select>
-                    <select id="filtroAccesso" onchange="gestisciFiltroAccesso(this.value, 'LM-45')">
+                    <select id="filtroAccesso" onchange="gestisciFiltroAccesso()">
                         <option value="">Tutti gli accessi</option>
                         <option value="libero">Accesso libero</option>
                         <option value="programmato">Accesso programmato</option>
                     </select>
-                    <select id="filtroDidattica" onchange="gestisciFiltroDidattica(this.value, 'LM-45')">
+                    <select id="filtroDidattica" onchange="gestisciFiltroDidattica()">
                         <option value="">Tutte le didattiche</option>
                         <option value="presenza">In presenza</option>
                         <option value="distanza">A distanza</option>
@@ -99,9 +99,9 @@
                     </select>
                 </div>
                 <div class="ordina">
-                    <button type="button" onclick="ordinaPerCorso('LM-45')">Ordina per corso</button>
-                    <button type="button" onclick="ordinaPerSede('LM-45')">Ordina per sede</button>
-                    <button type="button" onclick="ordinaPerRegione('LM-45')">Ordina per regione</button>
+                    <button type="button" onclick="ordinaPerCorso()">Ordina per corso</button>
+                    <button type="button" onclick="ordinaPerSede()">Ordina per sede</button>
+                    <button type="button" onclick="ordinaPerRegione()">Ordina per regione</button>
                 </div>
             </div>
             <input type="search" id="searchNelleClassi" placeholder="Cerca università, sede, regione o corso...">
@@ -109,7 +109,7 @@
             <table>
                 <tbody id="tabellauni">
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBo&quot;, &quot;nomeCorso&quot;: &quot;Discipline della musica e del teatro&quot;, &quot;sede&quot;: &quot;Bologna&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unibo.html">Alma Mater Studiorum - Università di Bologna</a></td>
+                        <td><a class="uni" href="/atenei/unibo">Alma Mater Studiorum - Università di Bologna</a></td>
                         <td colspan="4"><strong>Discipline della musica e del teatro</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -119,7 +119,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMi&quot;, &quot;nomeCorso&quot;: &quot;Musica, Culture, Media, Performance&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unimi.html">Università degli Studi di Milano</a></td>
+                        <td><a class="uni" href="/atenei/unimi">Università degli Studi di Milano</a></td>
                         <td colspan="4"><strong>Musica, Culture, Media, Performance</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -129,7 +129,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPa&quot;, &quot;nomeCorso&quot;: &quot;Musicologia e Scienze dello spettacolo&quot;, &quot;sede&quot;: &quot;Palermo&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipa.html">Università degli Studi di Palermo</a></td>
+                        <td><a class="uni" href="/atenei/unipa">Università degli Studi di Palermo</a></td>
                         <td colspan="4"><strong>Musicologia e Scienze dello spettacolo</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -139,7 +139,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPv&quot;, &quot;nomeCorso&quot;: &quot;Musicologia&quot;, &quot;sede&quot;: &quot;Cremona&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipv.html">Università degli Studi di Pavia</a></td>
+                        <td><a class="uni" href="/atenei/unipv">Università degli Studi di Pavia</a></td>
                         <td colspan="4"><strong>Musicologia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -149,7 +149,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniRoma1&quot;, &quot;nomeCorso&quot;: &quot;Musicologia&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniroma1.html">Sapienza Università di Roma</a></td>
+                        <td><a class="uni" href="/atenei/uniroma1">Sapienza Università di Roma</a></td>
                         <td colspan="4"><strong>Musicologia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -159,7 +159,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniRoma2&quot;, &quot;nomeCorso&quot;: &quot;Musica e Spettacolo&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniroma2.html">Università degli Studi di Roma Tor Vergata</a></td>
+                        <td><a class="uni" href="/atenei/uniroma2">Università degli Studi di Roma Tor Vergata</a></td>
                         <td colspan="4"><strong>Musica e Spettacolo</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -169,7 +169,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTn&quot;, &quot;nomeCorso&quot;: &quot;Culture e Beni Musicali&quot;, &quot;sede&quot;: &quot;Trento&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unitn.html">Università degli Studi di Trento</a></td>
+                        <td><a class="uni" href="/atenei/unitn">Università degli Studi di Trento</a></td>
                         <td colspan="4"><strong>Culture e Beni Musicali</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -195,7 +195,7 @@
                 </a>
             </p>
             <p>
-                <a class="a_footer github" href="https://www.instagram.com/unidirectory/" target="_blank"
+                <a class="a_footer github" href="https://www.instagram.com/unidirectory" target="_blank"
                     rel="noopener noreferrer">
                     <i class="fa-brands fa-instagram"></i> Instagram
                 </a>
@@ -213,16 +213,15 @@
                 &middot;
                 <a class="a_footer" href="https://ustat.mur.gov.it/" target="_blank" rel="noopener noreferrer">USTAT</a>
             </p>
-            <p><a class="a_footer" href="../about.html">About</a></p>
-            <p><a class="a_footer" href="../privacy.html">Privacy Policy</a></p>
-            <p><a class="a_footer" href="../sitemap.xml">Sitemap</a></p>
+            <p><a class="a_footer" href="/about">About</a></p>
+            <p><a class="a_footer" href="/privacy">Privacy Policy</a></p>
+            <p><a class="a_footer" href="/sitemap.xml">Sitemap</a></p>
             <p><a class="a_footer" href="mailto:info@unidirectory.it">Contattaci</a></p>
         </div>
     </footer>
-    <script src="../assets/js/footer.js"></script>
-    <script src="../assets/js/scriptclassi.js"></script>
+    <script src="/assets/js/scriptclassi.js"></script>
     <script>
-        caricaTabella("LM-45");
+        caricaTabella();
         ordinecorso = true;
         ordinecitta = false;
         ordineregione = false;

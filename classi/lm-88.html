@@ -40,9 +40,9 @@
         content="https://unidirectory.it/assets/img/iud_icon.png">
 
 
-    <link rel="icon" type="image/png" href="../assets/img/iud_icon.png">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/classi.css">
+    <link rel="icon" type="image/png" href="/assets/img/iud_icon.png">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/classi.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <script type="application/ld+json">
@@ -63,7 +63,7 @@
             <div class="header">
                 <div class="header1">
                     <a href="/">
-                        <img class="logo" src="../assets/img/iud_image.png" alt="Logo Unidirectory">
+                        <img class="logo" src="/assets/img/iud_image.png" alt="Logo Unidirectory">
                     </a>
                 </div>
                 <div class="header2">
@@ -78,7 +78,7 @@
         <div class="container table-responsive">
             <div class="toolbar-tabella">
                 <div class="filtri">
-                    <select id="filtroLingua" onchange="gestisciFiltroLingua(this.value, 'LM-88')">
+                    <select id="filtroLingua" onchange="gestisciFiltroLingua()">
                         <option value="">Tutte le lingue</option>
                         <option value="italiano">Italiano</option>
                         <option value="inglese">Inglese</option>
@@ -86,12 +86,12 @@
                         <option value="francese">Francese</option>
                         <option value="ladino">Ladino</option>
                     </select>
-                    <select id="filtroAccesso" onchange="gestisciFiltroAccesso(this.value, 'LM-88')">
+                    <select id="filtroAccesso" onchange="gestisciFiltroAccesso()">
                         <option value="">Tutti gli accessi</option>
                         <option value="libero">Accesso libero</option>
                         <option value="programmato">Accesso programmato</option>
                     </select>
-                    <select id="filtroDidattica" onchange="gestisciFiltroDidattica(this.value, 'LM-88')">
+                    <select id="filtroDidattica" onchange="gestisciFiltroDidattica()">
                         <option value="">Tutte le didattiche</option>
                         <option value="presenza">In presenza</option>
                         <option value="distanza">A distanza</option>
@@ -99,9 +99,9 @@
                     </select>
                 </div>
                 <div class="ordina">
-                    <button type="button" onclick="ordinaPerCorso('LM-88')">Ordina per corso</button>
-                    <button type="button" onclick="ordinaPerSede('LM-88')">Ordina per sede</button>
-                    <button type="button" onclick="ordinaPerRegione('LM-88')">Ordina per regione</button>
+                    <button type="button" onclick="ordinaPerCorso()">Ordina per corso</button>
+                    <button type="button" onclick="ordinaPerSede()">Ordina per sede</button>
+                    <button type="button" onclick="ordinaPerRegione()">Ordina per regione</button>
                 </div>
             </div>
             <input type="search" id="searchNelleClassi" placeholder="Cerca università, sede, regione o corso...">
@@ -109,7 +109,7 @@
             <table>
                 <tbody id="tabellauni">
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBa&quot;, &quot;nomeCorso&quot;: &quot;RICERCA, INNOVAZIONE SOCIALE E POLITICHE DI INCLUSIONE&quot;, &quot;sede&quot;: &quot;Bari&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniba.html">Università degli Studi di Bari "Aldo Moro"</a></td>
+                        <td><a class="uni" href="/atenei/uniba">Università degli Studi di Bari "Aldo Moro"</a></td>
                         <td colspan="4"><strong>RICERCA, INNOVAZIONE SOCIALE E POLITICHE DI INCLUSIONE</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -119,7 +119,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBo&quot;, &quot;nomeCorso&quot;: &quot;Scienze Criminologiche per l'investigazione e la sicurezza&quot;, &quot;sede&quot;: &quot;Forlì&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unibo.html">Alma Mater Studiorum - Università di Bologna</a></td>
+                        <td><a class="uni" href="/atenei/unibo">Alma Mater Studiorum - Università di Bologna</a></td>
                         <td colspan="4"><strong>Scienze Criminologiche per l'investigazione e la sicurezza</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -129,7 +129,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBo&quot;, &quot;nomeCorso&quot;: &quot;Sociologia e Servizio Sociale&quot;, &quot;sede&quot;: &quot;Bologna&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unibo.html">Alma Mater Studiorum - Università di Bologna</a></td>
+                        <td><a class="uni" href="/atenei/unibo">Alma Mater Studiorum - Università di Bologna</a></td>
                         <td colspan="4"><strong>Sociologia e Servizio Sociale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -139,7 +139,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCatt&quot;, &quot;nomeCorso&quot;: &quot;Gestione del lavoro e comunicazione per le organizzazioni&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unicatt.html">Università Cattolica del Sacro Cuore</a></td>
+                        <td><a class="uni" href="/atenei/unicatt">Università Cattolica del Sacro Cuore</a></td>
                         <td colspan="4"><strong>Gestione del lavoro e comunicazione per le organizzazioni</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -149,7 +149,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCatt&quot;, &quot;nomeCorso&quot;: &quot;Gestione del lavoro e comunicazione per le organizzazioni REPLICA&quot;, &quot;sede&quot;: &quot;Brescia&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unicatt.html">Università Cattolica del Sacro Cuore</a></td>
+                        <td><a class="uni" href="/atenei/unicatt">Università Cattolica del Sacro Cuore</a></td>
                         <td colspan="4"><strong>Gestione del lavoro e comunicazione per le organizzazioni REPLICA</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -159,7 +159,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCh&quot;, &quot;nomeCorso&quot;: &quot;Ricerca Sociale, Politiche della Sicurezza e Criminalità&quot;, &quot;sede&quot;: &quot;Chieti&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unich.html">Università degli Studi "Gabriele d'Annunzio" di Chieti-Pescara</a></td>
+                        <td><a class="uni" href="/atenei/unich">Università degli Studi "Gabriele d'Annunzio" di Chieti-Pescara</a></td>
                         <td colspan="4"><strong>Ricerca Sociale, Politiche della Sicurezza e Criminalità</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -169,7 +169,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCt&quot;, &quot;nomeCorso&quot;: &quot;Sociologia delle reti, dell' informazione e dell' innovazione&quot;, &quot;sede&quot;: &quot;Catania&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unict.html">Università degli Studi di Catania</a></td>
+                        <td><a class="uni" href="/atenei/unict">Università degli Studi di Catania</a></td>
                         <td colspan="4"><strong>Sociologia delle reti, dell' informazione e dell' innovazione</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -179,7 +179,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniFi&quot;, &quot;nomeCorso&quot;: &quot;Sociologia e sfide globali&quot;, &quot;sede&quot;: &quot;Firenze&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unifi.html">Università degli Studi di Firenze</a></td>
+                        <td><a class="uni" href="/atenei/unifi">Università degli Studi di Firenze</a></td>
                         <td colspan="4"><strong>Sociologia e sfide globali</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -189,7 +189,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMe&quot;, &quot;nomeCorso&quot;: &quot;Servizio sociale, politiche sociali e studi sociologici e ricerca sociale&quot;, &quot;sede&quot;: &quot;Messina&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unime.html">Università degli Studi di Messina</a></td>
+                        <td><a class="uni" href="/atenei/unime">Università degli Studi di Messina</a></td>
                         <td colspan="4"><strong>Servizio sociale, politiche sociali e studi sociologici e ricerca sociale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -199,7 +199,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMi&quot;, &quot;nomeCorso&quot;: &quot;Computational Social and Political Science&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unimi.html">Università degli Studi di Milano</a></td>
+                        <td><a class="uni" href="/atenei/unimi">Università degli Studi di Milano</a></td>
                         <td colspan="4"><strong>Computational Social and Political Science</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -209,7 +209,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMiB&quot;, &quot;nomeCorso&quot;: &quot;Analisi dei processi sociali&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unimib.html">Università degli Studi di Milano-Bicocca</a></td>
+                        <td><a class="uni" href="/atenei/unimib">Università degli Studi di Milano-Bicocca</a></td>
                         <td colspan="4"><strong>Analisi dei processi sociali</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -219,7 +219,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMiB&quot;, &quot;nomeCorso&quot;: &quot;SICUREZZA, DEVIANZA E GESTIONE DEI RISCHI&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unimib.html">Università degli Studi di Milano-Bicocca</a></td>
+                        <td><a class="uni" href="/atenei/unimib">Università degli Studi di Milano-Bicocca</a></td>
                         <td colspan="4"><strong>SICUREZZA, DEVIANZA E GESTIONE DEI RISCHI</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -229,7 +229,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniNa&quot;, &quot;nomeCorso&quot;: &quot;Comunicazione pubblica, sociale e politica&quot;, &quot;sede&quot;: &quot;Napoli&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unina.html">Università degli Studi di Napoli "Federico II"</a></td>
+                        <td><a class="uni" href="/atenei/unina">Università degli Studi di Napoli "Federico II"</a></td>
                         <td colspan="4"><strong>Comunicazione pubblica, sociale e politica</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -239,7 +239,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniNa&quot;, &quot;nomeCorso&quot;: &quot;Innovazione sociale&quot;, &quot;sede&quot;: &quot;Napoli&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unina.html">Università degli Studi di Napoli "Federico II"</a></td>
+                        <td><a class="uni" href="/atenei/unina">Università degli Studi di Napoli "Federico II"</a></td>
                         <td colspan="4"><strong>Innovazione sociale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -249,7 +249,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniNa&quot;, &quot;nomeCorso&quot;: &quot;Sociologia Digitale e Analisi del Web&quot;, &quot;sede&quot;: &quot;Napoli&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unina.html">Università degli Studi di Napoli "Federico II"</a></td>
+                        <td><a class="uni" href="/atenei/unina">Università degli Studi di Napoli "Federico II"</a></td>
                         <td colspan="4"><strong>Sociologia Digitale e Analisi del Web</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -259,7 +259,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPd&quot;, &quot;nomeCorso&quot;: &quot;Pluralismo culturale, mutamento sociale e migrazioni&quot;, &quot;sede&quot;: &quot;Padova&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipd.html">Università degli Studi di Padova</a></td>
+                        <td><a class="uni" href="/atenei/unipd">Università degli Studi di Padova</a></td>
                         <td colspan="4"><strong>Pluralismo culturale, mutamento sociale e migrazioni</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -269,7 +269,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPd&quot;, &quot;nomeCorso&quot;: &quot;Social sciences and digital data&quot;, &quot;sede&quot;: &quot;Padova&quot;, &quot;didattica&quot;: &quot;Mista&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unipd.html">Università degli Studi di Padova</a></td>
+                        <td><a class="uni" href="/atenei/unipd">Università degli Studi di Padova</a></td>
                         <td colspan="4"><strong>Social sciences and digital data</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -279,7 +279,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPg&quot;, &quot;nomeCorso&quot;: &quot;Scienze socioantropologiche per l'integrazione e la sicurezza sociale&quot;, &quot;sede&quot;: &quot;Narni&quot;, &quot;didattica&quot;: &quot;Mista&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipg.html">Università degli Studi di Perugia</a></td>
+                        <td><a class="uni" href="/atenei/unipg">Università degli Studi di Perugia</a></td>
                         <td colspan="4"><strong>Scienze socioantropologiche per l'integrazione e la sicurezza sociale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -289,7 +289,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniRoma1&quot;, &quot;nomeCorso&quot;: &quot;Progettazione Sociale per la sostenibilità, l’innovazione e l’inclusione di genere&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniroma1.html">Sapienza Università di Roma</a></td>
+                        <td><a class="uni" href="/atenei/uniroma1">Sapienza Università di Roma</a></td>
                         <td colspan="4"><strong>Progettazione Sociale per la sostenibilità, l’innovazione e l’inclusione di genere</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -299,7 +299,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniRoma1&quot;, &quot;nomeCorso&quot;: &quot;Sociologia per la sostenibilità e analisi dei processi globali&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniroma1.html">Sapienza Università di Roma</a></td>
+                        <td><a class="uni" href="/atenei/uniroma1">Sapienza Università di Roma</a></td>
                         <td colspan="4"><strong>Sociologia per la sostenibilità e analisi dei processi globali</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -309,7 +309,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniSa&quot;, &quot;nomeCorso&quot;: &quot;Sociologia del Cambiamento Ambientale e Digitale&quot;, &quot;sede&quot;: &quot;Fisciano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unisa.html">Università degli Studi di Salerno</a></td>
+                        <td><a class="uni" href="/atenei/unisa">Università degli Studi di Salerno</a></td>
                         <td colspan="4"><strong>Sociologia del Cambiamento Ambientale e Digitale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -319,7 +319,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniSalento&quot;, &quot;nomeCorso&quot;: &quot;SOCIOLOGIA E RICERCA SOCIALE&quot;, &quot;sede&quot;: &quot;Lecce&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unisalento.html">Università del Salento</a></td>
+                        <td><a class="uni" href="/atenei/unisalento">Università del Salento</a></td>
                         <td colspan="4"><strong>SOCIOLOGIA E RICERCA SOCIALE</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -329,7 +329,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTn&quot;, &quot;nomeCorso&quot;: &quot;ORGANIZZAZIONE, SOCIETA' E TECNOLOGIA&quot;, &quot;sede&quot;: &quot;Trento&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unitn.html">Università degli Studi di Trento</a></td>
+                        <td><a class="uni" href="/atenei/unitn">Università degli Studi di Trento</a></td>
                         <td colspan="4"><strong>ORGANIZZAZIONE, SOCIETA' E TECNOLOGIA</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -339,7 +339,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTn&quot;, &quot;nomeCorso&quot;: &quot;SOCIOLOGY AND SOCIAL RESEARCH - SOCIOLOGIA E RICERCA SOCIALE&quot;, &quot;sede&quot;: &quot;Trento&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unitn.html">Università degli Studi di Trento</a></td>
+                        <td><a class="uni" href="/atenei/unitn">Università degli Studi di Trento</a></td>
                         <td colspan="4"><strong>SOCIOLOGY AND SOCIAL RESEARCH - SOCIOLOGIA E RICERCA SOCIALE</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -349,7 +349,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTo&quot;, &quot;nomeCorso&quot;: &quot;Sociologia&quot;, &quot;sede&quot;: &quot;Torino&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unito.html">Università degli Studi di Torino</a></td>
+                        <td><a class="uni" href="/atenei/unito">Università degli Studi di Torino</a></td>
                         <td colspan="4"><strong>Sociologia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -359,7 +359,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;Unicusano&quot;, &quot;nomeCorso&quot;: &quot;Sociologia e ricerca sociale&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;A distanza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unicusano.html">Università telematica "Niccolò Cusano"</a></td>
+                        <td><a class="uni" href="/atenei/unicusano">Università telematica "Niccolò Cusano"</a></td>
                         <td colspan="4"><strong>Sociologia e ricerca sociale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -385,7 +385,7 @@
                 </a>
             </p>
             <p>
-                <a class="a_footer github" href="https://www.instagram.com/unidirectory/" target="_blank"
+                <a class="a_footer github" href="https://www.instagram.com/unidirectory" target="_blank"
                     rel="noopener noreferrer">
                     <i class="fa-brands fa-instagram"></i> Instagram
                 </a>
@@ -403,16 +403,15 @@
                 &middot;
                 <a class="a_footer" href="https://ustat.mur.gov.it/" target="_blank" rel="noopener noreferrer">USTAT</a>
             </p>
-            <p><a class="a_footer" href="../about.html">About</a></p>
-            <p><a class="a_footer" href="../privacy.html">Privacy Policy</a></p>
-            <p><a class="a_footer" href="../sitemap.xml">Sitemap</a></p>
+            <p><a class="a_footer" href="/about">About</a></p>
+            <p><a class="a_footer" href="/privacy">Privacy Policy</a></p>
+            <p><a class="a_footer" href="/sitemap.xml">Sitemap</a></p>
             <p><a class="a_footer" href="mailto:info@unidirectory.it">Contattaci</a></p>
         </div>
     </footer>
-    <script src="../assets/js/footer.js"></script>
-    <script src="../assets/js/scriptclassi.js"></script>
+    <script src="/assets/js/scriptclassi.js"></script>
     <script>
-        caricaTabella("LM-88");
+        caricaTabella();
         ordinecorso = true;
         ordinecitta = false;
         ordineregione = false;

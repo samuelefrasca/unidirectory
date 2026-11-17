@@ -40,9 +40,9 @@
         content="https://unidirectory.it/assets/img/iud_icon.png">
 
 
-    <link rel="icon" type="image/png" href="../assets/img/iud_icon.png">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/classi.css">
+    <link rel="icon" type="image/png" href="/assets/img/iud_icon.png">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/classi.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <script type="application/ld+json">
@@ -63,7 +63,7 @@
             <div class="header">
                 <div class="header1">
                     <a href="/">
-                        <img class="logo" src="../assets/img/iud_image.png" alt="Logo Unidirectory">
+                        <img class="logo" src="/assets/img/iud_image.png" alt="Logo Unidirectory">
                     </a>
                 </div>
                 <div class="header2">
@@ -78,7 +78,7 @@
         <div class="container table-responsive">
             <div class="toolbar-tabella">
                 <div class="filtri">
-                    <select id="filtroLingua" onchange="gestisciFiltroLingua(this.value, 'LM-12')">
+                    <select id="filtroLingua" onchange="gestisciFiltroLingua()">
                         <option value="">Tutte le lingue</option>
                         <option value="italiano">Italiano</option>
                         <option value="inglese">Inglese</option>
@@ -86,12 +86,12 @@
                         <option value="francese">Francese</option>
                         <option value="ladino">Ladino</option>
                     </select>
-                    <select id="filtroAccesso" onchange="gestisciFiltroAccesso(this.value, 'LM-12')">
+                    <select id="filtroAccesso" onchange="gestisciFiltroAccesso()">
                         <option value="">Tutti gli accessi</option>
                         <option value="libero">Accesso libero</option>
                         <option value="programmato">Accesso programmato</option>
                     </select>
-                    <select id="filtroDidattica" onchange="gestisciFiltroDidattica(this.value, 'LM-12')">
+                    <select id="filtroDidattica" onchange="gestisciFiltroDidattica()">
                         <option value="">Tutte le didattiche</option>
                         <option value="presenza">In presenza</option>
                         <option value="distanza">A distanza</option>
@@ -99,9 +99,9 @@
                     </select>
                 </div>
                 <div class="ordina">
-                    <button type="button" onclick="ordinaPerCorso('LM-12')">Ordina per corso</button>
-                    <button type="button" onclick="ordinaPerSede('LM-12')">Ordina per sede</button>
-                    <button type="button" onclick="ordinaPerRegione('LM-12')">Ordina per regione</button>
+                    <button type="button" onclick="ordinaPerCorso()">Ordina per corso</button>
+                    <button type="button" onclick="ordinaPerSede()">Ordina per sede</button>
+                    <button type="button" onclick="ordinaPerRegione()">Ordina per regione</button>
                 </div>
             </div>
             <input type="search" id="searchNelleClassi" placeholder="Cerca università, sede, regione o corso...">
@@ -109,7 +109,7 @@
             <table>
                 <tbody id="tabellauni">
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;Iuav&quot;, &quot;nomeCorso&quot;: &quot;Design del prodotto, della comunicazione e degli interni&quot;, &quot;sede&quot;: &quot;Venezia&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/iuav.html">Università Iuav di Venezia</a></td>
+                        <td><a class="uni" href="/atenei/iuav">Università Iuav di Venezia</a></td>
                         <td colspan="4"><strong>Design del prodotto, della comunicazione e degli interni</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -119,7 +119,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;Iuav&quot;, &quot;nomeCorso&quot;: &quot;Moda&quot;, &quot;sede&quot;: &quot;Venezia&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/iuav.html">Università Iuav di Venezia</a></td>
+                        <td><a class="uni" href="/atenei/iuav">Università Iuav di Venezia</a></td>
                         <td colspan="4"><strong>Moda</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -129,7 +129,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;PoliBa&quot;, &quot;nomeCorso&quot;: &quot;Design for Cultural and Productive Context&quot;, &quot;sede&quot;: &quot;Bari&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/poliba.html">Politecnico di Bari</a></td>
+                        <td><a class="uni" href="/atenei/poliba">Politecnico di Bari</a></td>
                         <td colspan="4"><strong>Design for Cultural and Productive Context</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -139,7 +139,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;PoliMi&quot;, &quot;nomeCorso&quot;: &quot;Design & Engineering - Progetto e ingegnerizzazione del prodotto industriale&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/polimi.html">Politecnico di Milano</a></td>
+                        <td><a class="uni" href="/atenei/polimi">Politecnico di Milano</a></td>
                         <td colspan="4"><strong>Design & Engineering - Progetto e ingegnerizzazione del prodotto industriale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -149,7 +149,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;PoliMi&quot;, &quot;nomeCorso&quot;: &quot;Design della comunicazione&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/polimi.html">Politecnico di Milano</a></td>
+                        <td><a class="uni" href="/atenei/polimi">Politecnico di Milano</a></td>
                         <td colspan="4"><strong>Design della comunicazione</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -159,7 +159,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;PoliMi&quot;, &quot;nomeCorso&quot;: &quot;Design for the Fashion System&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/polimi.html">Politecnico di Milano</a></td>
+                        <td><a class="uni" href="/atenei/polimi">Politecnico di Milano</a></td>
                         <td colspan="4"><strong>Design for the Fashion System</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -169,7 +169,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;PoliMi&quot;, &quot;nomeCorso&quot;: &quot;Digital and Interaction Design&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/polimi.html">Politecnico di Milano</a></td>
+                        <td><a class="uni" href="/atenei/polimi">Politecnico di Milano</a></td>
                         <td colspan="4"><strong>Digital and Interaction Design</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -179,7 +179,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;PoliMi&quot;, &quot;nomeCorso&quot;: &quot;Integrated Product Design&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/polimi.html">Politecnico di Milano</a></td>
+                        <td><a class="uni" href="/atenei/polimi">Politecnico di Milano</a></td>
                         <td colspan="4"><strong>Integrated Product Design</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -189,7 +189,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;PoliMi&quot;, &quot;nomeCorso&quot;: &quot;Interior and Spatial Design&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/polimi.html">Politecnico di Milano</a></td>
+                        <td><a class="uni" href="/atenei/polimi">Politecnico di Milano</a></td>
                         <td colspan="4"><strong>Interior and Spatial Design</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -199,7 +199,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;PoliMi&quot;, &quot;nomeCorso&quot;: &quot;Product Service System Design&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/polimi.html">Politecnico di Milano</a></td>
+                        <td><a class="uni" href="/atenei/polimi">Politecnico di Milano</a></td>
                         <td colspan="4"><strong>Product Service System Design</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -209,7 +209,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;PoliTo&quot;, &quot;nomeCorso&quot;: &quot;Design sistemico&quot;, &quot;sede&quot;: &quot;Torino&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/polito.html">Politecnico di Torino</a></td>
+                        <td><a class="uni" href="/atenei/polito">Politecnico di Torino</a></td>
                         <td colspan="4"><strong>Design sistemico</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -219,7 +219,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBo&quot;, &quot;nomeCorso&quot;: &quot;Advanced design&quot;, &quot;sede&quot;: &quot;Bologna&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unibo.html">Alma Mater Studiorum - Università di Bologna</a></td>
+                        <td><a class="uni" href="/atenei/unibo">Alma Mater Studiorum - Università di Bologna</a></td>
                         <td colspan="4"><strong>Advanced design</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -229,7 +229,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBz&quot;, &quot;nomeCorso&quot;: &quot;Eco-social Design&quot;, &quot;sede&quot;: &quot;Bolzano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unibz.html">Libera Università di Bolzano</a></td>
+                        <td><a class="uni" href="/atenei/unibz">Libera Università di Bolzano</a></td>
                         <td colspan="4"><strong>Eco-social Design</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -239,7 +239,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCam&quot;, &quot;nomeCorso&quot;: &quot;Design per l'Innovazione e la Cultura Digitale&quot;, &quot;sede&quot;: &quot;Ascoli Piceno&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unicam.html">Università degli Studi di Camerino</a></td>
+                        <td><a class="uni" href="/atenei/unicam">Università degli Studi di Camerino</a></td>
                         <td colspan="4"><strong>Design per l'Innovazione e la Cultura Digitale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -249,7 +249,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCampania&quot;, &quot;nomeCorso&quot;: &quot;Design per l'innovazione&quot;, &quot;sede&quot;: &quot;Aversa&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unicampania.html">Università degli Studi della Campania "Luigi Vanvitelli"</a></td>
+                        <td><a class="uni" href="/atenei/unicampania">Università degli Studi della Campania "Luigi Vanvitelli"</a></td>
                         <td colspan="4"><strong>Design per l'innovazione</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -259,7 +259,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCh&quot;, &quot;nomeCorso&quot;: &quot;Eco Design Inclusivo&quot;, &quot;sede&quot;: &quot;Pescara&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unich.html">Università degli Studi "Gabriele d'Annunzio" di Chieti-Pescara</a></td>
+                        <td><a class="uni" href="/atenei/unich">Università degli Studi "Gabriele d'Annunzio" di Chieti-Pescara</a></td>
                         <td colspan="4"><strong>Eco Design Inclusivo</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -269,7 +269,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniFe&quot;, &quot;nomeCorso&quot;: &quot;Design di prodotto e servizio per la cultura e la salute&quot;, &quot;sede&quot;: &quot;Ferrara&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unife.html">Università degli Studi di Ferrara</a></td>
+                        <td><a class="uni" href="/atenei/unife">Università degli Studi di Ferrara</a></td>
                         <td colspan="4"><strong>Design di prodotto e servizio per la cultura e la salute</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -279,7 +279,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniFi&quot;, &quot;nomeCorso&quot;: &quot;Design Sistema Moda&quot;, &quot;sede&quot;: &quot;Firenze&quot;, &quot;didattica&quot;: &quot;Mista&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unifi.html">Università degli Studi di Firenze</a></td>
+                        <td><a class="uni" href="/atenei/unifi">Università degli Studi di Firenze</a></td>
                         <td colspan="4"><strong>Design Sistema Moda</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -289,7 +289,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniFi&quot;, &quot;nomeCorso&quot;: &quot;Design per l'innovazione sostenibile&quot;, &quot;sede&quot;: &quot;Firenze&quot;, &quot;didattica&quot;: &quot;Mista&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unifi.html">Università degli Studi di Firenze</a></td>
+                        <td><a class="uni" href="/atenei/unifi">Università degli Studi di Firenze</a></td>
                         <td colspan="4"><strong>Design per l'innovazione sostenibile</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -299,7 +299,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniGe&quot;, &quot;nomeCorso&quot;: &quot;Design Navale e Nautico&quot;, &quot;sede&quot;: &quot;La Spezia&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unige.html">Università degli Studi di Genova</a></td>
+                        <td><a class="uni" href="/atenei/unige">Università degli Studi di Genova</a></td>
                         <td colspan="4"><strong>Design Navale e Nautico</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -309,7 +309,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniGe&quot;, &quot;nomeCorso&quot;: &quot;Design prodotto evento&quot;, &quot;sede&quot;: &quot;Genova&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unige.html">Università degli Studi di Genova</a></td>
+                        <td><a class="uni" href="/atenei/unige">Università degli Studi di Genova</a></td>
                         <td colspan="4"><strong>Design prodotto evento</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -319,7 +319,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniNa&quot;, &quot;nomeCorso&quot;: &quot;Design for the Built Environment&quot;, &quot;sede&quot;: &quot;Napoli&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unina.html">Università degli Studi di Napoli "Federico II"</a></td>
+                        <td><a class="uni" href="/atenei/unina">Università degli Studi di Napoli "Federico II"</a></td>
                         <td colspan="4"><strong>Design for the Built Environment</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -329,7 +329,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPa&quot;, &quot;nomeCorso&quot;: &quot;Design, Sostenibilità, Cultura Digitale per il Territorio&quot;, &quot;sede&quot;: &quot;Palermo&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipa.html">Università degli Studi di Palermo</a></td>
+                        <td><a class="uni" href="/atenei/unipa">Università degli Studi di Palermo</a></td>
                         <td colspan="4"><strong>Design, Sostenibilità, Cultura Digitale per il Territorio</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -339,7 +339,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPg&quot;, &quot;nomeCorso&quot;: &quot;PLANET LIFE DESIGN&quot;, &quot;sede&quot;: &quot;Assisi&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipg.html">Università degli Studi di Perugia</a></td>
+                        <td><a class="uni" href="/atenei/unipg">Università degli Studi di Perugia</a></td>
                         <td colspan="4"><strong>PLANET LIFE DESIGN</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -349,7 +349,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniRc&quot;, &quot;nomeCorso&quot;: &quot;Design per le culture mediterranee. Prodotto|Spazio|Comunicazione&quot;, &quot;sede&quot;: &quot;Reggio Di Calabria&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unirc.html">Università degli Studi "Mediterranea" di Reggio Calabria</a></td>
+                        <td><a class="uni" href="/atenei/unirc">Università degli Studi "Mediterranea" di Reggio Calabria</a></td>
                         <td colspan="4"><strong>Design per le culture mediterranee. Prodotto|Spazio|Comunicazione</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -359,7 +359,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniRoma1&quot;, &quot;nomeCorso&quot;: &quot;Design, Comunicazione Visiva e Multimediale&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/uniroma1.html">Sapienza Università di Roma</a></td>
+                        <td><a class="uni" href="/atenei/uniroma1">Sapienza Università di Roma</a></td>
                         <td colspan="4"><strong>Design, Comunicazione Visiva e Multimediale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -369,7 +369,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniRoma1&quot;, &quot;nomeCorso&quot;: &quot;Product and Service Design&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/uniroma1.html">Sapienza Università di Roma</a></td>
+                        <td><a class="uni" href="/atenei/uniroma1">Sapienza Università di Roma</a></td>
                         <td colspan="4"><strong>Product and Service Design</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -395,7 +395,7 @@
                 </a>
             </p>
             <p>
-                <a class="a_footer github" href="https://www.instagram.com/unidirectory/" target="_blank"
+                <a class="a_footer github" href="https://www.instagram.com/unidirectory" target="_blank"
                     rel="noopener noreferrer">
                     <i class="fa-brands fa-instagram"></i> Instagram
                 </a>
@@ -413,16 +413,15 @@
                 &middot;
                 <a class="a_footer" href="https://ustat.mur.gov.it/" target="_blank" rel="noopener noreferrer">USTAT</a>
             </p>
-            <p><a class="a_footer" href="../about.html">About</a></p>
-            <p><a class="a_footer" href="../privacy.html">Privacy Policy</a></p>
-            <p><a class="a_footer" href="../sitemap.xml">Sitemap</a></p>
+            <p><a class="a_footer" href="/about">About</a></p>
+            <p><a class="a_footer" href="/privacy">Privacy Policy</a></p>
+            <p><a class="a_footer" href="/sitemap.xml">Sitemap</a></p>
             <p><a class="a_footer" href="mailto:info@unidirectory.it">Contattaci</a></p>
         </div>
     </footer>
-    <script src="../assets/js/footer.js"></script>
-    <script src="../assets/js/scriptclassi.js"></script>
+    <script src="/assets/js/scriptclassi.js"></script>
     <script>
-        caricaTabella("LM-12");
+        caricaTabella();
         ordinecorso = true;
         ordinecitta = false;
         ordineregione = false;

@@ -40,9 +40,9 @@
         content="https://unidirectory.it/assets/img/iud_icon.png">
 
 
-    <link rel="icon" type="image/png" href="../assets/img/iud_icon.png">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/classi.css">
+    <link rel="icon" type="image/png" href="/assets/img/iud_icon.png">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/classi.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <script type="application/ld+json">
@@ -63,7 +63,7 @@
             <div class="header">
                 <div class="header1">
                     <a href="/">
-                        <img class="logo" src="../assets/img/iud_image.png" alt="Logo Unidirectory">
+                        <img class="logo" src="/assets/img/iud_image.png" alt="Logo Unidirectory">
                     </a>
                 </div>
                 <div class="header2">
@@ -78,7 +78,7 @@
         <div class="container table-responsive">
             <div class="toolbar-tabella">
                 <div class="filtri">
-                    <select id="filtroLingua" onchange="gestisciFiltroLingua(this.value, 'LM-6')">
+                    <select id="filtroLingua" onchange="gestisciFiltroLingua()">
                         <option value="">Tutte le lingue</option>
                         <option value="italiano">Italiano</option>
                         <option value="inglese">Inglese</option>
@@ -86,12 +86,12 @@
                         <option value="francese">Francese</option>
                         <option value="ladino">Ladino</option>
                     </select>
-                    <select id="filtroAccesso" onchange="gestisciFiltroAccesso(this.value, 'LM-6')">
+                    <select id="filtroAccesso" onchange="gestisciFiltroAccesso()">
                         <option value="">Tutti gli accessi</option>
                         <option value="libero">Accesso libero</option>
                         <option value="programmato">Accesso programmato</option>
                     </select>
-                    <select id="filtroDidattica" onchange="gestisciFiltroDidattica(this.value, 'LM-6')">
+                    <select id="filtroDidattica" onchange="gestisciFiltroDidattica()">
                         <option value="">Tutte le didattiche</option>
                         <option value="presenza">In presenza</option>
                         <option value="distanza">A distanza</option>
@@ -99,9 +99,9 @@
                     </select>
                 </div>
                 <div class="ordina">
-                    <button type="button" onclick="ordinaPerCorso('LM-6')">Ordina per corso</button>
-                    <button type="button" onclick="ordinaPerSede('LM-6')">Ordina per sede</button>
-                    <button type="button" onclick="ordinaPerRegione('LM-6')">Ordina per regione</button>
+                    <button type="button" onclick="ordinaPerCorso()">Ordina per corso</button>
+                    <button type="button" onclick="ordinaPerSede()">Ordina per sede</button>
+                    <button type="button" onclick="ordinaPerRegione()">Ordina per regione</button>
                 </div>
             </div>
             <input type="search" id="searchNelleClassi" placeholder="Cerca università, sede, regione o corso...">
@@ -109,7 +109,7 @@
             <table>
                 <tbody id="tabellauni">
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UPO&quot;, &quot;nomeCorso&quot;: &quot;Biologia&quot;, &quot;sede&quot;: &quot;Alessandria&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/upo.html">Università degli Studi del Piemonte Orientale "Amedeo Avogadro"</a></td>
+                        <td><a class="uni" href="/atenei/upo">Università degli Studi del Piemonte Orientale "Amedeo Avogadro"</a></td>
                         <td colspan="4"><strong>Biologia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -119,7 +119,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UPO&quot;, &quot;nomeCorso&quot;: &quot;Food Health and Environment&quot;, &quot;sede&quot;: &quot;Vercelli&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/upo.html">Università degli Studi del Piemonte Orientale "Amedeo Avogadro"</a></td>
+                        <td><a class="uni" href="/atenei/upo">Università degli Studi del Piemonte Orientale "Amedeo Avogadro"</a></td>
                         <td colspan="4"><strong>Food Health and Environment</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -129,7 +129,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBa&quot;, &quot;nomeCorso&quot;: &quot;BIOLOGIA AMBIENTALE&quot;, &quot;sede&quot;: &quot;Bari&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniba.html">Università degli Studi di Bari "Aldo Moro"</a></td>
+                        <td><a class="uni" href="/atenei/uniba">Università degli Studi di Bari "Aldo Moro"</a></td>
                         <td colspan="4"><strong>BIOLOGIA AMBIENTALE</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -139,7 +139,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBa&quot;, &quot;nomeCorso&quot;: &quot;BIOLOGIA CELLULARE E MOLECOLARE&quot;, &quot;sede&quot;: &quot;Bari&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniba.html">Università degli Studi di Bari "Aldo Moro"</a></td>
+                        <td><a class="uni" href="/atenei/uniba">Università degli Studi di Bari "Aldo Moro"</a></td>
                         <td colspan="4"><strong>BIOLOGIA CELLULARE E MOLECOLARE</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -149,7 +149,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBa&quot;, &quot;nomeCorso&quot;: &quot;BIOLOGIA MARINA&quot;, &quot;sede&quot;: &quot;Bari&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniba.html">Università degli Studi di Bari "Aldo Moro"</a></td>
+                        <td><a class="uni" href="/atenei/uniba">Università degli Studi di Bari "Aldo Moro"</a></td>
                         <td colspan="4"><strong>BIOLOGIA MARINA</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -159,7 +159,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBa&quot;, &quot;nomeCorso&quot;: &quot;SCIENZE BIOSANITARIE&quot;, &quot;sede&quot;: &quot;Bari&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniba.html">Università degli Studi di Bari "Aldo Moro"</a></td>
+                        <td><a class="uni" href="/atenei/uniba">Università degli Studi di Bari "Aldo Moro"</a></td>
                         <td colspan="4"><strong>SCIENZE BIOSANITARIE</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -169,7 +169,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBo&quot;, &quot;nomeCorso&quot;: &quot;Biodiversità ed Evoluzione&quot;, &quot;sede&quot;: &quot;Bologna&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unibo.html">Alma Mater Studiorum - Università di Bologna</a></td>
+                        <td><a class="uni" href="/atenei/unibo">Alma Mater Studiorum - Università di Bologna</a></td>
                         <td colspan="4"><strong>Biodiversità ed Evoluzione</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -179,7 +179,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBo&quot;, &quot;nomeCorso&quot;: &quot;Bioinformatics&quot;, &quot;sede&quot;: &quot;Bologna&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unibo.html">Alma Mater Studiorum - Università di Bologna</a></td>
+                        <td><a class="uni" href="/atenei/unibo">Alma Mater Studiorum - Università di Bologna</a></td>
                         <td colspan="4"><strong>Bioinformatics</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -189,7 +189,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBo&quot;, &quot;nomeCorso&quot;: &quot;Biologia Marina&quot;, &quot;sede&quot;: &quot;Ravenna&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unibo.html">Alma Mater Studiorum - Università di Bologna</a></td>
+                        <td><a class="uni" href="/atenei/unibo">Alma Mater Studiorum - Università di Bologna</a></td>
                         <td colspan="4"><strong>Biologia Marina</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -199,7 +199,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBo&quot;, &quot;nomeCorso&quot;: &quot;Biologia della salute&quot;, &quot;sede&quot;: &quot;Bologna&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unibo.html">Alma Mater Studiorum - Università di Bologna</a></td>
+                        <td><a class="uni" href="/atenei/unibo">Alma Mater Studiorum - Università di Bologna</a></td>
                         <td colspan="4"><strong>Biologia della salute</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -209,7 +209,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniBo&quot;, &quot;nomeCorso&quot;: &quot;Molecular and Cell Biology&quot;, &quot;sede&quot;: &quot;Bologna&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unibo.html">Alma Mater Studiorum - Università di Bologna</a></td>
+                        <td><a class="uni" href="/atenei/unibo">Alma Mater Studiorum - Università di Bologna</a></td>
                         <td colspan="4"><strong>Molecular and Cell Biology</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -219,7 +219,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCa&quot;, &quot;nomeCorso&quot;: &quot;Bio-Ecologia Marina&quot;, &quot;sede&quot;: &quot;Cagliari&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unica.html">Università degli Studi di Cagliari</a></td>
+                        <td><a class="uni" href="/atenei/unica">Università degli Studi di Cagliari</a></td>
                         <td colspan="4"><strong>Bio-Ecologia Marina</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -229,7 +229,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCa&quot;, &quot;nomeCorso&quot;: &quot;Biologia Cellulare e Molecolare&quot;, &quot;sede&quot;: &quot;Cagliari&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unica.html">Università degli Studi di Cagliari</a></td>
+                        <td><a class="uni" href="/atenei/unica">Università degli Studi di Cagliari</a></td>
                         <td colspan="4"><strong>Biologia Cellulare e Molecolare</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -239,7 +239,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCa&quot;, &quot;nomeCorso&quot;: &quot;Neuropsicobiologia&quot;, &quot;sede&quot;: &quot;Cagliari&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unica.html">Università degli Studi di Cagliari</a></td>
+                        <td><a class="uni" href="/atenei/unica">Università degli Studi di Cagliari</a></td>
                         <td colspan="4"><strong>Neuropsicobiologia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -249,7 +249,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCal&quot;, &quot;nomeCorso&quot;: &quot;Biologia&quot;, &quot;sede&quot;: &quot;Rende&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unical.html">Università della Calabria</a></td>
+                        <td><a class="uni" href="/atenei/unical">Università della Calabria</a></td>
                         <td colspan="4"><strong>Biologia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -259,7 +259,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCam&quot;, &quot;nomeCorso&quot;: &quot;Biological Sciences&quot;, &quot;sede&quot;: &quot;Camerino&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unicam.html">Università degli Studi di Camerino</a></td>
+                        <td><a class="uni" href="/atenei/unicam">Università degli Studi di Camerino</a></td>
                         <td colspan="4"><strong>Biological Sciences</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -269,7 +269,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCampania&quot;, &quot;nomeCorso&quot;: &quot;Biologia&quot;, &quot;sede&quot;: &quot;Caserta&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unicampania.html">Università degli Studi della Campania "Luigi Vanvitelli"</a></td>
+                        <td><a class="uni" href="/atenei/unicampania">Università degli Studi della Campania "Luigi Vanvitelli"</a></td>
                         <td colspan="4"><strong>Biologia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -279,7 +279,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCt&quot;, &quot;nomeCorso&quot;: &quot;Biologia Sperimentale e Applicata&quot;, &quot;sede&quot;: &quot;Catania&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unict.html">Università degli Studi di Catania</a></td>
+                        <td><a class="uni" href="/atenei/unict">Università degli Studi di Catania</a></td>
                         <td colspan="4"><strong>Biologia Sperimentale e Applicata</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -289,7 +289,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniCt&quot;, &quot;nomeCorso&quot;: &quot;Biologia ambientale&quot;, &quot;sede&quot;: &quot;Catania&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unict.html">Università degli Studi di Catania</a></td>
+                        <td><a class="uni" href="/atenei/unict">Università degli Studi di Catania</a></td>
                         <td colspan="4"><strong>Biologia ambientale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -299,7 +299,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniFe&quot;, &quot;nomeCorso&quot;: &quot;Biologia molecolare, Genomica e Biodiversità&quot;, &quot;sede&quot;: &quot;Ferrara&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unife.html">Università degli Studi di Ferrara</a></td>
+                        <td><a class="uni" href="/atenei/unife">Università degli Studi di Ferrara</a></td>
                         <td colspan="4"><strong>Biologia molecolare, Genomica e Biodiversità</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -309,7 +309,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniFg&quot;, &quot;nomeCorso&quot;: &quot;CLINICAL AND EXPERIMENTAL BIOLOGY&quot;, &quot;sede&quot;: &quot;Foggia&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unifg.html">Università degli Studi di Foggia</a></td>
+                        <td><a class="uni" href="/atenei/unifg">Università degli Studi di Foggia</a></td>
                         <td colspan="4"><strong>CLINICAL AND EXPERIMENTAL BIOLOGY</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -319,7 +319,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniFi&quot;, &quot;nomeCorso&quot;: &quot;BIOLOGIA DELL'AMBIENTE E DEL COMPORTAMENTO&quot;, &quot;sede&quot;: &quot;Firenze&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unifi.html">Università degli Studi di Firenze</a></td>
+                        <td><a class="uni" href="/atenei/unifi">Università degli Studi di Firenze</a></td>
                         <td colspan="4"><strong>BIOLOGIA DELL'AMBIENTE E DEL COMPORTAMENTO</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -329,7 +329,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniFi&quot;, &quot;nomeCorso&quot;: &quot;BIOLOGIA MOLECOLARE E APPLICATA&quot;, &quot;sede&quot;: &quot;Firenze&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unifi.html">Università degli Studi di Firenze</a></td>
+                        <td><a class="uni" href="/atenei/unifi">Università degli Studi di Firenze</a></td>
                         <td colspan="4"><strong>BIOLOGIA MOLECOLARE E APPLICATA</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -339,7 +339,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniGe&quot;, &quot;nomeCorso&quot;: &quot;Biologia Applicata e Sperimentale&quot;, &quot;sede&quot;: &quot;Genova&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unige.html">Università degli Studi di Genova</a></td>
+                        <td><a class="uni" href="/atenei/unige">Università degli Studi di Genova</a></td>
                         <td colspan="4"><strong>Biologia Applicata e Sperimentale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -349,7 +349,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniGe&quot;, &quot;nomeCorso&quot;: &quot;Biologia ed ecologia marina&quot;, &quot;sede&quot;: &quot;Genova&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unige.html">Università degli Studi di Genova</a></td>
+                        <td><a class="uni" href="/atenei/unige">Università degli Studi di Genova</a></td>
                         <td colspan="4"><strong>Biologia ed ecologia marina</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -359,7 +359,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMe&quot;, &quot;nomeCorso&quot;: &quot;Biologia della Salute delle Tecnologie applicate e della Nutrizione&quot;, &quot;sede&quot;: &quot;Messina&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unime.html">Università degli Studi di Messina</a></td>
+                        <td><a class="uni" href="/atenei/unime">Università degli Studi di Messina</a></td>
                         <td colspan="4"><strong>Biologia della Salute delle Tecnologie applicate e della Nutrizione</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -369,7 +369,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMe&quot;, &quot;nomeCorso&quot;: &quot;Biologia ed Ecologia dell'Ambiente Marino Costiero&quot;, &quot;sede&quot;: &quot;Messina&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unime.html">Università degli Studi di Messina</a></td>
+                        <td><a class="uni" href="/atenei/unime">Università degli Studi di Messina</a></td>
                         <td colspan="4"><strong>Biologia ed Ecologia dell'Ambiente Marino Costiero</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -379,7 +379,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMi&quot;, &quot;nomeCorso&quot;: &quot;Biodiversità ed evoluzione biologica&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unimi.html">Università degli Studi di Milano</a></td>
+                        <td><a class="uni" href="/atenei/unimi">Università degli Studi di Milano</a></td>
                         <td colspan="4"><strong>Biodiversità ed evoluzione biologica</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -389,7 +389,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMi&quot;, &quot;nomeCorso&quot;: &quot;Biologia applicata alla ricerca biomedica&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unimi.html">Università degli Studi di Milano</a></td>
+                        <td><a class="uni" href="/atenei/unimi">Università degli Studi di Milano</a></td>
                         <td colspan="4"><strong>Biologia applicata alla ricerca biomedica</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -399,7 +399,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMi&quot;, &quot;nomeCorso&quot;: &quot;Biologia applicata alle scienze della nutrizione&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unimi.html">Università degli Studi di Milano</a></td>
+                        <td><a class="uni" href="/atenei/unimi">Università degli Studi di Milano</a></td>
                         <td colspan="4"><strong>Biologia applicata alle scienze della nutrizione</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -409,7 +409,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMi&quot;, &quot;nomeCorso&quot;: &quot;Molecular Biology of the Cell - Biologia molecolare della cellula&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unimi.html">Università degli Studi di Milano</a></td>
+                        <td><a class="uni" href="/atenei/unimi">Università degli Studi di Milano</a></td>
                         <td colspan="4"><strong>Molecular Biology of the Cell - Biologia molecolare della cellula</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -419,7 +419,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMi&quot;, &quot;nomeCorso&quot;: &quot;Plant Science - Biologia Vegetale&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;Mista&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unimi.html">Università degli Studi di Milano</a></td>
+                        <td><a class="uni" href="/atenei/unimi">Università degli Studi di Milano</a></td>
                         <td colspan="4"><strong>Plant Science - Biologia Vegetale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -429,7 +429,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMiB&quot;, &quot;nomeCorso&quot;: &quot;BIOLOGIA&quot;, &quot;sede&quot;: &quot;Milano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unimib.html">Università degli Studi di Milano-Bicocca</a></td>
+                        <td><a class="uni" href="/atenei/unimib">Università degli Studi di Milano-Bicocca</a></td>
                         <td colspan="4"><strong>BIOLOGIA</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -439,7 +439,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMoRe&quot;, &quot;nomeCorso&quot;: &quot;BIOSCIENZE&quot;, &quot;sede&quot;: &quot;Modena&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unimore.html">Università degli Studi di Modena e Reggio Emilia</a></td>
+                        <td><a class="uni" href="/atenei/unimore">Università degli Studi di Modena e Reggio Emilia</a></td>
                         <td colspan="4"><strong>BIOSCIENZE</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -449,7 +449,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniMol&quot;, &quot;nomeCorso&quot;: &quot;Biologia&quot;, &quot;sede&quot;: &quot;Pesche&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unimol.html">Università degli Studi del Molise</a></td>
+                        <td><a class="uni" href="/atenei/unimol">Università degli Studi del Molise</a></td>
                         <td colspan="4"><strong>Biologia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -459,7 +459,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniNa&quot;, &quot;nomeCorso&quot;: &quot;BIOLOGY OF EXTREME ENVIRONMENTS&quot;, &quot;sede&quot;: &quot;Napoli&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unina.html">Università degli Studi di Napoli "Federico II"</a></td>
+                        <td><a class="uni" href="/atenei/unina">Università degli Studi di Napoli "Federico II"</a></td>
                         <td colspan="4"><strong>BIOLOGY OF EXTREME ENVIRONMENTS</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -469,7 +469,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniNa&quot;, &quot;nomeCorso&quot;: &quot;Biologia&quot;, &quot;sede&quot;: &quot;Napoli&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unina.html">Università degli Studi di Napoli "Federico II"</a></td>
+                        <td><a class="uni" href="/atenei/unina">Università degli Studi di Napoli "Federico II"</a></td>
                         <td colspan="4"><strong>Biologia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -479,7 +479,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniNa&quot;, &quot;nomeCorso&quot;: &quot;MARINE BIOLOGY AND AQUACULTURE&quot;, &quot;sede&quot;: &quot;Napoli&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unina.html">Università degli Studi di Napoli "Federico II"</a></td>
+                        <td><a class="uni" href="/atenei/unina">Università degli Studi di Napoli "Federico II"</a></td>
                         <td colspan="4"><strong>MARINE BIOLOGY AND AQUACULTURE</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -489,7 +489,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniNa&quot;, &quot;nomeCorso&quot;: &quot;Scienze Biologiche&quot;, &quot;sede&quot;: &quot;Napoli&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unina.html">Università degli Studi di Napoli "Federico II"</a></td>
+                        <td><a class="uni" href="/atenei/unina">Università degli Studi di Napoli "Federico II"</a></td>
                         <td colspan="4"><strong>Scienze Biologiche</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -499,7 +499,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPa&quot;, &quot;nomeCorso&quot;: &quot;Biologia Molecolare e della Salute&quot;, &quot;sede&quot;: &quot;Palermo&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/unipa.html">Università degli Studi di Palermo</a></td>
+                        <td><a class="uni" href="/atenei/unipa">Università degli Studi di Palermo</a></td>
                         <td colspan="4"><strong>Biologia Molecolare e della Salute</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -509,7 +509,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPa&quot;, &quot;nomeCorso&quot;: &quot;Biologia marina&quot;, &quot;sede&quot;: &quot;Palermo&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipa.html">Università degli Studi di Palermo</a></td>
+                        <td><a class="uni" href="/atenei/unipa">Università degli Studi di Palermo</a></td>
                         <td colspan="4"><strong>Biologia marina</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -519,7 +519,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPa&quot;, &quot;nomeCorso&quot;: &quot;Neuroscience&quot;, &quot;sede&quot;: &quot;Palermo&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipa.html">Università degli Studi di Palermo</a></td>
+                        <td><a class="uni" href="/atenei/unipa">Università degli Studi di Palermo</a></td>
                         <td colspan="4"><strong>Neuroscience</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -529,7 +529,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniParthenope&quot;, &quot;nomeCorso&quot;: &quot;Biologia per la Sostenibilita'&quot;, &quot;sede&quot;: &quot;Napoli&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniparthenope.html">Università degli Studi di Napoli "Parthenope"</a></td>
+                        <td><a class="uni" href="/atenei/uniparthenope">Università degli Studi di Napoli "Parthenope"</a></td>
                         <td colspan="4"><strong>Biologia per la Sostenibilita'</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -539,7 +539,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPd&quot;, &quot;nomeCorso&quot;: &quot;Biologia sanitaria&quot;, &quot;sede&quot;: &quot;Padova&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipd.html">Università degli Studi di Padova</a></td>
+                        <td><a class="uni" href="/atenei/unipd">Università degli Studi di Padova</a></td>
                         <td colspan="4"><strong>Biologia sanitaria</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -549,7 +549,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPd&quot;, &quot;nomeCorso&quot;: &quot;Evolutionary biology&quot;, &quot;sede&quot;: &quot;Padova&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipd.html">Università degli Studi di Padova</a></td>
+                        <td><a class="uni" href="/atenei/unipd">Università degli Studi di Padova</a></td>
                         <td colspan="4"><strong>Evolutionary biology</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -559,7 +559,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPd&quot;, &quot;nomeCorso&quot;: &quot;Marine Biology&quot;, &quot;sede&quot;: &quot;Chioggia&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipd.html">Università degli Studi di Padova</a></td>
+                        <td><a class="uni" href="/atenei/unipd">Università degli Studi di Padova</a></td>
                         <td colspan="4"><strong>Marine Biology</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -569,7 +569,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPd&quot;, &quot;nomeCorso&quot;: &quot;Molecular Biology&quot;, &quot;sede&quot;: &quot;Padova&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipd.html">Università degli Studi di Padova</a></td>
+                        <td><a class="uni" href="/atenei/unipd">Università degli Studi di Padova</a></td>
                         <td colspan="4"><strong>Molecular Biology</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -579,7 +579,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPd&quot;, &quot;nomeCorso&quot;: &quot;Quantitative and Computational Biosciences&quot;, &quot;sede&quot;: &quot;Padova&quot;, &quot;didattica&quot;: &quot;Mista&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipd.html">Università degli Studi di Padova</a></td>
+                        <td><a class="uni" href="/atenei/unipd">Università degli Studi di Padova</a></td>
                         <td colspan="4"><strong>Quantitative and Computational Biosciences</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -589,7 +589,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPg&quot;, &quot;nomeCorso&quot;: &quot;Biologia&quot;, &quot;sede&quot;: &quot;Perugia&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipg.html">Università degli Studi di Perugia</a></td>
+                        <td><a class="uni" href="/atenei/unipg">Università degli Studi di Perugia</a></td>
                         <td colspan="4"><strong>Biologia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -599,7 +599,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPi&quot;, &quot;nomeCorso&quot;: &quot;BIOLOGIA APPLICATA ALLA BIOMEDICINA&quot;, &quot;sede&quot;: &quot;Pisa&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipi.html">Università di Pisa</a></td>
+                        <td><a class="uni" href="/atenei/unipi">Università di Pisa</a></td>
                         <td colspan="4"><strong>BIOLOGIA APPLICATA ALLA BIOMEDICINA</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -609,7 +609,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPi&quot;, &quot;nomeCorso&quot;: &quot;BIOLOGIA MARINA&quot;, &quot;sede&quot;: &quot;Pisa&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipi.html">Università di Pisa</a></td>
+                        <td><a class="uni" href="/atenei/unipi">Università di Pisa</a></td>
                         <td colspan="4"><strong>BIOLOGIA MARINA</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -619,7 +619,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPi&quot;, &quot;nomeCorso&quot;: &quot;BIOLOGIA MOLECOLARE E CELLULARE&quot;, &quot;sede&quot;: &quot;Pisa&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipi.html">Università di Pisa</a></td>
+                        <td><a class="uni" href="/atenei/unipi">Università di Pisa</a></td>
                         <td colspan="4"><strong>BIOLOGIA MOLECOLARE E CELLULARE</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -629,7 +629,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPi&quot;, &quot;nomeCorso&quot;: &quot;CONSERVAZIONE ED EVOLUZIONE&quot;, &quot;sede&quot;: &quot;Pisa&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipi.html">Università di Pisa</a></td>
+                        <td><a class="uni" href="/atenei/unipi">Università di Pisa</a></td>
                         <td colspan="4"><strong>CONSERVAZIONE ED EVOLUZIONE</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -639,7 +639,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPi&quot;, &quot;nomeCorso&quot;: &quot;NEUROSCIENCE&quot;, &quot;sede&quot;: &quot;Pisa&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipi.html">Università di Pisa</a></td>
+                        <td><a class="uni" href="/atenei/unipi">Università di Pisa</a></td>
                         <td colspan="4"><strong>NEUROSCIENCE</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -649,7 +649,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPr&quot;, &quot;nomeCorso&quot;: &quot;Ecologia ed Etologia per la Conservazione della Natura&quot;, &quot;sede&quot;: &quot;Parma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipr.html">Università degli Studi di Parma</a></td>
+                        <td><a class="uni" href="/atenei/unipr">Università degli Studi di Parma</a></td>
                         <td colspan="4"><strong>Ecologia ed Etologia per la Conservazione della Natura</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -659,7 +659,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPr&quot;, &quot;nomeCorso&quot;: &quot;Scienze Biomediche Traslazionali&quot;, &quot;sede&quot;: &quot;Parma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipr.html">Università degli Studi di Parma</a></td>
+                        <td><a class="uni" href="/atenei/unipr">Università degli Studi di Parma</a></td>
                         <td colspan="4"><strong>Scienze Biomediche Traslazionali</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -669,7 +669,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPr&quot;, &quot;nomeCorso&quot;: &quot;Scienze Biomolecolari, Genomiche e Cellulari&quot;, &quot;sede&quot;: &quot;Parma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipr.html">Università degli Studi di Parma</a></td>
+                        <td><a class="uni" href="/atenei/unipr">Università degli Studi di Parma</a></td>
                         <td colspan="4"><strong>Scienze Biomolecolari, Genomiche e Cellulari</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -679,7 +679,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPv&quot;, &quot;nomeCorso&quot;: &quot;Biologia Sperimentale ed Applicata&quot;, &quot;sede&quot;: &quot;Pavia&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipv.html">Università degli Studi di Pavia</a></td>
+                        <td><a class="uni" href="/atenei/unipv">Università degli Studi di Pavia</a></td>
                         <td colspan="4"><strong>Biologia Sperimentale ed Applicata</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -689,7 +689,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPv&quot;, &quot;nomeCorso&quot;: &quot;Molecular Biology and Genetics&quot;, &quot;sede&quot;: &quot;Pavia&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipv.html">Università degli Studi di Pavia</a></td>
+                        <td><a class="uni" href="/atenei/unipv">Università degli Studi di Pavia</a></td>
                         <td colspan="4"><strong>Molecular Biology and Genetics</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -699,7 +699,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniPv&quot;, &quot;nomeCorso&quot;: &quot;Neurobiology&quot;, &quot;sede&quot;: &quot;Pavia&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unipv.html">Università degli Studi di Pavia</a></td>
+                        <td><a class="uni" href="/atenei/unipv">Università degli Studi di Pavia</a></td>
                         <td colspan="4"><strong>Neurobiology</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -709,7 +709,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniRoma1&quot;, &quot;nomeCorso&quot;: &quot;Biologia e Tecnologie Cellulari&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniroma1.html">Sapienza Università di Roma</a></td>
+                        <td><a class="uni" href="/atenei/uniroma1">Sapienza Università di Roma</a></td>
                         <td colspan="4"><strong>Biologia e Tecnologie Cellulari</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -719,7 +719,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniRoma1&quot;, &quot;nomeCorso&quot;: &quot;Ecobiologia&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/uniroma1.html">Sapienza Università di Roma</a></td>
+                        <td><a class="uni" href="/atenei/uniroma1">Sapienza Università di Roma</a></td>
                         <td colspan="4"><strong>Ecobiologia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -729,7 +729,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniRoma1&quot;, &quot;nomeCorso&quot;: &quot;Genetica e Biologia Molecolare&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/uniroma1.html">Sapienza Università di Roma</a></td>
+                        <td><a class="uni" href="/atenei/uniroma1">Sapienza Università di Roma</a></td>
                         <td colspan="4"><strong>Genetica e Biologia Molecolare</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -739,7 +739,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniRoma1&quot;, &quot;nomeCorso&quot;: &quot;Neurobiologia&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: false}">
-                        <td><a class="uni" href="../atenei/uniroma1.html">Sapienza Università di Roma</a></td>
+                        <td><a class="uni" href="/atenei/uniroma1">Sapienza Università di Roma</a></td>
                         <td colspan="4"><strong>Neurobiologia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -749,7 +749,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniRoma2&quot;, &quot;nomeCorso&quot;: &quot;Bioinformatica&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniroma2.html">Università degli Studi di Roma Tor Vergata</a></td>
+                        <td><a class="uni" href="/atenei/uniroma2">Università degli Studi di Roma Tor Vergata</a></td>
                         <td colspan="4"><strong>Bioinformatica</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -759,7 +759,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniRoma2&quot;, &quot;nomeCorso&quot;: &quot;Biologia Ambientale&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniroma2.html">Università degli Studi di Roma Tor Vergata</a></td>
+                        <td><a class="uni" href="/atenei/uniroma2">Università degli Studi di Roma Tor Vergata</a></td>
                         <td colspan="4"><strong>Biologia Ambientale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -769,7 +769,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniRoma2&quot;, &quot;nomeCorso&quot;: &quot;Biologia Cellulare, Molecolare e Ricerca Biomedica&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniroma2.html">Università degli Studi di Roma Tor Vergata</a></td>
+                        <td><a class="uni" href="/atenei/uniroma2">Università degli Studi di Roma Tor Vergata</a></td>
                         <td colspan="4"><strong>Biologia Cellulare, Molecolare e Ricerca Biomedica</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -779,7 +779,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniRoma3&quot;, &quot;nomeCorso&quot;: &quot;Biodiversità e Tutela dell'Ambiente&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniroma3.html">Università degli Studi Roma Tre</a></td>
+                        <td><a class="uni" href="/atenei/uniroma3">Università degli Studi Roma Tre</a></td>
                         <td colspan="4"><strong>Biodiversità e Tutela dell'Ambiente</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -789,7 +789,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniRoma3&quot;, &quot;nomeCorso&quot;: &quot;Biologia Molecolare, Cellulare e della Salute&quot;, &quot;sede&quot;: &quot;Roma&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniroma3.html">Università degli Studi Roma Tre</a></td>
+                        <td><a class="uni" href="/atenei/uniroma3">Università degli Studi Roma Tre</a></td>
                         <td colspan="4"><strong>Biologia Molecolare, Cellulare e della Salute</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -799,7 +799,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniSa&quot;, &quot;nomeCorso&quot;: &quot;Biologia&quot;, &quot;sede&quot;: &quot;Fisciano&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unisa.html">Università degli Studi di Salerno</a></td>
+                        <td><a class="uni" href="/atenei/unisa">Università degli Studi di Salerno</a></td>
                         <td colspan="4"><strong>Biologia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -809,7 +809,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniSalento&quot;, &quot;nomeCorso&quot;: &quot;BIOLOGIA SPERIMENTALE ED APPLICATA&quot;, &quot;sede&quot;: &quot;Lecce&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unisalento.html">Università del Salento</a></td>
+                        <td><a class="uni" href="/atenei/unisalento">Università del Salento</a></td>
                         <td colspan="4"><strong>BIOLOGIA SPERIMENTALE ED APPLICATA</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -819,7 +819,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniSalento&quot;, &quot;nomeCorso&quot;: &quot;Coastal and Marine Biology and Ecology (Biologia ed Ecologia Costiera e Marina)&quot;, &quot;sede&quot;: &quot;Lecce&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unisalento.html">Università del Salento</a></td>
+                        <td><a class="uni" href="/atenei/unisalento">Università del Salento</a></td>
                         <td colspan="4"><strong>Coastal and Marine Biology and Ecology (Biologia ed Ecologia Costiera e Marina)</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -829,7 +829,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniSannio&quot;, &quot;nomeCorso&quot;: &quot;BIOLOGIA&quot;, &quot;sede&quot;: &quot;Benevento&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unisannio.html">Università degli Studi del Sannio</a></td>
+                        <td><a class="uni" href="/atenei/unisannio">Università degli Studi del Sannio</a></td>
                         <td colspan="4"><strong>BIOLOGIA</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -839,7 +839,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniSi&quot;, &quot;nomeCorso&quot;: &quot;Biodiversity, Conservation and Environmental Quality&quot;, &quot;sede&quot;: &quot;Siena&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unisi.html">Università degli Studi di Siena</a></td>
+                        <td><a class="uni" href="/atenei/unisi">Università degli Studi di Siena</a></td>
                         <td colspan="4"><strong>Biodiversity, Conservation and Environmental Quality</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -849,7 +849,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniSi&quot;, &quot;nomeCorso&quot;: &quot;Biologia&quot;, &quot;sede&quot;: &quot;Siena&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unisi.html">Università degli Studi di Siena</a></td>
+                        <td><a class="uni" href="/atenei/unisi">Università degli Studi di Siena</a></td>
                         <td colspan="4"><strong>Biologia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -859,7 +859,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniSi&quot;, &quot;nomeCorso&quot;: &quot;Biologia sanitaria&quot;, &quot;sede&quot;: &quot;Siena&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unisi.html">Università degli Studi di Siena</a></td>
+                        <td><a class="uni" href="/atenei/unisi">Università degli Studi di Siena</a></td>
                         <td colspan="4"><strong>Biologia sanitaria</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -869,7 +869,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniSs&quot;, &quot;nomeCorso&quot;: &quot;Biologia&quot;, &quot;sede&quot;: &quot;Sassari&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniss.html">Università degli Studi di Sassari</a></td>
+                        <td><a class="uni" href="/atenei/uniss">Università degli Studi di Sassari</a></td>
                         <td colspan="4"><strong>Biologia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -879,7 +879,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTo&quot;, &quot;nomeCorso&quot;: &quot;Biologia dell'Ambiente&quot;, &quot;sede&quot;: &quot;Torino&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unito.html">Università degli Studi di Torino</a></td>
+                        <td><a class="uni" href="/atenei/unito">Università degli Studi di Torino</a></td>
                         <td colspan="4"><strong>Biologia dell'Ambiente</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -889,7 +889,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTo&quot;, &quot;nomeCorso&quot;: &quot;Biotecnologie vegetali&quot;, &quot;sede&quot;: &quot;Grugliasco&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unito.html">Università degli Studi di Torino</a></td>
+                        <td><a class="uni" href="/atenei/unito">Università degli Studi di Torino</a></td>
                         <td colspan="4"><strong>Biotecnologie vegetali</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -899,7 +899,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTo&quot;, &quot;nomeCorso&quot;: &quot;CELLULAR AND MOLECULAR BIOLOGY-BIOLOGIA CELLULARE E MOLECOLARE&quot;, &quot;sede&quot;: &quot;Torino&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unito.html">Università degli Studi di Torino</a></td>
+                        <td><a class="uni" href="/atenei/unito">Università degli Studi di Torino</a></td>
                         <td colspan="4"><strong>CELLULAR AND MOLECULAR BIOLOGY-BIOLOGIA CELLULARE E MOLECOLARE</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -909,7 +909,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTs&quot;, &quot;nomeCorso&quot;: &quot;Ecologia e sostenibilità dei cambiamenti globali&quot;, &quot;sede&quot;: &quot;Trieste&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/units.html">Università degli Studi di Trieste</a></td>
+                        <td><a class="uni" href="/atenei/units">Università degli Studi di Trieste</a></td>
                         <td colspan="4"><strong>Ecologia e sostenibilità dei cambiamenti globali</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -919,7 +919,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTs&quot;, &quot;nomeCorso&quot;: &quot;Genomica funzionale&quot;, &quot;sede&quot;: &quot;Trieste&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano, Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/units.html">Università degli Studi di Trieste</a></td>
+                        <td><a class="uni" href="/atenei/units">Università degli Studi di Trieste</a></td>
                         <td colspan="4"><strong>Genomica funzionale</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -929,7 +929,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTs&quot;, &quot;nomeCorso&quot;: &quot;Neuroscience&quot;, &quot;sede&quot;: &quot;Trieste&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/units.html">Università degli Studi di Trieste</a></td>
+                        <td><a class="uni" href="/atenei/units">Università degli Studi di Trieste</a></td>
                         <td colspan="4"><strong>Neuroscience</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -939,7 +939,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTus&quot;, &quot;nomeCorso&quot;: &quot;Biologia sperimentale e bioinformatica&quot;, &quot;sede&quot;: &quot;Viterbo&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unitus.html">Università degli Studi della Tuscia</a></td>
+                        <td><a class="uni" href="/atenei/unitus">Università degli Studi della Tuscia</a></td>
                         <td colspan="4"><strong>Biologia sperimentale e bioinformatica</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -949,7 +949,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniTus&quot;, &quot;nomeCorso&quot;: &quot;Marine Biology and Ecology&quot;, &quot;sede&quot;: &quot;Civitavecchia&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/unitus.html">Università degli Studi della Tuscia</a></td>
+                        <td><a class="uni" href="/atenei/unitus">Università degli Studi della Tuscia</a></td>
                         <td colspan="4"><strong>Marine Biology and Ecology</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -959,7 +959,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniUrb&quot;, &quot;nomeCorso&quot;: &quot;Biologia della nutrizione&quot;, &quot;sede&quot;: &quot;Urbino&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uniurb.html">Università degli Studi di Urbino "Carlo Bo"</a></td>
+                        <td><a class="uni" href="/atenei/uniurb">Università degli Studi di Urbino "Carlo Bo"</a></td>
                         <td colspan="4"><strong>Biologia della nutrizione</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -969,7 +969,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UniVr&quot;, &quot;nomeCorso&quot;: &quot;Biology for Translational Research and Precision Medicine&quot;, &quot;sede&quot;: &quot;Verona&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/univr.html">Università degli Studi di Verona</a></td>
+                        <td><a class="uni" href="/atenei/univr">Università degli Studi di Verona</a></td>
                         <td colspan="4"><strong>Biology for Translational Research and Precision Medicine</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -979,7 +979,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;Uninsubria&quot;, &quot;nomeCorso&quot;: &quot;Biologia e sostenibilità&quot;, &quot;sede&quot;: &quot;Varese&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uninsubria.html">Università degli Studi dell'Insubria</a></td>
+                        <td><a class="uni" href="/atenei/uninsubria">Università degli Studi dell'Insubria</a></td>
                         <td colspan="4"><strong>Biologia e sostenibilità</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -989,7 +989,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;Uninsubria&quot;, &quot;nomeCorso&quot;: &quot;Biomedical Sciences&quot;, &quot;sede&quot;: &quot;Busto Arsizio&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/uninsubria.html">Università degli Studi dell'Insubria</a></td>
+                        <td><a class="uni" href="/atenei/uninsubria">Università degli Studi dell'Insubria</a></td>
                         <td colspan="4"><strong>Biomedical Sciences</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -999,7 +999,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UnivAq&quot;, &quot;nomeCorso&quot;: &quot;BIOSCIENZE&quot;, &quot;sede&quot;: &quot;L'Aquila&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/univaq.html">Università degli Studi dell'Aquila</a></td>
+                        <td><a class="uni" href="/atenei/univaq">Università degli Studi dell'Aquila</a></td>
                         <td colspan="4"><strong>BIOSCIENZE</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1009,7 +1009,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UnivAq&quot;, &quot;nomeCorso&quot;: &quot;Biologia Ambientale e Gestione degli Ecosistemi&quot;, &quot;sede&quot;: &quot;L'Aquila&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/univaq.html">Università degli Studi dell'Aquila</a></td>
+                        <td><a class="uni" href="/atenei/univaq">Università degli Studi dell'Aquila</a></td>
                         <td colspan="4"><strong>Biologia Ambientale e Gestione degli Ecosistemi</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1019,7 +1019,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UnivAq&quot;, &quot;nomeCorso&quot;: &quot;NEUROSCIENCES&quot;, &quot;sede&quot;: &quot;L'Aquila&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/univaq.html">Università degli Studi dell'Aquila</a></td>
+                        <td><a class="uni" href="/atenei/univaq">Università degli Studi dell'Aquila</a></td>
                         <td colspan="4"><strong>NEUROSCIENCES</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1029,7 +1029,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UnivPM&quot;, &quot;nomeCorso&quot;: &quot;BIOLOGIA MOLECOLARE E APPLICATA&quot;, &quot;sede&quot;: &quot;Ancona&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Italiano&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/univpm.html">Università Politecnica delle Marche</a></td>
+                        <td><a class="uni" href="/atenei/univpm">Università Politecnica delle Marche</a></td>
                         <td colspan="4"><strong>BIOLOGIA MOLECOLARE E APPLICATA</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1039,7 +1039,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;UnivPM&quot;, &quot;nomeCorso&quot;: &quot;MARINE BIOLOGY&quot;, &quot;sede&quot;: &quot;Ancona&quot;, &quot;didattica&quot;: &quot;In presenza&quot;, &quot;lingua&quot;: &quot;Inglese&quot;, &quot;accessoLibero&quot;: true}">
-                        <td><a class="uni" href="../atenei/univpm.html">Università Politecnica delle Marche</a></td>
+                        <td><a class="uni" href="/atenei/univpm">Università Politecnica delle Marche</a></td>
                         <td colspan="4"><strong>MARINE BIOLOGY</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -1065,7 +1065,7 @@
                 </a>
             </p>
             <p>
-                <a class="a_footer github" href="https://www.instagram.com/unidirectory/" target="_blank"
+                <a class="a_footer github" href="https://www.instagram.com/unidirectory" target="_blank"
                     rel="noopener noreferrer">
                     <i class="fa-brands fa-instagram"></i> Instagram
                 </a>
@@ -1083,16 +1083,15 @@
                 &middot;
                 <a class="a_footer" href="https://ustat.mur.gov.it/" target="_blank" rel="noopener noreferrer">USTAT</a>
             </p>
-            <p><a class="a_footer" href="../about.html">About</a></p>
-            <p><a class="a_footer" href="../privacy.html">Privacy Policy</a></p>
-            <p><a class="a_footer" href="../sitemap.xml">Sitemap</a></p>
+            <p><a class="a_footer" href="/about">About</a></p>
+            <p><a class="a_footer" href="/privacy">Privacy Policy</a></p>
+            <p><a class="a_footer" href="/sitemap.xml">Sitemap</a></p>
             <p><a class="a_footer" href="mailto:info@unidirectory.it">Contattaci</a></p>
         </div>
     </footer>
-    <script src="../assets/js/footer.js"></script>
-    <script src="../assets/js/scriptclassi.js"></script>
+    <script src="/assets/js/scriptclassi.js"></script>
     <script>
-        caricaTabella("LM-6");
+        caricaTabella();
         ordinecorso = true;
         ordinecitta = false;
         ordineregione = false;

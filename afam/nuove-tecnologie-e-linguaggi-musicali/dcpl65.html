@@ -40,9 +40,9 @@
         content="https://unidirectory.it/assets/img/iud_icon.png">
 
 
-    <link rel="icon" type="image/png" href="../../assets/img/iud_icon.png">
-    <link rel="stylesheet" href="../../assets/css/style.css">
-    <link rel="stylesheet" href="../../assets/css/classi.css">
+    <link rel="icon" type="image/png" href="/assets/img/iud_icon.png">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/classi.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <script type="application/ld+json">
@@ -63,7 +63,7 @@
             <div class="header">
                 <div class="header1">
                     <a href="/">
-                        <img class="logo" src="../../assets/img/iud_image.png" alt="Logo Unidirectory">
+                        <img class="logo" src="/assets/img/iud_image.png" alt="Logo Unidirectory">
                     </a>
                 </div>
                 <div class="header2">
@@ -78,9 +78,9 @@
         <div class="container table-responsive">
             <div class="toolbar-tabella">
                 <div class="ordina">
-                    <button type="button" onclick="ordinaPerCorso('DCPL65')">Ordina per corso</button>
-                    <button type="button" onclick="ordinaPerSede('DCPL65')">Ordina per sede</button>
-                    <button type="button" onclick="ordinaPerRegione('DCPL65')">Ordina per regione</button>
+                    <button type="button" onclick="ordinaPerCorso()">Ordina per corso</button>
+                    <button type="button" onclick="ordinaPerSede()">Ordina per sede</button>
+                    <button type="button" onclick="ordinaPerRegione()">Ordina per regione</button>
                 </div>
             </div>
             <input type="search" id="searchNelleClassi" placeholder="Cerca istituto, sede, regione o corso...">
@@ -88,7 +88,7 @@
             <table>
                 <tbody id="tabellauni">
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;ConsAl&quot;, &quot;nomeCorso&quot;: &quot;Musiche Tradizionali - Ukulele&quot;, &quot;sede&quot;: &quot;Alessandria&quot;}">
-                        <td><a class="uni" href="../../atenei/consal.html">Conservatorio statale di musica di Alessandria "Antonio Vivaldi"</a></td>
+                        <td><a class="uni" href="/atenei/consal">Conservatorio statale di musica di Alessandria "Antonio Vivaldi"</a></td>
                         <td colspan="4"><strong>Musiche Tradizionali - Ukulele</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -96,7 +96,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;ConsAq&quot;, &quot;nomeCorso&quot;: &quot;Musiche Tradizionali&quot;, &quot;sede&quot;: &quot;L'Aquila&quot;}">
-                        <td><a class="uni" href="../../atenei/consaq.html">Conservatorio statale di musica dell'Aquila "Alfredo Casella"</a></td>
+                        <td><a class="uni" href="/atenei/consaq">Conservatorio statale di musica dell'Aquila "Alfredo Casella"</a></td>
                         <td colspan="4"><strong>Musiche Tradizionali</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -104,7 +104,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;ConsBo&quot;, &quot;nomeCorso&quot;: &quot;Musiche Tradizionali - Ocarina,  Organetto, Corno Jazz&quot;, &quot;sede&quot;: &quot;Bologna&quot;}">
-                        <td><a class="uni" href="../../atenei/consbo.html">Conservatorio statale di musica di Bologna "Giovan Battista Martini"</a></td>
+                        <td><a class="uni" href="/atenei/consbo">Conservatorio statale di musica di Bologna "Giovan Battista Martini"</a></td>
                         <td colspan="4"><strong>Musiche Tradizionali - Ocarina,  Organetto, Corno Jazz</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -112,7 +112,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;ConsBz&quot;, &quot;nomeCorso&quot;: &quot;Musiche Tradizionali&quot;, &quot;sede&quot;: &quot;Bolzano&quot;}">
-                        <td><a class="uni" href="../../atenei/consbz.html">Conservatorio statale di musica di Bolzano "Claudio Monteverdi"</a></td>
+                        <td><a class="uni" href="/atenei/consbz">Conservatorio statale di musica di Bolzano "Claudio Monteverdi"</a></td>
                         <td colspan="4"><strong>Musiche Tradizionali</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -120,7 +120,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;ConsCa&quot;, &quot;nomeCorso&quot;: &quot;Musiche Tradizionali - Bandoneon&quot;, &quot;sede&quot;: &quot;Cagliari&quot;}">
-                        <td><a class="uni" href="../../atenei/consca.html">Conservatorio di musica statale di Cagliari "Pierluigi da Palestrina"</a></td>
+                        <td><a class="uni" href="/atenei/consca">Conservatorio di musica statale di Cagliari "Pierluigi da Palestrina"</a></td>
                         <td colspan="4"><strong>Musiche Tradizionali - Bandoneon</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -128,7 +128,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;ConsCa&quot;, &quot;nomeCorso&quot;: &quot;Musiche Tradizionali - Etnomusicologia&quot;, &quot;sede&quot;: &quot;Cagliari&quot;}">
-                        <td><a class="uni" href="../../atenei/consca.html">Conservatorio di musica statale di Cagliari "Pierluigi da Palestrina"</a></td>
+                        <td><a class="uni" href="/atenei/consca">Conservatorio di musica statale di Cagliari "Pierluigi da Palestrina"</a></td>
                         <td colspan="4"><strong>Musiche Tradizionali - Etnomusicologia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -136,7 +136,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;ConsCb&quot;, &quot;nomeCorso&quot;: &quot;Musiche Tradizionali&quot;, &quot;sede&quot;: &quot;Campobasso&quot;}">
-                        <td><a class="uni" href="../../atenei/conscb.html">Conservatorio statale di musica di Campobasso "Lorenzo Perosi"</a></td>
+                        <td><a class="uni" href="/atenei/conscb">Conservatorio statale di musica di Campobasso "Lorenzo Perosi"</a></td>
                         <td colspan="4"><strong>Musiche Tradizionali</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -144,7 +144,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;ConsCfv&quot;, &quot;nomeCorso&quot;: &quot;Musiche Tradizionali - Tradizione Musicale Popolare Veneta&quot;, &quot;sede&quot;: &quot;Castelfranco Veneto (TV)&quot;}">
-                        <td><a class="uni" href="../../atenei/conscfv.html">Conservatorio statale di musica di Castelfranco Veneto "Agostino Steffani"</a></td>
+                        <td><a class="uni" href="/atenei/conscfv">Conservatorio statale di musica di Castelfranco Veneto "Agostino Steffani"</a></td>
                         <td colspan="4"><strong>Musiche Tradizionali - Tradizione Musicale Popolare Veneta</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -152,7 +152,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;ConsCz&quot;, &quot;nomeCorso&quot;: &quot;Musiche Tradizionali - Bandoneon, Chitarra Battente, Fisarmonica, Fisarmonica Diatonica, Lira Calabrese, Zampogna, Ciaramella&quot;, &quot;sede&quot;: &quot;Nocera Terinese (CZ)&quot;}">
-                        <td><a class="uni" href="../../atenei/conscz.html">Conservatorio statale di musica di Nocera Terinese "Pyotr Ilyich Tchaikovsky"</a></td>
+                        <td><a class="uni" href="/atenei/conscz">Conservatorio statale di musica di Nocera Terinese "Pyotr Ilyich Tchaikovsky"</a></td>
                         <td colspan="4"><strong>Musiche Tradizionali - Bandoneon, Chitarra Battente, Fisarmonica, Fisarmonica Diatonica, Lira Calabrese, Zampogna, Ciaramella</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -160,7 +160,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;ConsLe&quot;, &quot;nomeCorso&quot;: &quot;Musiche Tradizionali - Etnomusicologia&quot;, &quot;sede&quot;: &quot;Lecce&quot;}">
-                        <td><a class="uni" href="../../atenei/consle.html">Conservatorio statale di musica di Lecce "Tito Schipa"</a></td>
+                        <td><a class="uni" href="/atenei/consle">Conservatorio statale di musica di Lecce "Tito Schipa"</a></td>
                         <td colspan="4"><strong>Musiche Tradizionali - Etnomusicologia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -168,7 +168,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;ConsMi&quot;, &quot;nomeCorso&quot;: &quot;Musiche Tradizionali Dell'India&quot;, &quot;sede&quot;: &quot;Milano&quot;}">
-                        <td><a class="uni" href="../../atenei/consmi.html">Conservatorio statale di musica di Milano "Giuseppe Verdi"</a></td>
+                        <td><a class="uni" href="/atenei/consmi">Conservatorio statale di musica di Milano "Giuseppe Verdi"</a></td>
                         <td colspan="4"><strong>Musiche Tradizionali Dell'India</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -176,7 +176,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;ConsPe&quot;, &quot;nomeCorso&quot;: &quot;Musiche Tradizionali - Bandoneon, Chitarra Battente, Fisarmonica, Fisarmonica Diatonica, Lira Calabrese, Zampogna, Ciaramella&quot;, &quot;sede&quot;: &quot;Pescara&quot;}">
-                        <td><a class="uni" href="../../atenei/conspe.html">Conservatorio statale di musica di Pescara "Luisa d'Annunzio"</a></td>
+                        <td><a class="uni" href="/atenei/conspe">Conservatorio statale di musica di Pescara "Luisa d'Annunzio"</a></td>
                         <td colspan="4"><strong>Musiche Tradizionali - Bandoneon, Chitarra Battente, Fisarmonica, Fisarmonica Diatonica, Lira Calabrese, Zampogna, Ciaramella</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -184,7 +184,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;ConsPe&quot;, &quot;nomeCorso&quot;: &quot;Musiche Tradizionali - Vocalit Di Tradizione Orale E Canto Difonico&quot;, &quot;sede&quot;: &quot;Pescara&quot;}">
-                        <td><a class="uni" href="../../atenei/conspe.html">Conservatorio statale di musica di Pescara "Luisa d'Annunzio"</a></td>
+                        <td><a class="uni" href="/atenei/conspe">Conservatorio statale di musica di Pescara "Luisa d'Annunzio"</a></td>
                         <td colspan="4"><strong>Musiche Tradizionali - Vocalit Di Tradizione Orale E Canto Difonico</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -192,7 +192,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;ConsVi&quot;, &quot;nomeCorso&quot;: &quot;Musiche Tradizionali&quot;, &quot;sede&quot;: &quot;Vicenza&quot;}">
-                        <td><a class="uni" href="../../atenei/consvi.html">Conservatorio statale di musica di Vicenza "Arrigo Pedrollo"</a></td>
+                        <td><a class="uni" href="/atenei/consvi">Conservatorio statale di musica di Vicenza "Arrigo Pedrollo"</a></td>
                         <td colspan="4"><strong>Musiche Tradizionali</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -216,7 +216,7 @@
                 </a>
             </p>
             <p>
-                <a class="a_footer github" href="https://www.instagram.com/unidirectory/" target="_blank"
+                <a class="a_footer github" href="https://www.instagram.com/unidirectory" target="_blank"
                     rel="noopener noreferrer">
                     <i class="fa-brands fa-instagram"></i> Instagram
                 </a>
@@ -234,16 +234,15 @@
                 &middot;
                 <a class="a_footer" href="https://ustat.mur.gov.it/" target="_blank" rel="noopener noreferrer">USTAT</a>
             </p>
-            <p><a class="a_footer" href="../../about.html">About</a></p>
-            <p><a class="a_footer" href="../../privacy.html">Privacy Policy</a></p>
-            <p><a class="a_footer" href="../../sitemap.xml">Sitemap</a></p>
+            <p><a class="a_footer" href="/about">About</a></p>
+            <p><a class="a_footer" href="/privacy">Privacy Policy</a></p>
+            <p><a class="a_footer" href="/sitemap.xml">Sitemap</a></p>
             <p><a class="a_footer" href="mailto:info@unidirectory.it">Contattaci</a></p>
         </div>
     </footer>
-    <script src="../../assets/js/footer.js"></script>
-    <script src="../../assets/js/scriptafam.js"></script>
+    <script src="/assets/js/scriptafam.js"></script>
     <script>
-        caricaTabella("DCPL65");
+        caricaTabella();
         ordinecorso = true;
         ordinecitta = false;
         ordineregione = false;

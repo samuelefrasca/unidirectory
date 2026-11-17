@@ -40,9 +40,9 @@
         content="https://unidirectory.it/assets/img/iud_icon.png">
 
 
-    <link rel="icon" type="image/png" href="../../assets/img/iud_icon.png">
-    <link rel="stylesheet" href="../../assets/css/style.css">
-    <link rel="stylesheet" href="../../assets/css/classi.css">
+    <link rel="icon" type="image/png" href="/assets/img/iud_icon.png">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/classi.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <script type="application/ld+json">
@@ -63,7 +63,7 @@
             <div class="header">
                 <div class="header1">
                     <a href="/">
-                        <img class="logo" src="../../assets/img/iud_image.png" alt="Logo Unidirectory">
+                        <img class="logo" src="/assets/img/iud_image.png" alt="Logo Unidirectory">
                     </a>
                 </div>
                 <div class="header2">
@@ -78,9 +78,9 @@
         <div class="container table-responsive">
             <div class="toolbar-tabella">
                 <div class="ordina">
-                    <button type="button" onclick="ordinaPerCorso('DAPL05')">Ordina per corso</button>
-                    <button type="button" onclick="ordinaPerSede('DAPL05')">Ordina per sede</button>
-                    <button type="button" onclick="ordinaPerRegione('DAPL05')">Ordina per regione</button>
+                    <button type="button" onclick="ordinaPerCorso()">Ordina per corso</button>
+                    <button type="button" onclick="ordinaPerSede()">Ordina per sede</button>
+                    <button type="button" onclick="ordinaPerRegione()">Ordina per regione</button>
                 </div>
             </div>
             <input type="search" id="searchNelleClassi" placeholder="Cerca istituto, sede, regione o corso...">
@@ -88,7 +88,7 @@
             <table>
                 <tbody id="tabellauni">
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;ABAV&quot;, &quot;nomeCorso&quot;: &quot;Scenografia&quot;, &quot;sede&quot;: &quot;Viterbo&quot;}">
-                        <td><a class="uni" href="../../atenei/abav.html">Accademia di Belle Arti Lorenzo da Viterbo</a></td>
+                        <td><a class="uni" href="/atenei/abav">Accademia di Belle Arti Lorenzo da Viterbo</a></td>
                         <td colspan="4"><strong>Scenografia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -96,7 +96,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;ACME&quot;, &quot;nomeCorso&quot;: &quot;Scenografia&quot;, &quot;sede&quot;: &quot;Milano&quot;}">
-                        <td><a class="uni" href="../../atenei/acme.html">Accademia di Belle Arti ACME</a></td>
+                        <td><a class="uni" href="/atenei/acme">Accademia di Belle Arti ACME</a></td>
                         <td colspan="4"><strong>Scenografia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -104,7 +104,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaBa&quot;, &quot;nomeCorso&quot;: &quot;Scenografia&quot;, &quot;sede&quot;: &quot;Bari&quot;}">
-                        <td><a class="uni" href="../../atenei/ababa.html">Accademia di Belle Arti di Bari</a></td>
+                        <td><a class="uni" href="/atenei/ababa">Accademia di Belle Arti di Bari</a></td>
                         <td colspan="4"><strong>Scenografia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -112,7 +112,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaBo&quot;, &quot;nomeCorso&quot;: &quot;Scenografia&quot;, &quot;sede&quot;: &quot;Bologna&quot;}">
-                        <td><a class="uni" href="../../atenei/ababo.html">Accademia di Belle Arti di Bologna</a></td>
+                        <td><a class="uni" href="/atenei/ababo">Accademia di Belle Arti di Bologna</a></td>
                         <td colspan="4"><strong>Scenografia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -120,7 +120,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaCa&quot;, &quot;nomeCorso&quot;: &quot;Scenografia&quot;, &quot;sede&quot;: &quot;Carrara&quot;}">
-                        <td><a class="uni" href="../../atenei/abaca.html">Accademia di Belle Arti di Carrara</a></td>
+                        <td><a class="uni" href="/atenei/abaca">Accademia di Belle Arti di Carrara</a></td>
                         <td colspan="4"><strong>Scenografia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -128,7 +128,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaCt&quot;, &quot;nomeCorso&quot;: &quot;Scenografia&quot;, &quot;sede&quot;: &quot;Catania&quot;}">
-                        <td><a class="uni" href="../../atenei/abact.html">Accademia di Belle Arti di Catania</a></td>
+                        <td><a class="uni" href="/atenei/abact">Accademia di Belle Arti di Catania</a></td>
                         <td colspan="4"><strong>Scenografia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -136,7 +136,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaCz&quot;, &quot;nomeCorso&quot;: &quot;Scenografia&quot;, &quot;sede&quot;: &quot;Catanzaro&quot;}">
-                        <td><a class="uni" href="../../atenei/abacz.html">Accademia di Belle Arti di Catanzaro</a></td>
+                        <td><a class="uni" href="/atenei/abacz">Accademia di Belle Arti di Catanzaro</a></td>
                         <td colspan="4"><strong>Scenografia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -144,7 +144,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaFg&quot;, &quot;nomeCorso&quot;: &quot;Scenografia&quot;, &quot;sede&quot;: &quot;Foggia&quot;}">
-                        <td><a class="uni" href="../../atenei/abafg.html">Accademia di Belle Arti di Foggia</a></td>
+                        <td><a class="uni" href="/atenei/abafg">Accademia di Belle Arti di Foggia</a></td>
                         <td colspan="4"><strong>Scenografia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -152,7 +152,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaFi&quot;, &quot;nomeCorso&quot;: &quot;Scenografia&quot;, &quot;sede&quot;: &quot;Firenze&quot;}">
-                        <td><a class="uni" href="../../atenei/abafi.html">Accademia di Belle Arti di Firenze</a></td>
+                        <td><a class="uni" href="/atenei/abafi">Accademia di Belle Arti di Firenze</a></td>
                         <td colspan="4"><strong>Scenografia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -160,7 +160,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaFr&quot;, &quot;nomeCorso&quot;: &quot;Scenografia&quot;, &quot;sede&quot;: &quot;Frosinone&quot;}">
-                        <td><a class="uni" href="../../atenei/abafr.html">Accademia di Belle Arti di Frosinone</a></td>
+                        <td><a class="uni" href="/atenei/abafr">Accademia di Belle Arti di Frosinone</a></td>
                         <td colspan="4"><strong>Scenografia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -168,7 +168,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaGe&quot;, &quot;nomeCorso&quot;: &quot;Scenografia&quot;, &quot;sede&quot;: &quot;Genova&quot;}">
-                        <td><a class="uni" href="../../atenei/abage.html">Accademia Ligustica di Belle Arti di Genova</a></td>
+                        <td><a class="uni" href="/atenei/abage">Accademia Ligustica di Belle Arti di Genova</a></td>
                         <td colspan="4"><strong>Scenografia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -176,7 +176,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaLe&quot;, &quot;nomeCorso&quot;: &quot;Scenografia&quot;, &quot;sede&quot;: &quot;Lecce&quot;}">
-                        <td><a class="uni" href="../../atenei/abale.html">Accademia di Belle Arti di Lecce</a></td>
+                        <td><a class="uni" href="/atenei/abale">Accademia di Belle Arti di Lecce</a></td>
                         <td colspan="4"><strong>Scenografia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -184,7 +184,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaMc&quot;, &quot;nomeCorso&quot;: &quot;Scenografia Per Lo Spettacolo&quot;, &quot;sede&quot;: &quot;Macerata&quot;}">
-                        <td><a class="uni" href="../../atenei/abamc.html">Accademia di Belle Arti di Macerata</a></td>
+                        <td><a class="uni" href="/atenei/abamc">Accademia di Belle Arti di Macerata</a></td>
                         <td colspan="4"><strong>Scenografia Per Lo Spettacolo</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -192,7 +192,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaMi&quot;, &quot;nomeCorso&quot;: &quot;Scenografia&quot;, &quot;sede&quot;: &quot;Milano&quot;}">
-                        <td><a class="uni" href="../../atenei/abami.html">Accademia di Belle Arti di Brera</a></td>
+                        <td><a class="uni" href="/atenei/abami">Accademia di Belle Arti di Brera</a></td>
                         <td colspan="4"><strong>Scenografia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -200,7 +200,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaNa&quot;, &quot;nomeCorso&quot;: &quot;Scenografia&quot;, &quot;sede&quot;: &quot;Napoli&quot;}">
-                        <td><a class="uni" href="../../atenei/abana.html">Accademia di Belle Arti di Napoli</a></td>
+                        <td><a class="uni" href="/atenei/abana">Accademia di Belle Arti di Napoli</a></td>
                         <td colspan="4"><strong>Scenografia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -208,7 +208,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaPa&quot;, &quot;nomeCorso&quot;: &quot;Scenografia&quot;, &quot;sede&quot;: &quot;Palermo&quot;}">
-                        <td><a class="uni" href="../../atenei/abapa.html">Accademia di Belle Arti di Palermo</a></td>
+                        <td><a class="uni" href="/atenei/abapa">Accademia di Belle Arti di Palermo</a></td>
                         <td colspan="4"><strong>Scenografia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -216,7 +216,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaPg&quot;, &quot;nomeCorso&quot;: &quot;Scenografia&quot;, &quot;sede&quot;: &quot;Perugia&quot;}">
-                        <td><a class="uni" href="../../atenei/abapg.html">Accademia di Belle Arti "Pietro Vannucci" di Perugia</a></td>
+                        <td><a class="uni" href="/atenei/abapg">Accademia di Belle Arti "Pietro Vannucci" di Perugia</a></td>
                         <td colspan="4"><strong>Scenografia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -224,7 +224,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaRc&quot;, &quot;nomeCorso&quot;: &quot;Scenografia&quot;, &quot;sede&quot;: &quot;Reggio Calabria&quot;}">
-                        <td><a class="uni" href="../../atenei/abarc.html">Accademia di Belle Arti di Reggio Calabria</a></td>
+                        <td><a class="uni" href="/atenei/abarc">Accademia di Belle Arti di Reggio Calabria</a></td>
                         <td colspan="4"><strong>Scenografia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -232,7 +232,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaRm&quot;, &quot;nomeCorso&quot;: &quot;Scenografia&quot;, &quot;sede&quot;: &quot;Roma&quot;}">
-                        <td><a class="uni" href="../../atenei/abarm.html">Accademia di Belle Arti di Roma</a></td>
+                        <td><a class="uni" href="/atenei/abarm">Accademia di Belle Arti di Roma</a></td>
                         <td colspan="4"><strong>Scenografia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -240,7 +240,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaSs&quot;, &quot;nomeCorso&quot;: &quot;Scenografia&quot;, &quot;sede&quot;: &quot;Sassari&quot;}">
-                        <td><a class="uni" href="../../atenei/abass.html">Accademia di Belle Arti "Mario Sironi" di Sassari</a></td>
+                        <td><a class="uni" href="/atenei/abass">Accademia di Belle Arti "Mario Sironi" di Sassari</a></td>
                         <td colspan="4"><strong>Scenografia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -248,7 +248,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaTo&quot;, &quot;nomeCorso&quot;: &quot;Scenografia Per Il Cinema E La Televisione&quot;, &quot;sede&quot;: &quot;Torino&quot;}">
-                        <td><a class="uni" href="../../atenei/abato.html">Accademia Albertina di Belle Arti di Torino</a></td>
+                        <td><a class="uni" href="/atenei/abato">Accademia Albertina di Belle Arti di Torino</a></td>
                         <td colspan="4"><strong>Scenografia Per Il Cinema E La Televisione</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -256,7 +256,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaTo&quot;, &quot;nomeCorso&quot;: &quot;Scenografia Per Il Teatro&quot;, &quot;sede&quot;: &quot;Torino&quot;}">
-                        <td><a class="uni" href="../../atenei/abato.html">Accademia Albertina di Belle Arti di Torino</a></td>
+                        <td><a class="uni" href="/atenei/abato">Accademia Albertina di Belle Arti di Torino</a></td>
                         <td colspan="4"><strong>Scenografia Per Il Teatro</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -264,7 +264,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaUr&quot;, &quot;nomeCorso&quot;: &quot;Scenografia&quot;, &quot;sede&quot;: &quot;Urbino (PU)&quot;}">
-                        <td><a class="uni" href="../../atenei/abaur.html">Accademia di Belle Arti di Urbino</a></td>
+                        <td><a class="uni" href="/atenei/abaur">Accademia di Belle Arti di Urbino</a></td>
                         <td colspan="4"><strong>Scenografia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -272,7 +272,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaVe&quot;, &quot;nomeCorso&quot;: &quot;Scenografia - Architettura Di Scena&quot;, &quot;sede&quot;: &quot;Venezia&quot;}">
-                        <td><a class="uni" href="../../atenei/abave.html">Accademia di Belle Arti di Venezia</a></td>
+                        <td><a class="uni" href="/atenei/abave">Accademia di Belle Arti di Venezia</a></td>
                         <td colspan="4"><strong>Scenografia - Architettura Di Scena</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -280,7 +280,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaVe&quot;, &quot;nomeCorso&quot;: &quot;Scenografia - Costume&quot;, &quot;sede&quot;: &quot;Venezia&quot;}">
-                        <td><a class="uni" href="../../atenei/abave.html">Accademia di Belle Arti di Venezia</a></td>
+                        <td><a class="uni" href="/atenei/abave">Accademia di Belle Arti di Venezia</a></td>
                         <td colspan="4"><strong>Scenografia - Costume</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -288,7 +288,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaVe&quot;, &quot;nomeCorso&quot;: &quot;Scenografia - Scenotecnica&quot;, &quot;sede&quot;: &quot;Venezia&quot;}">
-                        <td><a class="uni" href="../../atenei/abave.html">Accademia di Belle Arti di Venezia</a></td>
+                        <td><a class="uni" href="/atenei/abave">Accademia di Belle Arti di Venezia</a></td>
                         <td colspan="4"><strong>Scenografia - Scenotecnica</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -296,7 +296,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;AbaVr&quot;, &quot;nomeCorso&quot;: &quot;Scenografia&quot;, &quot;sede&quot;: &quot;Verona&quot;}">
-                        <td><a class="uni" href="../../atenei/abavr.html">Accademia di Belle Arti di Verona</a></td>
+                        <td><a class="uni" href="/atenei/abavr">Accademia di Belle Arti di Verona</a></td>
                         <td colspan="4"><strong>Scenografia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -304,7 +304,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;Abaq&quot;, &quot;nomeCorso&quot;: &quot;Scenografia&quot;, &quot;sede&quot;: &quot;L'Aquila&quot;}">
-                        <td><a class="uni" href="../../atenei/abaq.html">Accademia di Belle Arti dell'Aquila</a></td>
+                        <td><a class="uni" href="/atenei/abaq">Accademia di Belle Arti dell'Aquila</a></td>
                         <td colspan="4"><strong>Scenografia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -312,7 +312,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;LABA Brescia&quot;, &quot;nomeCorso&quot;: &quot;Scenografia&quot;, &quot;sede&quot;: &quot;Brescia&quot;}">
-                        <td><a class="uni" href="../../atenei/laba_brescia.html">Libera Accademia di Belle Arti di Brescia</a></td>
+                        <td><a class="uni" href="/atenei/laba_brescia">Libera Accademia di Belle Arti di Brescia</a></td>
                         <td colspan="4"><strong>Scenografia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -320,7 +320,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;NABA&quot;, &quot;nomeCorso&quot;: &quot;Scenografia&quot;, &quot;sede&quot;: &quot;Milano&quot;}">
-                        <td><a class="uni" href="../../atenei/naba.html">Nuova Accademia di Belle Arti</a></td>
+                        <td><a class="uni" href="/atenei/naba">Nuova Accademia di Belle Arti</a></td>
                         <td colspan="4"><strong>Scenografia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -328,7 +328,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;NABA&quot;, &quot;nomeCorso&quot;: &quot;Scenografia (In Lingua Inglese)&quot;, &quot;sede&quot;: &quot;Milano&quot;}">
-                        <td><a class="uni" href="../../atenei/naba.html">Nuova Accademia di Belle Arti</a></td>
+                        <td><a class="uni" href="/atenei/naba">Nuova Accademia di Belle Arti</a></td>
                         <td colspan="4"><strong>Scenografia (In Lingua Inglese)</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -336,7 +336,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;RUFA&quot;, &quot;nomeCorso&quot;: &quot;Scenografia&quot;, &quot;sede&quot;: &quot;Roma&quot;}">
-                        <td><a class="uni" href="../../atenei/rufa.html">Rome University of Fine Arts</a></td>
+                        <td><a class="uni" href="/atenei/rufa">Rome University of Fine Arts</a></td>
                         <td colspan="4"><strong>Scenografia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -344,7 +344,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;SantaGiulia&quot;, &quot;nomeCorso&quot;: &quot;Scenografia&quot;, &quot;sede&quot;: &quot;Brescia&quot;}">
-                        <td><a class="uni" href="../../atenei/santagiulia.html">Accademia SantaGiulia</a></td>
+                        <td><a class="uni" href="/atenei/santagiulia">Accademia SantaGiulia</a></td>
                         <td colspan="4"><strong>Scenografia</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -352,7 +352,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;Scala&quot;, &quot;nomeCorso&quot;: &quot;Costume Per Lo Spettacolo&quot;, &quot;sede&quot;: &quot;Milano&quot;}">
-                        <td><a class="uni" href="../../atenei/scala.html">Accademia Teatro alla Scala</a></td>
+                        <td><a class="uni" href="/atenei/scala">Accademia Teatro alla Scala</a></td>
                         <td colspan="4"><strong>Costume Per Lo Spettacolo</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -360,7 +360,7 @@
                     </tr>
 
                     <tr class="riga-principale" data-offerta="{&quot;universita&quot;: &quot;Scala&quot;, &quot;nomeCorso&quot;: &quot;Tecniche Di Allestimento Scenico&quot;, &quot;sede&quot;: &quot;Milano&quot;}">
-                        <td><a class="uni" href="../../atenei/scala.html">Accademia Teatro alla Scala</a></td>
+                        <td><a class="uni" href="/atenei/scala">Accademia Teatro alla Scala</a></td>
                         <td colspan="4"><strong>Tecniche Di Allestimento Scenico</strong></td>
                     </tr>
                     <tr class="riga-dettagli">
@@ -384,7 +384,7 @@
                 </a>
             </p>
             <p>
-                <a class="a_footer github" href="https://www.instagram.com/unidirectory/" target="_blank"
+                <a class="a_footer github" href="https://www.instagram.com/unidirectory" target="_blank"
                     rel="noopener noreferrer">
                     <i class="fa-brands fa-instagram"></i> Instagram
                 </a>
@@ -402,16 +402,15 @@
                 &middot;
                 <a class="a_footer" href="https://ustat.mur.gov.it/" target="_blank" rel="noopener noreferrer">USTAT</a>
             </p>
-            <p><a class="a_footer" href="../../about.html">About</a></p>
-            <p><a class="a_footer" href="../../privacy.html">Privacy Policy</a></p>
-            <p><a class="a_footer" href="../../sitemap.xml">Sitemap</a></p>
+            <p><a class="a_footer" href="/about">About</a></p>
+            <p><a class="a_footer" href="/privacy">Privacy Policy</a></p>
+            <p><a class="a_footer" href="/sitemap.xml">Sitemap</a></p>
             <p><a class="a_footer" href="mailto:info@unidirectory.it">Contattaci</a></p>
         </div>
     </footer>
-    <script src="../../assets/js/footer.js"></script>
-    <script src="../../assets/js/scriptafam.js"></script>
+    <script src="/assets/js/scriptafam.js"></script>
     <script>
-        caricaTabella("DAPL05");
+        caricaTabella();
         ordinecorso = true;
         ordinecitta = false;
         ordineregione = false;

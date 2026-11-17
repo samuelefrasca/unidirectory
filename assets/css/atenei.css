@@ -38,6 +38,9 @@
     text-decoration: none;
     white-space: nowrap;
     transition: 0.3s;
+    font: inherit;
+    border: 0;
+    cursor: pointer;
 }
 
 .sito-ateneo:hover {

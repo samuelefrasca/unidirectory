@@ -31,7 +31,7 @@ def genera_righe_html(codice):
         uni = mappa_universita.get(offerta["universita"], {})
         sigla = offerta["universita"]
         slug = sigla.lower().replace(" ", "_")
-        link = f"../../atenei/{slug}.html"
+        link = f"/atenei/{slug}"
         nome_uni = uni.get("nome", offerta["universita"])
         regione = offerta.get("regione", uni.get("regione", "----"))
 
@@ -92,9 +92,9 @@ template = """<!DOCTYPE html>
         content="https://unidirectory.it/assets/img/iud_icon.png">
 
 
-    <link rel="icon" type="image/png" href="../../assets/img/iud_icon.png">
-    <link rel="stylesheet" href="../../assets/css/style.css">
-    <link rel="stylesheet" href="../../assets/css/classi.css">
+    <link rel="icon" type="image/png" href="/assets/img/iud_icon.png">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/classi.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <script type="application/ld+json">
@@ -115,7 +115,7 @@ template = """<!DOCTYPE html>
             <div class="header">
                 <div class="header1">
                     <a href="/">
-                        <img class="logo" src="../../assets/img/iud_image.png" alt="Logo Unidirectory">
+                        <img class="logo" src="/assets/img/iud_image.png" alt="Logo Unidirectory">
                     </a>
                 </div>
                 <div class="header2">
@@ -130,9 +130,9 @@ template = """<!DOCTYPE html>
         <div class="container table-responsive">
             <div class="toolbar-tabella">
                 <div class="ordina">
-                    <button type="button" onclick="ordinaPerCorso('{{CODICE}}')">Ordina per corso</button>
-                    <button type="button" onclick="ordinaPerSede('{{CODICE}}')">Ordina per sede</button>
-                    <button type="button" onclick="ordinaPerRegione('{{CODICE}}')">Ordina per regione</button>
+                    <button type="button" onclick="ordinaPerCorso()">Ordina per corso</button>
+                    <button type="button" onclick="ordinaPerSede()">Ordina per sede</button>
+                    <button type="button" onclick="ordinaPerRegione()">Ordina per regione</button>
                 </div>
             </div>
             <input type="search" id="searchNelleClassi" placeholder="Cerca istituto, sede, regione o corso...">
@@ -157,7 +157,7 @@ template = """<!DOCTYPE html>
                 </a>
             </p>
             <p>
-                <a class="a_footer github" href="https://www.instagram.com/unidirectory/" target="_blank"
+                <a class="a_footer github" href="https://www.instagram.com/unidirectory" target="_blank"
                     rel="noopener noreferrer">
                     <i class="fa-brands fa-instagram"></i> Instagram
                 </a>
@@ -175,16 +175,15 @@ template = """<!DOCTYPE html>
                 &middot;
                 <a class="a_footer" href="https://ustat.mur.gov.it/" target="_blank" rel="noopener noreferrer">USTAT</a>
             </p>
-            <p><a class="a_footer" href="../../about.html">About</a></p>
-            <p><a class="a_footer" href="../../privacy.html">Privacy Policy</a></p>
-            <p><a class="a_footer" href="../../sitemap.xml">Sitemap</a></p>
+            <p><a class="a_footer" href="/about">About</a></p>
+            <p><a class="a_footer" href="/privacy">Privacy Policy</a></p>
+            <p><a class="a_footer" href="/sitemap.xml">Sitemap</a></p>
             <p><a class="a_footer" href="mailto:info@unidirectory.it">Contattaci</a></p>
         </div>
     </footer>
-    <script src="../../assets/js/footer.js"></script>
-    <script src="../../assets/js/scriptafam.js"></script>
+    <script src="/assets/js/scriptafam.js"></script>
     <script>
-        caricaTabella("{{CODICE}}");
+        caricaTabella();
         ordinecorso = true;
         ordinecitta = false;
         ordineregione = false;

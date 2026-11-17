@@ -36,9 +36,9 @@
     <meta name="twitter:image"
         content="https://unidirectory.it/assets/img/iud_icon.png">
 
-    <link rel="icon" type="image/png" href="../assets/img/iud_icon.png">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/elenchi.css">
+    <link rel="icon" type="image/png" href="/assets/img/iud_icon.png">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/elenchi.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <script type="application/ld+json">
@@ -58,7 +58,7 @@
             <div class="header">
                 <div class="header1">
                     <a href="/">
-                        <img class="logo" src="../assets/img/iud_image.png" alt="Logo Unidirectory">
+                        <img class="logo" src="/assets/img/iud_image.png" alt="Logo Unidirectory">
                     </a>
                 </div>
                 <div class="header2">
@@ -69,16 +69,16 @@
             </div>
             <nav class="altreuni">
                 <ul class="navul">
-                    <li class="navli"><a class="reflink select-none" href="statali.html">Statali</a></li>
+                    <li class="navli"><a class="reflink select-none" href="statali">Statali</a></li>
                     <li class="navli"><span class="reflink select-none active">Scuole superiori</span></li>
-                    <li class="navli"><a class="reflink select-none" href="nonstatali.html">Non statali</a></li>
-                    <li class="navli"><a class="reflink select-none" href="telematiche.html">Telematiche</a></li>
-                    <li class="navli"><a class="reflink select-none" href="ssml.html">SSML</a></li>
-                    <li class="navli"><a class="reflink select-none" href="conservatori.html">Conservatori</a></li>
-                    <li class="navli"><a class="reflink select-none" href="abastatali.html">ABA</a></li>
-                    <li class="navli"><a class="reflink select-none" href="accnazionali.html">Acc. nazionali</a></li>
-                    <li class="navli"><a class="reflink select-none" href="isia.html">ISIA</a></li>
-                    <li class="navli"><a class="reflink select-none" href="afamprivati.html">AFAM privati</a></li>
+                    <li class="navli"><a class="reflink select-none" href="nonstatali">Non statali</a></li>
+                    <li class="navli"><a class="reflink select-none" href="telematiche">Telematiche</a></li>
+                    <li class="navli"><a class="reflink select-none" href="ssml">SSML</a></li>
+                    <li class="navli"><a class="reflink select-none" href="conservatori">Conservatori</a></li>
+                    <li class="navli"><a class="reflink select-none" href="abastatali">ABA</a></li>
+                    <li class="navli"><a class="reflink select-none" href="accnazionali">Acc. nazionali</a></li>
+                    <li class="navli"><a class="reflink select-none" href="isia">ISIA</a></li>
+                    <li class="navli"><a class="reflink select-none" href="afamprivati">AFAM privati</a></li>
                 </ul>
             </nav>
         </div>
@@ -93,15 +93,15 @@
                         <th class="select-none num"></th>
                         <th class="select-none">Nome</th>
                         <th class="select-none">Sigla</th>
-                        <th class="select-none"><a onclick="ordinaPerCitta('superiori')">Sede principale <i class="fa-solid fa-sort"></i></a></th>
-                        <th class="select-none"><a onclick="ordinaPerRegione('superiori')">Regione <i class="fa-solid fa-sort"></i></a></th>
-                        <th class="select-none"><a onclick="ordinaPerStudenti('superiori')">Studenti <i class="fa-solid fa-sort"></i></a></th>
+                        <th class="select-none"><a onclick="ordinaPerCitta()">Sede principale <i class="fa-solid fa-sort"></i></a></th>
+                        <th class="select-none"><a onclick="ordinaPerRegione()">Regione <i class="fa-solid fa-sort"></i></a></th>
+                        <th class="select-none"><a onclick="ordinaPerStudenti()">Studenti <i class="fa-solid fa-sort"></i></a></th>
                     </tr>
                 </thead>
                 <tbody id="tabellauni">
         <tr data-uni="{&quot;nome&quot;: &quot;Scuola universitaria superiore \&quot;Gran Sasso Science Institute\&quot;&quot;, &quot;sigla&quot;: &quot;GSSI&quot;, &quot;citta&quot;: &quot;L'Aquila&quot;, &quot;regione&quot;: &quot;Abruzzo&quot;, &quot;studenti&quot;: 146, &quot;link&quot;: &quot;https://gssi.it/&quot;, &quot;categoria&quot;: &quot;superiori&quot;}">
                 <td class="num">1</td>
-                <td><a class="uni" href="../atenei/gssi.html">Scuola universitaria superiore "Gran Sasso Science Institute"</a></td>
+                <td><a class="uni" href="/atenei/gssi">Scuola universitaria superiore "Gran Sasso Science Institute"</a></td>
                 <td>GSSI</td>
                 <td>L'Aquila</td>
                 <td>Abruzzo</td>
@@ -109,7 +109,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Scuola Superiore Meridionale&quot;, &quot;sigla&quot;: &quot;SSM&quot;, &quot;citta&quot;: &quot;Napoli&quot;, &quot;regione&quot;: &quot;Campania&quot;, &quot;studenti&quot;: 85, &quot;link&quot;: &quot;https://www.ssmeridionale.it/&quot;, &quot;categoria&quot;: &quot;superiori&quot;}">
                 <td class="num">2</td>
-                <td><a class="uni" href="../atenei/ssm.html">Scuola Superiore Meridionale</a></td>
+                <td><a class="uni" href="/atenei/ssm">Scuola Superiore Meridionale</a></td>
                 <td>SSM</td>
                 <td>Napoli</td>
                 <td>Campania</td>
@@ -117,7 +117,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Institute of Advanced Science for Agriculture&quot;, &quot;sigla&quot;: &quot;IASA&quot;, &quot;citta&quot;: &quot;Jolanda di Savoia (FE)&quot;, &quot;regione&quot;: &quot;Emilia-Romagna&quot;, &quot;studenti&quot;: null, &quot;link&quot;: &quot;https://www.iasaeu.it/&quot;, &quot;categoria&quot;: &quot;superiori&quot;}">
                 <td class="num">3</td>
-                <td><a class="uni" href="../atenei/iasa.html">Institute of Advanced Science for Agriculture</a></td>
+                <td><a class="uni" href="/atenei/iasa">Institute of Advanced Science for Agriculture</a></td>
                 <td>IASA</td>
                 <td>Jolanda di Savoia (FE)</td>
                 <td>Emilia-Romagna</td>
@@ -125,7 +125,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Scuola Internazionale Superiore di Studi Avanzati&quot;, &quot;sigla&quot;: &quot;SISSA&quot;, &quot;citta&quot;: &quot;Trieste&quot;, &quot;regione&quot;: &quot;Friuli-Venezia Giulia&quot;, &quot;studenti&quot;: 305, &quot;link&quot;: &quot;https://www.sissa.it/&quot;, &quot;categoria&quot;: &quot;superiori&quot;}">
                 <td class="num">4</td>
-                <td><a class="uni" href="../atenei/sissa.html">Scuola Internazionale Superiore di Studi Avanzati</a></td>
+                <td><a class="uni" href="/atenei/sissa">Scuola Internazionale Superiore di Studi Avanzati</a></td>
                 <td>SISSA</td>
                 <td>Trieste</td>
                 <td>Friuli-Venezia Giulia</td>
@@ -133,7 +133,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Centro Alti Studi per la Difesa&quot;, &quot;sigla&quot;: &quot;CASD&quot;, &quot;citta&quot;: &quot;Roma&quot;, &quot;regione&quot;: &quot;Lazio&quot;, &quot;studenti&quot;: 24, &quot;link&quot;: &quot;https://www.difesa.it/smd/casd/index/26451.html&quot;, &quot;categoria&quot;: &quot;superiori&quot;}">
                 <td class="num">5</td>
-                <td><a class="uni" href="../atenei/casd.html">Centro Alti Studi per la Difesa</a></td>
+                <td><a class="uni" href="/atenei/casd">Centro Alti Studi per la Difesa</a></td>
                 <td>CASD</td>
                 <td>Roma</td>
                 <td>Lazio</td>
@@ -141,7 +141,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Istituto Universitario di Studi Superiori&quot;, &quot;sigla&quot;: &quot;IUSS&quot;, &quot;citta&quot;: &quot;Pavia&quot;, &quot;regione&quot;: &quot;Lombardia&quot;, &quot;studenti&quot;: 416, &quot;link&quot;: &quot;https://www.iusspavia.it/it&quot;, &quot;categoria&quot;: &quot;superiori&quot;}">
                 <td class="num">6</td>
-                <td><a class="uni" href="../atenei/iuss.html">Istituto Universitario di Studi Superiori</a></td>
+                <td><a class="uni" href="/atenei/iuss">Istituto Universitario di Studi Superiori</a></td>
                 <td>IUSS</td>
                 <td>Pavia</td>
                 <td>Lombardia</td>
@@ -149,7 +149,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Scuola IMT Alti Studi Lucca&quot;, &quot;sigla&quot;: &quot;IMT&quot;, &quot;citta&quot;: &quot;Lucca&quot;, &quot;regione&quot;: &quot;Toscana&quot;, &quot;studenti&quot;: 254, &quot;link&quot;: &quot;https://www.imtlucca.it/homepage&quot;, &quot;categoria&quot;: &quot;superiori&quot;}">
                 <td class="num">7</td>
-                <td><a class="uni" href="../atenei/imt.html">Scuola IMT Alti Studi Lucca</a></td>
+                <td><a class="uni" href="/atenei/imt">Scuola IMT Alti Studi Lucca</a></td>
                 <td>IMT</td>
                 <td>Lucca</td>
                 <td>Toscana</td>
@@ -157,7 +157,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Scuola Normale Superiore&quot;, &quot;sigla&quot;: &quot;SNS&quot;, &quot;citta&quot;: &quot;Pisa&quot;, &quot;regione&quot;: &quot;Toscana&quot;, &quot;studenti&quot;: 353, &quot;link&quot;: &quot;https://www.sns.it/it&quot;, &quot;categoria&quot;: &quot;superiori&quot;}">
                 <td class="num">8</td>
-                <td><a class="uni" href="../atenei/sns.html">Scuola Normale Superiore</a></td>
+                <td><a class="uni" href="/atenei/sns">Scuola Normale Superiore</a></td>
                 <td>SNS</td>
                 <td>Pisa</td>
                 <td>Toscana</td>
@@ -165,7 +165,7 @@
             </tr>
         <tr data-uni="{&quot;nome&quot;: &quot;Scuola superiore di studi universitari e di perfezionamento Sant'Anna&quot;, &quot;sigla&quot;: &quot;SSSUP&quot;, &quot;citta&quot;: &quot;Pisa&quot;, &quot;regione&quot;: &quot;Toscana&quot;, &quot;studenti&quot;: 510, &quot;link&quot;: &quot;https://www.santannapisa.it/it&quot;, &quot;categoria&quot;: &quot;superiori&quot;}">
                 <td class="num">9</td>
-                <td><a class="uni" href="../atenei/sssup.html">Scuola superiore di studi universitari e di perfezionamento Sant'Anna</a></td>
+                <td><a class="uni" href="/atenei/sssup">Scuola superiore di studi universitari e di perfezionamento Sant'Anna</a></td>
                 <td>SSSUP</td>
                 <td>Pisa</td>
                 <td>Toscana</td>
@@ -188,7 +188,7 @@
                 </a>
             </p>
             <p>
-                <a class="a_footer github" href="https://www.instagram.com/unidirectory/" target="_blank"
+                <a class="a_footer github" href="https://www.instagram.com/unidirectory" target="_blank"
                     rel="noopener noreferrer">
                     <i class="fa-brands fa-instagram"></i> Instagram
                 </a>
@@ -206,19 +206,18 @@
                 &middot;
                 <a class="a_footer" href="https://ustat.mur.gov.it/" target="_blank" rel="noopener noreferrer">USTAT</a>
             </p>
-            <p><a class="a_footer" href="../about.html">About</a></p>
-            <p><a class="a_footer" href="../privacy.html">Privacy Policy</a></p>
-            <p><a class="a_footer" href="../sitemap.xml">Sitemap</a></p>
+            <p><a class="a_footer" href="/about">About</a></p>
+            <p><a class="a_footer" href="/privacy">Privacy Policy</a></p>
+            <p><a class="a_footer" href="/sitemap.xml">Sitemap</a></p>
             <p><a class="a_footer" href="mailto:info@unidirectory.it">Contattaci</a></p>
         </div>
     </footer>
-    <script src="../assets/js/footer.js"></script>
-    <script src="../assets/js/scriptelenco.js"></script>
+    <script src="/assets/js/scriptelenco.js"></script>
     <script>
         ordineregione = false;
         ordinestudenti = false;
         ordinecitta = false;
-        caricaTabella('superiori');
+        caricaTabella();
     </script>
 </body>
 

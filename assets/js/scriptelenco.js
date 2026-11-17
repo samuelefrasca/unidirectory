@@ -38,7 +38,7 @@ function renderizzaTabella(lista) {
         if (!uni.studenti) { uni.studenti = "----" }
         if (!uni.sigla) { uni.sigla = "----" }
             let slug = uni.sigla.toLowerCase().replace(/ /g, "_");
-            let link = `../atenei/${slug}.html`;
+            let link = `/atenei/${slug}`;
         let studenti_display = typeof uni.studenti === "number"
             ? uni.studenti.toLocaleString("it-IT", { useGrouping: "always" })
             : uni.studenti;
@@ -61,7 +61,7 @@ function renderizzaTabella(lista) {
 
 // Carica dal DOM statico (pre-generato da Python)
 
-function caricaTabella(categoria) {
+function caricaTabella() {
     const righe = corpoTabella.querySelectorAll("tr[data-uni]");
     uniAttuale = Array.from(righe).map(riga => JSON.parse(riga.dataset.uni));
     uniTrovate.textContent = `${uniAttuale.length} atenei trovati`;
@@ -72,7 +72,7 @@ function caricaTabella(categoria) {
 
 var ordineregione
 
-function ordinaPerRegione(categoria) {
+function ordinaPerRegione() {
     const copia = [...uniAttuale];
     copia.sort((a, b) => a.regione.localeCompare(b.regione, "it"));
     if (ordineregione) {
@@ -90,7 +90,7 @@ function ordinaPerRegione(categoria) {
 
 var ordinecitta
 
-function ordinaPerCitta(categoria) {
+function ordinaPerCitta() {
     const copia = [...uniAttuale];
     copia.sort((a, b) => a.citta.localeCompare(b.citta, "it"));
     if (ordinecitta) {
@@ -108,7 +108,7 @@ function ordinaPerCitta(categoria) {
 
 var ordinestudenti
 
-function ordinaPerStudenti(categoria) {
+function ordinaPerStudenti() {
     const copia = [...uniAttuale];
     const numStudenti = (u) => (typeof u.studenti === "number" ? u.studenti : 0);
     if (ordinestudenti) {
